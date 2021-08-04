@@ -45,8 +45,10 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Inserta = new SqlCommand();
                 sp_Inserta.Connection = Conectar;
-                sp_Inserta.CommandText = "sp_NuevoExpediente";
+                sp_Inserta.CommandText = "psci.New_C";
                 sp_Inserta.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter 
 
 
 
