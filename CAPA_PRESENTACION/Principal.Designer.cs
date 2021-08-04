@@ -46,15 +46,16 @@ namespace CAPA_PRESENTACION
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 41);
+            this.panel1.Size = new System.Drawing.Size(814, 41);
             this.panel1.TabIndex = 0;
             // 
             // btnminform
             // 
             this.btnminform.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnminform.FlatAppearance.BorderSize = 0;
             this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
-            this.btnminform.Location = new System.Drawing.Point(689, 0);
+            this.btnminform.Location = new System.Drawing.Point(703, 0);
             this.btnminform.Name = "btnminform";
             this.btnminform.Size = new System.Drawing.Size(38, 41);
             this.btnminform.TabIndex = 6;
@@ -67,7 +68,7 @@ namespace CAPA_PRESENTACION
             this.btnresform.FlatAppearance.BorderSize = 0;
             this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
-            this.btnresform.Location = new System.Drawing.Point(727, 0);
+            this.btnresform.Location = new System.Drawing.Point(741, 0);
             this.btnresform.Name = "btnresform";
             this.btnresform.Size = new System.Drawing.Size(38, 41);
             this.btnresform.TabIndex = 4;
@@ -92,17 +93,18 @@ namespace CAPA_PRESENTACION
             this.btncloseform.FlatAppearance.BorderSize = 0;
             this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.closewindowapplication_cerca_ventan_2874;
-            this.btncloseform.Location = new System.Drawing.Point(765, 0);
+            this.btncloseform.Location = new System.Drawing.Point(779, 0);
             this.btncloseform.Name = "btncloseform";
             this.btncloseform.Size = new System.Drawing.Size(35, 41);
             this.btncloseform.TabIndex = 1;
             this.btncloseform.UseVisualStyleBackColor = true;
+            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(814, 612);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Principal";

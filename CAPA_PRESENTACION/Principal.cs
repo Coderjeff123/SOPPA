@@ -16,5 +16,11 @@ namespace CAPA_PRESENTACION
         {
             InitializeComponent();
         }
+
+        private void btncloseform_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }
