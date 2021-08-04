@@ -51,14 +51,14 @@ namespace CAPA_DATOS
                 SqlParameter Consulta = new SqlParameter();
                 Consulta.ParameterName = "@ID_Consulta";
                 Consulta.SqlDbType = SqlDbType.Int;
-                Consulta.Size = 0;
+               // Consulta.Size = 0;
                 Consulta.Value = exp.ID_Consulta1;
                 New_C.Parameters.Add(Consulta);
 
                 SqlParameter Cita = new SqlParameter();
                 Cita.ParameterName = "@ID_Cita";
                 Cita.SqlDbType = SqlDbType.Int;
-                Cita.Size = 0;
+                //Cita.Size = 0;
                 Cita.Value = exp.ID_Cita1;
                 New_C.Parameters.Add(Cita);
 
