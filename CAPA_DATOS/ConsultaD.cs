@@ -43,22 +43,50 @@ namespace CAPA_DATOS
                 //Asignamos la cadena de conexión
                 Conectar.ConnectionString = Conet.cnx;
                 Conectar.Open();
-                SqlCommand sp_Inserta = new SqlCommand();
-                sp_Inserta.Connection = Conectar;
-                sp_Inserta.CommandText = "psci.New_C";
-                sp_Inserta.CommandType = CommandType.StoredProcedure;
+                SqlCommand New_C = new SqlCommand();
+                New_C.Connection = Conectar;
+                New_C.CommandText = "Consulta";
+                New_C.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter 
+                SqlParameter Consulta = new SqlParameter();
+                Consulta.ParameterName = "@ID_Consulta";
+                Consulta.SqlDbType = SqlDbType.Int;
+                Consulta.Size = 0;
+                Consulta.Value = exp.ID_Consulta1;
+                New_C.Parameters.Add(Consulta);
+
+                SqlParameter Cita = new SqlParameter();
+                Cita.ParameterName = "@ID_Cita";
+                Cita.SqlDbType = SqlDbType.Int;
+                Cita.Size = 0;
+                Cita.Value = exp.ID_Cita1;
+                New_C.Parameters.Add(Cita);
+
+                SqlParameter Actividades = new SqlParameter();
+                Actividades.ParameterName = "@ID_Cita";
+                Actividades.SqlDbType = SqlDbType.NVarChar;
+                Actividades.Size = 50;
+                Actividades.Value = exp.Actividades1;
+                New_C.Parameters.Add(Actividades);
+
+                SqlParameter Observacion = new SqlParameter();
+                Observacion.ParameterName = "@Observaciones";
+                Observacion.SqlDbType = SqlDbType.NVarChar;
+                Observacion.Size = 3000;
+                Observacion.Value = exp.Observaciones1;
+                New_C.Parameters.Add(Observacion);
+
+                SqlParameter Tipo = new SqlParameter();
+                Tipo.ParameterName = "@Tipo";
+                Tipo.SqlDbType = SqlDbType.NChar;
+                Tipo.Size = 1;
+                Tipo.Value = exp.Tipo1;
+                New_C.Parameters.Add(Tipo);
 
 
 
 
-
-
-
-
-
-                if (sp_Inserta.ExecuteNonQuery() == 1)
+                if (New_C.ExecuteNonQuery() == 1)
                 {
                     retorno = "Everything it's ok";
                 }
