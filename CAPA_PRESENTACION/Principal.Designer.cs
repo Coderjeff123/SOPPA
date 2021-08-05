@@ -539,6 +539,7 @@ namespace CAPA_PRESENTACION
             // 
             // panelFormhijo
             // 
+            this.panelFormhijo.AutoScroll = true;
             this.panelFormhijo.BackColor = System.Drawing.Color.White;
             this.panelFormhijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
