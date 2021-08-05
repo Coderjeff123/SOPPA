@@ -45,7 +45,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand New_C = new SqlCommand();
                 New_C.Connection = Conectar;
-                New_C.CommandText = "Consulta";
+                New_C.CommandText = "psci.Consulta";
                 New_C.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Consulta = new SqlParameter();

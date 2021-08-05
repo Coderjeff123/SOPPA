@@ -46,6 +46,7 @@
     <Compile Include="ConsultaD.cs" />
     <Compile Include="Dexpediente.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemisionD.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -45,7 +45,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand SP_NewE = new SqlCommand();
                 SP_NewE.Connection = Conectar;
-                SP_NewE.CommandText = "File_psico";
+                SP_NewE.CommandText = "pcsi.File_psico";
                 SP_NewE.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Expediente = new SqlParameter();
