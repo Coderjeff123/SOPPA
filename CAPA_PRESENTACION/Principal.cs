@@ -123,5 +123,61 @@ namespace CAPA_PRESENTACION
             ocultarsubmenu();
             abrirForm(new VerExpediente());
         }
+
+        private void panelsubmenuinformes_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btngenerarinfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnverinformes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelsubmenucita_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnposponercita_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnagendarcitas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnvercitas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelsubmenuconsulta_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btniniciarconsulta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnnuevaconsulta_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnverconsulta_Click(object sender, EventArgs e)
+        {
+
+        }
     }
+    
 }
