@@ -64,25 +64,24 @@ namespace CAPA_DATOS
 
                 SqlParameter Estado = new SqlParameter();
                 Estado.ParameterName = "@Estado";
-                Estado.SqlDbType = SqlDbType.NVarChar;
-                Estado.Size = 50;
+                Estado.SqlDbType = SqlDbType.NChar;
+                Estado.Size = 10;
                 Estado.Value = exp.Estado1;
                 SP_NewE.Parameters.Add(Estado);
 
                 SqlParameter Foto = new SqlParameter();
-                Nombre.ParameterName = "@ID_Expediente";
-                Nombre.SqlDbType = SqlDbType.NVarChar;
-                Nombre.Size = 50;
-                Nombre.Value = exp.Nombre1;
-                SP_NewE.Parameters.Add(Nombre);
+                Foto.ParameterName = "@Foto";
+                Foto.SqlDbType = SqlDbType.Image;
+                //Nombre.Size = 50;
+                Foto.Value = exp.Foto1;
+                SP_NewE.Parameters.Add(Foto);
 
-
-
-
-
-
-
-
+                SqlParameter Noexpediente = new SqlParameter();
+                Estado.ParameterName = "@NoExpediente";
+                Estado.SqlDbType = SqlDbType.NVarChar;
+                Estado.Size = 8;
+                Estado.Value = exp.Noexpediente1;
+                SP_NewE.Parameters.Add(Noexpediente);
 
 
 
