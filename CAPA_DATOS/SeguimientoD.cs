@@ -18,6 +18,15 @@ namespace CAPA_DATOS
 
         public SeguimientoD() { }
 
+        public SeguimientoD(string iD_Seguimiento, string iD_Consulta, DateTime fecha_inicio, DateTime fecha_final, string observaciones)
+        {
+            ID_Seguimiento = iD_Seguimiento;
+            ID_Consulta = iD_Consulta;
+            Fecha_inicio = fecha_inicio;
+            Fecha_final = fecha_final;
+            Observaciones = observaciones;
+        }
+
         public string ID_Seguimiento1 { get => ID_Seguimiento; set => ID_Seguimiento = value; }
         public string ID_Consulta1 { get => ID_Consulta; set => ID_Consulta = value; }
         public DateTime Fecha_inicio1 { get => Fecha_inicio; set => Fecha_inicio = value; }
