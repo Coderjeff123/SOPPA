@@ -102,7 +102,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Update(Dexpediente exp)
+        public string Update(RemisionD exp)
         {
             return "";
         }
