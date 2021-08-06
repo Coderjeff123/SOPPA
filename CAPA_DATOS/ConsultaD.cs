@@ -18,13 +18,13 @@ namespace CAPA_DATOS
 
         public ConsultaD() { }
 
-        public ConsultaD(string iD_Consulta, string iD_Cita, string actividades, string observaciones, string tipo)
+        public ConsultaD(string iD_Consulta1, string iD_Cita1, string actividades1, string observaciones1, string tipo1)
         {
-            ID_Consulta = iD_Consulta;
-            ID_Cita = iD_Cita;
-            Actividades = actividades;
-            Observaciones = observaciones;
-            Tipo = tipo;
+            ID_Consulta1 = iD_Consulta1;
+            ID_Cita1 = iD_Cita1;
+            Actividades1 = actividades1;
+            Observaciones1 = observaciones1;
+            Tipo1 = tipo1;
         }
 
         public string ID_Consulta1 { get => ID_Consulta; set => ID_Consulta = value; }

@@ -19,13 +19,13 @@ namespace CAPA_DATOS
 
         public Dexpediente() { }
 
-        public Dexpediente(string iD_Expediente, string nombre, string estado, byte[] foto, string noexpediente)
+        public Dexpediente(string iD_Expediente1, string nombre1, string estado1, byte[] foto1, string noexpediente1)
         {
-            ID_Expediente = iD_Expediente;
-            Nombre = nombre;
-            Estado = estado;
-            Foto = foto;
-            Noexpediente = noexpediente;
+            ID_Expediente1 = iD_Expediente1;
+            Nombre1 = nombre1;
+            Estado1 = estado1;
+            Foto1 = foto1;
+            Noexpediente1 = noexpediente1;
         }
 
         public string ID_Expediente1 { get => ID_Expediente; set => ID_Expediente = value; }

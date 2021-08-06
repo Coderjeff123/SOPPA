@@ -17,12 +17,12 @@ namespace CAPA_DATOS
 
         public RemisionD() { }
 
-        public RemisionD(string iD_Remision, string iD_Expediente, string remitente, string motivoRemision)
+        public RemisionD(string iD_Remision1, string iD_Expediente1, string remitente1, string motivoRemision1)
         {
-            ID_Remision = iD_Remision;
-            ID_Expediente1 = iD_Expediente;
-            Remitente = remitente;
-            MotivoRemision = motivoRemision;
+            ID_Remision1 = iD_Remision1;
+            ID_Expediente1 = iD_Expediente1;
+            Remitente1 = remitente1;
+            MotivoRemision1 = motivoRemision1;
         }
 
         public string ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
