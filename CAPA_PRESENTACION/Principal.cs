@@ -36,7 +36,10 @@ namespace CAPA_PRESENTACION
             this.WindowState = FormWindowState.Normal;
             btnresform.Visible = false;
             btnmaxform.Visible = true;
+           
         }
+
+      
 
         private void btnmaxform_Click(object sender, EventArgs e)
         {
@@ -124,60 +127,13 @@ namespace CAPA_PRESENTACION
             abrirForm(new VerExpediente());
         }
 
-        private void panelsubmenuinformes_Paint(object sender, PaintEventArgs e)
+        private void btnnuevoexpe_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btngenerarinfo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnverinformes_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelsubmenucita_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btnposponercita_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnagendarcitas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnvercitas_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelsubmenuconsulta_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void btniniciarconsulta_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnnuevaconsulta_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnverconsulta_Click(object sender, EventArgs e)
-        {
-
+            ocultarmenu();
+            abrirForm(new NuevoExpe());
         }
     }
+    }
     
-}
+    
+

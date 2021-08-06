@@ -58,8 +58,8 @@ namespace CAPA_PRESENTACION
             this.btnexpediente = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panelFormhijo = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -84,8 +84,8 @@ namespace CAPA_PRESENTACION
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnminform);
             this.panel2.Controls.Add(this.btnresform);
+            this.panel2.Controls.Add(this.btnminform);
             this.panel2.Controls.Add(this.btnmaxform);
             this.panel2.Controls.Add(this.btncloseform);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
@@ -111,7 +111,7 @@ namespace CAPA_PRESENTACION
             this.btnresform.FlatAppearance.BorderSize = 0;
             this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
-            this.btnresform.Location = new System.Drawing.Point(44, 0);
+            this.btnresform.Location = new System.Drawing.Point(44, 2);
             this.btnresform.Name = "btnresform";
             this.btnresform.Size = new System.Drawing.Size(38, 41);
             this.btnresform.TabIndex = 4;
@@ -161,7 +161,7 @@ namespace CAPA_PRESENTACION
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 44);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(224, 744);
+            this.panelmenu.Size = new System.Drawing.Size(224, 738);
             this.panelmenu.TabIndex = 1;
             // 
             // panelsubmenuinformes
@@ -174,7 +174,6 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuinformes.Name = "panelsubmenuinformes";
             this.panelsubmenuinformes.Size = new System.Drawing.Size(207, 118);
             this.panelsubmenuinformes.TabIndex = 9;
-            this.panelsubmenuinformes.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsubmenuinformes_Paint);
             // 
             // btngenerarinfo
             // 
@@ -194,7 +193,6 @@ namespace CAPA_PRESENTACION
             this.btngenerarinfo.Text = "Generar Informes";
             this.btngenerarinfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngenerarinfo.UseVisualStyleBackColor = false;
-            this.btngenerarinfo.Click += new System.EventHandler(this.btngenerarinfo_Click);
             // 
             // btnverinformes
             // 
@@ -214,7 +212,6 @@ namespace CAPA_PRESENTACION
             this.btnverinformes.Text = "Ver Informes";
             this.btnverinformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverinformes.UseVisualStyleBackColor = false;
-            this.btnverinformes.Click += new System.EventHandler(this.btnverinformes_Click);
             // 
             // btninforme
             // 
@@ -244,7 +241,6 @@ namespace CAPA_PRESENTACION
             this.panelsubmenucita.Name = "panelsubmenucita";
             this.panelsubmenucita.Size = new System.Drawing.Size(207, 118);
             this.panelsubmenucita.TabIndex = 7;
-            this.panelsubmenucita.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsubmenucita_Paint);
             // 
             // btnposponercita
             // 
@@ -264,7 +260,6 @@ namespace CAPA_PRESENTACION
             this.btnposponercita.Text = "Posponer Cita";
             this.btnposponercita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnposponercita.UseVisualStyleBackColor = false;
-            this.btnposponercita.Click += new System.EventHandler(this.btnposponercita_Click);
             // 
             // btnagendarcitas
             // 
@@ -284,7 +279,6 @@ namespace CAPA_PRESENTACION
             this.btnagendarcitas.Text = "Agendar Citas";
             this.btnagendarcitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnagendarcitas.UseVisualStyleBackColor = false;
-            this.btnagendarcitas.Click += new System.EventHandler(this.btnagendarcitas_Click);
             // 
             // btnvercitas
             // 
@@ -304,7 +298,6 @@ namespace CAPA_PRESENTACION
             this.btnvercitas.Text = "Ver Citas";
             this.btnvercitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnvercitas.UseVisualStyleBackColor = false;
-            this.btnvercitas.Click += new System.EventHandler(this.btnvercitas_Click);
             // 
             // btncita
             // 
@@ -334,7 +327,6 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuconsulta.Name = "panelsubmenuconsulta";
             this.panelsubmenuconsulta.Size = new System.Drawing.Size(207, 118);
             this.panelsubmenuconsulta.TabIndex = 5;
-            this.panelsubmenuconsulta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsubmenuconsulta_Paint);
             // 
             // btniniciarconsulta
             // 
@@ -354,7 +346,6 @@ namespace CAPA_PRESENTACION
             this.btniniciarconsulta.Text = "Iniciar Consulta";
             this.btniniciarconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniniciarconsulta.UseVisualStyleBackColor = false;
-            this.btniniciarconsulta.Click += new System.EventHandler(this.btniniciarconsulta_Click);
             // 
             // btnnuevaconsulta
             // 
@@ -374,7 +365,6 @@ namespace CAPA_PRESENTACION
             this.btnnuevaconsulta.Text = "Nueva Consulta";
             this.btnnuevaconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnuevaconsulta.UseVisualStyleBackColor = false;
-            this.btnnuevaconsulta.Click += new System.EventHandler(this.btnnuevaconsulta_Click);
             // 
             // btnverconsulta
             // 
@@ -394,7 +384,6 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta.Text = "Ver Expediente";
             this.btnverconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverconsulta.UseVisualStyleBackColor = false;
-            this.btnverconsulta.Click += new System.EventHandler(this.btnverconsulta_Click);
             // 
             // btnconsulta
             // 
@@ -462,6 +451,7 @@ namespace CAPA_PRESENTACION
             this.btnnuevoexpe.Text = "Nuevo Expediente";
             this.btnnuevoexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnuevoexpe.UseVisualStyleBackColor = false;
+            this.btnnuevoexpe.Click += new System.EventHandler(this.btnnuevoexpe_Click);
             // 
             // btnverexpe
             // 
@@ -516,10 +506,20 @@ namespace CAPA_PRESENTACION
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.monthCalendar1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(224, 484);
+            this.panel4.Location = new System.Drawing.Point(224, 538);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(768, 304);
+            this.panel4.Size = new System.Drawing.Size(768, 244);
             this.panel4.TabIndex = 2;
+            this.panel4.Visible = false;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(248, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(520, 244);
+            this.dataGridView1.TabIndex = 0;
             // 
             // monthCalendar1
             // 
@@ -528,34 +528,28 @@ namespace CAPA_PRESENTACION
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 1;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(248, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 304);
-            this.dataGridView1.TabIndex = 0;
-            // 
             // panelFormhijo
             // 
-            this.panelFormhijo.AutoScroll = true;
-            this.panelFormhijo.BackColor = System.Drawing.Color.White;
-            this.panelFormhijo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFormhijo.AutoSize = true;
+            this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 440);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 494);
             this.panelFormhijo.TabIndex = 3;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 788);
-            this.Controls.Add(this.panelFormhijo);
+            this.ClientSize = new System.Drawing.Size(992, 782);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panelFormhijo);
             this.Controls.Add(this.panelmenu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -572,6 +566,7 @@ namespace CAPA_PRESENTACION
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

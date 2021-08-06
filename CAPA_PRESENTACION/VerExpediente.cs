@@ -17,9 +17,14 @@ namespace CAPA_PRESENTACION
             InitializeComponent();
         }
 
-        private void btncerrarform_Click(object sender, EventArgs e)
+        private void btnbuscar_Click(object sender, EventArgs e)
         {
-            this.Close();
+            panelinfo.Visible = true;
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            panelinfo.Visible = false;
         }
     }
 }
