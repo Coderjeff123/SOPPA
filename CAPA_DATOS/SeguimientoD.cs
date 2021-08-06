@@ -43,51 +43,51 @@ namespace CAPA_DATOS
                 //Asignamos la cadena de conexión
                 Conectar.ConnectionString = Conet.cnx;
                 Conectar.Open();
-                SqlCommand SP_NewS = new SqlCommand();
-                SP_NewS.Connection = Conectar;
-                SP_NewS.CommandText = "pcsi.Seguimiento";
-                SP_NewS.CommandType = CommandType.StoredProcedure;
+                SqlCommand SP_NewSe = new SqlCommand();
+                SP_NewSe.Connection = Conectar;
+                SP_NewSe.CommandText = "SP_NewS";
+                SP_NewSe.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Id_seguimiento = new SqlParameter();
                 Id_seguimiento.ParameterName = "@ID_Seguimiento";
                 Id_seguimiento.SqlDbType = SqlDbType.Int;
                 //Id_seguimiento.Size = 50;
                 Id_seguimiento.Value = exp.ID_Seguimiento1;
-                SP_NewS.Parameters.Add(Id_seguimiento);
+                SP_NewSe.Parameters.Add(Id_seguimiento);
 
                 SqlParameter Id_consulta = new SqlParameter();
                 Id_consulta.ParameterName = "@ID_Consulta";
                 Id_consulta.SqlDbType = SqlDbType.Int;
                 //Id_seguimiento.Size = 50;
                 Id_consulta.Value = exp.ID_Consulta1;
-                SP_NewS.Parameters.Add(Id_consulta);
+                SP_NewSe.Parameters.Add(Id_consulta);
 
                 SqlParameter fecha_inicio = new SqlParameter();
                 fecha_inicio.ParameterName = "@ID_Seguimiento";
                 fecha_inicio.SqlDbType = SqlDbType.DateTime;
                 //Id_seguimiento.Size = 50;
                 fecha_inicio.Value = exp.Fecha_inicio1;
-                SP_NewS.Parameters.Add(fecha_inicio);
+                SP_NewSe.Parameters.Add(fecha_inicio);
 
                 SqlParameter fecha_final = new SqlParameter();
                 fecha_final.ParameterName = "@ID_Seguimiento";
                 fecha_final.SqlDbType = SqlDbType.DateTime;
                 //Id_seguimiento.Size = 50;
                 fecha_final.Value = exp.Fecha_final1;
-                SP_NewS.Parameters.Add(fecha_final);
+                SP_NewSe.Parameters.Add(fecha_final);
 
                 SqlParameter Observacion = new SqlParameter();
                 Observacion.ParameterName = "@Observaciones";
                 Observacion.SqlDbType = SqlDbType.NVarChar;
                 Observacion.Size = 3000;
                 Observacion.Value = exp.Observaciones1;
-                SP_NewS.Parameters.Add(Observacion);
+                SP_NewSe.Parameters.Add(Observacion);
 
 
 
 
 
-                if (SP_NewS.ExecuteNonQuery() == 1)
+                if (SP_NewSe.ExecuteNonQuery() == 1)
                 {
                     retorno = "Everything it's ok";
                 }

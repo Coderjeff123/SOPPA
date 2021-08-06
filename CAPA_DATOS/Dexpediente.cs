@@ -43,50 +43,50 @@ namespace CAPA_DATOS
                 //Asignamos la cadena de conexión
                 Conectar.ConnectionString = Conet.cnx;
                 Conectar.Open();
-                SqlCommand SP_NewE = new SqlCommand();
-                SP_NewE.Connection = Conectar;
-                SP_NewE.CommandText = "pcsi.File_psico";
-                SP_NewE.CommandType = CommandType.StoredProcedure;
+                SqlCommand SP_NewEX = new SqlCommand();
+                SP_NewEX.Connection = Conectar;
+                SP_NewEX.CommandText = "SP_NewE";
+                SP_NewEX.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Expediente = new SqlParameter();
                 Expediente.ParameterName = "@ID_Expediente";
                 Expediente.SqlDbType = SqlDbType.Int;
                 //Expediente.Size = 0;
                 Expediente.Value = exp.ID_Expediente1;
-                SP_NewE.Parameters.Add(Expediente);
+                SP_NewEX.Parameters.Add(Expediente);
 
                 SqlParameter Nombre = new SqlParameter();
                 Nombre.ParameterName = "@Nombre";
                 Nombre.SqlDbType = SqlDbType.NVarChar;
                 Nombre.Size = 50;
                 Nombre.Value = exp.Nombre1;
-                SP_NewE.Parameters.Add(Nombre);
+                SP_NewEX.Parameters.Add(Nombre);
 
                 SqlParameter Estado = new SqlParameter();
                 Estado.ParameterName = "@Estado";
                 Estado.SqlDbType = SqlDbType.NChar;
                 Estado.Size = 10;
                 Estado.Value = exp.Estado1;
-                SP_NewE.Parameters.Add(Estado);
+                SP_NewEX.Parameters.Add(Estado);
 
                 SqlParameter Foto = new SqlParameter();
                 Foto.ParameterName = "@Foto";
                 Foto.SqlDbType = SqlDbType.Image;
                 //Nombre.Size = 50;
                 Foto.Value = exp.Foto1;
-                SP_NewE.Parameters.Add(Foto);
+                SP_NewEX.Parameters.Add(Foto);
 
                 SqlParameter Noexpediente = new SqlParameter();
                 Estado.ParameterName = "@NoExpediente";
                 Estado.SqlDbType = SqlDbType.NVarChar;
                 Estado.Size = 8;
                 Estado.Value = exp.Noexpediente1;
-                SP_NewE.Parameters.Add(Noexpediente);
+                SP_NewEX.Parameters.Add(Noexpediente);
 
 
 
 
-                if (SP_NewE.ExecuteNonQuery() == 1)
+                if (SP_NewEX.ExecuteNonQuery() == 1)
                 {
                     retorno = "Everything it's ok";
                 }

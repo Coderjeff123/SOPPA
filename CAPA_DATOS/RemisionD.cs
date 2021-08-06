@@ -40,43 +40,43 @@ namespace CAPA_DATOS
                 //Asignamos la cadena de conexión
                 Conectar.ConnectionString = Conet.cnx;
                 Conectar.Open();
-                SqlCommand SP_NewR = new SqlCommand();
-                SP_NewR.Connection = Conectar;
-                SP_NewR.CommandText = "pcsi.Remision";
-                SP_NewR.CommandType = CommandType.StoredProcedure;
+                SqlCommand SP_NewRe = new SqlCommand();
+                SP_NewRe.Connection = Conectar;
+                SP_NewRe.CommandText = "SP_NewR";
+                SP_NewRe.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Id_remision = new SqlParameter();
                 Id_remision.ParameterName = "@ID_Remision";
                 Id_remision.SqlDbType = SqlDbType.Int;
                 //Id_remision.Size = 50;
                 Id_remision.Value = exp.ID_Remision1;
-                SP_NewR.Parameters.Add(Id_remision);
+                SP_NewRe.Parameters.Add(Id_remision);
 
                 SqlParameter Id_expediente = new SqlParameter();
                 Id_expediente.ParameterName = "@ID_Remision";
                 Id_expediente.SqlDbType = SqlDbType.Int;
                 //Id_remision.Size = 50;
                 Id_expediente.Value = exp.ID_Expediente1;
-                SP_NewR.Parameters.Add(Id_expediente);
+                SP_NewRe.Parameters.Add(Id_expediente);
 
                 SqlParameter remitente = new SqlParameter();
                 remitente.ParameterName = "@Remitente";
                 remitente.SqlDbType = SqlDbType.NVarChar;
                 remitente.Size = 30;
                 remitente.Value = exp.Remitente1;
-                SP_NewR.Parameters.Add(remitente);
+                SP_NewRe.Parameters.Add(remitente);
 
                 SqlParameter motivo = new SqlParameter();
                 motivo.ParameterName = "@ID_Remision";
                 motivo.SqlDbType = SqlDbType.NVarChar;
                 motivo.Size = 100;
                 Id_expediente.Value = exp.ID_Expediente1;
-                SP_NewR.Parameters.Add(motivo);
+                SP_NewRe.Parameters.Add(motivo);
 
 
 
 
-                if (SP_NewR.ExecuteNonQuery() == 1)
+                if (SP_NewRe.ExecuteNonQuery() == 1)
                 {
                     retorno = "Everything it's ok";
                 }
