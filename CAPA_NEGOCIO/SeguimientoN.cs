@@ -16,7 +16,7 @@ namespace CAPA_NEGOCIO
             datos.ID_Seguimiento1 = iD_Seguimiento;
             datos.ID_Consulta1 = iD_Consulta;
             datos.Fecha_inicio1 = fecha_inicio;
-            datos.Fecha_inicio1 = fecha_final;
+            datos.Fecha_final1 = fecha_final;
             datos.Observaciones1 = observaciones;
 
             return datos.insert(datos);
