@@ -32,8 +32,8 @@ namespace CAPA_PRESENTACION
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnminform = new System.Windows.Forms.Button();
             this.btnresform = new System.Windows.Forms.Button();
+            this.btnminform = new System.Windows.Forms.Button();
             this.btnmaxform = new System.Windows.Forms.Button();
             this.btncloseform = new System.Windows.Forms.Button();
             this.panelmenu = new System.Windows.Forms.Panel();
@@ -94,18 +94,6 @@ namespace CAPA_PRESENTACION
             this.panel2.Size = new System.Drawing.Size(123, 44);
             this.panel2.TabIndex = 7;
             // 
-            // btnminform
-            // 
-            this.btnminform.FlatAppearance.BorderSize = 0;
-            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
-            this.btnminform.Location = new System.Drawing.Point(6, 0);
-            this.btnminform.Name = "btnminform";
-            this.btnminform.Size = new System.Drawing.Size(38, 41);
-            this.btnminform.TabIndex = 6;
-            this.btnminform.UseVisualStyleBackColor = true;
-            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
-            // 
             // btnresform
             // 
             this.btnresform.FlatAppearance.BorderSize = 0;
@@ -117,6 +105,18 @@ namespace CAPA_PRESENTACION
             this.btnresform.TabIndex = 4;
             this.btnresform.UseVisualStyleBackColor = true;
             this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
+            // 
+            // btnminform
+            // 
+            this.btnminform.FlatAppearance.BorderSize = 0;
+            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
+            this.btnminform.Location = new System.Drawing.Point(6, 0);
+            this.btnminform.Name = "btnminform";
+            this.btnminform.Size = new System.Drawing.Size(38, 41);
+            this.btnminform.TabIndex = 6;
+            this.btnminform.UseVisualStyleBackColor = true;
+            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
             // 
             // btnmaxform
             // 
@@ -533,6 +533,9 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFormhijo.AutoScroll = true;
+            this.panelFormhijo.AutoScrollMargin = new System.Drawing.Size(450, 450);
+            this.panelFormhijo.AutoScrollMinSize = new System.Drawing.Size(450, 450);
             this.panelFormhijo.AutoSize = true;
             this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;

@@ -41,7 +41,7 @@ namespace CAPA_PRESENTACION
             this.paneltitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneltitulo.Location = new System.Drawing.Point(0, 0);
             this.paneltitulo.Name = "paneltitulo";
-            this.paneltitulo.Size = new System.Drawing.Size(759, 37);
+            this.paneltitulo.Size = new System.Drawing.Size(768, 37);
             this.paneltitulo.TabIndex = 0;
             // 
             // Titulo
@@ -63,7 +63,7 @@ namespace CAPA_PRESENTACION
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(759, 585);
+            this.ClientSize = new System.Drawing.Size(768, 738);
             this.Controls.Add(this.paneltitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoExpe";
