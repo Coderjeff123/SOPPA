@@ -68,6 +68,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="VerConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerConsulta.Designer.cs">
+      <DependentUpon>VerConsulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerExpediente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerConsulta.resx">
+      <DependentUpon>VerConsulta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerExpediente.resx">
       <DependentUpon>VerExpediente.cs</DependentUpon>
