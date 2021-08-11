@@ -31,7 +31,6 @@ namespace CAPA_PRESENTACION
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panelbusqueda = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -53,7 +52,6 @@ namespace CAPA_PRESENTACION
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panelimagen = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panelbusqueda.SuspendLayout();
             this.panelinfo.SuspendLayout();
             this.panelDatos2.SuspendLayout();
@@ -85,26 +83,14 @@ namespace CAPA_PRESENTACION
             this.Titulo.TabIndex = 3;
             this.Titulo.Text = "Ver Expediente";
             // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.panel2.Controls.Add(this.panelbusqueda);
-            this.panel2.Location = new System.Drawing.Point(0, 37);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(768, 81);
-            this.panel2.TabIndex = 1;
-            // 
             // panelbusqueda
             // 
-            this.panelbusqueda.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelbusqueda.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelbusqueda.BackColor = System.Drawing.Color.White;
             this.panelbusqueda.Controls.Add(this.label1);
             this.panelbusqueda.Controls.Add(this.textBox1);
             this.panelbusqueda.Controls.Add(this.btnbuscar);
-            this.panelbusqueda.Location = new System.Drawing.Point(33, 6);
+            this.panelbusqueda.Location = new System.Drawing.Point(33, 69);
             this.panelbusqueda.Name = "panelbusqueda";
             this.panelbusqueda.Size = new System.Drawing.Size(717, 56);
             this.panelbusqueda.TabIndex = 0;
@@ -142,13 +128,13 @@ namespace CAPA_PRESENTACION
             // 
             // panelinfo
             // 
-            this.panelinfo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panelinfo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.panelinfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelinfo.BackColor = System.Drawing.Color.White;
             this.panelinfo.Controls.Add(this.panelDatos2);
             this.panelinfo.Controls.Add(this.panelDatos);
             this.panelinfo.Controls.Add(this.panelimagen);
-            this.panelinfo.Location = new System.Drawing.Point(33, 151);
+            this.panelinfo.Location = new System.Drawing.Point(33, 145);
             this.panelinfo.Name = "panelinfo";
             this.panelinfo.Size = new System.Drawing.Size(717, 334);
             this.panelinfo.TabIndex = 2;
@@ -314,8 +300,8 @@ namespace CAPA_PRESENTACION
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(768, 562);
+            this.Controls.Add(this.panelbusqueda);
             this.Controls.Add(this.panelinfo);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VerExpediente";
@@ -324,7 +310,6 @@ namespace CAPA_PRESENTACION
             this.TopMost = true;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
             this.panelbusqueda.ResumeLayout(false);
             this.panelbusqueda.PerformLayout();
             this.panelinfo.ResumeLayout(false);
@@ -341,7 +326,6 @@ namespace CAPA_PRESENTACION
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panelbusqueda;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;

@@ -161,7 +161,7 @@ namespace CAPA_PRESENTACION
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 44);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(224, 738);
+            this.panelmenu.Size = new System.Drawing.Size(224, 741);
             this.panelmenu.TabIndex = 1;
             // 
             // panelsubmenuinformes
@@ -506,9 +506,9 @@ namespace CAPA_PRESENTACION
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.monthCalendar1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(224, 538);
+            this.panel4.Location = new System.Drawing.Point(224, 571);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(768, 244);
+            this.panel4.Size = new System.Drawing.Size(768, 214);
             this.panel4.TabIndex = 2;
             this.panel4.Visible = false;
             // 
@@ -518,7 +518,7 @@ namespace CAPA_PRESENTACION
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(248, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 244);
+            this.dataGridView1.Size = new System.Drawing.Size(520, 214);
             this.dataGridView1.TabIndex = 0;
             // 
             // monthCalendar1
@@ -543,14 +543,14 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 494);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 521);
             this.panelFormhijo.TabIndex = 3;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 782);
+            this.ClientSize = new System.Drawing.Size(992, 785);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelFormhijo);
             this.Controls.Add(this.panelmenu);
