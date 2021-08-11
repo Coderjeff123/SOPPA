@@ -148,7 +148,7 @@ namespace CAPA_PRESENTACION
             // 
             this.panelmenu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.panelmenu.AutoScroll = true;
-            this.panelmenu.BackColor = System.Drawing.Color.White;
+            this.panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(130)))), ((int)(((byte)(136)))));
             this.panelmenu.Controls.Add(this.panelsubmenuinformes);
             this.panelmenu.Controls.Add(this.btninforme);
             this.panelmenu.Controls.Add(this.panelsubmenucita);
@@ -161,34 +161,34 @@ namespace CAPA_PRESENTACION
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 44);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(224, 741);
+            this.panelmenu.Size = new System.Drawing.Size(224, 710);
             this.panelmenu.TabIndex = 1;
             // 
             // panelsubmenuinformes
             // 
-            this.panelsubmenuinformes.BackColor = System.Drawing.Color.White;
+            this.panelsubmenuinformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
             this.panelsubmenuinformes.Controls.Add(this.btngenerarinfo);
             this.panelsubmenuinformes.Controls.Add(this.btnverinformes);
             this.panelsubmenuinformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuinformes.Location = new System.Drawing.Point(0, 698);
             this.panelsubmenuinformes.Name = "panelsubmenuinformes";
-            this.panelsubmenuinformes.Size = new System.Drawing.Size(207, 118);
+            this.panelsubmenuinformes.Size = new System.Drawing.Size(207, 102);
             this.panelsubmenuinformes.TabIndex = 9;
             // 
             // btngenerarinfo
             // 
-            this.btngenerarinfo.BackColor = System.Drawing.Color.White;
+            this.btngenerarinfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btngenerarinfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btngenerarinfo.FlatAppearance.BorderSize = 0;
             this.btngenerarinfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngenerarinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btngenerarinfo.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btngenerarinfo.ForeColor = System.Drawing.Color.White;
             this.btngenerarinfo.Image = global::CAPA_PRESENTACION.Properties.Resources._3700408_archive_document_education_exam_file_test_108771;
             this.btngenerarinfo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btngenerarinfo.Location = new System.Drawing.Point(0, 35);
+            this.btngenerarinfo.Location = new System.Drawing.Point(0, 38);
             this.btngenerarinfo.Name = "btngenerarinfo";
             this.btngenerarinfo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btngenerarinfo.Size = new System.Drawing.Size(207, 35);
+            this.btngenerarinfo.Size = new System.Drawing.Size(207, 55);
             this.btngenerarinfo.TabIndex = 1;
             this.btngenerarinfo.Text = "Generar Informes";
             this.btngenerarinfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -196,18 +196,18 @@ namespace CAPA_PRESENTACION
             // 
             // btnverinformes
             // 
-            this.btnverinformes.BackColor = System.Drawing.Color.White;
+            this.btnverinformes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnverinformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverinformes.FlatAppearance.BorderSize = 0;
             this.btnverinformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnverinformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnverinformes.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnverinformes.ForeColor = System.Drawing.Color.White;
             this.btnverinformes.Image = global::CAPA_PRESENTACION.Properties.Resources._3844476_eye_see_show_view_watch_110339;
             this.btnverinformes.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnverinformes.Location = new System.Drawing.Point(0, 0);
             this.btnverinformes.Name = "btnverinformes";
             this.btnverinformes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnverinformes.Size = new System.Drawing.Size(207, 35);
+            this.btnverinformes.Size = new System.Drawing.Size(207, 38);
             this.btnverinformes.TabIndex = 0;
             this.btnverinformes.Text = "Ver Informes";
             this.btnverinformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -215,12 +215,12 @@ namespace CAPA_PRESENTACION
             // 
             // btninforme
             // 
-            this.btninforme.BackColor = System.Drawing.Color.White;
+            this.btninforme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
             this.btninforme.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninforme.FlatAppearance.BorderSize = 0;
             this.btninforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninforme.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninforme.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btninforme.ForeColor = System.Drawing.Color.White;
             this.btninforme.Location = new System.Drawing.Point(0, 655);
             this.btninforme.Name = "btninforme";
             this.btninforme.Size = new System.Drawing.Size(207, 43);
@@ -232,7 +232,7 @@ namespace CAPA_PRESENTACION
             // 
             // panelsubmenucita
             // 
-            this.panelsubmenucita.BackColor = System.Drawing.Color.White;
+            this.panelsubmenucita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
             this.panelsubmenucita.Controls.Add(this.btnposponercita);
             this.panelsubmenucita.Controls.Add(this.btnagendarcitas);
             this.panelsubmenucita.Controls.Add(this.btnvercitas);
@@ -244,12 +244,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnposponercita
             // 
-            this.btnposponercita.BackColor = System.Drawing.Color.White;
+            this.btnposponercita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnposponercita.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnposponercita.FlatAppearance.BorderSize = 0;
             this.btnposponercita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnposponercita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnposponercita.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnposponercita.ForeColor = System.Drawing.Color.White;
             this.btnposponercita.Image = global::CAPA_PRESENTACION.Properties.Resources.twocirclingarrows_120593;
             this.btnposponercita.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnposponercita.Location = new System.Drawing.Point(0, 70);
@@ -263,12 +263,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnagendarcitas
             // 
-            this.btnagendarcitas.BackColor = System.Drawing.Color.White;
+            this.btnagendarcitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnagendarcitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnagendarcitas.FlatAppearance.BorderSize = 0;
             this.btnagendarcitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagendarcitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnagendarcitas.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnagendarcitas.ForeColor = System.Drawing.Color.White;
             this.btnagendarcitas.Image = global::CAPA_PRESENTACION.Properties.Resources.appointment_icon_179680;
             this.btnagendarcitas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnagendarcitas.Location = new System.Drawing.Point(0, 35);
@@ -282,12 +282,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnvercitas
             // 
-            this.btnvercitas.BackColor = System.Drawing.Color.White;
+            this.btnvercitas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnvercitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnvercitas.FlatAppearance.BorderSize = 0;
             this.btnvercitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnvercitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnvercitas.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnvercitas.ForeColor = System.Drawing.Color.White;
             this.btnvercitas.Image = ((System.Drawing.Image)(resources.GetObject("btnvercitas.Image")));
             this.btnvercitas.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnvercitas.Location = new System.Drawing.Point(0, 0);
@@ -301,12 +301,12 @@ namespace CAPA_PRESENTACION
             // 
             // btncita
             // 
-            this.btncita.BackColor = System.Drawing.Color.White;
+            this.btncita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
             this.btncita.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncita.FlatAppearance.BorderSize = 0;
             this.btncita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncita.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncita.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btncita.ForeColor = System.Drawing.Color.White;
             this.btncita.Location = new System.Drawing.Point(0, 494);
             this.btncita.Name = "btncita";
             this.btncita.Size = new System.Drawing.Size(207, 43);
@@ -318,7 +318,7 @@ namespace CAPA_PRESENTACION
             // 
             // panelsubmenuconsulta
             // 
-            this.panelsubmenuconsulta.BackColor = System.Drawing.Color.White;
+            this.panelsubmenuconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
             this.panelsubmenuconsulta.Controls.Add(this.btniniciarconsulta);
             this.panelsubmenuconsulta.Controls.Add(this.btnnuevaconsulta);
             this.panelsubmenuconsulta.Controls.Add(this.btnverconsulta);
@@ -330,12 +330,12 @@ namespace CAPA_PRESENTACION
             // 
             // btniniciarconsulta
             // 
-            this.btniniciarconsulta.BackColor = System.Drawing.Color.White;
+            this.btniniciarconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btniniciarconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btniniciarconsulta.FlatAppearance.BorderSize = 0;
             this.btniniciarconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btniniciarconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btniniciarconsulta.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btniniciarconsulta.ForeColor = System.Drawing.Color.White;
             this.btniniciarconsulta.Image = global::CAPA_PRESENTACION.Properties.Resources.login_square_arrow_button_outline_icon_icons_com_73220;
             this.btniniciarconsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btniniciarconsulta.Location = new System.Drawing.Point(0, 70);
@@ -349,12 +349,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnnuevaconsulta
             // 
-            this.btnnuevaconsulta.BackColor = System.Drawing.Color.White;
+            this.btnnuevaconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnnuevaconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnnuevaconsulta.FlatAppearance.BorderSize = 0;
             this.btnnuevaconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnuevaconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnuevaconsulta.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnnuevaconsulta.ForeColor = System.Drawing.Color.White;
             this.btnnuevaconsulta.Image = global::CAPA_PRESENTACION.Properties.Resources.newfile_85903;
             this.btnnuevaconsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnnuevaconsulta.Location = new System.Drawing.Point(0, 35);
@@ -368,12 +368,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnverconsulta
             // 
-            this.btnverconsulta.BackColor = System.Drawing.Color.White;
+            this.btnverconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnverconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverconsulta.FlatAppearance.BorderSize = 0;
             this.btnverconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnverconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnverconsulta.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnverconsulta.ForeColor = System.Drawing.Color.White;
             this.btnverconsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnverconsulta.Image")));
             this.btnverconsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnverconsulta.Location = new System.Drawing.Point(0, 0);
@@ -387,12 +387,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnconsulta
             // 
-            this.btnconsulta.BackColor = System.Drawing.Color.White;
+            this.btnconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
             this.btnconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnconsulta.FlatAppearance.BorderSize = 0;
             this.btnconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnconsulta.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconsulta.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnconsulta.ForeColor = System.Drawing.Color.White;
             this.btnconsulta.Location = new System.Drawing.Point(0, 333);
             this.btnconsulta.Name = "btnconsulta";
             this.btnconsulta.Size = new System.Drawing.Size(207, 43);
@@ -404,7 +404,7 @@ namespace CAPA_PRESENTACION
             // 
             // panelsubmenuexpe
             // 
-            this.panelsubmenuexpe.BackColor = System.Drawing.Color.White;
+            this.panelsubmenuexpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
             this.panelsubmenuexpe.Controls.Add(this.btnbaja);
             this.panelsubmenuexpe.Controls.Add(this.btnnuevoexpe);
             this.panelsubmenuexpe.Controls.Add(this.btnverexpe);
@@ -416,12 +416,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnbaja
             // 
-            this.btnbaja.BackColor = System.Drawing.Color.White;
+            this.btnbaja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnbaja.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnbaja.FlatAppearance.BorderSize = 0;
             this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbaja.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnbaja.ForeColor = System.Drawing.Color.White;
             this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.download_arrow_icon_143023;
             this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbaja.Location = new System.Drawing.Point(0, 70);
@@ -432,15 +432,16 @@ namespace CAPA_PRESENTACION
             this.btnbaja.Text = "Dar de baja";
             this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbaja.UseVisualStyleBackColor = false;
+            this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
             // btnnuevoexpe
             // 
-            this.btnnuevoexpe.BackColor = System.Drawing.Color.White;
+            this.btnnuevoexpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnnuevoexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnnuevoexpe.FlatAppearance.BorderSize = 0;
             this.btnnuevoexpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnuevoexpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnuevoexpe.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnnuevoexpe.ForeColor = System.Drawing.Color.White;
             this.btnnuevoexpe.Image = global::CAPA_PRESENTACION.Properties.Resources.newfile_85903;
             this.btnnuevoexpe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnnuevoexpe.Location = new System.Drawing.Point(0, 35);
@@ -455,12 +456,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnverexpe
             // 
-            this.btnverexpe.BackColor = System.Drawing.Color.White;
+            this.btnverexpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.btnverexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverexpe.FlatAppearance.BorderSize = 0;
             this.btnverexpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnverexpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnverexpe.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnverexpe.ForeColor = System.Drawing.Color.White;
             this.btnverexpe.Image = global::CAPA_PRESENTACION.Properties.Resources._3844476_eye_see_show_view_watch_110339;
             this.btnverexpe.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnverexpe.Location = new System.Drawing.Point(0, 0);
@@ -475,12 +476,12 @@ namespace CAPA_PRESENTACION
             // 
             // btnexpediente
             // 
-            this.btnexpediente.BackColor = System.Drawing.Color.White;
+            this.btnexpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
             this.btnexpediente.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnexpediente.FlatAppearance.BorderSize = 0;
             this.btnexpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexpediente.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexpediente.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.btnexpediente.ForeColor = System.Drawing.Color.White;
             this.btnexpediente.Location = new System.Drawing.Point(0, 172);
             this.btnexpediente.Name = "btnexpediente";
             this.btnexpediente.Size = new System.Drawing.Size(207, 43);
@@ -492,7 +493,7 @@ namespace CAPA_PRESENTACION
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
             this.panel3.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.human_brain_psychiatrist_icon_131296;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
@@ -506,11 +507,10 @@ namespace CAPA_PRESENTACION
             this.panel4.Controls.Add(this.dataGridView1);
             this.panel4.Controls.Add(this.monthCalendar1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(224, 571);
+            this.panel4.Location = new System.Drawing.Point(224, 589);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(768, 214);
+            this.panel4.Size = new System.Drawing.Size(768, 165);
             this.panel4.TabIndex = 2;
-            this.panel4.Visible = false;
             // 
             // dataGridView1
             // 
@@ -518,7 +518,7 @@ namespace CAPA_PRESENTACION
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(248, 0);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 214);
+            this.dataGridView1.Size = new System.Drawing.Size(520, 165);
             this.dataGridView1.TabIndex = 0;
             // 
             // monthCalendar1
@@ -537,20 +537,20 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.AutoScrollMargin = new System.Drawing.Size(450, 450);
             this.panelFormhijo.AutoScrollMinSize = new System.Drawing.Size(450, 450);
             this.panelFormhijo.AutoSize = true;
-            this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 521);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 550);
             this.panelFormhijo.TabIndex = 3;
             // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 785);
+            this.ClientSize = new System.Drawing.Size(992, 754);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelFormhijo);
             this.Controls.Add(this.panelmenu);

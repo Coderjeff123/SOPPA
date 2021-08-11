@@ -299,7 +299,7 @@ namespace CAPA_PRESENTACION
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(768, 562);
+            this.ClientSize = new System.Drawing.Size(768, 505);
             this.Controls.Add(this.panelbusqueda);
             this.Controls.Add(this.panelinfo);
             this.Controls.Add(this.panel1);

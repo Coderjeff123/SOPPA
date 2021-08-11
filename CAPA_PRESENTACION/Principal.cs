@@ -16,6 +16,7 @@ namespace CAPA_PRESENTACION
         {
             InitializeComponent();
             ocultarmenu();
+            
         }
 
         private void btncloseform_Click(object sender, EventArgs e)
@@ -131,6 +132,12 @@ namespace CAPA_PRESENTACION
         {
             ocultarmenu();
             abrirForm(new NuevoExpe());
+        }
+
+        private void btnbaja_Click(object sender, EventArgs e)
+        {
+            ocultarmenu();
+            abrirForm(new BajaExpe());
         }
     }
     }
