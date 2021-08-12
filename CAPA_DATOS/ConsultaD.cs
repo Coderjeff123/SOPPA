@@ -34,7 +34,7 @@ namespace CAPA_DATOS
         public string Tipo1 { get => Tipo; set => Tipo = value; }
 
 
-        public string insertconsulta(ConsultaD exp)
+        public string insertconsulta(ConsultaD expC)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -52,35 +52,35 @@ namespace CAPA_DATOS
                 Consulta.ParameterName = "@ID_Consulta";
                 Consulta.SqlDbType = SqlDbType.Int;
                // Consulta.Size = 0;
-                Consulta.Value = exp.ID_Consulta1;
+                Consulta.Value = expC.ID_Consulta1;
                 sp_New_C.Parameters.Add(Consulta);
 
                 SqlParameter Cita = new SqlParameter();
                 Cita.ParameterName = "@ID_Cita";
                 Cita.SqlDbType = SqlDbType.Int;
                 //Cita.Size = 0;
-                Cita.Value = exp.ID_Cita1;
+                Cita.Value = expC.ID_Cita1;
                 sp_New_C.Parameters.Add(Cita);
 
                 SqlParameter Actividades = new SqlParameter();
                 Actividades.ParameterName = "@ID_Cita";
                 Actividades.SqlDbType = SqlDbType.NVarChar;
                 Actividades.Size = 50;
-                Actividades.Value = exp.Actividades1;
+                Actividades.Value = expC.Actividades1;
                 sp_New_C.Parameters.Add(Actividades);
 
                 SqlParameter Observacion = new SqlParameter();
                 Observacion.ParameterName = "@Observaciones";
                 Observacion.SqlDbType = SqlDbType.NVarChar;
                 Observacion.Size = 3000;
-                Observacion.Value = exp.Observaciones1;
+                Observacion.Value = expC.Observaciones1;
                 sp_New_C.Parameters.Add(Observacion);
 
                 SqlParameter Tipo = new SqlParameter();
                 Tipo.ParameterName = "@Tipo";
                 Tipo.SqlDbType = SqlDbType.NChar;
                 Tipo.Size = 1;
-                Tipo.Value = exp.Tipo1;
+                Tipo.Value = expC.Tipo1;
                 sp_New_C.Parameters.Add(Tipo);
 
 
@@ -113,7 +113,7 @@ namespace CAPA_DATOS
         }
 
 
-        public string Updateconsulta(ConsultaD exp)
+        public string Updateconsulta(ConsultaD expC)
         {
             return "";
         }

@@ -31,7 +31,7 @@ namespace CAPA_DATOS
         public string MotivoRemision1 { get => MotivoRemision; set => MotivoRemision = value; }
 
 
-        public string insertremision(RemisionD exp)
+        public string insertremision(RemisionD expR)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -49,28 +49,28 @@ namespace CAPA_DATOS
                 Id_remision.ParameterName = "@ID_Remision";
                 Id_remision.SqlDbType = SqlDbType.Int;
                 //Id_remision.Size = 50;
-                Id_remision.Value = exp.ID_Remision1;
+                Id_remision.Value = expR.ID_Remision1;
                 SP_NewRe.Parameters.Add(Id_remision);
 
                 SqlParameter Id_expediente = new SqlParameter();
                 Id_expediente.ParameterName = "@ID_Remision";
                 Id_expediente.SqlDbType = SqlDbType.Int;
                 //Id_remision.Size = 50;
-                Id_expediente.Value = exp.ID_Expediente1;
+                Id_expediente.Value = expR.ID_Expediente1;
                 SP_NewRe.Parameters.Add(Id_expediente);
 
                 SqlParameter remitente = new SqlParameter();
                 remitente.ParameterName = "@Remitente";
                 remitente.SqlDbType = SqlDbType.NVarChar;
                 remitente.Size = 30;
-                remitente.Value = exp.Remitente1;
+                remitente.Value = expR.Remitente1;
                 SP_NewRe.Parameters.Add(remitente);
 
                 SqlParameter motivo = new SqlParameter();
                 motivo.ParameterName = "@ID_Remision";
                 motivo.SqlDbType = SqlDbType.NVarChar;
                 motivo.Size = 100;
-                Id_expediente.Value = exp.ID_Expediente1;
+                Id_expediente.Value = expR.ID_Expediente1;
                 SP_NewRe.Parameters.Add(motivo);
 
 
@@ -102,7 +102,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Updateremision(RemisionD exp)
+        public string Updateremision(RemisionD expR)
         {
             return "";
         }
