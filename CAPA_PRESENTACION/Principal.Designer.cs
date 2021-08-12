@@ -381,7 +381,7 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnverconsulta.Size = new System.Drawing.Size(207, 35);
             this.btnverconsulta.TabIndex = 0;
-            this.btnverconsulta.Text = "Ver Expediente";
+            this.btnverconsulta.Text = "Ver Consulta";
             this.btnverconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverconsulta.UseVisualStyleBackColor = false;
             this.btnverconsulta.Click += new System.EventHandler(this.btnverconsulta_Click);
