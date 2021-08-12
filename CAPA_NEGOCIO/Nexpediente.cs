@@ -11,7 +11,7 @@ namespace CAPA_NEGOCIO
     public class Nexpediente
     {
 
-        public static string insert(string iD_Expediente, string nombre, string estado, byte[] foto, string noexpediente)
+        public static string insertexpediente(string iD_Expediente, string nombre, string estado, byte[] foto, string noexpediente)
         {
 
             Dexpediente datos = new Dexpediente();
@@ -21,7 +21,7 @@ namespace CAPA_NEGOCIO
             datos.Foto1 = foto;
             datos.Noexpediente1 = noexpediente;
 
-            return datos.insert(datos);
+            return datos.insertexpediente(datos);
 
 
         }

@@ -9,7 +9,7 @@ namespace CAPA_NEGOCIO
 {
     public class RemisionN
     {
-        public static string insert(string iD_Remision, string iD_Expediente, string remitente, string motivoRemision)
+        public static string insertremision(string iD_Remision, string iD_Expediente, string remitente, string motivoRemision)
         {
             RemisionD datos = new RemisionD();
             datos.ID_Remision1 = iD_Remision;
@@ -17,7 +17,7 @@ namespace CAPA_NEGOCIO
             datos.Remitente1 = remitente;
             datos.MotivoRemision1 = motivoRemision;
 
-            return datos.insert(datos);
+            return datos.insertremision(datos);
 
 
         }

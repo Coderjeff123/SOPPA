@@ -34,7 +34,7 @@ namespace CAPA_DATOS
         public byte[] Foto1 { get => Foto; set => Foto = value; }
         public string Noexpediente1 { get => Noexpediente; set => Noexpediente = value; }
 
-        public string insert(Dexpediente exp)
+        public string insertexpediente(Dexpediente expE)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -52,35 +52,35 @@ namespace CAPA_DATOS
                 Expediente.ParameterName = "@ID_Expediente";
                 Expediente.SqlDbType = SqlDbType.Int;
                 //Expediente.Size = 0;
-                Expediente.Value = exp.ID_Expediente1;
+                Expediente.Value = expE.ID_Expediente1;
                 SP_NewEX.Parameters.Add(Expediente);
 
                 SqlParameter Nombre = new SqlParameter();
                 Nombre.ParameterName = "@Nombre";
                 Nombre.SqlDbType = SqlDbType.NVarChar;
                 Nombre.Size = 50;
-                Nombre.Value = exp.Nombre1;
+                Nombre.Value = expE.Nombre1;
                 SP_NewEX.Parameters.Add(Nombre);
 
                 SqlParameter Estado = new SqlParameter();
                 Estado.ParameterName = "@Estado";
                 Estado.SqlDbType = SqlDbType.NChar;
                 Estado.Size = 10;
-                Estado.Value = exp.Estado1;
+                Estado.Value = expE.Estado1;
                 SP_NewEX.Parameters.Add(Estado);
 
                 SqlParameter Foto = new SqlParameter();
                 Foto.ParameterName = "@Foto";
                 Foto.SqlDbType = SqlDbType.Image;
                 //Nombre.Size = 50;
-                Foto.Value = exp.Foto1;
+                Foto.Value = expE.Foto1;
                 SP_NewEX.Parameters.Add(Foto);
 
                 SqlParameter Noexpediente = new SqlParameter();
                 Estado.ParameterName = "@NoExpediente";
                 Estado.SqlDbType = SqlDbType.NVarChar;
                 Estado.Size = 8;
-                Estado.Value = exp.Noexpediente1;
+                Estado.Value = expE.Noexpediente1;
                 SP_NewEX.Parameters.Add(Noexpediente);
 
 
@@ -111,7 +111,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Update(Dexpediente exp)
+        public string Updatexpediente(Dexpediente expE)
         {
             return "";
         }

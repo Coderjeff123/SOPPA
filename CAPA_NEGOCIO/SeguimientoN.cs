@@ -10,7 +10,7 @@ namespace CAPA_NEGOCIO
 {
     public class SeguimientoN
     {
-        public static string insert(string iD_Seguimiento, string iD_Consulta, DateTime fecha_inicio, DateTime fecha_final, string observaciones)
+        public static string insertseguimiento(string iD_Seguimiento, string iD_Consulta, DateTime fecha_inicio, DateTime fecha_final, string observaciones)
         {
             SeguimientoD datos = new SeguimientoD();
             datos.ID_Seguimiento1 = iD_Seguimiento;
@@ -19,7 +19,7 @@ namespace CAPA_NEGOCIO
             datos.Fecha_final1 = fecha_final;
             datos.Observaciones1 = observaciones;
 
-            return datos.insert(datos);
+            return datos.insertseguimiento(datos);
 
 
         }
