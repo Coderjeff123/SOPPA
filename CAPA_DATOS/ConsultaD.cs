@@ -34,7 +34,7 @@ namespace CAPA_DATOS
         public string Tipo1 { get => Tipo; set => Tipo = value; }
 
 
-        public string insert(ConsultaD exp)
+        public string insertconsulta(ConsultaD exp)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -113,7 +113,7 @@ namespace CAPA_DATOS
         }
 
 
-        public string Update(ConsultaD exp)
+        public string Updateconsulta(ConsultaD exp)
         {
             return "";
         }

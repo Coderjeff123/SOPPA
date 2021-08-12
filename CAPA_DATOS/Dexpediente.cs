@@ -34,7 +34,7 @@ namespace CAPA_DATOS
         public byte[] Foto1 { get => Foto; set => Foto = value; }
         public string Noexpediente1 { get => Noexpediente; set => Noexpediente = value; }
 
-        public string insert(Dexpediente exp)
+        public string insertexpediente(Dexpediente exp)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -111,7 +111,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Update(Dexpediente exp)
+        public string Updatexpediente(Dexpediente exp)
         {
             return "";
         }

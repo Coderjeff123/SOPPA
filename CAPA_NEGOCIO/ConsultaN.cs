@@ -10,7 +10,7 @@ namespace CAPA_NEGOCIO
 {
    public class ConsultaN
     {
-        public static string insert(string iD_Consulta, string iD_Cita, string actividades, string observaciones, string tipo)
+        public static string insertconsulta(string iD_Consulta, string iD_Cita, string actividades, string observaciones, string tipo)
 
         {
             ConsultaD datos = new ConsultaD();
@@ -20,7 +20,7 @@ namespace CAPA_NEGOCIO
             datos.Observaciones1 = observaciones;
             datos.Tipo1 = tipo;
 
-            return datos.insert(datos);
+            return datos.insertconsulta(datos);
 
 
         }

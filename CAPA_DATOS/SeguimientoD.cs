@@ -34,7 +34,7 @@ namespace CAPA_DATOS
         public string Observaciones1 { get => Observaciones; set => Observaciones = value; }
 
 
-        public string insert(SeguimientoD exp)
+        public string insertseguimiento(SeguimientoD exp)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -115,7 +115,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Update(SeguimientoD exp)
+        public string Updateseguimiento(SeguimientoD exp)
         {
             return "";
         }

@@ -31,7 +31,7 @@ namespace CAPA_DATOS
         public string MotivoRemision1 { get => MotivoRemision; set => MotivoRemision = value; }
 
 
-        public string insert(RemisionD exp)
+        public string insertremision(RemisionD exp)
         {
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
@@ -102,7 +102,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Update(RemisionD exp)
+        public string Updateremision(RemisionD exp)
         {
             return "";
         }
