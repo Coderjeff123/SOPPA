@@ -16,14 +16,14 @@ namespace CAPA_PRESENTACION
         {
             InitializeComponent();
             ocultarmenu();
-            
+
         }
 
         private void btncloseform_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-         
+
         private void ocultarmenu()
         {
             panelsubmenucita.Visible = false;
@@ -37,10 +37,10 @@ namespace CAPA_PRESENTACION
             this.WindowState = FormWindowState.Normal;
             btnresform.Visible = false;
             btnmaxform.Visible = true;
-           
+
         }
 
-      
+
 
         private void btnmaxform_Click(object sender, EventArgs e)
         {
@@ -86,20 +86,6 @@ namespace CAPA_PRESENTACION
             }
         }
 
-        private void btnexpediente_Click(object sender, EventArgs e)
-        {
-            mostrarsubmenu(panelsubmenuexpe);
-        }
-
-        private void btnconsulta_Click(object sender, EventArgs e)
-        {
-            mostrarsubmenu(panelsubmenuconsulta);
-        }
-
-        private void btncita_Click(object sender, EventArgs e)
-        {
-            mostrarsubmenu(panelsubmenucita);
-        }
 
         private void btninforme_Click(object sender, EventArgs e)
         {
@@ -146,14 +132,74 @@ namespace CAPA_PRESENTACION
             abrirForm(new VerConsulta());
         }
 
-   
-        private void btniniciarconsulta_Click(object sender, EventArgs e)
+        private void btncon_Click(object sender, EventArgs e)
         {
-            ocultarsubmenu();
+            mostrarsubmenu(panelsubmenuconsulta);
 
         }
+
+        private void btncita_Click(object sender, EventArgs e)
+        {
+            mostrarsubmenu(panelsubmenucita);
+        }
+
+        private void btnexpe_Click(object sender, EventArgs e)
+        {
+            mostrarsubmenu(panelsubmenuexpe);
+        }
+
+        private void btncon_MouseHover(object sender, EventArgs e)
+        {
+            btncon.BackColor = Color.Aqua;
+        }
+
+        private void btncon_MouseLeave(object sender, EventArgs e)
+        {
+            btncon.BackColor = Color.Transparent;
+        }
+
+
+        private void btncita_MouseHover(object sender, EventArgs e)
+        {
+            btncita.BackColor = Color.Aqua;
+        }
+
+        private void btncita_MouseLeave(object sender, EventArgs e)
+        {
+            btncita.BackColor = Color.Transparent;
+        }
+
+      
+        private void btnexpe_MouseHover(object sender, EventArgs e)
+        {
+            btnexpe.BackColor = Color.Aqua;
+        }
+
+        private void btnexpe_MouseLeave(object sender, EventArgs e)
+        {
+            btnexpe.BackColor = Color.Transparent;
+        }
+
+        private void btninforme_MouseHover(object sender, EventArgs e)
+        {
+            btninforme.BackColor = Color.Aqua;
+        }
+
+        private void btninforme_MouseLeave(object sender, EventArgs e)
+        {
+            btninforme.BackColor = Color.Transparent;
+        }
+
+        private void btnverconsulta_MouseHover(object sender, EventArgs e)
+        {
+            btnverconsulta.BackColor = Color.Aquamarine;
+        }
+
+        private void btnverconsulta_MouseLeave(object sender, EventArgs e)
+        {
+            btnverconsulta.BackColor = Color.Transparent;
+        }
     }
-    }
-    
+} 
     
 
