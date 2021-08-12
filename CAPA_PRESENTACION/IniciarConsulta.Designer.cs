@@ -1,7 +1,7 @@
 ﻿
 namespace CAPA_PRESENTACION
 {
-    partial class NuevaConsulta
+    partial class IniciarConsulta
     {
         /// <summary>
         /// Required designer variable.
@@ -54,20 +54,19 @@ namespace CAPA_PRESENTACION
             this.Titulo.ForeColor = System.Drawing.Color.Black;
             this.Titulo.Location = new System.Drawing.Point(312, 9);
             this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(129, 19);
+            this.Titulo.Size = new System.Drawing.Size(130, 19);
             this.Titulo.TabIndex = 4;
-            this.Titulo.Text = "Nueva Consulta";
+            this.Titulo.Text = "Iniciar Consulta";
             // 
-            // NuevaConsulta
+            // IniciarConsulta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(768, 505);
             this.Controls.Add(this.paneltitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "NuevaConsulta";
-            this.Text = "NuevaConsulta";
+            this.Name = "IniciarConsulta";
+            this.Text = "IniciarConsulta";
             this.paneltitulo.ResumeLayout(false);
             this.paneltitulo.PerformLayout();
             this.ResumeLayout(false);

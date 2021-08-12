@@ -145,6 +145,13 @@ namespace CAPA_PRESENTACION
             ocultarsubmenu();
             abrirForm(new VerConsulta());
         }
+
+   
+        private void btniniciarconsulta_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+
+        }
     }
     }
     

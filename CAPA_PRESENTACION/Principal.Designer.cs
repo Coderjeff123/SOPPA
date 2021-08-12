@@ -32,35 +32,34 @@ namespace CAPA_PRESENTACION
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnresform = new System.Windows.Forms.Button();
-            this.btnminform = new System.Windows.Forms.Button();
-            this.btnmaxform = new System.Windows.Forms.Button();
-            this.btncloseform = new System.Windows.Forms.Button();
             this.panelmenu = new System.Windows.Forms.Panel();
             this.panelsubmenuinformes = new System.Windows.Forms.Panel();
-            this.btngenerarinfo = new System.Windows.Forms.Button();
-            this.btnverinformes = new System.Windows.Forms.Button();
             this.btninforme = new System.Windows.Forms.Button();
             this.panelsubmenucita = new System.Windows.Forms.Panel();
-            this.btnposponercita = new System.Windows.Forms.Button();
-            this.btnagendarcitas = new System.Windows.Forms.Button();
-            this.btnvercitas = new System.Windows.Forms.Button();
             this.btncita = new System.Windows.Forms.Button();
             this.panelsubmenuconsulta = new System.Windows.Forms.Panel();
-            this.btniniciarconsulta = new System.Windows.Forms.Button();
-            this.btnnuevaconsulta = new System.Windows.Forms.Button();
-            this.btnverconsulta = new System.Windows.Forms.Button();
             this.btnconsulta = new System.Windows.Forms.Button();
             this.panelsubmenuexpe = new System.Windows.Forms.Panel();
-            this.btnbaja = new System.Windows.Forms.Button();
-            this.btnnuevoexpe = new System.Windows.Forms.Button();
-            this.btnverexpe = new System.Windows.Forms.Button();
             this.btnexpediente = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panelFormhijo = new System.Windows.Forms.Panel();
+            this.btngenerarinfo = new System.Windows.Forms.Button();
+            this.btnverinformes = new System.Windows.Forms.Button();
+            this.btnposponercita = new System.Windows.Forms.Button();
+            this.btnagendarcitas = new System.Windows.Forms.Button();
+            this.btnvercitas = new System.Windows.Forms.Button();
+            this.btniniciarconsulta = new System.Windows.Forms.Button();
+            this.btnverconsulta = new System.Windows.Forms.Button();
+            this.btnbaja = new System.Windows.Forms.Button();
+            this.btnnuevoexpe = new System.Windows.Forms.Button();
+            this.btnverexpe = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnresform = new System.Windows.Forms.Button();
+            this.btnminform = new System.Windows.Forms.Button();
+            this.btnmaxform = new System.Windows.Forms.Button();
+            this.btncloseform = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelmenu.SuspendLayout();
@@ -94,56 +93,6 @@ namespace CAPA_PRESENTACION
             this.panel2.Size = new System.Drawing.Size(123, 44);
             this.panel2.TabIndex = 7;
             // 
-            // btnresform
-            // 
-            this.btnresform.FlatAppearance.BorderSize = 0;
-            this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
-            this.btnresform.Location = new System.Drawing.Point(44, 2);
-            this.btnresform.Name = "btnresform";
-            this.btnresform.Size = new System.Drawing.Size(38, 41);
-            this.btnresform.TabIndex = 4;
-            this.btnresform.UseVisualStyleBackColor = true;
-            this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
-            // 
-            // btnminform
-            // 
-            this.btnminform.FlatAppearance.BorderSize = 0;
-            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
-            this.btnminform.Location = new System.Drawing.Point(6, 0);
-            this.btnminform.Name = "btnminform";
-            this.btnminform.Size = new System.Drawing.Size(38, 41);
-            this.btnminform.TabIndex = 6;
-            this.btnminform.UseVisualStyleBackColor = true;
-            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
-            // 
-            // btnmaxform
-            // 
-            this.btnmaxform.FlatAppearance.BorderSize = 0;
-            this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
-            this.btnmaxform.Location = new System.Drawing.Point(44, 2);
-            this.btnmaxform.Name = "btnmaxform";
-            this.btnmaxform.Size = new System.Drawing.Size(38, 36);
-            this.btnmaxform.TabIndex = 5;
-            this.btnmaxform.UseVisualStyleBackColor = true;
-            this.btnmaxform.Visible = false;
-            this.btnmaxform.Click += new System.EventHandler(this.btnmaxform_Click);
-            // 
-            // btncloseform
-            // 
-            this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btncloseform.FlatAppearance.BorderSize = 0;
-            this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.delete_remove_close_icon_1815331;
-            this.btncloseform.Location = new System.Drawing.Point(88, 0);
-            this.btncloseform.Name = "btncloseform";
-            this.btncloseform.Size = new System.Drawing.Size(35, 44);
-            this.btncloseform.TabIndex = 1;
-            this.btncloseform.UseVisualStyleBackColor = true;
-            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
-            // 
             // panelmenu
             // 
             this.panelmenu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -174,6 +123,153 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuinformes.Name = "panelsubmenuinformes";
             this.panelsubmenuinformes.Size = new System.Drawing.Size(207, 102);
             this.panelsubmenuinformes.TabIndex = 9;
+            // 
+            // btninforme
+            // 
+            this.btninforme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
+            this.btninforme.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btninforme.FlatAppearance.BorderSize = 0;
+            this.btninforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btninforme.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btninforme.ForeColor = System.Drawing.Color.White;
+            this.btninforme.Location = new System.Drawing.Point(0, 655);
+            this.btninforme.Name = "btninforme";
+            this.btninforme.Size = new System.Drawing.Size(207, 43);
+            this.btninforme.TabIndex = 8;
+            this.btninforme.Text = "Informes";
+            this.btninforme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btninforme.UseVisualStyleBackColor = false;
+            this.btninforme.Click += new System.EventHandler(this.btninforme_Click);
+            // 
+            // panelsubmenucita
+            // 
+            this.panelsubmenucita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
+            this.panelsubmenucita.Controls.Add(this.btnposponercita);
+            this.panelsubmenucita.Controls.Add(this.btnagendarcitas);
+            this.panelsubmenucita.Controls.Add(this.btnvercitas);
+            this.panelsubmenucita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelsubmenucita.Location = new System.Drawing.Point(0, 537);
+            this.panelsubmenucita.Name = "panelsubmenucita";
+            this.panelsubmenucita.Size = new System.Drawing.Size(207, 118);
+            this.panelsubmenucita.TabIndex = 7;
+            // 
+            // btncita
+            // 
+            this.btncita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
+            this.btncita.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncita.FlatAppearance.BorderSize = 0;
+            this.btncita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncita.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncita.ForeColor = System.Drawing.Color.White;
+            this.btncita.Location = new System.Drawing.Point(0, 494);
+            this.btncita.Name = "btncita";
+            this.btncita.Size = new System.Drawing.Size(207, 43);
+            this.btncita.TabIndex = 6;
+            this.btncita.Text = "Cita";
+            this.btncita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btncita.UseVisualStyleBackColor = false;
+            this.btncita.Click += new System.EventHandler(this.btncita_Click);
+            // 
+            // panelsubmenuconsulta
+            // 
+            this.panelsubmenuconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
+            this.panelsubmenuconsulta.Controls.Add(this.btniniciarconsulta);
+            this.panelsubmenuconsulta.Controls.Add(this.btnverconsulta);
+            this.panelsubmenuconsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelsubmenuconsulta.Location = new System.Drawing.Point(0, 376);
+            this.panelsubmenuconsulta.Name = "panelsubmenuconsulta";
+            this.panelsubmenuconsulta.Size = new System.Drawing.Size(207, 118);
+            this.panelsubmenuconsulta.TabIndex = 5;
+            // 
+            // btnconsulta
+            // 
+            this.btnconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
+            this.btnconsulta.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnconsulta.FlatAppearance.BorderSize = 0;
+            this.btnconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnconsulta.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnconsulta.ForeColor = System.Drawing.Color.White;
+            this.btnconsulta.Location = new System.Drawing.Point(0, 333);
+            this.btnconsulta.Name = "btnconsulta";
+            this.btnconsulta.Size = new System.Drawing.Size(207, 43);
+            this.btnconsulta.TabIndex = 4;
+            this.btnconsulta.Text = "Consulta";
+            this.btnconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnconsulta.UseVisualStyleBackColor = false;
+            this.btnconsulta.Click += new System.EventHandler(this.btnconsulta_Click);
+            // 
+            // panelsubmenuexpe
+            // 
+            this.panelsubmenuexpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
+            this.panelsubmenuexpe.Controls.Add(this.btnbaja);
+            this.panelsubmenuexpe.Controls.Add(this.btnnuevoexpe);
+            this.panelsubmenuexpe.Controls.Add(this.btnverexpe);
+            this.panelsubmenuexpe.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelsubmenuexpe.Location = new System.Drawing.Point(0, 215);
+            this.panelsubmenuexpe.Name = "panelsubmenuexpe";
+            this.panelsubmenuexpe.Size = new System.Drawing.Size(207, 118);
+            this.panelsubmenuexpe.TabIndex = 3;
+            // 
+            // btnexpediente
+            // 
+            this.btnexpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
+            this.btnexpediente.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnexpediente.FlatAppearance.BorderSize = 0;
+            this.btnexpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnexpediente.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnexpediente.ForeColor = System.Drawing.Color.White;
+            this.btnexpediente.Location = new System.Drawing.Point(0, 172);
+            this.btnexpediente.Name = "btnexpediente";
+            this.btnexpediente.Size = new System.Drawing.Size(207, 43);
+            this.btnexpediente.TabIndex = 2;
+            this.btnexpediente.Text = "Expediente";
+            this.btnexpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnexpediente.UseVisualStyleBackColor = false;
+            this.btnexpediente.Click += new System.EventHandler(this.btnexpediente_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.dataGridView1);
+            this.panel4.Controls.Add(this.monthCalendar1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel4.Location = new System.Drawing.Point(224, 589);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(768, 165);
+            this.panel4.TabIndex = 2;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(248, 0);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(520, 165);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
+            // 
+            // panelFormhijo
+            // 
+            this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFormhijo.AutoScroll = true;
+            this.panelFormhijo.AutoScrollMargin = new System.Drawing.Size(450, 450);
+            this.panelFormhijo.AutoScrollMinSize = new System.Drawing.Size(450, 450);
+            this.panelFormhijo.AutoSize = true;
+            this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
+            this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelFormhijo.ForeColor = System.Drawing.Color.White;
+            this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
+            this.panelFormhijo.Name = "panelFormhijo";
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 550);
+            this.panelFormhijo.TabIndex = 3;
             // 
             // btngenerarinfo
             // 
@@ -212,35 +308,6 @@ namespace CAPA_PRESENTACION
             this.btnverinformes.Text = "Ver Informes";
             this.btnverinformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverinformes.UseVisualStyleBackColor = false;
-            // 
-            // btninforme
-            // 
-            this.btninforme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
-            this.btninforme.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btninforme.FlatAppearance.BorderSize = 0;
-            this.btninforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btninforme.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btninforme.ForeColor = System.Drawing.Color.White;
-            this.btninforme.Location = new System.Drawing.Point(0, 655);
-            this.btninforme.Name = "btninforme";
-            this.btninforme.Size = new System.Drawing.Size(207, 43);
-            this.btninforme.TabIndex = 8;
-            this.btninforme.Text = "Informes";
-            this.btninforme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btninforme.UseVisualStyleBackColor = false;
-            this.btninforme.Click += new System.EventHandler(this.btninforme_Click);
-            // 
-            // panelsubmenucita
-            // 
-            this.panelsubmenucita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
-            this.panelsubmenucita.Controls.Add(this.btnposponercita);
-            this.panelsubmenucita.Controls.Add(this.btnagendarcitas);
-            this.panelsubmenucita.Controls.Add(this.btnvercitas);
-            this.panelsubmenucita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenucita.Location = new System.Drawing.Point(0, 537);
-            this.panelsubmenucita.Name = "panelsubmenucita";
-            this.panelsubmenucita.Size = new System.Drawing.Size(207, 118);
-            this.panelsubmenucita.TabIndex = 7;
             // 
             // btnposponercita
             // 
@@ -299,35 +366,6 @@ namespace CAPA_PRESENTACION
             this.btnvercitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnvercitas.UseVisualStyleBackColor = false;
             // 
-            // btncita
-            // 
-            this.btncita.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
-            this.btncita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btncita.FlatAppearance.BorderSize = 0;
-            this.btncita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncita.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncita.ForeColor = System.Drawing.Color.White;
-            this.btncita.Location = new System.Drawing.Point(0, 494);
-            this.btncita.Name = "btncita";
-            this.btncita.Size = new System.Drawing.Size(207, 43);
-            this.btncita.TabIndex = 6;
-            this.btncita.Text = "Cita";
-            this.btncita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btncita.UseVisualStyleBackColor = false;
-            this.btncita.Click += new System.EventHandler(this.btncita_Click);
-            // 
-            // panelsubmenuconsulta
-            // 
-            this.panelsubmenuconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
-            this.panelsubmenuconsulta.Controls.Add(this.btniniciarconsulta);
-            this.panelsubmenuconsulta.Controls.Add(this.btnnuevaconsulta);
-            this.panelsubmenuconsulta.Controls.Add(this.btnverconsulta);
-            this.panelsubmenuconsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenuconsulta.Location = new System.Drawing.Point(0, 376);
-            this.panelsubmenuconsulta.Name = "panelsubmenuconsulta";
-            this.panelsubmenuconsulta.Size = new System.Drawing.Size(207, 118);
-            this.panelsubmenuconsulta.TabIndex = 5;
-            // 
             // btniniciarconsulta
             // 
             this.btniniciarconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
@@ -338,7 +376,7 @@ namespace CAPA_PRESENTACION
             this.btniniciarconsulta.ForeColor = System.Drawing.Color.White;
             this.btniniciarconsulta.Image = global::CAPA_PRESENTACION.Properties.Resources.login_square_arrow_button_outline_icon_icons_com_73220;
             this.btniniciarconsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btniniciarconsulta.Location = new System.Drawing.Point(0, 70);
+            this.btniniciarconsulta.Location = new System.Drawing.Point(0, 35);
             this.btniniciarconsulta.Name = "btniniciarconsulta";
             this.btniniciarconsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btniniciarconsulta.Size = new System.Drawing.Size(207, 35);
@@ -346,25 +384,7 @@ namespace CAPA_PRESENTACION
             this.btniniciarconsulta.Text = "Iniciar Consulta";
             this.btniniciarconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniniciarconsulta.UseVisualStyleBackColor = false;
-            // 
-            // btnnuevaconsulta
-            // 
-            this.btnnuevaconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
-            this.btnnuevaconsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnnuevaconsulta.FlatAppearance.BorderSize = 0;
-            this.btnnuevaconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnnuevaconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnnuevaconsulta.ForeColor = System.Drawing.Color.White;
-            this.btnnuevaconsulta.Image = global::CAPA_PRESENTACION.Properties.Resources.newfile_85903;
-            this.btnnuevaconsulta.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnnuevaconsulta.Location = new System.Drawing.Point(0, 35);
-            this.btnnuevaconsulta.Name = "btnnuevaconsulta";
-            this.btnnuevaconsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnnuevaconsulta.Size = new System.Drawing.Size(207, 35);
-            this.btnnuevaconsulta.TabIndex = 1;
-            this.btnnuevaconsulta.Text = "Nueva Consulta";
-            this.btnnuevaconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnnuevaconsulta.UseVisualStyleBackColor = false;
+            this.btniniciarconsulta.Click += new System.EventHandler(this.btniniciarconsulta_Click);
             // 
             // btnverconsulta
             // 
@@ -385,35 +405,6 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverconsulta.UseVisualStyleBackColor = false;
             this.btnverconsulta.Click += new System.EventHandler(this.btnverconsulta_Click);
-            // 
-            // btnconsulta
-            // 
-            this.btnconsulta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
-            this.btnconsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnconsulta.FlatAppearance.BorderSize = 0;
-            this.btnconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnconsulta.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnconsulta.ForeColor = System.Drawing.Color.White;
-            this.btnconsulta.Location = new System.Drawing.Point(0, 333);
-            this.btnconsulta.Name = "btnconsulta";
-            this.btnconsulta.Size = new System.Drawing.Size(207, 43);
-            this.btnconsulta.TabIndex = 4;
-            this.btnconsulta.Text = "Consulta";
-            this.btnconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnconsulta.UseVisualStyleBackColor = false;
-            this.btnconsulta.Click += new System.EventHandler(this.btnconsulta_Click);
-            // 
-            // panelsubmenuexpe
-            // 
-            this.panelsubmenuexpe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
-            this.panelsubmenuexpe.Controls.Add(this.btnbaja);
-            this.panelsubmenuexpe.Controls.Add(this.btnnuevoexpe);
-            this.panelsubmenuexpe.Controls.Add(this.btnverexpe);
-            this.panelsubmenuexpe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenuexpe.Location = new System.Drawing.Point(0, 215);
-            this.panelsubmenuexpe.Name = "panelsubmenuexpe";
-            this.panelsubmenuexpe.Size = new System.Drawing.Size(207, 118);
-            this.panelsubmenuexpe.TabIndex = 3;
             // 
             // btnbaja
             // 
@@ -475,23 +466,6 @@ namespace CAPA_PRESENTACION
             this.btnverexpe.UseVisualStyleBackColor = false;
             this.btnverexpe.Click += new System.EventHandler(this.btnverexpe_Click);
             // 
-            // btnexpediente
-            // 
-            this.btnexpediente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(193)))), ((int)(((byte)(190)))));
-            this.btnexpediente.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnexpediente.FlatAppearance.BorderSize = 0;
-            this.btnexpediente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnexpediente.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnexpediente.ForeColor = System.Drawing.Color.White;
-            this.btnexpediente.Location = new System.Drawing.Point(0, 172);
-            this.btnexpediente.Name = "btnexpediente";
-            this.btnexpediente.Size = new System.Drawing.Size(207, 43);
-            this.btnexpediente.TabIndex = 2;
-            this.btnexpediente.Text = "Expediente";
-            this.btnexpediente.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnexpediente.UseVisualStyleBackColor = false;
-            this.btnexpediente.Click += new System.EventHandler(this.btnexpediente_Click);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(143)))), ((int)(((byte)(151)))));
@@ -503,49 +477,55 @@ namespace CAPA_PRESENTACION
             this.panel3.Size = new System.Drawing.Size(207, 172);
             this.panel3.TabIndex = 0;
             // 
-            // panel4
+            // btnresform
             // 
-            this.panel4.Controls.Add(this.dataGridView1);
-            this.panel4.Controls.Add(this.monthCalendar1);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(224, 589);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(768, 165);
-            this.panel4.TabIndex = 2;
+            this.btnresform.FlatAppearance.BorderSize = 0;
+            this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
+            this.btnresform.Location = new System.Drawing.Point(44, 2);
+            this.btnresform.Name = "btnresform";
+            this.btnresform.Size = new System.Drawing.Size(38, 41);
+            this.btnresform.TabIndex = 4;
+            this.btnresform.UseVisualStyleBackColor = true;
+            this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
             // 
-            // dataGridView1
+            // btnminform
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(248, 0);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(520, 165);
-            this.dataGridView1.TabIndex = 0;
+            this.btnminform.FlatAppearance.BorderSize = 0;
+            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
+            this.btnminform.Location = new System.Drawing.Point(6, 0);
+            this.btnminform.Name = "btnminform";
+            this.btnminform.Size = new System.Drawing.Size(38, 41);
+            this.btnminform.TabIndex = 6;
+            this.btnminform.UseVisualStyleBackColor = true;
+            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
             // 
-            // monthCalendar1
+            // btnmaxform
             // 
-            this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 1;
+            this.btnmaxform.FlatAppearance.BorderSize = 0;
+            this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
+            this.btnmaxform.Location = new System.Drawing.Point(44, 2);
+            this.btnmaxform.Name = "btnmaxform";
+            this.btnmaxform.Size = new System.Drawing.Size(38, 36);
+            this.btnmaxform.TabIndex = 5;
+            this.btnmaxform.UseVisualStyleBackColor = true;
+            this.btnmaxform.Visible = false;
+            this.btnmaxform.Click += new System.EventHandler(this.btnmaxform_Click);
             // 
-            // panelFormhijo
+            // btncloseform
             // 
-            this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelFormhijo.AutoScroll = true;
-            this.panelFormhijo.AutoScrollMargin = new System.Drawing.Size(450, 450);
-            this.panelFormhijo.AutoScrollMinSize = new System.Drawing.Size(450, 450);
-            this.panelFormhijo.AutoSize = true;
-            this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
-            this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelFormhijo.ForeColor = System.Drawing.Color.White;
-            this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
-            this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 550);
-            this.panelFormhijo.TabIndex = 3;
+            this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btncloseform.FlatAppearance.BorderSize = 0;
+            this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.delete_remove_close_icon_1815331;
+            this.btncloseform.Location = new System.Drawing.Point(88, 0);
+            this.btncloseform.Name = "btncloseform";
+            this.btncloseform.Size = new System.Drawing.Size(35, 44);
+            this.btncloseform.TabIndex = 1;
+            this.btncloseform.UseVisualStyleBackColor = true;
+            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
             // 
             // Principal
             // 
@@ -585,7 +565,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Panel panelmenu;
         private System.Windows.Forms.Panel panelsubmenuconsulta;
         private System.Windows.Forms.Button btniniciarconsulta;
-        private System.Windows.Forms.Button btnnuevaconsulta;
         private System.Windows.Forms.Button btnverconsulta;
         private System.Windows.Forms.Button btnconsulta;
         private System.Windows.Forms.Panel panelsubmenuexpe;

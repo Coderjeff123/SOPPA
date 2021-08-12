@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CAPA_PRESENTACION
 {
-    public partial class NuevaConsulta : Form
+    public partial class IniciarConsulta : Form
     {
-        public NuevaConsulta()
+        public IniciarConsulta()
         {
             InitializeComponent();
         }
