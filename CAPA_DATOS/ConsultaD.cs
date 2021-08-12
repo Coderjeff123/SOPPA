@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace CAPA_DATOS
 {
-   public class ConsultaD
+    public class ConsultaD
     {
         string ID_Consulta;
         string ID_Cita;
@@ -51,7 +51,7 @@ namespace CAPA_DATOS
                 SqlParameter Consulta = new SqlParameter();
                 Consulta.ParameterName = "@ID_Consulta";
                 Consulta.SqlDbType = SqlDbType.Int;
-               // Consulta.Size = 0;
+                // Consulta.Size = 0;
                 Consulta.Value = expC.ID_Consulta1;
                 sp_New_C.Parameters.Add(Consulta);
 
@@ -63,7 +63,7 @@ namespace CAPA_DATOS
                 sp_New_C.Parameters.Add(Cita);
 
                 SqlParameter Actividades = new SqlParameter();
-                Actividades.ParameterName = "@ID_Cita";
+                Actividades.ParameterName = "@Actividades";
                 Actividades.SqlDbType = SqlDbType.NVarChar;
                 Actividades.Size = 50;
                 Actividades.Value = expC.Actividades1;
@@ -115,20 +115,127 @@ namespace CAPA_DATOS
 
         public string Updateconsulta(ConsultaD expC)
         {
-            return "";
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand sp_New_C = new SqlCommand();
+                sp_New_C.Connection = Conectar;
+                sp_New_C.CommandText = "SP_UpdateC";
+                sp_New_C.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter Consulta = new SqlParameter();
+                Consulta.ParameterName = "@ID_Consulta";
+                Consulta.SqlDbType = SqlDbType.Int;
+                // Consulta.Size = 0;
+                Consulta.Value = expC.ID_Consulta1;
+                sp_New_C.Parameters.Add(Consulta);
+
+                /* SqlParameter Cita = new SqlParameter();
+                 Cita.ParameterName = "@ID_Cita";
+                 Cita.SqlDbType = SqlDbType.Int;
+                 //Cita.Size = 0;
+                 Cita.Value = expC.ID_Cita1;
+                 sp_New_C.Parameters.Add(Cita);*/
+
+                SqlParameter Actividades = new SqlParameter();
+                Actividades.ParameterName = "@Actividades";
+                Actividades.SqlDbType = SqlDbType.NVarChar;
+                Actividades.Size = 50;
+                Actividades.Value = expC.Actividades1;
+                sp_New_C.Parameters.Add(Actividades);
+
+                SqlParameter Observacion = new SqlParameter();
+                Observacion.ParameterName = "@Observaciones";
+                Observacion.SqlDbType = SqlDbType.NVarChar;
+                Observacion.Size = 3000;
+                Observacion.Value = expC.Observaciones1;
+                sp_New_C.Parameters.Add(Observacion);
+
+                SqlParameter Tipo = new SqlParameter();
+                Tipo.ParameterName = "@Tipo";
+                Tipo.SqlDbType = SqlDbType.NChar;
+                Tipo.Size = 1;
+                Tipo.Value = expC.Tipo1;
+                sp_New_C.Parameters.Add(Tipo);
+
+
+
+
+                if (sp_New_C.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return retorno;
+
         }
 
+        public DataTable showc()
+        {
+
+            DataTable showconsulta = new DataTable("consulta");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand sp_New_C = new SqlCommand();
+                sp_New_C.Connection = Conectar;
+                sp_New_C.CommandText = "SP_ShowC";
+                sp_New_C.CommandType = CommandType.StoredProcedure;
+
+
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_New_C);
+                adartar.Fill(showconsulta);
 
 
 
+                if (sp_New_C.ExecuteNonQuery() == 1)
+                {
+                retorno = "Everything it's ok";
+                }
+              else
+              {
+                retorno = "Houston tenemos un problema";
+              }
+        
+            }  
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
 
+            return showconsulta;
 
-
-
-
-
-
-
-
-    }
+    }   }
 }
