@@ -8,7 +8,7 @@ using CAPA_DATOS;
 
 namespace CAPA_NEGOCIO
 {
-   public class ConsultaN
+    public class ConsultaN
     {
         public static string insertconsulta(string iD_Consulta, string iD_Cita, string actividades, string observaciones, string tipo)
 
@@ -24,5 +24,42 @@ namespace CAPA_NEGOCIO
 
 
         }
+
+        public static string Updateconsulta(string iD_Consulta, string actividades, string observaciones, string tipo)
+
+        {
+            ConsultaD datos = new ConsultaD();
+            datos.ID_Consulta1 = iD_Consulta;
+
+            datos.Actividades1 = actividades;
+            datos.Observaciones1 = observaciones;
+            datos.Tipo1 = tipo;
+
+            return datos.Updateconsulta(datos);
+
+
+        }
+
+        public static DataTable showc()
+        {
+            ConsultaD datos = new ConsultaD();
+            return datos.showc();
+        }
+
+        public static DataTable buscarconsulta(string iD_Consulta)
+        {
+            ConsultaD datos = new ConsultaD();
+            datos.ID_Consulta1 = iD_Consulta;
+            return datos.buscarconsulta(datos);
+        }
+
+
+
+
+
+
+
+
+
     }
 }
