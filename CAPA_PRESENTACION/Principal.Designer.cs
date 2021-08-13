@@ -127,7 +127,7 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 398);
+            this.panelFormhijo.Size = new System.Drawing.Size(866, 598);
             this.panelFormhijo.TabIndex = 3;
             // 
             // panelmenu
@@ -162,6 +162,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Name = "paneldegradado1";
             this.paneldegradado1.Size = new System.Drawing.Size(207, 1030);
             this.paneldegradado1.TabIndex = 0;
+            this.paneldegradado1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
             // panelsubmenuinformes
             // 
@@ -192,6 +193,7 @@ namespace CAPA_PRESENTACION
             this.btngenerarinfo.Text = "Generar Informes";
             this.btngenerarinfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btngenerarinfo.UseVisualStyleBackColor = false;
+            this.btngenerarinfo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btngenerarinfo.MouseLeave += new System.EventHandler(this.btngenerarinfo_MouseLeave);
             this.btngenerarinfo.MouseHover += new System.EventHandler(this.btngenerarinfo_MouseHover);
             // 
@@ -213,6 +215,7 @@ namespace CAPA_PRESENTACION
             this.btnverinformes.Text = "Ver Informes";
             this.btnverinformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverinformes.UseVisualStyleBackColor = false;
+            this.btnverinformes.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnverinformes.MouseLeave += new System.EventHandler(this.btnverinformes_MouseLeave);
             this.btnverinformes.MouseHover += new System.EventHandler(this.btnverinformes_MouseHover);
             // 
@@ -221,6 +224,8 @@ namespace CAPA_PRESENTACION
             this.btninforme.BackColor = System.Drawing.Color.Transparent;
             this.btninforme.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninforme.FlatAppearance.BorderSize = 0;
+            this.btninforme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.btninforme.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.btninforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninforme.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninforme.ForeColor = System.Drawing.Color.White;
@@ -232,6 +237,7 @@ namespace CAPA_PRESENTACION
             this.btninforme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btninforme.UseVisualStyleBackColor = false;
             this.btninforme.Click += new System.EventHandler(this.btninforme_Click);
+            this.btninforme.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btninforme.MouseLeave += new System.EventHandler(this.btninforme_MouseLeave);
             this.btninforme.MouseHover += new System.EventHandler(this.btninforme_MouseHover);
             // 
@@ -266,6 +272,7 @@ namespace CAPA_PRESENTACION
             this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
+            this.btnbaja.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnbaja.MouseLeave += new System.EventHandler(this.btnbaja_MouseLeave);
             this.btnbaja.MouseHover += new System.EventHandler(this.btnbaja_MouseHover);
             // 
@@ -288,6 +295,7 @@ namespace CAPA_PRESENTACION
             this.btnnuevoexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnnuevoexpe.UseVisualStyleBackColor = false;
             this.btnnuevoexpe.Click += new System.EventHandler(this.btnnuevoexpe_Click);
+            this.btnnuevoexpe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnnuevoexpe.MouseLeave += new System.EventHandler(this.btnnuevoexpe_MouseLeave);
             this.btnnuevoexpe.MouseHover += new System.EventHandler(this.btnnuevoexpe_MouseHover);
             // 
@@ -310,6 +318,7 @@ namespace CAPA_PRESENTACION
             this.btnverexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverexpe.UseVisualStyleBackColor = false;
             this.btnverexpe.Click += new System.EventHandler(this.btnverexpe_Click);
+            this.btnverexpe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnverexpe.MouseLeave += new System.EventHandler(this.btnverexpe_MouseLeave);
             this.btnverexpe.MouseHover += new System.EventHandler(this.btnverexpe_MouseHover);
             // 
@@ -318,6 +327,8 @@ namespace CAPA_PRESENTACION
             this.btnexpe.BackColor = System.Drawing.Color.Transparent;
             this.btnexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnexpe.FlatAppearance.BorderSize = 0;
+            this.btnexpe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.btnexpe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.btnexpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexpe.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexpe.ForeColor = System.Drawing.Color.White;
@@ -329,6 +340,7 @@ namespace CAPA_PRESENTACION
             this.btnexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnexpe.UseVisualStyleBackColor = false;
             this.btnexpe.Click += new System.EventHandler(this.btnexpe_Click);
+            this.btnexpe.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnexpe.MouseLeave += new System.EventHandler(this.btnexpe_MouseLeave);
             this.btnexpe.MouseHover += new System.EventHandler(this.btnexpe_MouseHover);
             // 
@@ -362,6 +374,7 @@ namespace CAPA_PRESENTACION
             this.btnposponercita.Text = "Posponer Cita";
             this.btnposponercita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnposponercita.UseVisualStyleBackColor = false;
+            this.btnposponercita.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnposponercita.MouseLeave += new System.EventHandler(this.btnposponercita_MouseLeave);
             this.btnposponercita.MouseHover += new System.EventHandler(this.btnposponercita_MouseHover);
             // 
@@ -383,6 +396,7 @@ namespace CAPA_PRESENTACION
             this.btnagendarcitas.Text = "Agendar Citas";
             this.btnagendarcitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnagendarcitas.UseVisualStyleBackColor = false;
+            this.btnagendarcitas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnagendarcitas.MouseLeave += new System.EventHandler(this.btnagendarcitas_MouseLeave);
             this.btnagendarcitas.MouseHover += new System.EventHandler(this.btnagendarcitas_MouseHover);
             // 
@@ -404,6 +418,7 @@ namespace CAPA_PRESENTACION
             this.btnvercitas.Text = "Ver Citas";
             this.btnvercitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnvercitas.UseVisualStyleBackColor = false;
+            this.btnvercitas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnvercitas.MouseLeave += new System.EventHandler(this.btnvercitas_MouseLeave);
             this.btnvercitas.MouseHover += new System.EventHandler(this.btnvercitas_MouseHover);
             // 
@@ -412,6 +427,8 @@ namespace CAPA_PRESENTACION
             this.btncita.BackColor = System.Drawing.Color.Transparent;
             this.btncita.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncita.FlatAppearance.BorderSize = 0;
+            this.btncita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.btncita.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.btncita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncita.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncita.ForeColor = System.Drawing.Color.White;
@@ -423,6 +440,7 @@ namespace CAPA_PRESENTACION
             this.btncita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btncita.UseVisualStyleBackColor = false;
             this.btncita.Click += new System.EventHandler(this.btncita_Click);
+            this.btncita.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btncita.MouseLeave += new System.EventHandler(this.btncita_MouseLeave);
             this.btncita.MouseHover += new System.EventHandler(this.btncita_MouseHover);
             // 
@@ -436,6 +454,7 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuconsulta.Name = "panelsubmenuconsulta";
             this.panelsubmenuconsulta.Size = new System.Drawing.Size(207, 116);
             this.panelsubmenuconsulta.TabIndex = 5;
+            this.panelsubmenuconsulta.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
             // btniniciarconsulta
             // 
@@ -456,6 +475,7 @@ namespace CAPA_PRESENTACION
             this.btniniciarconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btniniciarconsulta.UseVisualStyleBackColor = false;
             this.btniniciarconsulta.Click += new System.EventHandler(this.btniniciarconsulta_Click);
+            this.btniniciarconsulta.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btniniciarconsulta.MouseLeave += new System.EventHandler(this.btniniciarconsulta_MouseLeave);
             this.btniniciarconsulta.MouseHover += new System.EventHandler(this.btniniciarconsulta_MouseHover);
             // 
@@ -478,6 +498,7 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnverconsulta.UseVisualStyleBackColor = false;
             this.btnverconsulta.Click += new System.EventHandler(this.btnverconsulta_Click);
+            this.btnverconsulta.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnverconsulta.MouseLeave += new System.EventHandler(this.btnverconsulta_MouseLeave);
             this.btnverconsulta.MouseHover += new System.EventHandler(this.btnverconsulta_MouseHover);
             // 
@@ -486,6 +507,8 @@ namespace CAPA_PRESENTACION
             this.btncon.BackColor = System.Drawing.Color.Transparent;
             this.btncon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncon.FlatAppearance.BorderSize = 0;
+            this.btncon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.btncon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
             this.btncon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncon.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncon.ForeColor = System.Drawing.Color.White;
@@ -510,6 +533,7 @@ namespace CAPA_PRESENTACION
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(207, 170);
             this.panel3.TabIndex = 0;
+            this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
             // paneldegradado2
             // 

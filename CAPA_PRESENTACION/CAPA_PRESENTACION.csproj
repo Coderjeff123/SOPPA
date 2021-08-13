@@ -56,6 +56,12 @@
     <Compile Include="IniciarConsulta.Designer.cs">
       <DependentUpon>IniciarConsulta.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
     <Compile Include="NuevoExpe.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="IniciarConsulta.resx">
       <DependentUpon>IniciarConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="NuevoExpe.resx">
       <DependentUpon>NuevoExpe.cs</DependentUpon>

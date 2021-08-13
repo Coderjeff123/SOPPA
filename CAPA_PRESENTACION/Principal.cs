@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace CAPA_PRESENTACION
 {
@@ -18,7 +19,8 @@ namespace CAPA_PRESENTACION
             ocultarmenu();
 
         }
-
+       
+     
         private void btncloseform_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -37,6 +39,7 @@ namespace CAPA_PRESENTACION
             this.WindowState = FormWindowState.Normal;
             btnresform.Visible = false;
             btnmaxform.Visible = true;
+            this.StartPosition = FormStartPosition.CenterScreen;
 
         }
 
@@ -295,6 +298,14 @@ namespace CAPA_PRESENTACION
             ocultarsubmenu();
             abrirForm(new IniciarConsulta());
         }
+
+  
+
+        private void paneldegradado2_MouseDown_1(object sender, MouseEventArgs e)
+        {
+        }
+      
+        
     }
 } 
     
