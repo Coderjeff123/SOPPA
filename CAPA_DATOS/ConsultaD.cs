@@ -15,6 +15,7 @@ namespace CAPA_DATOS
         string Actividades;
         string Observaciones;
         string Tipo;
+        
 
         public ConsultaD() { }
 
