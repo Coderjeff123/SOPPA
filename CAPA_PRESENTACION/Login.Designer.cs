@@ -29,42 +29,21 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
-            this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txtuser = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnlogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.paneldegradado1.SuspendLayout();
+            this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.lblerror = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // paneldegradado1
-            // 
-            this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.Aqua;
-            this.paneldegradado1.Controls.Add(this.panel1);
-            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.paneldegradado1.Location = new System.Drawing.Point(0, 0);
-            this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(186, 336);
-            this.paneldegradado1.TabIndex = 0;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.brain_storming_settings_thought_preferences_icon_124677;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(25, 22);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(127, 100);
-            this.panel1.TabIndex = 0;
             // 
             // panel2
             // 
@@ -91,7 +70,7 @@ namespace CAPA_PRESENTACION
             this.txtuser.Location = new System.Drawing.Point(314, 108);
             this.txtuser.Name = "txtuser";
             this.txtuser.Size = new System.Drawing.Size(274, 18);
-            this.txtuser.TabIndex = 3;
+            this.txtuser.TabIndex = 2;
             this.txtuser.Text = "User";
             this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
             this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
@@ -105,7 +84,7 @@ namespace CAPA_PRESENTACION
             this.txtpass.Location = new System.Drawing.Point(314, 175);
             this.txtpass.Name = "txtpass";
             this.txtpass.Size = new System.Drawing.Size(274, 18);
-            this.txtpass.TabIndex = 4;
+            this.txtpass.TabIndex = 2;
             this.txtpass.Text = "Password";
             this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
             this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
@@ -121,20 +100,21 @@ namespace CAPA_PRESENTACION
             this.label1.TabIndex = 5;
             this.label1.Text = "LOGIN";
             // 
-            // button1
+            // btnlogin
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(218)))), ((int)(((byte)(228)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Blue;
-            this.button1.Location = new System.Drawing.Point(323, 259);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(265, 33);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Acceder";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(218)))), ((int)(((byte)(228)))));
+            this.btnlogin.FlatAppearance.BorderSize = 0;
+            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.ForeColor = System.Drawing.Color.Blue;
+            this.btnlogin.Location = new System.Drawing.Point(323, 259);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(265, 33);
+            this.btnlogin.TabIndex = 3;
+            this.btnlogin.Text = "Acceder";
+            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // pictureBox1
             // 
@@ -156,15 +136,49 @@ namespace CAPA_PRESENTACION
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // paneldegradado1
+            // 
+            this.paneldegradado1.angulo = 0F;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.Teal;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.Aqua;
+            this.paneldegradado1.Controls.Add(this.panel1);
+            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paneldegradado1.Location = new System.Drawing.Point(0, 0);
+            this.paneldegradado1.Name = "paneldegradado1";
+            this.paneldegradado1.Size = new System.Drawing.Size(186, 336);
+            this.paneldegradado1.TabIndex = 0;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.brain_storming_settings_thought_preferences_icon_124677;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel1.Location = new System.Drawing.Point(25, 22);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(127, 100);
+            this.panel1.TabIndex = 0;
+            // 
+            // lblerror
+            // 
+            this.lblerror.AutoSize = true;
+            this.lblerror.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblerror.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.lblerror.Location = new System.Drawing.Point(314, 211);
+            this.lblerror.Name = "lblerror";
+            this.lblerror.Size = new System.Drawing.Size(0, 15);
+            this.lblerror.TabIndex = 9;
+            this.lblerror.Visible = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(719, 336);
+            this.Controls.Add(this.lblerror);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtpass);
             this.Controls.Add(this.txtuser);
@@ -176,9 +190,9 @@ namespace CAPA_PRESENTACION
             this.Opacity = 0.88D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.paneldegradado1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.paneldegradado1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,8 +207,9 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label lblerror;
     }
 }

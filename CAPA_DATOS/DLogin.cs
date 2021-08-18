@@ -10,71 +10,68 @@ namespace CAPA_DATOS
 {
     public class DLogin
     {
-        int Iduser;
         string nombre;
-        float contraseña;
+        string contraseña;
 
         public DLogin()
         {
         }
 
-        public DLogin(int iduser1, string nombre, float contraseña)
+        public DLogin(string nombre, string contraseña)
         {
-            Iduser1 = iduser1;
             Nombre = nombre;
             Contraseña = contraseña;
         }
 
-        public int Iduser1 { get => Iduser; set => Iduser = value; }
         public string Nombre { get => nombre; set => nombre = value; }
-        public float Contraseña { get => contraseña; set => contraseña = value; }
+        public string Contraseña { get => contraseña; set => contraseña = value; }
 
         public string INICIO(DLogin sesion)
         {
             string retorno = "";
-            SqlConnection connection = new SqlConnection();
+            SqlConnection conectar = new SqlConnection();
             try
             {
-                connection.ConnectionString = Conet.cnx;
-                connection.Open();
-                SqlCommand sql = new SqlCommand();
-                sql.Connection = connection;
-                sql.CommandText = "ShowU";
-                sql.CommandType = CommandType.StoredProcedure;
+                conectar.ConnectionString = Conet.cnx;
+                conectar.Open();
 
-                SqlParameter nombre = new SqlParameter();
-                nombre.ParameterName = "@Nombre";
-                nombre.SqlDbType = SqlDbType.NChar;
-                nombre.Value = sesion.Nombre;
-                sql.Parameters.Add(nombre);
+                SqlCommand splogin = new SqlCommand();
+                splogin.Connection = conectar;
+                splogin.CommandText = "psci.ShowU";
+                splogin.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Contra = new SqlParameter();
-                Contra.ParameterName = "@Contraseña";
-                Contra.SqlDbType = SqlDbType.NChar;
-                Contra.Value = sesion.contraseña;
-                sql.Parameters.Add(Contra);
+                SqlParameter nom = new SqlParameter();
+                nom.ParameterName = "@Nombre";
+                nom.SqlDbType = SqlDbType.NChar;
+                nom.Value = sesion.Nombre;
+                splogin.Parameters.Add(nom);
 
-                if (sql.ExecuteNonQuery()==1)
+                SqlParameter con = new SqlParameter();
+                con.ParameterName = "@Contraseña";
+                con.SqlDbType = SqlDbType.NChar;
+                con.Value = sesion.Contraseña;
+                splogin.Parameters.Add(con);
+
+                SqlDataReader sqlDataReader = splogin.ExecuteReader();
+
+                if (sqlDataReader.HasRows)
                 {
                     retorno = "Everithing its ok";
                 }
                 else
                 {
-                    retorno = "You have a problem";
+                    retorno = "you have a problem";
                 }
-
             }
-            catch(Exception e)
+            catch (Exception e)
             {
-                retorno = e.Message;
+                retorno=e.Message;
             }
             finally
             {
-                if (connection.State == ConnectionState.Open)
-                {
-                    connection.Close();
-                }
+                conectar.Close();
             }
+           
             return retorno;
         }
     }

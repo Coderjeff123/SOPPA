@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CAPA_NEGOCIO;
+
 
 namespace CAPA_PRESENTACION
 {
     public partial class Login : Form
     {
+        string retorno= "Everithing its ok";
         public Login()
         {
             InitializeComponent();
@@ -37,7 +40,7 @@ namespace CAPA_PRESENTACION
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -51,6 +54,7 @@ namespace CAPA_PRESENTACION
             {
                 txtpass.Text = "";
                 txtpass.ForeColor = Color.Black;
+                txtpass.UseSystemPasswordChar = true;
             }
         }
 
@@ -60,7 +64,41 @@ namespace CAPA_PRESENTACION
             {
                 txtpass.Text = "Password";
                 txtpass.ForeColor = Color.Blue;
+                txtpass.UseSystemPasswordChar = false;
             }
+        }
+
+        private void btnlogin_Click(object sender, EventArgs e)
+        {
+            if (txtuser.Text != "User")
+            {
+                if (txtpass.Text !="Pass") 
+                {
+                    NLogin nLogin = new NLogin();
+                    string validation =nLogin.loginuser(txtuser.Text, txtpass.Text);
+
+                    if (validation == retorno )
+                    {
+                        Principal principal = new Principal();
+                        principal.Show();
+                        this.Hide();
+                    }
+                    else msgError("Usuario incorrecto");
+                    
+                       
+                    
+                }
+                else msgError("Please enter password");
+
+
+
+            }
+            else msgError("Please enter User");
+        }
+        private void msgError(string msg)
+        {
+            lblerror.Text="  " + msg;
+            lblerror.Visible = true;
         }
     }
 }
