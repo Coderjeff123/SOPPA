@@ -63,6 +63,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _327_3273204_psicologia_educativa_png_logos_de_psicologia_clinica_transparent {
+            get {
+                object obj = ResourceManager.GetObject("327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3700408_archive_document_education_exam_file_test_108771 {
             get {
                 object obj = ResourceManager.GetObject("3700408-archive-document-education-exam-file-test_108771", resourceCulture);
@@ -116,6 +126,36 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap closewindowapplication_cerca_ventan_2874 {
             get {
                 object obj = ResourceManager.GetObject("closewindowapplication_cerca_ventan_2874", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap corazon {
+            get {
+                object obj = ResourceManager.GetObject("corazon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap corazon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("corazon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap corazon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("corazon (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -196,6 +236,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap newfile_85903 {
             get {
                 object obj = ResourceManager.GetObject("newfile_85903", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pensando {
+            get {
+                object obj = ResourceManager.GetObject("pensando", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -50,6 +50,12 @@
       <DependentUpon>BajaExpe.cs</DependentUpon>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="Formwelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formwelcome.Designer.cs">
+      <DependentUpon>Formwelcome.cs</DependentUpon>
+    </Compile>
     <Compile Include="IniciarConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +105,9 @@
   <ItemGroup>
     <EmbeddedResource Include="BajaExpe.resx">
       <DependentUpon>BajaExpe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formwelcome.resx">
+      <DependentUpon>Formwelcome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IniciarConsulta.resx">
       <DependentUpon>IniciarConsulta.cs</DependentUpon>
@@ -176,6 +185,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\human_brain_psychiatrist_icon_131296.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\corazon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\corazon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\corazon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\pensando.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
