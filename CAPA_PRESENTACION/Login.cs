@@ -20,12 +20,15 @@ namespace CAPA_PRESENTACION
             InitializeComponent();
         }
 
+        public string nombre;
+
         private void txtuser_Enter(object sender, EventArgs e)
         {
             if (txtuser.Text == "User")
             {
                 txtuser.Text = "";
                 txtuser.ForeColor = Color.Black;
+                nombre = txtuser.Text;
             }
         }
 
@@ -79,9 +82,12 @@ namespace CAPA_PRESENTACION
 
                     if (validation == retorno )
                     {
+                        this.Hide();
+                        Formwelcome formwelcome = new Formwelcome();
+                        formwelcome.ShowDialog();
                         Principal principal = new Principal();
                         principal.Show();
-                        this.Hide();
+                        
                     }
                     else msgError("Usuario incorrecto");
                     
@@ -100,5 +106,6 @@ namespace CAPA_PRESENTACION
             lblerror.Text="  " + msg;
             lblerror.Visible = true;
         }
+        
     }
 }

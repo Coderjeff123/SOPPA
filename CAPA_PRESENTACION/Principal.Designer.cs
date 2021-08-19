@@ -255,6 +255,8 @@ namespace CAPA_PRESENTACION
             this.btngenerarinfo.BackColor = System.Drawing.Color.Transparent;
             this.btngenerarinfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btngenerarinfo.FlatAppearance.BorderSize = 0;
+            this.btngenerarinfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btngenerarinfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btngenerarinfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btngenerarinfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btngenerarinfo.ForeColor = System.Drawing.Color.White;
@@ -277,6 +279,8 @@ namespace CAPA_PRESENTACION
             this.btnverinformes.BackColor = System.Drawing.Color.Transparent;
             this.btnverinformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverinformes.FlatAppearance.BorderSize = 0;
+            this.btnverinformes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnverinformes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnverinformes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnverinformes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnverinformes.ForeColor = System.Drawing.Color.White;
@@ -333,6 +337,8 @@ namespace CAPA_PRESENTACION
             this.btnbaja.BackColor = System.Drawing.Color.Transparent;
             this.btnbaja.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnbaja.FlatAppearance.BorderSize = 0;
+            this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnbaja.ForeColor = System.Drawing.Color.White;
@@ -356,6 +362,8 @@ namespace CAPA_PRESENTACION
             this.btnnuevoexpe.BackColor = System.Drawing.Color.Transparent;
             this.btnnuevoexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnnuevoexpe.FlatAppearance.BorderSize = 0;
+            this.btnnuevoexpe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnnuevoexpe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnnuevoexpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnnuevoexpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnnuevoexpe.ForeColor = System.Drawing.Color.White;
@@ -379,6 +387,8 @@ namespace CAPA_PRESENTACION
             this.btnverexpe.BackColor = System.Drawing.Color.Transparent;
             this.btnverexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverexpe.FlatAppearance.BorderSize = 0;
+            this.btnverexpe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnverexpe.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnverexpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnverexpe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnverexpe.ForeColor = System.Drawing.Color.White;
@@ -436,6 +446,8 @@ namespace CAPA_PRESENTACION
             this.btnposponercita.BackColor = System.Drawing.Color.Transparent;
             this.btnposponercita.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnposponercita.FlatAppearance.BorderSize = 0;
+            this.btnposponercita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnposponercita.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnposponercita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnposponercita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnposponercita.ForeColor = System.Drawing.Color.White;
@@ -458,6 +470,8 @@ namespace CAPA_PRESENTACION
             this.btnagendarcitas.BackColor = System.Drawing.Color.Transparent;
             this.btnagendarcitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnagendarcitas.FlatAppearance.BorderSize = 0;
+            this.btnagendarcitas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnagendarcitas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnagendarcitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnagendarcitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnagendarcitas.ForeColor = System.Drawing.Color.White;
@@ -480,6 +494,8 @@ namespace CAPA_PRESENTACION
             this.btnvercitas.BackColor = System.Drawing.Color.Transparent;
             this.btnvercitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnvercitas.FlatAppearance.BorderSize = 0;
+            this.btnvercitas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnvercitas.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnvercitas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnvercitas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnvercitas.ForeColor = System.Drawing.Color.White;
@@ -536,6 +552,8 @@ namespace CAPA_PRESENTACION
             this.btniniciarconsulta.BackColor = System.Drawing.Color.Transparent;
             this.btniniciarconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btniniciarconsulta.FlatAppearance.BorderSize = 0;
+            this.btniniciarconsulta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btniniciarconsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btniniciarconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btniniciarconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btniniciarconsulta.ForeColor = System.Drawing.Color.White;
@@ -559,6 +577,8 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta.BackColor = System.Drawing.Color.Transparent;
             this.btnverconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverconsulta.FlatAppearance.BorderSize = 0;
+            this.btnverconsulta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnverconsulta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btnverconsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnverconsulta.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnverconsulta.ForeColor = System.Drawing.Color.White;

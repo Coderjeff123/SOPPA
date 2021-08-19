@@ -6,25 +6,29 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 
+
 namespace CAPA_DATOS
 {
     public class DLogin
     {
         string nombre;
         string contraseña;
+        string very;
 
         public DLogin()
         {
         }
 
-        public DLogin(string nombre, string contraseña)
+        public DLogin(string nombre, string contraseña, string very)
         {
             Nombre = nombre;
             Contraseña = contraseña;
+            this.Very = very;
         }
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
+        public string Very { get => very; set => very = value; }
 
         public string INICIO(DLogin sesion)
         {
@@ -57,6 +61,7 @@ namespace CAPA_DATOS
                 if (sqlDataReader.HasRows)
                 {
                     retorno = "Everithing its ok";
+                    
                 }
                 else
                 {
@@ -72,7 +77,24 @@ namespace CAPA_DATOS
                 conectar.Close();
             }
            
+           
+
             return retorno;
         }
+
+        public string secur(DLogin ver)
+        {
+            string retorno = "";
+            if (Nombre == "Admin")
+            {
+                retorno = "Admin";
+            }
+            if (Nombre == "Coordinador")
+            {
+                retorno = "Coordinador";
+            }
+            return retorno;
+        }
+       
     }
 }

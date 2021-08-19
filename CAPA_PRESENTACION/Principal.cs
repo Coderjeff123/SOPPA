@@ -23,7 +23,7 @@ namespace CAPA_PRESENTACION
      
         private void btncloseform_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void ocultarmenu()

@@ -22,5 +22,17 @@ namespace CAPA_NEGOCIO
 
             return dLogin.INICIO(dLogin);
         }
-    }
+
+        public string very(string res)
+        {
+            DLogin login = new DLogin();
+            res = login.Nombre;
+            
+
+            return login.secur(login);
+        }
+            
+        
+       }
+    
 }

@@ -153,9 +153,9 @@ namespace CAPA_PRESENTACION
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.brain_storming_settings_thought_preferences_icon_124677;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Location = new System.Drawing.Point(25, 22);
+            this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(127, 100);
+            this.panel1.Size = new System.Drawing.Size(186, 158);
             this.panel1.TabIndex = 0;
             // 
             // lblerror
