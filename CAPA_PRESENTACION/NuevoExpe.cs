@@ -16,5 +16,15 @@ namespace CAPA_PRESENTACION
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnremitir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

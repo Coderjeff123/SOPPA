@@ -63,6 +63,36 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _0_3895_smbolo_da_psicologia_png_transparent_png {
+            get {
+                object obj = ResourceManager.GetObject("0-3895_smbolo-da-psicologia-png-transparent-png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1 {
+            get {
+                object obj = ResourceManager.GetObject("1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1486395886_checkmark_80611 {
+            get {
+                object obj = ResourceManager.GetObject("1486395886-checkmark_80611", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _327_3273204_psicologia_educativa_png_logos_de_psicologia_clinica_transparent {
             get {
                 object obj = ResourceManager.GetObject("327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent", resourceCulture);
@@ -116,6 +146,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap brain_storming_settings_thought_preferences_icon_124677 {
             get {
                 object obj = ResourceManager.GetObject("brain_storming_settings_thought_preferences_icon_124677", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap canceltheapplication_cancelar_2901 {
+            get {
+                object obj = ResourceManager.GetObject("canceltheapplication_cancelar_2901", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -243,9 +283,29 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ok_accept_3523 {
+            get {
+                object obj = ResourceManager.GetObject("ok_accept_3523", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pensando {
             get {
                 object obj = ResourceManager.GetObject("pensando", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pngtree_brain_technology_code_digital_image_6990 {
+            get {
+                object obj = ResourceManager.GetObject("pngtree-brain-technology-code-digital-image_6990", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

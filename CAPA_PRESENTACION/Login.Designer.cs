@@ -40,25 +40,28 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblerror = new System.Windows.Forms.Label();
+            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
+            this.lblnot = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.paneldegradado1.SuspendLayout();
+            this.paneldegradado2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel2.Location = new System.Drawing.Point(314, 124);
+            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel2.Location = new System.Drawing.Point(131, 114);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(274, 10);
+            this.panel2.Size = new System.Drawing.Size(286, 10);
             this.panel2.TabIndex = 1;
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel3.Location = new System.Drawing.Point(314, 194);
+            this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel3.Location = new System.Drawing.Point(131, 184);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(274, 10);
+            this.panel3.Size = new System.Drawing.Size(286, 10);
             this.panel3.TabIndex = 2;
             // 
             // txtuser
@@ -66,10 +69,10 @@ namespace CAPA_PRESENTACION
             this.txtuser.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser.ForeColor = System.Drawing.Color.Blue;
-            this.txtuser.Location = new System.Drawing.Point(314, 108);
+            this.txtuser.ForeColor = System.Drawing.Color.Black;
+            this.txtuser.Location = new System.Drawing.Point(131, 96);
             this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(274, 18);
+            this.txtuser.Size = new System.Drawing.Size(286, 18);
             this.txtuser.TabIndex = 2;
             this.txtuser.Text = "User";
             this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
@@ -80,10 +83,10 @@ namespace CAPA_PRESENTACION
             this.txtpass.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.ForeColor = System.Drawing.Color.Blue;
-            this.txtpass.Location = new System.Drawing.Point(314, 175);
+            this.txtpass.ForeColor = System.Drawing.Color.Black;
+            this.txtpass.Location = new System.Drawing.Point(131, 165);
             this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(274, 18);
+            this.txtpass.Size = new System.Drawing.Size(286, 18);
             this.txtpass.TabIndex = 2;
             this.txtpass.Text = "Password";
             this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
@@ -92,25 +95,26 @@ namespace CAPA_PRESENTACION
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Yu Gothic UI Semilight", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(384, 9);
+            this.label1.Location = new System.Drawing.Point(23, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 36);
+            this.label1.Size = new System.Drawing.Size(94, 37);
             this.label1.TabIndex = 5;
             this.label1.Text = "LOGIN";
             // 
             // btnlogin
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(216)))), ((int)(((byte)(218)))), ((int)(((byte)(228)))));
+            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(242)))), ((int)(((byte)(200)))));
             this.btnlogin.FlatAppearance.BorderSize = 0;
-            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnlogin.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.ForeColor = System.Drawing.Color.Blue;
-            this.btnlogin.Location = new System.Drawing.Point(323, 259);
+            this.btnlogin.ForeColor = System.Drawing.Color.Black;
+            this.btnlogin.Location = new System.Drawing.Point(140, 249);
             this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(265, 33);
+            this.btnlogin.Size = new System.Drawing.Size(277, 33);
             this.btnlogin.TabIndex = 3;
             this.btnlogin.Text = "Acceder";
             this.btnlogin.UseVisualStyleBackColor = false;
@@ -118,8 +122,10 @@ namespace CAPA_PRESENTACION
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.closewindowapplication_cerca_ventan_2874;
-            this.pictureBox1.Location = new System.Drawing.Point(687, 0);
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.closewindowapplication_cerca_ventan_2874;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(499, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(34, 34);
             this.pictureBox1.TabIndex = 7;
@@ -128,10 +134,12 @@ namespace CAPA_PRESENTACION
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
-            this.pictureBox2.Location = new System.Drawing.Point(652, 0);
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox2.Location = new System.Drawing.Point(454, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(34, 34);
+            this.pictureBox2.Size = new System.Drawing.Size(39, 34);
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
@@ -151,7 +159,7 @@ namespace CAPA_PRESENTACION
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
-            this.panel1.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.brain_storming_settings_thought_preferences_icon_124677;
+            this.panel1.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.human_brain_psychiatrist_icon_131296;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -169,21 +177,48 @@ namespace CAPA_PRESENTACION
             this.lblerror.TabIndex = 9;
             this.lblerror.Visible = false;
             // 
+            // paneldegradado2
+            // 
+            this.paneldegradado2.angulo = 0F;
+            this.paneldegradado2.Colorleft = System.Drawing.Color.LightSkyBlue;
+            this.paneldegradado2.Colorrigth = System.Drawing.Color.Teal;
+            this.paneldegradado2.Controls.Add(this.lblnot);
+            this.paneldegradado2.Controls.Add(this.pictureBox2);
+            this.paneldegradado2.Controls.Add(this.pictureBox1);
+            this.paneldegradado2.Controls.Add(this.label1);
+            this.paneldegradado2.Controls.Add(this.btnlogin);
+            this.paneldegradado2.Controls.Add(this.txtpass);
+            this.paneldegradado2.Controls.Add(this.txtuser);
+            this.paneldegradado2.Controls.Add(this.panel2);
+            this.paneldegradado2.Controls.Add(this.panel3);
+            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.paneldegradado2.Location = new System.Drawing.Point(186, 0);
+            this.paneldegradado2.Name = "paneldegradado2";
+            this.paneldegradado2.Size = new System.Drawing.Size(533, 336);
+            this.paneldegradado2.TabIndex = 10;
+            // 
+            // lblnot
+            // 
+            this.lblnot.AutoSize = true;
+            this.lblnot.BackColor = System.Drawing.Color.Transparent;
+            this.lblnot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblnot.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnot.ForeColor = System.Drawing.Color.Red;
+            this.lblnot.Location = new System.Drawing.Point(131, 211);
+            this.lblnot.Name = "lblnot";
+            this.lblnot.Size = new System.Drawing.Size(40, 16);
+            this.lblnot.TabIndex = 9;
+            this.lblnot.Text = "label2";
+            this.lblnot.Visible = false;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.SteelBlue;
             this.ClientSize = new System.Drawing.Size(719, 336);
+            this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.lblerror);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.btnlogin);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtpass);
-            this.Controls.Add(this.txtuser);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.paneldegradado1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -193,6 +228,8 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
+            this.paneldegradado2.ResumeLayout(false);
+            this.paneldegradado2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,5 +248,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblerror;
+        private Paneldegradado paneldegradado2;
+        private System.Windows.Forms.Label lblnot;
     }
 }

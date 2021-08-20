@@ -220,5 +220,23 @@
   <ItemGroup>
     <None Include="imagenes\pensando.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\1486395886-checkmark_80611.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\ok_accept_3523.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\canceltheapplication_cancelar_2901.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\pngtree-brain-technology-code-digital-image_6990.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\0-3895_smbolo-da-psicologia-png-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

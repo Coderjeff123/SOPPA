@@ -37,7 +37,7 @@ namespace CAPA_PRESENTACION
             if (txtuser.Text == "")
             {
                 txtuser.Text = "User";
-                txtuser.ForeColor = Color.Blue;
+                txtuser.ForeColor = Color.FromArgb(45, 50, 61);
             }
         }
 
@@ -66,7 +66,7 @@ namespace CAPA_PRESENTACION
             if (txtpass.Text == "")
             {
                 txtpass.Text = "Password";
-                txtpass.ForeColor = Color.Blue;
+                txtpass.ForeColor = Color.FromArgb(45, 50, 61);
                 txtpass.UseSystemPasswordChar = false;
             }
         }
@@ -103,8 +103,9 @@ namespace CAPA_PRESENTACION
         }
         private void msgError(string msg)
         {
-            lblerror.Text="  " + msg;
-            lblerror.Visible = true;
+            lblnot.Text="  " + msg;
+            lblnot.Visible = true;
+          
         }
         
     }

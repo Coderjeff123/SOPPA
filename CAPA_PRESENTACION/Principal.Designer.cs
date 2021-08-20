@@ -192,9 +192,6 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelFormhijo.AutoScroll = true;
-            this.panelFormhijo.AutoScrollMargin = new System.Drawing.Size(450, 450);
-            this.panelFormhijo.AutoScrollMinSize = new System.Drawing.Size(450, 450);
             this.panelFormhijo.AutoSize = true;
             this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -202,7 +199,7 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(866, 598);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 403);
             this.panelFormhijo.TabIndex = 3;
             // 
             // panelmenu
@@ -635,8 +632,8 @@ namespace CAPA_PRESENTACION
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(992, 682);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelFormhijo);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelmenu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

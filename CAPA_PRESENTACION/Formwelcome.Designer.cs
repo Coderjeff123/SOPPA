@@ -34,21 +34,23 @@ namespace CAPA_PRESENTACION
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.circularProgressBar1 = new CircularProgressBar.CircularProgressBar();
-            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.label1 = new System.Windows.Forms.Label();
-            this.paneldegradado2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.paneldegradado3 = new CAPA_PRESENTACION.Paneldegradado();
+            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
+            this.paneldegradado4 = new CAPA_PRESENTACION.Paneldegradado();
             this.paneldegradado1.SuspendLayout();
+            this.paneldegradado3.SuspendLayout();
+            this.paneldegradado2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label2.Location = new System.Drawing.Point(364, 225);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(39, 144);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(210, 55);
             this.label2.TabIndex = 3;
@@ -66,73 +68,49 @@ namespace CAPA_PRESENTACION
             // 
             // circularProgressBar1
             // 
-            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.Liner;
-            this.circularProgressBar1.AnimationSpeed = 500;
+            this.circularProgressBar1.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.CircularEaseOut;
+            this.circularProgressBar1.AnimationSpeed = 600;
             this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
             this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circularProgressBar1.ForeColor = System.Drawing.Color.Black;
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.SystemColors.Window;
             this.circularProgressBar1.InnerMargin = 2;
             this.circularProgressBar1.InnerWidth = -1;
-            this.circularProgressBar1.Location = new System.Drawing.Point(610, 173);
+            this.circularProgressBar1.Location = new System.Drawing.Point(285, 98);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.CornflowerBlue;
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.Teal;
             this.circularProgressBar1.OuterMargin = -25;
             this.circularProgressBar1.OuterWidth = 26;
-            this.circularProgressBar1.ProgressColor = System.Drawing.Color.RoyalBlue;
+            this.circularProgressBar1.ProgressColor = System.Drawing.Color.LightSkyBlue;
             this.circularProgressBar1.ProgressWidth = 25;
             this.circularProgressBar1.SecondaryFont = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circularProgressBar1.Size = new System.Drawing.Size(148, 136);
-            this.circularProgressBar1.StartAngle = 270;
+            this.circularProgressBar1.StartAngle = 200;
             this.circularProgressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.circularProgressBar1.SubscriptColor = System.Drawing.Color.Black;
             this.circularProgressBar1.SubscriptMargin = new System.Windows.Forms.Padding(10, -35, 0, 0);
             this.circularProgressBar1.SubscriptText = "";
             this.circularProgressBar1.SuperscriptColor = System.Drawing.Color.Black;
-            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(10, 35, 0, 0);
+            this.circularProgressBar1.SuperscriptMargin = new System.Windows.Forms.Padding(8, 25, 0, 0);
             this.circularProgressBar1.SuperscriptText = "%";
             this.circularProgressBar1.TabIndex = 6;
             this.circularProgressBar1.Text = "0";
             this.circularProgressBar1.TextMargin = new System.Windows.Forms.Padding(8, 8, 0, 0);
             this.circularProgressBar1.Value = 68;
             // 
-            // paneldegradado2
-            // 
-            this.paneldegradado2.angulo = 0F;
-            this.paneldegradado2.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.pensando;
-            this.paneldegradado2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.paneldegradado2.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegradado2.Colorrigth = System.Drawing.Color.Blue;
-            this.paneldegradado2.Controls.Add(this.pictureBox1);
-            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.paneldegradado2.Location = new System.Drawing.Point(0, 82);
-            this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(321, 375);
-            this.paneldegradado2.TabIndex = 1;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.pensando;
-            this.pictureBox1.Location = new System.Drawing.Point(18, 33);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(267, 266);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
             this.paneldegradado1.BackColor = System.Drawing.Color.Transparent;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.MediumSeaGreen;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.DeepSkyBlue;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.LightSkyBlue;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.Teal;
             this.paneldegradado1.Controls.Add(this.label1);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneldegradado1.Font = new System.Drawing.Font("MS UI Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paneldegradado1.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(800, 82);
+            this.paneldegradado1.Size = new System.Drawing.Size(800, 99);
             this.paneldegradado1.TabIndex = 0;
             // 
             // label1
@@ -140,33 +118,73 @@ namespace CAPA_PRESENTACION
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(3, 33);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(233, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Psychology System";
             // 
+            // paneldegradado3
+            // 
+            this.paneldegradado3.angulo = 0F;
+            this.paneldegradado3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.paneldegradado3.Colorleft = System.Drawing.Color.Empty;
+            this.paneldegradado3.Colorrigth = System.Drawing.Color.Empty;
+            this.paneldegradado3.Controls.Add(this.circularProgressBar1);
+            this.paneldegradado3.Controls.Add(this.label2);
+            this.paneldegradado3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.paneldegradado3.Location = new System.Drawing.Point(319, 99);
+            this.paneldegradado3.Name = "paneldegradado3";
+            this.paneldegradado3.Size = new System.Drawing.Size(481, 358);
+            this.paneldegradado3.TabIndex = 2;
+            // 
+            // paneldegradado2
+            // 
+            this.paneldegradado2.angulo = 0F;
+            this.paneldegradado2.BackColor = System.Drawing.Color.Black;
+            this.paneldegradado2.Colorleft = System.Drawing.Color.Black;
+            this.paneldegradado2.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.paneldegradado2.Controls.Add(this.paneldegradado4);
+            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.paneldegradado2.Location = new System.Drawing.Point(0, 99);
+            this.paneldegradado2.Name = "paneldegradado2";
+            this.paneldegradado2.Size = new System.Drawing.Size(321, 358);
+            this.paneldegradado2.TabIndex = 1;
+            // 
+            // paneldegradado4
+            // 
+            this.paneldegradado4.angulo = 0F;
+            this.paneldegradado4.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.pngtree_brain_technology_code_digital_image_6990;
+            this.paneldegradado4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.paneldegradado4.Colorleft = System.Drawing.Color.Empty;
+            this.paneldegradado4.Colorrigth = System.Drawing.Color.Empty;
+            this.paneldegradado4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegradado4.Location = new System.Drawing.Point(0, 0);
+            this.paneldegradado4.Name = "paneldegradado4";
+            this.paneldegradado4.Size = new System.Drawing.Size(321, 225);
+            this.paneldegradado4.TabIndex = 0;
+            // 
             // Formwelcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 457);
-            this.Controls.Add(this.circularProgressBar1);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.paneldegradado3);
             this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.paneldegradado1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Formwelcome";
+            this.Opacity = 0.9D;
             this.Text = "Formwelcome";
-            this.TransparencyKey = System.Drawing.Color.White;
+            this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.Formwelcome_Load);
-            this.paneldegradado2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegradado1.PerformLayout();
+            this.paneldegradado3.ResumeLayout(false);
+            this.paneldegradado3.PerformLayout();
+            this.paneldegradado2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -179,6 +197,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private CircularProgressBar.CircularProgressBar circularProgressBar1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private Paneldegradado paneldegradado3;
+        private Paneldegradado paneldegradado4;
     }
 }
