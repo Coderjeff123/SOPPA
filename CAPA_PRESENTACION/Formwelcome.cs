@@ -46,9 +46,8 @@ namespace CAPA_PRESENTACION
 
         private void Formwelcome_Load(object sender, EventArgs e)
         {
-            string retorno = "";
+            
             NLogin login = new NLogin();
-            lbluser.Text = login.very(retorno);
             circularProgressBar1.Value = 0;
             circularProgressBar1.Minimum = 0;
             circularProgressBar1.Maximum = 100;
