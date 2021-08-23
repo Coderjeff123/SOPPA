@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CitaN.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ConsultaN.cs" />
     <Compile Include="Nexpediente.cs" />
