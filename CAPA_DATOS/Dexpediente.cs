@@ -45,11 +45,11 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand SP_NewEX = new SqlCommand();
                 SP_NewEX.Connection = Conectar;
-                SP_NewEX.CommandText = "SP_NewE";
+                SP_NewEX.CommandText = "psci.SP_NewE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Expediente = new SqlParameter();
-                Expediente.ParameterName = "@ID_Expediente";
+                Expediente.ParameterName = "@ID";
                 Expediente.SqlDbType = SqlDbType.Int;
                 //Expediente.Size = 0;
                 Expediente.Value = expE.ID_Expediente1;

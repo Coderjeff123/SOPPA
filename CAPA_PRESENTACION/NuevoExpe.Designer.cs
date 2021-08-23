@@ -51,7 +51,7 @@ namespace CAPA_PRESENTACION
             this.txtmotivo = new System.Windows.Forms.TextBox();
             this.dtmfecharemi = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.panelimagen = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.button2 = new System.Windows.Forms.Button();
             this.btnremitir = new System.Windows.Forms.Button();
@@ -61,6 +61,7 @@ namespace CAPA_PRESENTACION
             this.groupBox1.SuspendLayout();
             this.panelDatos.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,18 +91,15 @@ namespace CAPA_PRESENTACION
             // 
             // panelinfo
             // 
-            this.panelinfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelinfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelinfo.BackColor = System.Drawing.Color.White;
+            this.panelinfo.Controls.Add(this.pictureBox1);
             this.panelinfo.Controls.Add(this.panelDatos2);
             this.panelinfo.Controls.Add(this.label1);
             this.panelinfo.Controls.Add(this.panelDatos);
-            this.panelinfo.Controls.Add(this.panelimagen);
             this.panelinfo.Location = new System.Drawing.Point(0, 170);
             this.panelinfo.Name = "panelinfo";
-            this.panelinfo.Size = new System.Drawing.Size(754, 278);
+            this.panelinfo.Size = new System.Drawing.Size(754, 272);
             this.panelinfo.TabIndex = 3;
             // 
             // panelDatos2
@@ -112,9 +110,9 @@ namespace CAPA_PRESENTACION
             this.panelDatos2.Controls.Add(this.groupBox1);
             this.panelDatos2.Controls.Add(this.txtid);
             this.panelDatos2.Controls.Add(this.label4);
-            this.panelDatos2.Location = new System.Drawing.Point(41, 167);
+            this.panelDatos2.Location = new System.Drawing.Point(41, 121);
             this.panelDatos2.Name = "panelDatos2";
-            this.panelDatos2.Size = new System.Drawing.Size(700, 97);
+            this.panelDatos2.Size = new System.Drawing.Size(619, 92);
             this.panelDatos2.TabIndex = 2;
             // 
             // groupBox1
@@ -131,7 +129,7 @@ namespace CAPA_PRESENTACION
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(6, 16);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
@@ -141,7 +139,7 @@ namespace CAPA_PRESENTACION
             // rbtninactivo
             // 
             this.rbtninactivo.AutoSize = true;
-            this.rbtninactivo.ForeColor = System.Drawing.Color.Black;
+            this.rbtninactivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbtninactivo.Location = new System.Drawing.Point(65, 53);
             this.rbtninactivo.Name = "rbtninactivo";
             this.rbtninactivo.Size = new System.Drawing.Size(63, 17);
@@ -153,7 +151,7 @@ namespace CAPA_PRESENTACION
             // 
             this.rbtnactivo.AutoSize = true;
             this.rbtnactivo.Checked = true;
-            this.rbtnactivo.ForeColor = System.Drawing.Color.Black;
+            this.rbtnactivo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.rbtnactivo.Location = new System.Drawing.Point(65, 14);
             this.rbtnactivo.Name = "rbtnactivo";
             this.rbtnactivo.Size = new System.Drawing.Size(55, 17);
@@ -173,7 +171,7 @@ namespace CAPA_PRESENTACION
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(84, 19);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(20, 13);
@@ -184,7 +182,7 @@ namespace CAPA_PRESENTACION
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Location = new System.Drawing.Point(304, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(116, 18);
@@ -198,17 +196,17 @@ namespace CAPA_PRESENTACION
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelDatos.Controls.Add(this.label2);
             this.panelDatos.Controls.Add(this.txtnombre);
-            this.panelDatos.Location = new System.Drawing.Point(233, 29);
+            this.panelDatos.Location = new System.Drawing.Point(162, 29);
             this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(498, 101);
+            this.panelDatos.Size = new System.Drawing.Size(498, 72);
             this.panelDatos.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(31, 44);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(17, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 3;
@@ -216,7 +214,7 @@ namespace CAPA_PRESENTACION
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(108, 41);
+            this.txtnombre.Location = new System.Drawing.Point(122, 11);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(316, 20);
             this.txtnombre.TabIndex = 0;
@@ -309,15 +307,16 @@ namespace CAPA_PRESENTACION
             this.label6.TabIndex = 5;
             this.label6.Text = "Remision\r\n";
             // 
-            // panelimagen
+            // pictureBox1
             // 
-            this.panelimagen.BackColor = System.Drawing.SystemColors.Window;
-            this.panelimagen.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
-            this.panelimagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panelimagen.Location = new System.Drawing.Point(41, 29);
-            this.panelimagen.Name = "panelimagen";
-            this.panelimagen.Size = new System.Drawing.Size(161, 132);
-            this.panelimagen.TabIndex = 0;
+            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // paneldegradado1
             // 
@@ -403,6 +402,7 @@ namespace CAPA_PRESENTACION
             this.panelDatos.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -435,6 +435,6 @@ namespace CAPA_PRESENTACION
         private Paneldegradado paneldegradado1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnremitir;
-        private System.Windows.Forms.Panel panelimagen;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
