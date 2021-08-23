@@ -300,6 +300,63 @@ namespace CAPA_DATOS
 
         }
 
+        public DataTable buscarconsultaA(ConsultaD expC)
+        {
+
+            DataTable showconsulta = new DataTable("consulta");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand sp_New_C = new SqlCommand();
+                sp_New_C.Connection = Conectar;
+                sp_New_C.CommandText = "SP_BuscarC";
+                sp_New_C.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter Cita = new SqlParameter();
+                Cita.ParameterName = "@ID_Cita";
+                Cita.SqlDbType = SqlDbType.Int;
+                //Cita.Size = 0;
+                Cita.Value = expC.ID_Cita1;
+                sp_New_C.Parameters.Add(Cita);
+
+
+
+
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_New_C);
+                adartar.Fill(showconsulta);
+
+
+
+                if (sp_New_C.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return showconsulta;
+
+
+        }
 
 
 

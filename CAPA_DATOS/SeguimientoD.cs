@@ -115,15 +115,222 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Updateseguimiento(SeguimientoD expS)
+        public string UpdateseguimientoO(SeguimientoD expS)
         {
-            return "";
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand SP_NewSe = new SqlCommand();
+                SP_NewSe.Connection = Conectar;
+                SP_NewSe.CommandText = "SP_UpdateObsS";
+                SP_NewSe.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter Id_seguimiento = new SqlParameter();
+                Id_seguimiento.ParameterName = "@ID_Seguimiento";
+                Id_seguimiento.SqlDbType = SqlDbType.Int;
+                //Id_seguimiento.Size = 50;
+                Id_seguimiento.Value = expS.ID_Seguimiento1;
+                SP_NewSe.Parameters.Add(Id_seguimiento);
+
+                SqlParameter Observacion = new SqlParameter();
+                Observacion.ParameterName = "@Observaciones";
+                Observacion.SqlDbType = SqlDbType.NVarChar;
+                Observacion.Size = 3000;
+                Observacion.Value = expS.Observaciones1;
+                SP_NewSe.Parameters.Add(Observacion);
+
+
+
+
+                if (SP_NewSe.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return retorno;
+
+        }
+
+        public string UpdateseguimientoF(SeguimientoD expS)
+        {
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand SP_NewSe = new SqlCommand();
+                SP_NewSe.Connection = Conectar;
+                SP_NewSe.CommandText = "SP_UpdateFechS";
+                SP_NewSe.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter Id_seguimiento = new SqlParameter();
+                Id_seguimiento.ParameterName = "@ID_Seguimiento";
+                Id_seguimiento.SqlDbType = SqlDbType.Int;
+                //Id_seguimiento.Size = 50;
+                Id_seguimiento.Value = expS.ID_Seguimiento1;
+                SP_NewSe.Parameters.Add(Id_seguimiento);
+
+                SqlParameter fecha_final = new SqlParameter();
+                fecha_final.ParameterName = "@Fecha_final";
+                fecha_final.SqlDbType = SqlDbType.DateTime;
+                //Id_seguimiento.Size = 50;
+                fecha_final.Value = expS.Fecha_final1;
+                SP_NewSe.Parameters.Add(fecha_final);
+
+
+
+
+                if (SP_NewSe.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return retorno;
+
         }
 
 
+        public DataTable showS()
+        {
+
+            DataTable showseguimeinto = new DataTable("seguimiento");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand SP_NewSe = new SqlCommand();
+                SP_NewSe.Connection = Conectar;
+                SP_NewSe.CommandText = "SP_ShowS";
+                SP_NewSe.CommandType = CommandType.StoredProcedure;
 
 
 
+
+                SqlDataAdapter adartar = new SqlDataAdapter(SP_NewSe);
+                adartar.Fill(showseguimeinto);
+
+
+
+                if (SP_NewSe.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return showseguimeinto;
+
+
+        }
+
+      /*  public DataTable buscarseguimiento(SeguimientoD expS)
+        {
+
+            DataTable showseguimiento = new DataTable("seguimiento");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand SP_NewSe = new SqlCommand();
+                SP_NewSe.Connection = Conectar;
+                SP_NewSe.CommandText = "SP_BuscarCT";
+                SP_NewSe.CommandType = CommandType.StoredProcedure;
+
+                
+
+
+
+
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_Newcita);
+                adartar.Fill(showseguimiento);
+
+
+
+                if (sp_Newcita.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return showseguimiento;
+
+
+        }*/
 
 
 
