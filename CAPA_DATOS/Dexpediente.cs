@@ -111,11 +111,7 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string Updatexpediente(Dexpediente expE)
-        {
-            return "";
-        }
-
+        
 
 
 
