@@ -313,7 +313,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_New_C = new SqlCommand();
                 sp_New_C.Connection = Conectar;
-                sp_New_C.CommandText = "SP_BuscarC";
+                sp_New_C.CommandText = "SP_BuscarA";
                 sp_New_C.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Cita = new SqlParameter();
@@ -358,7 +358,63 @@ namespace CAPA_DATOS
 
         }
 
+        public DataTable buscarconsultaO(ConsultaD expC)
+        {
 
+            DataTable showconsulta = new DataTable("consulta");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand sp_New_C = new SqlCommand();
+                sp_New_C.Connection = Conectar;
+                sp_New_C.CommandText = "SP_BuscarO";
+                sp_New_C.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter Consulta = new SqlParameter();
+                Consulta.ParameterName = "@ID_Consulta";
+                Consulta.SqlDbType = SqlDbType.Int;
+                // Consulta.Size = 0;
+                Consulta.Value = expC.ID_Consulta1;
+                sp_New_C.Parameters.Add(Consulta);
+
+
+
+
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_New_C);
+                adartar.Fill(showconsulta);
+
+
+
+                if (sp_New_C.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return showconsulta;
+
+
+        }
 
     }
 

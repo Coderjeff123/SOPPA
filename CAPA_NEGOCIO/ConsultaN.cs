@@ -62,6 +62,12 @@ namespace CAPA_NEGOCIO
         }
 
 
+        public static DataTable buscarconsultaO(string iD_Consulta)
+        {
+            ConsultaD datos = new ConsultaD();
+            datos.ID_Consulta1 = iD_Consulta;
+            return datos.buscarconsultaO(datos);
+        }
 
 
 
