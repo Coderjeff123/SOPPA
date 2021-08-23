@@ -225,7 +225,7 @@ namespace CAPA_DATOS
 
         }
 
-        public DataTable buscarremision(RemisionD expR)
+        /*public DataTable buscarremision(RemisionD expR)
         {
 
             DataTable showremision = new DataTable("remision");
@@ -277,7 +277,7 @@ namespace CAPA_DATOS
             return showremision;
 
 
-        }
+        }*/
 
 
 
