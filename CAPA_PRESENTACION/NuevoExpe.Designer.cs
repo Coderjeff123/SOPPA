@@ -32,16 +32,13 @@ namespace CAPA_PRESENTACION
             this.paneltitulo = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.panelinfo = new System.Windows.Forms.Panel();
-            this.panelDatos2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.rbtninactivo = new System.Windows.Forms.RadioButton();
             this.rbtnactivo = new System.Windows.Forms.RadioButton();
-            this.txtid = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -51,17 +48,16 @@ namespace CAPA_PRESENTACION
             this.txtmotivo = new System.Windows.Forms.TextBox();
             this.dtmfecharemi = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.button2 = new System.Windows.Forms.Button();
             this.btnremitir = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.paneltitulo.SuspendLayout();
             this.panelinfo.SuspendLayout();
-            this.panelDatos2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.panelDatos.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,7 +90,6 @@ namespace CAPA_PRESENTACION
             this.panelinfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelinfo.BackColor = System.Drawing.Color.White;
             this.panelinfo.Controls.Add(this.pictureBox1);
-            this.panelinfo.Controls.Add(this.panelDatos2);
             this.panelinfo.Controls.Add(this.label1);
             this.panelinfo.Controls.Add(this.panelDatos);
             this.panelinfo.Location = new System.Drawing.Point(0, 170);
@@ -102,25 +97,23 @@ namespace CAPA_PRESENTACION
             this.panelinfo.Size = new System.Drawing.Size(754, 272);
             this.panelinfo.TabIndex = 3;
             // 
-            // panelDatos2
+            // pictureBox1
             // 
-            this.panelDatos2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDatos2.Controls.Add(this.groupBox1);
-            this.panelDatos2.Controls.Add(this.txtid);
-            this.panelDatos2.Controls.Add(this.label4);
-            this.panelDatos2.Location = new System.Drawing.Point(41, 121);
-            this.panelDatos2.Name = "panelDatos2";
-            this.panelDatos2.Size = new System.Drawing.Size(619, 92);
-            this.panelDatos2.TabIndex = 2;
+            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.rbtninactivo);
             this.groupBox1.Controls.Add(this.rbtnactivo);
-            this.groupBox1.Location = new System.Drawing.Point(300, 3);
+            this.groupBox1.Location = new System.Drawing.Point(20, 68);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 87);
             this.groupBox1.TabIndex = 9;
@@ -160,24 +153,6 @@ namespace CAPA_PRESENTACION
             this.rbtnactivo.Text = "Activo";
             this.rbtnactivo.UseVisualStyleBackColor = true;
             // 
-            // txtid
-            // 
-            this.txtid.Location = new System.Drawing.Point(121, 19);
-            this.txtid.Name = "txtid";
-            this.txtid.Size = new System.Drawing.Size(107, 20);
-            this.txtid.TabIndex = 8;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label4.Location = new System.Drawing.Point(84, 19);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(20, 13);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "ID";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -194,23 +169,13 @@ namespace CAPA_PRESENTACION
             this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDatos.Controls.Add(this.groupBox1);
             this.panelDatos.Controls.Add(this.label2);
             this.panelDatos.Controls.Add(this.txtnombre);
             this.panelDatos.Location = new System.Drawing.Point(162, 29);
             this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(498, 72);
+            this.panelDatos.Size = new System.Drawing.Size(580, 182);
             this.panelDatos.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(17, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombres";
             // 
             // txtnombre
             // 
@@ -307,17 +272,6 @@ namespace CAPA_PRESENTACION
             this.label6.TabIndex = 5;
             this.label6.Text = "Remision\r\n";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
@@ -375,6 +329,17 @@ namespace CAPA_PRESENTACION
             this.btnremitir.UseVisualStyleBackColor = false;
             this.btnremitir.Click += new System.EventHandler(this.btnremitir_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(17, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nombres";
+            // 
             // NuevoExpe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,15 +359,13 @@ namespace CAPA_PRESENTACION
             this.paneltitulo.PerformLayout();
             this.panelinfo.ResumeLayout(false);
             this.panelinfo.PerformLayout();
-            this.panelDatos2.ResumeLayout(false);
-            this.panelDatos2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -413,15 +376,11 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Panel paneltitulo;
         private System.Windows.Forms.Label Titulo;
         private System.Windows.Forms.Panel panelinfo;
-        private System.Windows.Forms.Panel panelDatos2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton rbtninactivo;
         private System.Windows.Forms.RadioButton rbtnactivo;
-        private System.Windows.Forms.TextBox txtid;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panelDatos;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
@@ -436,5 +395,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnremitir;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

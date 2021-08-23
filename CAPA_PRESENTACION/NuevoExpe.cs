@@ -28,7 +28,7 @@ namespace CAPA_PRESENTACION
             Nexpediente nexpediente = new Nexpediente();
             System.IO.MemoryStream memory = new System.IO.MemoryStream();
             pictureBox1.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
-            nexpediente.insertexpediente("01", txtnombre.Text, "A",memory.GetBuffer(), "");
+            nexpediente.insertexpediente(txtnombre.Text, "A",memory.GetBuffer(), "");
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -41,6 +41,6 @@ namespace CAPA_PRESENTACION
             }
         }
 
-        
+       
     }
 }

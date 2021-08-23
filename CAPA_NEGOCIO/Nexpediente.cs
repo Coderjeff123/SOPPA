@@ -11,11 +11,10 @@ namespace CAPA_NEGOCIO
     public class Nexpediente
     {
 
-        public string insertexpediente(string iD_Expediente, string nombre, string estado, byte[] foto, string noexpediente)
+        public string insertexpediente( string nombre, string estado, byte[] foto, string noexpediente)
         {
 
             Dexpediente datos = new Dexpediente();
-            datos.ID_Expediente1 = iD_Expediente;
             datos.Nombre1 = nombre;
             datos.Estado1 = estado;
             datos.Foto1 = foto;

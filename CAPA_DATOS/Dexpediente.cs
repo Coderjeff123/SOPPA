@@ -11,7 +11,7 @@ namespace CAPA_DATOS
 {
     public class Dexpediente
     {
-        string ID_Expediente;
+      
         string Nombre;
         string Estado;
         byte[] Foto;
@@ -19,16 +19,25 @@ namespace CAPA_DATOS
 
         public Dexpediente() { }
 
-        public Dexpediente(string iD_Expediente1, string nombre1, string estado1, byte[] foto1, string noexpediente1)
+        /*public Dexpediente(string iD_Expediente, string nombre, string estado, byte[] foto, string noexpediente)
         {
-            ID_Expediente1 = iD_Expediente1;
+            ID_Expediente = iD_Expediente;
+            Nombre = nombre;
+            Estado = estado;
+            Foto = foto;
+            Noexpediente = noexpediente;
+        }*/
+
+        public Dexpediente( string nombre1, string estado1, byte[] foto1, string noexpediente1)
+        {
+            
             Nombre1 = nombre1;
             Estado1 = estado1;
             Foto1 = foto1;
             Noexpediente1 = noexpediente1;
         }
 
-        public string ID_Expediente1 { get => ID_Expediente; set => ID_Expediente = value; }
+        
         public string Nombre1 { get => Nombre; set => Nombre = value; }
         public string Estado1 { get => Estado; set => Estado = value; }
         public byte[] Foto1 { get => Foto; set => Foto = value; }
@@ -48,13 +57,6 @@ namespace CAPA_DATOS
                 SP_NewEX.CommandText = "psci.SP_NewE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Expediente = new SqlParameter();
-                Expediente.ParameterName = "@ID";
-                Expediente.SqlDbType = SqlDbType.Int;
-                //Expediente.Size = 0;
-                Expediente.Value = expE.ID_Expediente1;
-                SP_NewEX.Parameters.Add(Expediente);
-
                 SqlParameter Nombre = new SqlParameter();
                 Nombre.ParameterName = "@Nombre";
                 Nombre.SqlDbType = SqlDbType.NVarChar;
@@ -65,7 +67,6 @@ namespace CAPA_DATOS
                 SqlParameter Estado = new SqlParameter();
                 Estado.ParameterName = "@Estado";
                 Estado.SqlDbType = SqlDbType.NChar;
-                Estado.Size = 10;
                 Estado.Value = expE.Estado1;
                 SP_NewEX.Parameters.Add(Estado);
 
@@ -77,16 +78,16 @@ namespace CAPA_DATOS
                 SP_NewEX.Parameters.Add(Foto);
 
                 SqlParameter Noexpediente = new SqlParameter();
-                Estado.ParameterName = "@NoExpediente";
-                Estado.SqlDbType = SqlDbType.NVarChar;
-                Estado.Size = 8;
-                Estado.Value = expE.Noexpediente1;
+                Noexpediente.ParameterName = "@NoExpediente";
+                Noexpediente.SqlDbType = SqlDbType.NVarChar;
+                Noexpediente.Size = 8;
+                Noexpediente.Value = expE.Noexpediente1;
                 SP_NewEX.Parameters.Add(Noexpediente);
 
+                SqlDataReader sqlDataReader = SP_NewEX.ExecuteReader();
 
 
-
-                if (SP_NewEX.ExecuteNonQuery() == 1)
+                if(sqlDataReader.HasRows)
                 {
                     retorno = "Everything it's ok";
                 }
