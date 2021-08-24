@@ -39,7 +39,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "SP_NewCi";
+                sp_Newcita.CommandText = "psci.SP_NewCi";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Cita = new SqlParameter();
@@ -104,7 +104,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "SP_UpdateCi";
+                sp_Newcita.CommandText = "psci.SP_UpdateCi";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Cita = new SqlParameter();
@@ -172,7 +172,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "SP_ShowCi";
+                sp_Newcita.CommandText = "psci.SP_ShowCi";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
 
@@ -224,7 +224,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "SP_BuscarCT";
+                sp_Newcita.CommandText = "psci.SP_BuscarCT";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Cita = new SqlParameter();
