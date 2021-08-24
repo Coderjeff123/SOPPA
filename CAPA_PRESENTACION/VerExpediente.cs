@@ -17,14 +17,10 @@ namespace CAPA_PRESENTACION
             InitializeComponent();
         }
 
-        private void btnbuscar_Click(object sender, EventArgs e)
+        
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            panelinfo.Visible = true;
-        }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-            panelinfo.Visible = false;
         }
     }
 }

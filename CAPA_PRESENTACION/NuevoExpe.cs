@@ -41,6 +41,8 @@ namespace CAPA_PRESENTACION
 
             RemisionN remisionN = new RemisionN();
             remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,dtmfecharemi.Value);
+
+            limpiar();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -53,6 +55,19 @@ namespace CAPA_PRESENTACION
             }
         }
 
-       
+        private void limpiar()
+        {
+            rbtnactivo.Checked = true;
+            txtmotivo.Text = "";
+            txtnombre.Text = "";
+            dtmfecharemi.Value = DateTime.Now;
+            cmbxremitente.Text = "";
+            pictureBox1.Image = Properties.Resources.avatardefault_92824;
+        }
+
+        private void btnlimpiar_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
     }
 }

@@ -233,6 +233,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap edit_clear_all_icon_180807 {
+            get {
+                object obj = ResourceManager.GetObject("edit_clear_all_icon_180807", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap gui_form_checkbox_icon_157650 {
             get {
                 object obj = ResourceManager.GetObject("gui_form_checkbox_icon_157650", resourceCulture);

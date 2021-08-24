@@ -32,13 +32,13 @@ namespace CAPA_PRESENTACION
             this.paneltitulo = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.panelinfo = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelDatos = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
             this.rbtninactivo = new System.Windows.Forms.RadioButton();
             this.rbtnactivo = new System.Windows.Forms.RadioButton();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panelDatos = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,16 +49,17 @@ namespace CAPA_PRESENTACION
             this.dtmfecharemi = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.btnlimpiar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnremitir = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.paneltitulo.SuspendLayout();
             this.panelinfo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.panelDatos.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // paneltitulo
@@ -97,16 +98,29 @@ namespace CAPA_PRESENTACION
             this.panelinfo.Size = new System.Drawing.Size(754, 272);
             this.panelinfo.TabIndex = 3;
             // 
-            // pictureBox1
+            // label1
             // 
-            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(304, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(116, 18);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Ingresar datos";
+            // 
+            // panelDatos
+            // 
+            this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDatos.Controls.Add(this.groupBox1);
+            this.panelDatos.Controls.Add(this.label2);
+            this.panelDatos.Controls.Add(this.txtnombre);
+            this.panelDatos.Location = new System.Drawing.Point(162, 29);
+            this.panelDatos.Name = "panelDatos";
+            this.panelDatos.Size = new System.Drawing.Size(580, 182);
+            this.panelDatos.TabIndex = 1;
             // 
             // groupBox1
             // 
@@ -153,29 +167,16 @@ namespace CAPA_PRESENTACION
             this.rbtnactivo.Text = "Activo";
             this.rbtnactivo.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(304, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 18);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Ingresar datos";
-            // 
-            // panelDatos
-            // 
-            this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDatos.Controls.Add(this.groupBox1);
-            this.panelDatos.Controls.Add(this.label2);
-            this.panelDatos.Controls.Add(this.txtnombre);
-            this.panelDatos.Location = new System.Drawing.Point(162, 29);
-            this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(580, 182);
-            this.panelDatos.TabIndex = 1;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(17, 11);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nombres";
             // 
             // txtnombre
             // 
@@ -260,6 +261,7 @@ namespace CAPA_PRESENTACION
             this.dtmfecharemi.Name = "dtmfecharemi";
             this.dtmfecharemi.Size = new System.Drawing.Size(200, 20);
             this.dtmfecharemi.TabIndex = 6;
+            this.dtmfecharemi.Value = new System.DateTime(2021, 8, 24, 10, 8, 13, 0);
             // 
             // label6
             // 
@@ -277,6 +279,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.angulo = 0F;
             this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
             this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
+            this.paneldegradado1.Controls.Add(this.btnlimpiar);
             this.paneldegradado1.Controls.Add(this.button2);
             this.paneldegradado1.Controls.Add(this.btnremitir);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -284,6 +287,28 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Name = "paneldegradado1";
             this.paneldegradado1.Size = new System.Drawing.Size(754, 51);
             this.paneldegradado1.TabIndex = 6;
+            // 
+            // btnlimpiar
+            // 
+            this.btnlimpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnlimpiar.BackColor = System.Drawing.Color.Transparent;
+            this.btnlimpiar.FlatAppearance.BorderSize = 0;
+            this.btnlimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnlimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnlimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlimpiar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlimpiar.ForeColor = System.Drawing.Color.Black;
+            this.btnlimpiar.Image = global::CAPA_PRESENTACION.Properties.Resources.edit_clear_all_icon_180807;
+            this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnlimpiar.Location = new System.Drawing.Point(3, 3);
+            this.btnlimpiar.Name = "btnlimpiar";
+            this.btnlimpiar.Size = new System.Drawing.Size(104, 39);
+            this.btnlimpiar.TabIndex = 9;
+            this.btnlimpiar.Text = "Limpiar";
+            this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnlimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnlimpiar.UseVisualStyleBackColor = false;
+            this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
             // 
             // button2
             // 
@@ -329,16 +354,16 @@ namespace CAPA_PRESENTACION
             this.btnremitir.UseVisualStyleBackColor = false;
             this.btnremitir.Click += new System.EventHandler(this.btnremitir_Click);
             // 
-            // label2
+            // pictureBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(17, 11);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombres";
+            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // NuevoExpe
             // 
@@ -359,14 +384,14 @@ namespace CAPA_PRESENTACION
             this.paneltitulo.PerformLayout();
             this.panelinfo.ResumeLayout(false);
             this.panelinfo.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.paneldegradado1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -396,5 +421,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button btnremitir;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnlimpiar;
     }
 }
