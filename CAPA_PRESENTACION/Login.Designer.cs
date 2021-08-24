@@ -119,6 +119,7 @@ namespace CAPA_PRESENTACION
             this.btnlogin.Text = "Acceder";
             this.btnlogin.UseVisualStyleBackColor = false;
             this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            this.btnlogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnlogin_KeyDown);
             // 
             // pictureBox1
             // 
@@ -202,11 +203,11 @@ namespace CAPA_PRESENTACION
             this.lblnot.AutoSize = true;
             this.lblnot.BackColor = System.Drawing.Color.Transparent;
             this.lblnot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblnot.Font = new System.Drawing.Font("Microsoft YaHei UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblnot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnot.ForeColor = System.Drawing.Color.Red;
             this.lblnot.Location = new System.Drawing.Point(131, 211);
             this.lblnot.Name = "lblnot";
-            this.lblnot.Size = new System.Drawing.Size(40, 16);
+            this.lblnot.Size = new System.Drawing.Size(50, 19);
             this.lblnot.TabIndex = 9;
             this.lblnot.Text = "label2";
             this.lblnot.Visible = false;

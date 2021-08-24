@@ -73,26 +73,42 @@ namespace CAPA_PRESENTACION
 
         private void btnlogin_Click(object sender, EventArgs e)
         {
+            inicio();
+        }
+        private void msgError(string msg)
+        {
+            lblnot.Text="  " + msg;
+            lblnot.Visible = true;
+          
+        }
+
+        private void btnlogin_KeyDown(object sender, KeyEventArgs e)
+        {
+            inicio();
+        }
+
+        private void inicio()
+        {
             if (txtuser.Text != "User")
             {
-                if (txtpass.Text !="Pass") 
+                if (txtpass.Text != "Pass")
                 {
                     NLogin nLogin = new NLogin();
-                    string validation =nLogin.loginuser(txtuser.Text, txtpass.Text);
+                    string validation = nLogin.loginuser(txtuser.Text, txtpass.Text);
 
-                    if (validation == retorno )
+                    if (validation == retorno)
                     {
                         this.Hide();
                         Formwelcome formwelcome = new Formwelcome();
                         formwelcome.ShowDialog();
                         Principal principal = new Principal();
                         principal.Show();
-                        
+
                     }
                     else msgError("Usuario incorrecto");
-                    
-                       
-                    
+
+
+
                 }
                 else msgError("Please enter password");
 
@@ -101,12 +117,5 @@ namespace CAPA_PRESENTACION
             }
             else msgError("Please enter User");
         }
-        private void msgError(string msg)
-        {
-            lblnot.Text="  " + msg;
-            lblnot.Visible = true;
-          
-        }
-        
     }
 }

@@ -10,26 +10,29 @@ namespace CAPA_DATOS
 {
     public class RemisionD
     {
-        string ID_Remision;
-        string ID_Expediente;
+
+        int ID_Expediente;
         string Remitente;
         string MotivoRemision;
+        DateTime fecha;
 
         public RemisionD() { }
 
-        public RemisionD(string iD_Remision1, string iD_Expediente1, string remitente1, string motivoRemision1)
+        public RemisionD(int iD_Expediente1, string remitente1, string motivoRemision1, DateTime fecha)
         {
-            ID_Remision1 = iD_Remision1;
-            ID_Expediente1 = iD_Expediente1;
+            
+            ID_Expediente2 = iD_Expediente1;
             Remitente1 = remitente1;
             MotivoRemision1 = motivoRemision1;
+            Fecha = fecha;
         }
 
-        public string ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
-        public string ID_Expediente1 { get => ID_Expediente; set => ID_Expediente = value; }
+        
+        
         public string Remitente1 { get => Remitente; set => Remitente = value; }
         public string MotivoRemision1 { get => MotivoRemision; set => MotivoRemision = value; }
-
+        public DateTime Fecha { get => fecha; set => fecha = value; }
+        public int ID_Expediente2 { get => ID_Expediente; set => ID_Expediente = value; }
 
         public string insertremision(RemisionD expR)
         {
@@ -42,21 +45,16 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand SP_NewRe = new SqlCommand();
                 SP_NewRe.Connection = Conectar;
-                SP_NewRe.CommandText = "SP_NewR";
+                SP_NewRe.CommandText = "psci.SP_NewR";
                 SP_NewRe.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Id_remision = new SqlParameter();
-                Id_remision.ParameterName = "@ID_Remision";
-                Id_remision.SqlDbType = SqlDbType.Int;
-                //Id_remision.Size = 50;
-                Id_remision.Value = expR.ID_Remision1;
-                SP_NewRe.Parameters.Add(Id_remision);
+                
 
                 SqlParameter Id_expediente = new SqlParameter();
-                Id_expediente.ParameterName = "@ID_Remision";
+                Id_expediente.ParameterName = "@ID_Expediente";
                 Id_expediente.SqlDbType = SqlDbType.Int;
                 //Id_remision.Size = 50;
-                Id_expediente.Value = expR.ID_Expediente1;
+                Id_expediente.Value = expR.ID_Expediente2;
                 SP_NewRe.Parameters.Add(Id_expediente);
 
                 SqlParameter remitente = new SqlParameter();
@@ -67,16 +65,23 @@ namespace CAPA_DATOS
                 SP_NewRe.Parameters.Add(remitente);
 
                 SqlParameter motivo = new SqlParameter();
-                motivo.ParameterName = "@ID_Remision";
+                motivo.ParameterName = "@MotivoRemision";
                 motivo.SqlDbType = SqlDbType.NVarChar;
                 motivo.Size = 100;
-                Id_expediente.Value = expR.ID_Expediente1;
+                motivo.Value = expR.MotivoRemision;
                 SP_NewRe.Parameters.Add(motivo);
 
+                SqlParameter Fecha = new SqlParameter();
+                Fecha.ParameterName = "@Fecha";
+                Fecha.SqlDbType = SqlDbType.DateTime;
+                Fecha.Value = expR.Fecha;
+                SP_NewRe.Parameters.Add(Fecha);
+                
+
+                SqlDataReader dataReader = SP_NewRe.ExecuteReader();
 
 
-
-                if (SP_NewRe.ExecuteNonQuery() == 1)
+                if (dataReader.HasRows)
                 {
                     retorno = "Everything it's ok";
                 }
@@ -116,18 +121,13 @@ namespace CAPA_DATOS
                 SP_NewRe.CommandText = "SP_UpdateR";
                 SP_NewRe.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Id_remision = new SqlParameter();
-                Id_remision.ParameterName = "@ID_Remision";
-                Id_remision.SqlDbType = SqlDbType.Int;
-                //Id_remision.Size = 50;
-                Id_remision.Value = expR.ID_Remision1;
-                SP_NewRe.Parameters.Add(Id_remision);
+               
 
                 SqlParameter Id_expediente = new SqlParameter();
                 Id_expediente.ParameterName = "@ID_Remision";
                 Id_expediente.SqlDbType = SqlDbType.Int;
                 //Id_remision.Size = 50;
-                Id_expediente.Value = expR.ID_Expediente1;
+                Id_expediente.Value = expR.ID_Expediente2;
                 SP_NewRe.Parameters.Add(Id_expediente);
 
                 SqlParameter remitente = new SqlParameter();
@@ -141,7 +141,7 @@ namespace CAPA_DATOS
                 motivo.ParameterName = "@ID_Remision";
                 motivo.SqlDbType = SqlDbType.NVarChar;
                 motivo.Size = 100;
-                Id_expediente.Value = expR.ID_Expediente1;
+                motivo.Value = expR.MotivoRemision1;
                 SP_NewRe.Parameters.Add(motivo);
 
 

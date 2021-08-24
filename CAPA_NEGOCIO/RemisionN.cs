@@ -11,24 +11,25 @@ namespace CAPA_NEGOCIO
 {
     public class RemisionN
     {
-        public static string insertremision(string iD_Remision, string iD_Expediente, string remitente, string motivoRemision)
+        public string insertremision( int iD_Expediente, string remitente, string motivoRemision, DateTime Fecha)
         {
             RemisionD datos = new RemisionD();
-            datos.ID_Remision1 = iD_Remision;
-            datos.ID_Expediente1 = iD_Expediente;
+            
+            datos.ID_Expediente2 = iD_Expediente;
             datos.Remitente1 = remitente;
             datos.MotivoRemision1 = motivoRemision;
+            datos.Fecha = Fecha;
 
             return datos.insertremision(datos);
 
 
         }
 
-        public static string updateremision(string iD_Remision, string iD_Expediente, string remitente, string motivoRemision)
+        public static string updateremision(int iD_Expediente, string remitente, string motivoRemision)
         {
             RemisionD datos = new RemisionD();
-            datos.ID_Remision1 = iD_Remision;
-            datos.ID_Expediente1 = iD_Expediente;
+            
+            datos.ID_Expediente2 = iD_Expediente;
             datos.Remitente1 = remitente;
             datos.MotivoRemision1 = motivoRemision;
 

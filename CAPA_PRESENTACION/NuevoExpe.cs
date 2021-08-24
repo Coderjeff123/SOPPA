@@ -25,10 +25,22 @@ namespace CAPA_PRESENTACION
 
         private void btnremitir_Click(object sender, EventArgs e)
         {
+            string estado = "";
             Nexpediente nexpediente = new Nexpediente();
             System.IO.MemoryStream memory = new System.IO.MemoryStream();
             pictureBox1.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
-            nexpediente.insertexpediente(txtnombre.Text, "A",memory.GetBuffer(), "");
+            if (rbtnactivo.Checked == true)
+            {
+                estado = "A";
+            }
+            else
+            {
+                estado = "I";
+            }
+            nexpediente.insertexpediente(txtnombre.Text, estado ,memory.GetBuffer(), "");
+
+            RemisionN remisionN = new RemisionN();
+            remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,dtmfecharemi.Value);
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
