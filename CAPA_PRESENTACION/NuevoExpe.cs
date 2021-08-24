@@ -37,7 +37,8 @@ namespace CAPA_PRESENTACION
             {
                 estado = "I";
             }
-            nexpediente.insertexpediente(txtnombre.Text, estado ,memory.GetBuffer(), "");
+
+            nexpediente.insertexpediente(txtnombre.Text, estado, memory.GetBuffer(), "001");
 
             RemisionN remisionN = new RemisionN();
             remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,dtmfecharemi.Value);

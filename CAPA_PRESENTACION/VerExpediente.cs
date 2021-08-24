@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CAPA_NEGOCIO;
 
 namespace CAPA_PRESENTACION
 {
@@ -17,10 +18,21 @@ namespace CAPA_PRESENTACION
             InitializeComponent();
         }
 
-        
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+        Nexpediente data = new Nexpediente();
 
+        private void VerExpediente_Load(object sender, EventArgs e)
+        {
+            mostrar();
+        }
+
+        private void mostrar()
+        {
+            dtaexpe.DataSource = data.showEX();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            dtaexpe.DataSource = data.buscarexpediente(textBox1.Text);
         }
     }
 }

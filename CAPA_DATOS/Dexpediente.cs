@@ -60,13 +60,6 @@ namespace CAPA_DATOS
                 SP_NewEX.CommandText = "psci.SP_NewE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Expediente = new SqlParameter();
-                Expediente.ParameterName = "@Nombre";
-                Expediente.SqlDbType = SqlDbType.NVarChar;
-                Expediente.Size = 50;
-                Expediente.Value = expE.Nombre1;
-                SP_NewEX.Parameters.Add(Expediente);
-
 
                 SqlParameter Nombre = new SqlParameter();
                 Nombre.ParameterName = "@Nombre";
@@ -247,7 +240,7 @@ namespace CAPA_DATOS
         }
 
 
-        public DataTable buscarexpediente(Dexpediente expE)
+        public DataTable buscarexpediente(Dexpediente expe)
         {
 
             DataTable showexpediente = new DataTable("expediente");
@@ -262,6 +255,12 @@ namespace CAPA_DATOS
                 SP_NewEX.Connection = Conectar;
                 SP_NewEX.CommandText = "psci.SP_BuscarE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter nombre = new SqlParameter();
+                nombre.ParameterName = "@Nombre";
+                nombre.SqlDbType = SqlDbType.NChar;
+                nombre.Value = expe.Nombre1;
+                SP_NewEX.Parameters.Add(nombre);
 
                
 
