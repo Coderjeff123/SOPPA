@@ -34,8 +34,10 @@ namespace CAPA_NEGOCIO
 
         public static DataTable showct()
         {
+            DataTable tablec = new DataTable();
             CitaD datos = new CitaD();
-            return datos.showct();
+            tablec = datos.showct();
+            return tablec;
         }
 
         public static DataTable buscarcita(string iD_Cita)

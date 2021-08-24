@@ -64,10 +64,9 @@ namespace CAPA_DATOS
                 fecha.Value = expCt.Fecha1;
                 sp_Newcita.Parameters.Add(fecha);
 
+                SqlDataReader sqlDataReader = sp_Newcita.ExecuteReader();
 
-
-
-                if (sp_Newcita.ExecuteNonQuery() == 1)
+                if (sqlDataReader.HasRows)
                 {
                     retorno = "Everything it's ok";
                 }

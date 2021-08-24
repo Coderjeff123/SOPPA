@@ -42,8 +42,10 @@ namespace CAPA_NEGOCIO
 
         public static DataTable showc()
         {
+            DataTable TABLECon = new DataTable();
             ConsultaD datos = new ConsultaD();
-            return datos.showc();
+            TABLECon = datos.showc();
+            return TABLECon;
         }
 
         public static DataTable buscarconsulta(string iD_Consulta)
