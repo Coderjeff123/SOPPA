@@ -125,8 +125,6 @@ namespace CAPA_PRESENTACION
 
         private void btnbaja_Click(object sender, EventArgs e)
         {
-            ocultarsubmenu();
-            abrirForm(new BajaExpe());
         }
 
         private void btnverconsulta_Click(object sender, EventArgs e)
@@ -263,15 +261,8 @@ namespace CAPA_PRESENTACION
             btnnuevoexpe.BackColor = Color.Transparent;
         }
 
-        private void btnbaja_MouseHover(object sender, EventArgs e)
-        {
-            btnbaja.BackColor = Color.Aquamarine;
-        }
-
-        private void btnbaja_MouseLeave(object sender, EventArgs e)
-        {
-            btnbaja.BackColor = Color.Transparent;
-        }
+       
+        
 
         private void btnverinformes_MouseHover(object sender, EventArgs e)
         {

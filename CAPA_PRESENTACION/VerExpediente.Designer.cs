@@ -35,11 +35,11 @@ namespace CAPA_PRESENTACION
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.panelbusqueda = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelbusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
@@ -81,6 +81,21 @@ namespace CAPA_PRESENTACION
             this.panelbusqueda.Name = "panelbusqueda";
             this.panelbusqueda.Size = new System.Drawing.Size(717, 56);
             this.panelbusqueda.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(513, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -141,6 +156,10 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtaexpe.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtaexpe.ShowCellErrors = false;
+            this.dtaexpe.ShowCellToolTips = false;
+            this.dtaexpe.ShowEditingIcon = false;
+            this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 265);
             this.dtaexpe.TabIndex = 1;
             // 
@@ -151,21 +170,6 @@ namespace CAPA_PRESENTACION
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(717, 265);
             this.panel2.TabIndex = 2;
-            // 
-            // button1
-            // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(513, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // VerExpediente
             // 

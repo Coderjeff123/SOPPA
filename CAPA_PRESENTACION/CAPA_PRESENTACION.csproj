@@ -60,12 +60,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BajaExpe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="BajaExpe.Designer.cs">
-      <DependentUpon>BajaExpe.cs</DependentUpon>
-    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Formwelcome.cs">
       <SubType>Form</SubType>
@@ -120,9 +114,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BajaExpe.resx">
-      <DependentUpon>BajaExpe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Formwelcome.resx">
       <DependentUpon>Formwelcome.cs</DependentUpon>
     </EmbeddedResource>

@@ -48,7 +48,6 @@ namespace CAPA_PRESENTACION
             this.btnverinformes = new System.Windows.Forms.Button();
             this.btninforme = new System.Windows.Forms.Button();
             this.panelsubmenuexpe = new System.Windows.Forms.Panel();
-            this.btnbaja = new System.Windows.Forms.Button();
             this.btnnuevoexpe = new System.Windows.Forms.Button();
             this.btnverexpe = new System.Windows.Forms.Button();
             this.btnexpe = new System.Windows.Forms.Button();
@@ -320,7 +319,6 @@ namespace CAPA_PRESENTACION
             // panelsubmenuexpe
             // 
             this.panelsubmenuexpe.BackColor = System.Drawing.Color.Transparent;
-            this.panelsubmenuexpe.Controls.Add(this.btnbaja);
             this.panelsubmenuexpe.Controls.Add(this.btnnuevoexpe);
             this.panelsubmenuexpe.Controls.Add(this.btnverexpe);
             this.panelsubmenuexpe.Dock = System.Windows.Forms.DockStyle.Top;
@@ -328,31 +326,6 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuexpe.Name = "panelsubmenuexpe";
             this.panelsubmenuexpe.Size = new System.Drawing.Size(207, 116);
             this.panelsubmenuexpe.TabIndex = 3;
-            // 
-            // btnbaja
-            // 
-            this.btnbaja.BackColor = System.Drawing.Color.Transparent;
-            this.btnbaja.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnbaja.FlatAppearance.BorderSize = 0;
-            this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbaja.ForeColor = System.Drawing.Color.White;
-            this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.download_arrow_icon_143023;
-            this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbaja.Location = new System.Drawing.Point(0, 70);
-            this.btnbaja.Name = "btnbaja";
-            this.btnbaja.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnbaja.Size = new System.Drawing.Size(207, 35);
-            this.btnbaja.TabIndex = 2;
-            this.btnbaja.Text = "Dar de baja";
-            this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbaja.UseVisualStyleBackColor = false;
-            this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
-            this.btnbaja.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
-            this.btnbaja.MouseLeave += new System.EventHandler(this.btnbaja_MouseLeave);
-            this.btnbaja.MouseHover += new System.EventHandler(this.btnbaja_MouseHover);
             // 
             // btnnuevoexpe
             // 
@@ -669,7 +642,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button btnverconsulta;
         private System.Windows.Forms.Button btnexpe;
         private System.Windows.Forms.Panel panelsubmenuexpe;
-        private System.Windows.Forms.Button btnbaja;
         private System.Windows.Forms.Button btnnuevoexpe;
         private System.Windows.Forms.Button btnverexpe;
         private System.Windows.Forms.Panel panelsubmenuinformes;
