@@ -257,9 +257,6 @@ namespace CAPA_PRESENTACION
             btnnuevoexpe.BackColor = Color.Transparent;
         }
 
-       
-        
-
         private void btnverinformes_MouseHover(object sender, EventArgs e)
         {
             btnverinformes.BackColor = Color.Aquamarine;
