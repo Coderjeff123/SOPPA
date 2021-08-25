@@ -123,10 +123,6 @@ namespace CAPA_PRESENTACION
             abrirForm(new NuevoExpe());
         }
 
-        private void btnbaja_Click(object sender, EventArgs e)
-        {
-        }
-
         private void btnverconsulta_Click(object sender, EventArgs e)
         {
             ocultarsubmenu();
