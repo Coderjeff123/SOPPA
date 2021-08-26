@@ -26,12 +26,11 @@ namespace CAPA_PRESENTACION
         private void btnremitir_Click(object sender, EventArgs e)
         {
             string estado = "";
-            /*var fo;
+            
             Nexpediente nexpediente = new Nexpediente();
             System.Drawing.ImageConverter imageConverter = new ImageConverter();
             System.IO.MemoryStream memory = new System.IO.MemoryStream();
-            fo = pictureBox1.Image;
-            imageConverter.ConvertTo(fo);
+            pictureBox1.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
             
             if (rbtnactivo.Checked == true)
             {
@@ -42,7 +41,7 @@ namespace CAPA_PRESENTACION
                 estado = "I";
             }
 
-            nexpediente.insertexpediente(txtnombre.Text, estado, fo, "001");*/
+            nexpediente.insertexpediente(txtnombre.Text, estado, memory.GetBuffer(), "001");
 
             RemisionN remisionN = new RemisionN();
             remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,dtmfecharemi.Value);
