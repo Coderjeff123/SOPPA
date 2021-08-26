@@ -52,8 +52,10 @@ namespace CAPA_NEGOCIO
 
         public static DataTable showS()
         {
+            DataTable tableS = new DataTable();
             SeguimientoD datos = new SeguimientoD();
-            return datos.showS();
+            tableS = datos.showS();
+            return tableS;
         }
 
 
