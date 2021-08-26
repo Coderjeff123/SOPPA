@@ -40,6 +40,7 @@ namespace CAPA_NEGOCIO
 
         public static DataTable showR()
         {
+
             RemisionD datos = new RemisionD();
             return datos.showR();
         }
