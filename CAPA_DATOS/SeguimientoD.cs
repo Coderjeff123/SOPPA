@@ -84,10 +84,10 @@ namespace CAPA_DATOS
                 SP_NewSe.Parameters.Add(Observacion);
 
 
+                SqlDataReader dataReader = SP_NewSe.ExecuteReader();
 
 
-
-                if (SP_NewSe.ExecuteNonQuery() == 1)
+                if (dataReader.HasRows)
                 {
                     retorno = "Everything it's ok";
                 }
