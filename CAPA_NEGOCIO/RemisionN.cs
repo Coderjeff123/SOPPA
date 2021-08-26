@@ -40,9 +40,10 @@ namespace CAPA_NEGOCIO
 
         public static DataTable showR()
         {
-
+            DataTable tableR = new DataTable();
             RemisionD datos = new RemisionD();
-            return datos.showR();
+            tableR = datos.showR();
+            return tableR;
         }
 
 
