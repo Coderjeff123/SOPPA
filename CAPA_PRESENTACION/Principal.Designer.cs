@@ -188,17 +188,15 @@ namespace CAPA_PRESENTACION
             // 
             // panelFormhijo
             // 
-            this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelFormhijo.AutoSize = true;
             this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(172)))), ((int)(((byte)(169)))));
             this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelFormhijo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 403);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 398);
             this.panelFormhijo.TabIndex = 3;
             // 
             // panelmenu
