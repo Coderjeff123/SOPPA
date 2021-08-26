@@ -323,6 +323,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap priority_low_icon_136291 {
+            get {
+                object obj = ResourceManager.GetObject("priority_low_icon_136291", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search_locate_find_icon_icons_com_67287 {
             get {
                 object obj = ResourceManager.GetObject("search_locate_find_icon-icons.com_67287", resourceCulture);
