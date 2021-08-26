@@ -85,9 +85,9 @@ namespace CAPA_DATOS
                 sp_New_C.Parameters.Add(Tipo);
 
 
-                SqlDataReader sqlDataReader = sp_New_C.ExecuteReader();
+                SqlDataReader sqlDataReader2 = sp_New_C.ExecuteReader();
 
-                if (sqlDataReader.HasRows)
+                if (sqlDataReader2.HasRows)
                 {
                     retorno = "Everything it's ok";
                 }

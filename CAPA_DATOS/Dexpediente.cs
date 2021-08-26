@@ -88,10 +88,10 @@ namespace CAPA_DATOS
                 Noexpediente.Value = expE.Noexpediente1;
                 SP_NewEX.Parameters.Add(Noexpediente);
 
-                SqlDataReader sqlDataReader = SP_NewEX.ExecuteReader();
+                SqlDataReader sqlDataReader3 = SP_NewEX.ExecuteReader();
 
 
-                if(sqlDataReader.HasRows)
+                if(sqlDataReader3.HasRows)
                 {
                     retorno = "Everything it's ok";
                 }
