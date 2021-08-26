@@ -26,26 +26,26 @@ namespace CAPA_NEGOCIO
 
         }
 
-        public static string upsateseguimientoO(string iD_Seguimiento,  string observaciones)
+        public static string updateseguimientoO(string iD_Seguimiento,  string observaciones)
         {
             SeguimientoD datos = new SeguimientoD();
             datos.ID_Seguimiento1 = iD_Seguimiento;
      
             datos.Observaciones1 = observaciones;
 
-            return datos.insertseguimiento(datos);
+            return datos.UpdateseguimientoO(datos);
 
 
         }
 
-        public static string upsateseguimientoF(string iD_Seguimiento, DateTime fecha_final)
+        public static string updateseguimientoF(string iD_Seguimiento, DateTime fecha_final)
         {
             SeguimientoD datos = new SeguimientoD();
             datos.ID_Seguimiento1 = iD_Seguimiento;
             datos.Fecha_final1 = fecha_final;
             
 
-            return datos.insertseguimiento(datos);
+            return datos.UpdateseguimientoF(datos);
 
 
         }
