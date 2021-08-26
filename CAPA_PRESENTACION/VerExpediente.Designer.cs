@@ -35,16 +35,18 @@ namespace CAPA_PRESENTACION
             this.panel1 = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.panelbusqueda = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.panel1.SuspendLayout();
             this.panelbusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
+            this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -78,10 +80,25 @@ namespace CAPA_PRESENTACION
             this.panelbusqueda.Controls.Add(this.button1);
             this.panelbusqueda.Controls.Add(this.label1);
             this.panelbusqueda.Controls.Add(this.textBox1);
-            this.panelbusqueda.Location = new System.Drawing.Point(33, 69);
+            this.panelbusqueda.Location = new System.Drawing.Point(24, 69);
             this.panelbusqueda.Name = "panelbusqueda";
             this.panelbusqueda.Size = new System.Drawing.Size(717, 56);
             this.panelbusqueda.TabIndex = 0;
+            // 
+            // button1
+            // 
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(513, 5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -167,7 +184,7 @@ namespace CAPA_PRESENTACION
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(30, 446);
+            this.button2.Location = new System.Drawing.Point(12, 14);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 34);
             this.button2.TabIndex = 3;
@@ -175,20 +192,17 @@ namespace CAPA_PRESENTACION
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // paneldegradado1
             // 
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(513, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.paneldegradado1.angulo = 0F;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.Empty;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.Empty;
+            this.paneldegradado1.Controls.Add(this.button2);
+            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.paneldegradado1.Location = new System.Drawing.Point(0, 445);
+            this.paneldegradado1.Name = "paneldegradado1";
+            this.paneldegradado1.Size = new System.Drawing.Size(768, 60);
+            this.paneldegradado1.TabIndex = 3;
             // 
             // VerExpediente
             // 
@@ -198,7 +212,7 @@ namespace CAPA_PRESENTACION
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panelbusqueda);
             this.Controls.Add(this.panel1);
@@ -214,6 +228,7 @@ namespace CAPA_PRESENTACION
             this.panelbusqueda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panel2.ResumeLayout(false);
+            this.paneldegradado1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -229,5 +244,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private Paneldegradado paneldegradado1;
     }
 }
