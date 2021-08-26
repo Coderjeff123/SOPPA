@@ -40,8 +40,10 @@ namespace CAPA_PRESENTACION
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnbaja = new System.Windows.Forms.Button();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.txtestado = new System.Windows.Forms.TextBox();
+            this.id = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panelbusqueda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
@@ -121,6 +123,8 @@ namespace CAPA_PRESENTACION
             // dtaexpe
             // 
             this.dtaexpe.AllowUserToAddRows = false;
+            this.dtaexpe.AllowUserToResizeColumns = false;
+            this.dtaexpe.AllowUserToResizeRows = false;
             this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dtaexpe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
@@ -159,12 +163,15 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dtaexpe.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtaexpe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtaexpe.ShowCellErrors = false;
             this.dtaexpe.ShowCellToolTips = false;
             this.dtaexpe.ShowEditingIcon = false;
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 265);
             this.dtaexpe.TabIndex = 1;
+            this.dtaexpe.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellClick);
+            this.dtaexpe.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseClick);
             // 
             // panel2
             // 
@@ -174,35 +181,53 @@ namespace CAPA_PRESENTACION
             this.panel2.Size = new System.Drawing.Size(717, 265);
             this.panel2.TabIndex = 2;
             // 
-            // button2
+            // btnbaja
             // 
-            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(12, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 34);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Dar de baja";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnbaja.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnbaja.FlatAppearance.BorderSize = 0;
+            this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
+            this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnbaja.Location = new System.Drawing.Point(12, 14);
+            this.btnbaja.Name = "btnbaja";
+            this.btnbaja.Size = new System.Drawing.Size(108, 34);
+            this.btnbaja.TabIndex = 3;
+            this.btnbaja.Text = "Dar de baja";
+            this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbaja.UseVisualStyleBackColor = false;
+            this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
             this.paneldegradado1.Colorleft = System.Drawing.Color.Empty;
             this.paneldegradado1.Colorrigth = System.Drawing.Color.Empty;
-            this.paneldegradado1.Controls.Add(this.button2);
+            this.paneldegradado1.Controls.Add(this.txtestado);
+            this.paneldegradado1.Controls.Add(this.id);
+            this.paneldegradado1.Controls.Add(this.btnbaja);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.paneldegradado1.Location = new System.Drawing.Point(0, 445);
             this.paneldegradado1.Name = "paneldegradado1";
             this.paneldegradado1.Size = new System.Drawing.Size(768, 60);
             this.paneldegradado1.TabIndex = 3;
+            // 
+            // txtestado
+            // 
+            this.txtestado.Location = new System.Drawing.Point(656, 14);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(100, 20);
+            this.txtestado.TabIndex = 5;
+            // 
+            // id
+            // 
+            this.id.Location = new System.Drawing.Point(537, 14);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(100, 20);
+            this.id.TabIndex = 4;
+            this.id.Visible = false;
             // 
             // VerExpediente
             // 
@@ -229,6 +254,7 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panel2.ResumeLayout(false);
             this.paneldegradado1.ResumeLayout(false);
+            this.paneldegradado1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -243,7 +269,9 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.DataGridView dtaexpe;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnbaja;
         private Paneldegradado paneldegradado1;
+        private System.Windows.Forms.TextBox id;
+        private System.Windows.Forms.TextBox txtestado;
     }
 }

@@ -298,6 +298,58 @@ namespace CAPA_DATOS
 
         }
 
+        public string baja(Dexpediente esta)
+        {
+            string retorno = "";
+
+            SqlConnection conectar = new SqlConnection();
+            try
+            {
+                conectar.ConnectionString = Conet.cnx;
+                conectar.Open();
+
+                SqlCommand bajaex = new SqlCommand();
+                bajaex.Connection = conectar;
+                bajaex.CommandText = "psci.SP_bajaE";
+                bajaex.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ID = new SqlParameter();
+                ID.ParameterName = "@Id_ex";
+                ID.SqlDbType = SqlDbType.Int;
+                ID.Value = esta.ID_Expediente1;
+                bajaex.Parameters.Add(ID);
+
+                SqlParameter Estado = new SqlParameter();
+                Estado.ParameterName = "@Estado";
+                Estado.SqlDbType = SqlDbType.NChar;
+                Estado.Value = esta.Estado1;
+                bajaex.Parameters.Add(Estado);
+
+                if (bajaex.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                if (conectar.State == ConnectionState.Open)
+                {
+                    conectar.Close();
+                }
+            }
+            return retorno;
+            
+        }
+
 
 
 

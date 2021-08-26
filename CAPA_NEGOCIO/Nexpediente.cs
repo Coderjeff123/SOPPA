@@ -60,6 +60,14 @@ namespace CAPA_NEGOCIO
 
         }
 
+        public string Baja(string ID, string estado)
+        {
+            Dexpediente datos = new Dexpediente();
+            datos.ID_Expediente1 = ID;
+            datos.Estado1 = estado;
+           return datos.baja(datos);
+        }
+
 
     }
 }
