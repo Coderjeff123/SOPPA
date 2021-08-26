@@ -348,6 +348,50 @@ namespace CAPA_DATOS
             }
             return retorno;
             
+        } 
+
+        public DataTable mostrarfoto(Dexpediente fo)
+        {
+            DataTable mostrarfoto = new DataTable();
+            string retorno = "";
+            SqlConnection conectar = new SqlConnection();
+            try
+            {
+                conectar.ConnectionString = Conet.cnx;
+                conectar.Open();
+
+                SqlCommand expe = new SqlCommand();
+                expe.Connection = conectar;
+                expe.CommandText = "psci.SP_showF";
+                expe.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ID = new SqlParameter();
+                ID.ParameterName = "@id";
+                ID.SqlDbType = SqlDbType.Int;
+                ID.Value = fo.ID_Expediente1;
+                expe.Parameters.Add(ID);
+                
+                if (expe.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                if(conectar.State== ConnectionState.Open)
+                {
+                    conectar.Close();
+                }
+            }
+            return mostrarfoto;
         }
 
 

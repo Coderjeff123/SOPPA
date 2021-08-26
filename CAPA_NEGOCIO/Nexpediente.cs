@@ -68,6 +68,15 @@ namespace CAPA_NEGOCIO
            return datos.baja(datos);
         }
 
+        public DataTable mostrarfoto(string id)
+        {
+            DataTable tabla = new DataTable();
+            Dexpediente datos = new Dexpediente();
+            datos.ID_Expediente1 = id;
+            tabla =datos.mostrarfoto(datos);
+            return tabla;
+        }
+
 
     }
 }

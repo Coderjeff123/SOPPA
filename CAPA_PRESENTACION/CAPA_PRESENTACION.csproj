@@ -91,6 +91,9 @@
     <Compile Include="NuevoExpe.Designer.cs">
       <DependentUpon>NuevoExpe.cs</DependentUpon>
     </Compile>
+    <Compile Include="paneldegra2.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Paneldegradado.cs">
       <SubType>Component</SubType>
     </Compile>
