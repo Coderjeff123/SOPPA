@@ -49,7 +49,7 @@ namespace CAPA_PRESENTACION
 
             RemisionN remisionN = new RemisionN();
             remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,dtmfecharemi.Value);
-
+            MessageBox.Show("Se resgistro correctamente");
             limpiar();
         }
 
