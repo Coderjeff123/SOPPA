@@ -153,6 +153,26 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_10823 {
+            get {
+                object obj = ResourceManager.GetObject("calendar_10823", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap calendar_10823__1_ {
+            get {
+                object obj = ResourceManager.GetObject("calendar_10823 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap canceltheapplication_cancelar_2901 {
             get {
                 object obj = ResourceManager.GetObject("canceltheapplication_cancelar_2901", resourceCulture);

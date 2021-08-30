@@ -247,5 +247,11 @@
   <ItemGroup>
     <None Include="imagenes\priority_low_icon_136291.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_10823.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar_10823 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

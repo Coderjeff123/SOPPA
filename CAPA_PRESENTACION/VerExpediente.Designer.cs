@@ -32,42 +32,26 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pimagen = new System.Windows.Forms.PictureBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
-            this.button2 = new System.Windows.Forms.Button();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
-            this.btnbaja = new System.Windows.Forms.Button();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pimagen = new System.Windows.Forms.PictureBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btnbaja = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.paneldegra21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(585, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 
@@ -148,14 +132,6 @@ namespace CAPA_PRESENTACION
             this.panel2.Size = new System.Drawing.Size(717, 193);
             this.panel2.TabIndex = 2;
             // 
-            // pimagen
-            // 
-            this.pimagen.Location = new System.Drawing.Point(30, 99);
-            this.pimagen.Name = "pimagen";
-            this.pimagen.Size = new System.Drawing.Size(125, 107);
-            this.pimagen.TabIndex = 4;
-            this.pimagen.TabStop = false;
-            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
@@ -171,24 +147,6 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Size = new System.Drawing.Size(768, 60);
             this.paneldegradado1.TabIndex = 3;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.Location = new System.Drawing.Point(139, 14);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 34);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Cambiar imagen";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // txtestado
             // 
             this.txtestado.Location = new System.Drawing.Point(656, 14);
@@ -203,25 +161,6 @@ namespace CAPA_PRESENTACION
             this.id.Size = new System.Drawing.Size(100, 20);
             this.id.TabIndex = 4;
             this.id.Visible = false;
-            // 
-            // btnbaja
-            // 
-            this.btnbaja.BackColor = System.Drawing.Color.MediumAquamarine;
-            this.btnbaja.FlatAppearance.BorderSize = 0;
-            this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnbaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
-            this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnbaja.Location = new System.Drawing.Point(12, 14);
-            this.btnbaja.Name = "btnbaja";
-            this.btnbaja.Size = new System.Drawing.Size(108, 34);
-            this.btnbaja.TabIndex = 3;
-            this.btnbaja.Text = "Dar de baja";
-            this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbaja.UseVisualStyleBackColor = false;
-            this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
             // paneldegra21
             // 
@@ -244,6 +183,67 @@ namespace CAPA_PRESENTACION
             this.dataGridView1.Size = new System.Drawing.Size(240, 116);
             this.dataGridView1.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(585, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pimagen
+            // 
+            this.pimagen.Location = new System.Drawing.Point(30, 99);
+            this.pimagen.Name = "pimagen";
+            this.pimagen.Size = new System.Drawing.Size(125, 107);
+            this.pimagen.TabIndex = 4;
+            this.pimagen.TabStop = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button2.Location = new System.Drawing.Point(139, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 34);
+            this.button2.TabIndex = 6;
+            this.button2.Text = "Cambiar imagen";
+            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // btnbaja
+            // 
+            this.btnbaja.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnbaja.FlatAppearance.BorderSize = 0;
+            this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnbaja.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
+            this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnbaja.Location = new System.Drawing.Point(12, 14);
+            this.btnbaja.Name = "btnbaja";
+            this.btnbaja.Size = new System.Drawing.Size(108, 34);
+            this.btnbaja.TabIndex = 3;
+            this.btnbaja.Text = "Dar de baja";
+            this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnbaja.UseVisualStyleBackColor = false;
+            this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
+            // 
             // VerExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -265,12 +265,12 @@ namespace CAPA_PRESENTACION
             this.Load += new System.EventHandler(this.VerExpediente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegradado1.PerformLayout();
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.ResumeLayout(false);
 
         }
