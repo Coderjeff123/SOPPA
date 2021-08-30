@@ -288,8 +288,12 @@ namespace CAPA_PRESENTACION
         private void paneldegradado2_MouseDown_1(object sender, MouseEventArgs e)
         {
         }
-      
-        
+
+        private void btnagendarcitas_Click(object sender, EventArgs e)
+        {
+            ocultarsubmenu();
+            abrirForm(new Agendarcita());
+        }
     }
 } 
     

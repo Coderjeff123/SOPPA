@@ -26,13 +26,11 @@ namespace CAPA_NEGOCIO
 
         }
 
-        public string UpdateDexpediente(string id_Expediente, string nombre, string estado, byte[] foto)
+        public string UpdateDexpediente(string id ,byte[] foto)
         {
 
             Dexpediente datos = new Dexpediente();
-            datos.ID_Expediente1 = id_Expediente;
-            datos.Nombre1 = nombre;
-            datos.Estado1 = estado;
+            datos.ID_Expediente1 = id;
             datos.Foto1 = foto;
             
 

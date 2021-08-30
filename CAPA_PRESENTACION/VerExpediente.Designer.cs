@@ -44,13 +44,11 @@ namespace CAPA_PRESENTACION
             this.id = new System.Windows.Forms.TextBox();
             this.btnbaja = new System.Windows.Forms.Button();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.paneldegra21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -150,11 +148,15 @@ namespace CAPA_PRESENTACION
             // 
             // pimagen
             // 
+            this.pimagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pimagen.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
             this.pimagen.Location = new System.Drawing.Point(30, 99);
             this.pimagen.Name = "pimagen";
-            this.pimagen.Size = new System.Drawing.Size(125, 107);
+            this.pimagen.Size = new System.Drawing.Size(121, 107);
+            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pimagen.TabIndex = 4;
             this.pimagen.TabStop = false;
+            this.pimagen.Click += new System.EventHandler(this.pimagen_Click);
             // 
             // paneldegradado1
             // 
@@ -183,11 +185,12 @@ namespace CAPA_PRESENTACION
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(139, 14);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 34);
+            this.button2.Size = new System.Drawing.Size(136, 34);
             this.button2.TabIndex = 6;
             this.button2.Text = "Cambiar imagen";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtestado
             // 
@@ -236,14 +239,6 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Size = new System.Drawing.Size(768, 73);
             this.paneldegra21.TabIndex = 5;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(229, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 116);
-            this.dataGridView1.TabIndex = 6;
-            // 
             // VerExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -252,7 +247,6 @@ namespace CAPA_PRESENTACION
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.paneldegra21);
             this.Controls.Add(this.pimagen);
             this.Controls.Add(this.paneldegradado1);
@@ -270,7 +264,6 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.PerformLayout();
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,6 +281,5 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pimagen;
         private paneldegra2 paneldegra21;
-        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

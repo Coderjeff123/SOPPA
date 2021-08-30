@@ -453,6 +453,7 @@ namespace CAPA_PRESENTACION
             this.btnagendarcitas.Text = "Agendar Citas";
             this.btnagendarcitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnagendarcitas.UseVisualStyleBackColor = false;
+            this.btnagendarcitas.Click += new System.EventHandler(this.btnagendarcitas_Click);
             this.btnagendarcitas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnagendarcitas.MouseLeave += new System.EventHandler(this.btnagendarcitas_MouseLeave);
             this.btnagendarcitas.MouseHover += new System.EventHandler(this.btnagendarcitas_MouseHover);

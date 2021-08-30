@@ -49,12 +49,6 @@ namespace CAPA_DATOS
                 sp_New_C.CommandText = "New_C";
                 sp_New_C.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Consulta = new SqlParameter();
-                Consulta.ParameterName = "@ID_Consulta";
-                Consulta.SqlDbType = SqlDbType.Int;
-                // Consulta.Size = 0;
-                Consulta.Value = expC.ID_Consulta1;
-                sp_New_C.Parameters.Add(Consulta);
 
                 SqlParameter Cita = new SqlParameter();
                 Cita.ParameterName = "@ID_Cita";

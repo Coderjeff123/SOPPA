@@ -49,13 +49,6 @@ namespace CAPA_DATOS
                 Cita.Value = expCt.ID_Cita1;
                 sp_Newcita.Parameters.Add(Cita);
 
-                SqlParameter Id_remision = new SqlParameter();
-                Id_remision.ParameterName = "@ID_Remision";
-                Id_remision.SqlDbType = SqlDbType.Int;
-                //Id_remision.Size = 50;
-                Id_remision.Value = expCt.ID_Remision1;
-                sp_Newcita.Parameters.Add(Id_remision);
-
 
                 SqlParameter fecha = new SqlParameter();
                 fecha.ParameterName = "@Fecha";

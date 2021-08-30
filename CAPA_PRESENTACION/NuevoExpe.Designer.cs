@@ -29,9 +29,11 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.paneltitulo = new System.Windows.Forms.Panel();
             this.Titulo = new System.Windows.Forms.Label();
             this.panelinfo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,18 +50,19 @@ namespace CAPA_PRESENTACION
             this.txtmotivo = new System.Windows.Forms.TextBox();
             this.dtmfecharemi = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
+            this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnremitir = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.paneltitulo.SuspendLayout();
             this.panelinfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.paneldegradado1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // paneltitulo
@@ -97,6 +100,19 @@ namespace CAPA_PRESENTACION
             this.panelinfo.Name = "panelinfo";
             this.panelinfo.Size = new System.Drawing.Size(754, 272);
             this.panelinfo.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.InitialImage = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.pictureBox1.Validated += new System.EventHandler(this.pictureBox1_Validated);
             // 
             // label1
             // 
@@ -184,6 +200,7 @@ namespace CAPA_PRESENTACION
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(316, 20);
             this.txtnombre.TabIndex = 0;
+            this.txtnombre.Validated += new System.EventHandler(this.txtnombre_Validated);
             // 
             // panel1
             // 
@@ -254,6 +271,7 @@ namespace CAPA_PRESENTACION
             this.txtmotivo.Name = "txtmotivo";
             this.txtmotivo.Size = new System.Drawing.Size(200, 70);
             this.txtmotivo.TabIndex = 7;
+            this.txtmotivo.Validated += new System.EventHandler(this.txtmotivo_Validated);
             // 
             // dtmfecharemi
             // 
@@ -273,6 +291,10 @@ namespace CAPA_PRESENTACION
             this.label6.Size = new System.Drawing.Size(79, 18);
             this.label6.TabIndex = 5;
             this.label6.Text = "Remision\r\n";
+            // 
+            // epError
+            // 
+            this.epError.ContainerControl = this;
             // 
             // paneldegradado1
             // 
@@ -354,17 +376,6 @@ namespace CAPA_PRESENTACION
             this.btnremitir.UseVisualStyleBackColor = false;
             this.btnremitir.Click += new System.EventHandler(this.btnremitir_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
-            this.pictureBox1.Location = new System.Drawing.Point(41, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(104, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // NuevoExpe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -384,14 +395,15 @@ namespace CAPA_PRESENTACION
             this.paneltitulo.PerformLayout();
             this.panelinfo.ResumeLayout(false);
             this.panelinfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -422,5 +434,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnlimpiar;
+        private System.Windows.Forms.ErrorProvider epError;
     }
 }

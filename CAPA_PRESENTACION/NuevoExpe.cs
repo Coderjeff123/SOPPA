@@ -25,12 +25,11 @@ namespace CAPA_PRESENTACION
 
         private void btnremitir_Click(object sender, EventArgs e)
         {
-            string estado = "";            
+            string estado = "";
 
-          
+
 
             Nexpediente nexpediente = new Nexpediente();
-            System.Drawing.ImageConverter imageConverter = new ImageConverter();
             System.IO.MemoryStream memory = new System.IO.MemoryStream();
             pictureBox1.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
             
@@ -77,6 +76,51 @@ namespace CAPA_PRESENTACION
         private void btnlimpiar_Click(object sender, EventArgs e)
         {
             limpiar();
+        }
+
+        private void txtnombre_Validated(object sender, EventArgs e)
+        {
+            if (txtnombre.Text.Trim() == "")
+            {
+                epError.SetError(txtnombre, "Intruzca un valor");
+                txtnombre.Focus();
+                btnremitir.Enabled = false;
+            }
+            else
+            {
+                epError.Clear();
+                btnremitir.Enabled = true;
+            }
+        }
+
+        private void txtmotivo_Validated(object sender, EventArgs e)
+        {
+            if (txtmotivo.Text.Trim() == "")
+            {
+                epError.SetError(txtmotivo, "Intruzca un valor");
+                txtmotivo.Focus();
+                btnremitir.Enabled = false;
+            }
+            else
+            {
+                epError.Clear();
+                btnremitir.Enabled = true;
+            }
+        }
+
+        private void pictureBox1_Validated(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image==Properties.Resources.avatardefault_92824)
+            {
+                epError.SetError(pictureBox1,"Seleccione una imagen");
+                pictureBox1.Focus();
+                btnremitir.Enabled = false;
+            }
+            else
+            {
+                epError.Clear();
+                btnremitir.Enabled = true;
+            }
         }
     }
 }

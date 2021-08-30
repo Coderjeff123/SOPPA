@@ -2,6 +2,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace CAPA_PRESENTACION
 {
@@ -26,6 +27,7 @@ namespace CAPA_PRESENTACION
         private void mostrar()
         {
             dtaexpe.DataSource = data.showEX();
+            dtaexpe.Columns["Foto"].Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,6 +42,9 @@ namespace CAPA_PRESENTACION
             {
                 id.Text = dtaexpe.CurrentRow.Cells["ID_Expediente"].Value.ToString();
                 txtestado.Text = dtaexpe.CurrentRow.Cells["Estado"].Value.ToString();
+                byte[] imag = (byte[])dtaexpe.CurrentRow.Cells["Foto"].Value;
+                MemoryStream ms = new MemoryStream(imag);
+                pimagen.Image = Image.FromStream(ms);
             }
 
             if (txtestado.Text == "I")
@@ -51,7 +56,7 @@ namespace CAPA_PRESENTACION
                 btnbaja.Visible = true;
             }
 
-            dataGridView1.DataSource = data.mostrarfoto(id.Text);
+           
         }
         private void btnbaja_Click(object sender, EventArgs e)
         {
@@ -64,6 +69,28 @@ namespace CAPA_PRESENTACION
             }
             mostrar();
             MessageBox.Show("Se ha dado de baja exitosamente");
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+                System.IO.MemoryStream memory = new System.IO.MemoryStream();
+                pimagen.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
+                Nexpediente expe = new Nexpediente();
+                expe.UpdateDexpediente(id.Text, memory.GetBuffer());
+            
+            mostrar();
+        }
+
+        private void pimagen_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            DialogResult result = open.ShowDialog();
+
+            if (result == DialogResult.OK)
+            {
+                pimagen.Image = Image.FromFile(open.FileName);
+            }
+            mostrar();
         }
     }
 }

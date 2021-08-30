@@ -131,26 +131,11 @@ namespace CAPA_DATOS
                 SP_NewEX.CommandText = "psci.SP_UpdateE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Expediente = new SqlParameter();
-                Expediente.ParameterName = "@Nombre";
-                Expediente.SqlDbType = SqlDbType.NVarChar;
-                Expediente.Size = 50;
-                Expediente.Value = expE.Nombre1;
-                SP_NewEX.Parameters.Add(Expediente);
-
-
-                SqlParameter Nombre = new SqlParameter();
-                Nombre.ParameterName = "@Nombre";
-                Nombre.SqlDbType = SqlDbType.NVarChar;
-                Nombre.Size = 50;
-                Nombre.Value = expE.Nombre1;
-                SP_NewEX.Parameters.Add(Nombre);
-
-                SqlParameter Estado = new SqlParameter();
-                Estado.ParameterName = "@Estado";
-                Estado.SqlDbType = SqlDbType.NChar;
-                Estado.Value = expE.Estado1;
-                SP_NewEX.Parameters.Add(Estado);
+                SqlParameter id = new SqlParameter();
+                id.ParameterName = "@id_expe";
+                id.SqlDbType = SqlDbType.Int;
+                id.Value = expE.ID_Expediente1;
+                SP_NewEX.Parameters.Add(id);
 
                 SqlParameter Foto = new SqlParameter();
                 Foto.ParameterName = "@Foto";
