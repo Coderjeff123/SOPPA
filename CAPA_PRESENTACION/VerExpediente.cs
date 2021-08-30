@@ -70,27 +70,5 @@ namespace CAPA_PRESENTACION
             mostrar();
             MessageBox.Show("Se ha dado de baja exitosamente");
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-                System.IO.MemoryStream memory = new System.IO.MemoryStream();
-                pimagen.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
-                Nexpediente expe = new Nexpediente();
-                expe.UpdateDexpediente(id.Text, memory.GetBuffer());
-            
-            mostrar();
-        }
-
-        private void pimagen_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            DialogResult result = open.ShowDialog();
-
-            if (result == DialogResult.OK)
-            {
-                pimagen.Image = Image.FromFile(open.FileName);
-            }
-            mostrar();
-        }
     }
 }
