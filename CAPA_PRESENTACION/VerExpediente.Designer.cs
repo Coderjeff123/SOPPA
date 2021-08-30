@@ -37,14 +37,14 @@ namespace CAPA_PRESENTACION
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.button2 = new System.Windows.Forms.Button();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
-            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pimagen = new System.Windows.Forms.PictureBox();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnbaja = new System.Windows.Forms.Button();
+            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.pimagen = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
@@ -122,6 +122,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 193);
             this.dtaexpe.TabIndex = 1;
+            this.dtaexpe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellContentClick);
             this.dtaexpe.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseClick);
             // 
             // panel2
@@ -147,66 +148,6 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Size = new System.Drawing.Size(768, 60);
             this.paneldegradado1.TabIndex = 3;
             // 
-            // txtestado
-            // 
-            this.txtestado.Location = new System.Drawing.Point(656, 14);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(100, 20);
-            this.txtestado.TabIndex = 5;
-            // 
-            // id
-            // 
-            this.id.Location = new System.Drawing.Point(537, 14);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(100, 20);
-            this.id.TabIndex = 4;
-            this.id.Visible = false;
-            // 
-            // paneldegra21
-            // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.paneldegra21.Controls.Add(this.label1);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textBox1);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(768, 73);
-            this.paneldegra21.TabIndex = 5;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(229, 99);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 116);
-            this.dataGridView1.TabIndex = 6;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(585, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pimagen
-            // 
-            this.pimagen.Location = new System.Drawing.Point(30, 99);
-            this.pimagen.Name = "pimagen";
-            this.pimagen.Size = new System.Drawing.Size(125, 107);
-            this.pimagen.TabIndex = 4;
-            this.pimagen.TabStop = false;
-            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MediumAquamarine;
@@ -224,6 +165,21 @@ namespace CAPA_PRESENTACION
             this.button2.Text = "Cambiar imagen";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button2.UseVisualStyleBackColor = false;
+            // 
+            // txtestado
+            // 
+            this.txtestado.Location = new System.Drawing.Point(656, 14);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(100, 20);
+            this.txtestado.TabIndex = 5;
+            // 
+            // id
+            // 
+            this.id.Location = new System.Drawing.Point(537, 14);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(100, 20);
+            this.id.TabIndex = 4;
+            this.id.Visible = false;
             // 
             // btnbaja
             // 
@@ -243,6 +199,51 @@ namespace CAPA_PRESENTACION
             this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
+            // 
+            // paneldegra21
+            // 
+            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
+            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.paneldegra21.Controls.Add(this.label1);
+            this.paneldegra21.Controls.Add(this.button1);
+            this.paneldegra21.Controls.Add(this.textBox1);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.Size = new System.Drawing.Size(768, 73);
+            this.paneldegra21.TabIndex = 5;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(585, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(229, 99);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 116);
+            this.dataGridView1.TabIndex = 6;
+            // 
+            // pimagen
+            // 
+            this.pimagen.Location = new System.Drawing.Point(30, 99);
+            this.pimagen.Name = "pimagen";
+            this.pimagen.Size = new System.Drawing.Size(125, 107);
+            this.pimagen.TabIndex = 4;
+            this.pimagen.TabStop = false;
             // 
             // VerExpediente
             // 

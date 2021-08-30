@@ -179,6 +179,7 @@ namespace CAPA_PRESENTACION
             // btnagen
             // 
             this.btnagen.BackColor = System.Drawing.SystemColors.Info;
+            this.btnagen.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnagen.FlatAppearance.BorderSize = 0;
             this.btnagen.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.btnagen.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
@@ -206,6 +207,7 @@ namespace CAPA_PRESENTACION
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcita";
             this.Text = "Agendarcita";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.panelagendar.ResumeLayout(false);
             this.panelagendar.PerformLayout();
             this.panel1.ResumeLayout(false);

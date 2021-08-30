@@ -65,5 +65,10 @@ namespace CAPA_PRESENTACION
             mostrar();
             MessageBox.Show("Se ha dado de baja exitosamente");
         }
+
+        private void dtaexpe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
