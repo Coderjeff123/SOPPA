@@ -77,7 +77,8 @@ namespace CAPA_PRESENTACION
                 pimagen.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
                 Nexpediente expe = new Nexpediente();
                 expe.UpdateDexpediente(id.Text, memory.GetBuffer());
-            
+            MessageBox.Show("Se ha dado cambiado la imagen exitosamente exitosamente");
+
             mostrar();
         }
 
@@ -90,6 +91,7 @@ namespace CAPA_PRESENTACION
             {
                 pimagen.Image = Image.FromFile(open.FileName);
             }
+
             mostrar();
         }
     }
