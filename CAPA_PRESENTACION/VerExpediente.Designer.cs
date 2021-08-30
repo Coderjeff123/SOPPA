@@ -198,6 +198,7 @@ namespace CAPA_PRESENTACION
             this.txtestado.Name = "txtestado";
             this.txtestado.Size = new System.Drawing.Size(100, 20);
             this.txtestado.TabIndex = 5;
+            this.txtestado.Visible = false;
             // 
             // id
             // 
