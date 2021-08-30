@@ -70,9 +70,9 @@ namespace CAPA_PRESENTACION
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(585, 46);
+            this.button1.Location = new System.Drawing.Point(585, 12);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 10);
+            this.button1.Size = new System.Drawing.Size(56, 44);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = false;
             // 
