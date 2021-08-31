@@ -37,19 +37,18 @@ namespace CAPA_PRESENTACION
             this.textver = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pimagen = new System.Windows.Forms.PictureBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.button2 = new System.Windows.Forms.Button();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.btnbaja = new System.Windows.Forms.Button();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.dataRepeater1 = new Microsoft.VisualBasic.PowerPacks.DataRepeater();
+            this.pimagen = new CAPA_PRESENTACION.Pictureboxpersonal();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.paneldegra21.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -137,7 +136,6 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 193);
             this.dtaexpe.TabIndex = 1;
-            //this.dtaexpe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellContentClick);
             this.dtaexpe.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseClick);
             // 
             // panel2
@@ -147,18 +145,6 @@ namespace CAPA_PRESENTACION
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(717, 193);
             this.panel2.TabIndex = 2;
-            // 
-            // pimagen
-            // 
-            this.pimagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pimagen.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
-            this.pimagen.Location = new System.Drawing.Point(30, 99);
-            this.pimagen.Name = "pimagen";
-            this.pimagen.Size = new System.Drawing.Size(121, 107);
-            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pimagen.TabIndex = 4;
-            this.pimagen.TabStop = false;
-            this.pimagen.Click += new System.EventHandler(this.pimagen_Click);
             // 
             // paneldegradado1
             // 
@@ -242,13 +228,20 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Size = new System.Drawing.Size(768, 73);
             this.paneldegra21.TabIndex = 5;
             // 
-            // dataRepeater1
+            // pimagen
             // 
-            this.dataRepeater1.Controls.Add(this.dataRepeater1.ItemTemplate);
-            this.dataRepeater1.Location = new System.Drawing.Point(0, 0);
-            this.dataRepeater1.Name = "dataRepeater1";
-            this.dataRepeater1.Size = new System.Drawing.Size(240, 150);
-            this.dataRepeater1.TabIndex = 0;
+            this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pimagen.Bordercolor = System.Drawing.Color.DarkOrchid;
+            this.pimagen.Bordercolor2 = System.Drawing.Color.DeepSkyBlue;
+            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.pimagen.Bordersize = 5;
+            this.pimagen.Gradient = 50F;
+            this.pimagen.Location = new System.Drawing.Point(44, 89);
+            this.pimagen.Name = "pimagen";
+            this.pimagen.Size = new System.Drawing.Size(121, 107);
+            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pimagen.TabIndex = 6;
+            this.pimagen.TabStop = false;
             // 
             // VerExpediente
             // 
@@ -258,8 +251,8 @@ namespace CAPA_PRESENTACION
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.paneldegra21);
             this.Controls.Add(this.pimagen);
+            this.Controls.Add(this.paneldegra21);
             this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -270,11 +263,11 @@ namespace CAPA_PRESENTACION
             this.Load += new System.EventHandler(this.VerExpediente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegradado1.PerformLayout();
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -290,8 +283,8 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.TextBox txtestado;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.PictureBox pimagen;
         private paneldegra2 paneldegra21;
-        private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
+        private Pictureboxpersonal pimagen;
+        // private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
     }
 }
