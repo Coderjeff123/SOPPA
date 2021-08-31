@@ -293,6 +293,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medical_42_icon_icons_com_73897 {
+            get {
+                object obj = ResourceManager.GetObject("medical-42_icon-icons.com_73897", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minimize_thewindow_theapplication_2872 {
             get {
                 object obj = ResourceManager.GetObject("minimize_thewindow_theapplication_2872", resourceCulture);
