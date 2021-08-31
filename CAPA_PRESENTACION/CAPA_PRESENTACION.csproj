@@ -270,5 +270,8 @@
   <ItemGroup>
     <None Include="Resources\medical-42_icon-icons.com_73897.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\organizer_calendar_pen_note_6134.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
