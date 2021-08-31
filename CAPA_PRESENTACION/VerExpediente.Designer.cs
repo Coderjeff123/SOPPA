@@ -32,59 +32,24 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textver = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pimagen = new CAPA_PRESENTACION.Pictureboxpersonal();
+            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textver = new System.Windows.Forms.TextBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.button2 = new System.Windows.Forms.Button();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.btnbaja = new System.Windows.Forms.Button();
-            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.pimagen = new CAPA_PRESENTACION.Pictureboxpersonal();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
-            this.paneldegradado1.SuspendLayout();
-            this.paneldegra21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
+            this.paneldegra21.SuspendLayout();
+            this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(585, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(299, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar Expediente";
-            // 
-            // textver
-            // 
-            this.textver.Location = new System.Drawing.Point(144, 36);
-            this.textver.Name = "textver";
-            this.textver.Size = new System.Drawing.Size(415, 20);
-            this.textver.TabIndex = 1;
             // 
             // dtaexpe
             // 
@@ -145,6 +110,70 @@ namespace CAPA_PRESENTACION
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(717, 193);
             this.panel2.TabIndex = 2;
+            // 
+            // pimagen
+            // 
+            this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pimagen.Bordercolor = System.Drawing.Color.SlateBlue;
+            this.pimagen.Bordercolor2 = System.Drawing.Color.Teal;
+            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.pimagen.Bordersize = 5;
+            this.pimagen.Gradient = 50F;
+            this.pimagen.Location = new System.Drawing.Point(44, 89);
+            this.pimagen.Name = "pimagen";
+            this.pimagen.Size = new System.Drawing.Size(121, 107);
+            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pimagen.TabIndex = 6;
+            this.pimagen.TabStop = false;
+            this.pimagen.Click += new System.EventHandler(this.pimagen_Click_1);
+            // 
+            // paneldegra21
+            // 
+            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
+            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.paneldegra21.Controls.Add(this.label1);
+            this.paneldegra21.Controls.Add(this.button1);
+            this.paneldegra21.Controls.Add(this.textver);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.Size = new System.Drawing.Size(768, 73);
+            this.paneldegra21.TabIndex = 5;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(299, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar Expediente";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(585, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // textver
+            // 
+            this.textver.Location = new System.Drawing.Point(144, 36);
+            this.textver.Name = "textver";
+            this.textver.Size = new System.Drawing.Size(415, 20);
+            this.textver.TabIndex = 1;
             // 
             // paneldegradado1
             // 
@@ -215,34 +244,6 @@ namespace CAPA_PRESENTACION
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
-            // paneldegra21
-            // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.paneldegra21.Controls.Add(this.label1);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textver);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(768, 73);
-            this.paneldegra21.TabIndex = 5;
-            // 
-            // pimagen
-            // 
-            this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pimagen.Bordercolor = System.Drawing.Color.DarkOrchid;
-            this.pimagen.Bordercolor2 = System.Drawing.Color.DeepSkyBlue;
-            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.DashDot;
-            this.pimagen.Bordersize = 5;
-            this.pimagen.Gradient = 50F;
-            this.pimagen.Location = new System.Drawing.Point(44, 89);
-            this.pimagen.Name = "pimagen";
-            this.pimagen.Size = new System.Drawing.Size(121, 107);
-            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pimagen.TabIndex = 6;
-            this.pimagen.TabStop = false;
-            // 
             // VerExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,11 +264,11 @@ namespace CAPA_PRESENTACION
             this.Load += new System.EventHandler(this.VerExpediente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.paneldegradado1.ResumeLayout(false);
-            this.paneldegradado1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
+            this.paneldegradado1.ResumeLayout(false);
+            this.paneldegradado1.PerformLayout();
             this.ResumeLayout(false);
 
         }
