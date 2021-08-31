@@ -29,8 +29,6 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.txtuser = new System.Windows.Forms.TextBox();
             this.txtpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,31 +40,18 @@ namespace CAPA_PRESENTACION
             this.lblerror = new System.Windows.Forms.Label();
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
             this.lblnot = new System.Windows.Forms.Label();
+            ///this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+          ///  this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+           /// this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.paneldegradado2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Location = new System.Drawing.Point(131, 114);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(286, 10);
-            this.panel2.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel3.Location = new System.Drawing.Point(131, 184);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(286, 10);
-            this.panel3.TabIndex = 2;
-            // 
             // txtuser
             // 
-            this.txtuser.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtuser.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtuser.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtuser.ForeColor = System.Drawing.Color.Black;
@@ -80,7 +65,7 @@ namespace CAPA_PRESENTACION
             // 
             // txtpass
             // 
-            this.txtpass.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtpass.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtpass.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtpass.ForeColor = System.Drawing.Color.Black;
@@ -190,8 +175,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.Controls.Add(this.btnlogin);
             this.paneldegradado2.Controls.Add(this.txtpass);
             this.paneldegradado2.Controls.Add(this.txtuser);
-            this.paneldegradado2.Controls.Add(this.panel2);
-            this.paneldegradado2.Controls.Add(this.panel3);
+           // this.paneldegradado2.Controls.Add(this.shapeContainer1);
             this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Right;
             this.paneldegradado2.Location = new System.Drawing.Point(186, 0);
             this.paneldegradado2.Name = "paneldegradado2";
@@ -211,6 +195,36 @@ namespace CAPA_PRESENTACION
             this.lblnot.TabIndex = 9;
             this.lblnot.Text = "label2";
             this.lblnot.Visible = false;
+            // 
+            // shapeContainer1
+            // 
+           // this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
+           // this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
+           // this.shapeContainer1.Name = "shapeContainer1";
+          /*  this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
+            this.lineShape2,
+            this.lineShape1});
+            this.shapeContainer1.Size = new System.Drawing.Size(533, 336);
+            this.shapeContainer1.TabIndex = 10;
+            this.shapeContainer1.TabStop = false;
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 132;
+            this.lineShape1.X2 = 417;
+            this.lineShape1.Y1 = 190;
+            this.lineShape1.Y2 = 190;
+            // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderColor = System.Drawing.SystemColors.ActiveCaption;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 130;
+            this.lineShape2.X2 = 418;
+            this.lineShape2.Y1 = 119;
+            this.lineShape2.Y2 = 119;*/
             // 
             // Login
             // 
@@ -240,8 +254,6 @@ namespace CAPA_PRESENTACION
 
         private Paneldegradado paneldegradado1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TextBox txtuser;
         private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label1;
@@ -251,5 +263,8 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label lblerror;
         private Paneldegradado paneldegradado2;
         private System.Windows.Forms.Label lblnot;
+       // private ShapeContainer shapeContainer1;
+        //private LineShape lineShape2;
+        //private LineShape lineShape1;
     }
 }

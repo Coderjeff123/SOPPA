@@ -22,6 +22,7 @@ namespace CAPA_PRESENTACION
         {
             this.Close();
         }
+        Nexpediente datos = new Nexpediente();
 
         private void btnremitir_Click(object sender, EventArgs e)
         {
@@ -42,8 +43,8 @@ namespace CAPA_PRESENTACION
                 estado = "I";
             }
 
-
-            nexpediente.insertexpediente(txtnombre.Text, estado, memory.GetBuffer(), "001");
+            
+            nexpediente.insertexpediente(txtnombre.Text, estado, memory.GetBuffer(),dtaexpe.CurrentRow.Cells["NoExpediente"].Value.ToString());
 
            
 
@@ -89,7 +90,6 @@ namespace CAPA_PRESENTACION
             else
             {
                 epError.Clear();
-                btnremitir.Enabled = true;
             }
         }
 
@@ -99,7 +99,7 @@ namespace CAPA_PRESENTACION
             {
                 epError.SetError(txtmotivo, "Intruzca un valor");
                 txtmotivo.Focus();
-                btnremitir.Enabled = false;
+                
             }
             else
             {
@@ -114,13 +114,26 @@ namespace CAPA_PRESENTACION
             {
                 epError.SetError(pictureBox1,"Seleccione una imagen");
                 pictureBox1.Focus();
-                btnremitir.Enabled = false;
+                
             }
             else
             {
                 epError.Clear();
-                btnremitir.Enabled = true;
+               
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            dtaexpe.DataSource = datos.mostrarestu(txtnom.Text);
+        }
+
+        private void dtaexpe_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            panelinfo.Visible = true;
+            paneldegradado2.Visible = false;
+            txtnombre.Text = dtaexpe.CurrentRow.Cells["Nombre1"].Value.ToString();
         }
     }
 }

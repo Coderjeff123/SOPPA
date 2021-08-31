@@ -12,14 +12,15 @@ namespace CAPA_NEGOCIO
     public class Nexpediente
     {
 
-        public string insertexpediente(string nombre, string estado, byte[] foto, string noexpediente)
+        public string insertexpediente(string nombre, string estado, byte[] foto, string no_expe)
         {
 
             Dexpediente datos = new Dexpediente();
             datos.Nombre1 = nombre;
             datos.Estado1 = estado;
             datos.Foto1 = foto;
-            datos.Noexpediente1 = noexpediente;
+            datos.Noexpediente1 = no_expe;
+            
 
             return datos.insertexpediente(datos);
 
@@ -72,6 +73,15 @@ namespace CAPA_NEGOCIO
             Dexpediente datos = new Dexpediente();
             datos.ID_Expediente1 = id;
             tabla =datos.mostrarfoto(datos);
+            return tabla;
+        }
+
+        public DataTable mostrarestu(string estu)
+        {
+            DataTable tabla = new DataTable();
+            Dexpediente datos = new Dexpediente();
+            datos.Estu = estu;
+            tabla = datos.buscarestudiante(datos);
             return tabla;
         }
 

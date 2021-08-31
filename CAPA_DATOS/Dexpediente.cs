@@ -17,6 +17,7 @@ namespace CAPA_DATOS
         string Estado;
         byte[] Foto;
         string Noexpediente;
+        string estu;
 
         public Dexpediente() { }
 
@@ -29,13 +30,14 @@ namespace CAPA_DATOS
             Noexpediente = noexpediente;
         }*/
 
-        public Dexpediente( string id_Expediente,string nombre1, string estado1, byte[] foto1, string noexpediente1)
+        public Dexpediente( string id_Expediente,string nombre1, string estado1, byte[] foto1, string noexpediente1,string estu)
         {
             ID_Expediente1 = id_Expediente;
             Nombre1 = nombre1;
             Estado1 = estado1;
             Foto1 = foto1;
             Noexpediente1 = noexpediente1;
+            Estu = estu;
         }
 
 
@@ -44,7 +46,7 @@ namespace CAPA_DATOS
         public string Estado1 { get => Estado; set => Estado = value; }
         public byte[] Foto1 { get => Foto; set => Foto = value; }
         public string Noexpediente1 { get => Noexpediente; set => Noexpediente = value; }
-       
+        public string Estu { get => estu; set => estu = value; }
 
         public string insertexpediente(Dexpediente expE)
         {
@@ -81,12 +83,13 @@ namespace CAPA_DATOS
                 Foto.Value = expE.Foto1;
                 SP_NewEX.Parameters.Add(Foto);
 
-                SqlParameter Noexpediente = new SqlParameter();
-                Noexpediente.ParameterName = "@NoExpediente";
-                Noexpediente.SqlDbType = SqlDbType.NVarChar;
-                Noexpediente.Size = 8;
-                Noexpediente.Value = expE.Noexpediente1;
-                SP_NewEX.Parameters.Add(Noexpediente);
+                SqlParameter No_expediente = new SqlParameter();
+                No_expediente.ParameterName = "@NoEXPE";
+                No_expediente.SqlDbType = SqlDbType.NVarChar;
+                //Nombre.Size = 50;
+                No_expediente.Value = expE.Noexpediente1;
+                SP_NewEX.Parameters.Add(No_expediente);
+
 
                 SqlDataReader sqlDataReader3 = SP_NewEX.ExecuteReader();
 
@@ -379,6 +382,57 @@ namespace CAPA_DATOS
             return mostrarfoto;
         }
 
+        public DataTable buscarestudiante( Dexpediente exped)
+        {
+            DataTable mostraestu = new DataTable();
+            string retorno = "";
+            SqlConnection conectar = new SqlConnection();
+            try
+            {
+                conectar.ConnectionString = Conet.cnx;
+                conectar.Open();
+
+                SqlCommand expe = new SqlCommand();
+                expe.Connection = conectar;
+                expe.CommandText = "psci.SP_BuscarEs";
+                expe.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter Nombre = new SqlParameter();
+                Nombre.ParameterName = "@Nombre";
+                Nombre.SqlDbType = SqlDbType.NChar;
+                Nombre.Value = exped.Estu;
+                expe.Parameters.Add(Nombre);
+
+                SqlDataAdapter adartar = new SqlDataAdapter(expe);
+                adartar.Fill(mostraestu);
+
+                SqlDataReader reader = expe.ExecuteReader();
+
+
+                if (reader.HasRows)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                if (conectar.State == ConnectionState.Open)
+                {
+                    conectar.Close();
+                }
+            }
+            return mostraestu;
+        }
+    }
+
 
 
 
@@ -397,7 +451,7 @@ namespace CAPA_DATOS
 
     }
 
-}   
+
 
 
 

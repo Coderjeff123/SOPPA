@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace CAPA_PRESENTACION
 {
@@ -293,6 +294,48 @@ namespace CAPA_PRESENTACION
         {
             ocultarsubmenu();
             abrirForm(new Agendarcita());
+        }
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            for(int f = 1; f <= 96; f++)
+            {
+                dataGridView1.Rows.Add();                
+            }
+            Cargarfecha();
+        }
+
+        private void Cargarfecha()
+        {
+            DateTime select = monthCalendar1.SelectionStart;
+            Fecha.Text = "Fecha selecionada" + select.ToString("dd/MM/yy");
+            string fecha = select.Year.ToString() + select.Month.ToString() + select.Day.ToString();
+            if (!File.Exists(fecha))
+            {
+                StreamWriter archivo = new StreamWriter(fecha);
+                DateTime fe = DateTime.Today;
+                for(int f = 1; f <= 96; f++)
+                {
+                    archivo.WriteLine(fe.ToString("HH:mm"));
+                    archivo.WriteLine("");
+                    fe = fe.AddMinutes(15);
+                }
+                archivo.Close();
+            }
+            StreamReader archivo2 = new StreamReader(fecha);
+            int x = 0;
+            while (!archivo2.EndOfStream)
+            {
+                string linea1 = archivo2.ReadLine();
+                string linea2 = archivo2.ReadLine();
+                dataGridView1.Rows[x].Cells[0].Value = linea1;
+                x++;
+            }
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            Cargarfecha();
         }
     }
 } 
