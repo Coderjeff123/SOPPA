@@ -32,7 +32,7 @@ namespace CAPA_PRESENTACION
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtaexpe.DataSource = data.buscarexpediente(textBox1.Text);
+            dtaexpe.DataSource = data.buscarexpediente(textver.Text);
         }
 
 
@@ -94,5 +94,7 @@ namespace CAPA_PRESENTACION
 
             mostrar();
         }
+
+        
     }
 }

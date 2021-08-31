@@ -34,7 +34,7 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textver = new System.Windows.Forms.TextBox();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pimagen = new System.Windows.Forms.PictureBox();
@@ -44,6 +44,7 @@ namespace CAPA_PRESENTACION
             this.id = new System.Windows.Forms.TextBox();
             this.btnbaja = new System.Windows.Forms.Button();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
+            this.dataRepeater1 = new Microsoft.VisualBasic.PowerPacks.DataRepeater();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
@@ -79,12 +80,12 @@ namespace CAPA_PRESENTACION
             this.label1.TabIndex = 2;
             this.label1.Text = "Buscar Expediente";
             // 
-            // textBox1
+            // textver
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 20);
-            this.textBox1.TabIndex = 1;
+            this.textver.Location = new System.Drawing.Point(144, 36);
+            this.textver.Name = "textver";
+            this.textver.Size = new System.Drawing.Size(415, 20);
+            this.textver.TabIndex = 1;
             // 
             // dtaexpe
             // 
@@ -136,6 +137,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 193);
             this.dtaexpe.TabIndex = 1;
+            //this.dtaexpe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellContentClick);
             this.dtaexpe.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseClick);
             // 
             // panel2
@@ -233,12 +235,20 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.paneldegra21.Controls.Add(this.label1);
             this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textBox1);
+            this.paneldegra21.Controls.Add(this.textver);
             this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneldegra21.Location = new System.Drawing.Point(0, 0);
             this.paneldegra21.Name = "paneldegra21";
             this.paneldegra21.Size = new System.Drawing.Size(768, 73);
             this.paneldegra21.TabIndex = 5;
+            // 
+            // dataRepeater1
+            // 
+            this.dataRepeater1.Controls.Add(this.dataRepeater1.ItemTemplate);
+            this.dataRepeater1.Location = new System.Drawing.Point(0, 0);
+            this.dataRepeater1.Name = "dataRepeater1";
+            this.dataRepeater1.Size = new System.Drawing.Size(240, 150);
+            this.dataRepeater1.TabIndex = 0;
             // 
             // VerExpediente
             // 
@@ -271,7 +281,7 @@ namespace CAPA_PRESENTACION
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textver;
         private System.Windows.Forms.DataGridView dtaexpe;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
@@ -282,5 +292,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pimagen;
         private paneldegra2 paneldegra21;
+        private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
     }
 }
