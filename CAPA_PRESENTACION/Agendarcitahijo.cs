@@ -41,5 +41,10 @@ namespace CAPA_PRESENTACION
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

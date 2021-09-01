@@ -31,9 +31,9 @@ namespace CAPA_PRESENTACION
         {
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.textagendar = new System.Windows.Forms.TextBox();
             this.dtaagendar = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.paneldegra21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).BeginInit();
             this.SuspendLayout();
@@ -62,6 +62,22 @@ namespace CAPA_PRESENTACION
             this.label1.Size = new System.Drawing.Size(113, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Buscar Expediente";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(585, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 44);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textagendar
             // 
@@ -96,22 +112,6 @@ namespace CAPA_PRESENTACION
             this.dtaagendar.ShowRowErrors = false;
             this.dtaagendar.Size = new System.Drawing.Size(769, 390);
             this.dtaagendar.TabIndex = 1;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(585, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 44);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Agendarcita
             // 
