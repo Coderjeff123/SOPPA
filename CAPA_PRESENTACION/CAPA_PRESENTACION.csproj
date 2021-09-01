@@ -74,6 +74,9 @@
     <Compile Include="Agendarcitahijo.Designer.cs">
       <DependentUpon>Agendarcitahijo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Buttonpersolizado.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Formwelcome.cs">
       <SubType>Form</SubType>
