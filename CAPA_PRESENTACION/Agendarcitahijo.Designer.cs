@@ -30,18 +30,19 @@ namespace CAPA_PRESENTACION
         private void InitializeComponent()
         {
             this.panelagenda = new CAPA_PRESENTACION.Paneldegradado();
+            this.textapellido = new CAPA_PRESENTACION.textboxpersonal();
+            this.textnombre = new CAPA_PRESENTACION.textboxpersonal();
+            this.textcodigo = new CAPA_PRESENTACION.textboxpersonal();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureboxpersonal1 = new CAPA_PRESENTACION.Pictureboxpersonal();
-            this.textboxpersonal1 = new CAPA_PRESENTACION.textboxpersonal();
-            this.textboxpersonal2 = new CAPA_PRESENTACION.textboxpersonal();
-            this.textboxpersonal3 = new CAPA_PRESENTACION.textboxpersonal();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.comidin = new CAPA_PRESENTACION.Pictureboxpersonal();
+            this.datetimepicker1 = new CAPA_PRESENTACION.Datetimepicker();
+            this.buttonpersolizado1 = new CAPA_PRESENTACION.Buttonpersolizado();
             this.panelagenda.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxpersonal1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comidin)).BeginInit();
             this.SuspendLayout();
             // 
             // panelagenda
@@ -49,26 +50,99 @@ namespace CAPA_PRESENTACION
             this.panelagenda.angulo = 0F;
             this.panelagenda.Colorleft = System.Drawing.Color.Empty;
             this.panelagenda.Colorrigth = System.Drawing.Color.Empty;
-            this.panelagenda.Controls.Add(this.monthCalendar1);
-            this.panelagenda.Controls.Add(this.textboxpersonal3);
-            this.panelagenda.Controls.Add(this.textboxpersonal2);
-            this.panelagenda.Controls.Add(this.textboxpersonal1);
+            this.panelagenda.Controls.Add(this.buttonpersolizado1);
+            this.panelagenda.Controls.Add(this.datetimepicker1);
+            this.panelagenda.Controls.Add(this.textapellido);
+            this.panelagenda.Controls.Add(this.textnombre);
+            this.panelagenda.Controls.Add(this.textcodigo);
             this.panelagenda.Controls.Add(this.label6);
             this.panelagenda.Controls.Add(this.label5);
             this.panelagenda.Controls.Add(this.label4);
             this.panelagenda.Controls.Add(this.label2);
             this.panelagenda.Controls.Add(this.label1);
-            this.panelagenda.Controls.Add(this.pictureboxpersonal1);
+            this.panelagenda.Controls.Add(this.comidin);
             this.panelagenda.Location = new System.Drawing.Point(30, 12);
             this.panelagenda.Name = "panelagenda";
-            this.panelagenda.Size = new System.Drawing.Size(386, 554);
+            this.panelagenda.Size = new System.Drawing.Size(386, 434);
             this.panelagenda.TabIndex = 5;
+            // 
+            // textapellido
+            // 
+            this.textapellido.BackColor = System.Drawing.SystemColors.Window;
+            this.textapellido.BorderColor = System.Drawing.Color.Crimson;
+            this.textapellido.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textapellido.BorderRadius = 0;
+            this.textapellido.BorderSize = 2;
+            this.textapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textapellido.IsFocused = false;
+            this.textapellido.IsPasswordChar = false;
+            this.textapellido.IsPlaceholder = false;
+            this.textapellido.Location = new System.Drawing.Point(101, 244);
+            this.textapellido.Margin = new System.Windows.Forms.Padding(4);
+            this.textapellido.Multiline = false;
+            this.textapellido.Name = "textapellido";
+            this.textapellido.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.textapellido.PasswordChar = false;
+            this.textapellido.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textapellido.PlaceholderText = "";
+            this.textapellido.Size = new System.Drawing.Size(183, 31);
+            this.textapellido.TabIndex = 9;
+            this.textapellido.Texts = "";
+            this.textapellido.UnderlinedStyle = false;
+            // 
+            // textnombre
+            // 
+            this.textnombre.BackColor = System.Drawing.SystemColors.Window;
+            this.textnombre.BorderColor = System.Drawing.Color.Crimson;
+            this.textnombre.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textnombre.BorderRadius = 0;
+            this.textnombre.BorderSize = 2;
+            this.textnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textnombre.IsFocused = false;
+            this.textnombre.IsPasswordChar = false;
+            this.textnombre.IsPlaceholder = false;
+            this.textnombre.Location = new System.Drawing.Point(101, 189);
+            this.textnombre.Margin = new System.Windows.Forms.Padding(4);
+            this.textnombre.Multiline = false;
+            this.textnombre.Name = "textnombre";
+            this.textnombre.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.textnombre.PasswordChar = false;
+            this.textnombre.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textnombre.PlaceholderText = "";
+            this.textnombre.Size = new System.Drawing.Size(183, 31);
+            this.textnombre.TabIndex = 8;
+            this.textnombre.Texts = "";
+            this.textnombre.UnderlinedStyle = false;
+            // 
+            // textcodigo
+            // 
+            this.textcodigo.BackColor = System.Drawing.SystemColors.Window;
+            this.textcodigo.BorderColor = System.Drawing.Color.Pink;
+            this.textcodigo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textcodigo.BorderRadius = 0;
+            this.textcodigo.BorderSize = 2;
+            this.textcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcodigo.IsFocused = false;
+            this.textcodigo.IsPasswordChar = false;
+            this.textcodigo.IsPlaceholder = false;
+            this.textcodigo.Location = new System.Drawing.Point(93, 137);
+            this.textcodigo.Margin = new System.Windows.Forms.Padding(4);
+            this.textcodigo.Multiline = false;
+            this.textcodigo.Name = "textcodigo";
+            this.textcodigo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.textcodigo.PasswordChar = false;
+            this.textcodigo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textcodigo.PlaceholderText = "";
+            this.textcodigo.Size = new System.Drawing.Size(110, 31);
+            this.textcodigo.TabIndex = 7;
+            this.textcodigo.Texts = "";
+            this.textcodigo.UnderlinedStyle = false;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 189);
+            this.label6.Location = new System.Drawing.Point(30, 189);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 19);
             this.label6.TabIndex = 6;
@@ -116,107 +190,61 @@ namespace CAPA_PRESENTACION
             this.label1.TabIndex = 1;
             this.label1.Text = "Agendas de citas";
             // 
-            // pictureboxpersonal1
+            // comidin
             // 
-            this.pictureboxpersonal1.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pictureboxpersonal1.Bordercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
-            this.pictureboxpersonal1.Bordercolor2 = System.Drawing.Color.Cyan;
-            this.pictureboxpersonal1.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Dash;
-            this.pictureboxpersonal1.Bordersize = 5;
-            this.pictureboxpersonal1.Gradient = 50F;
-            this.pictureboxpersonal1.Image = global::CAPA_PRESENTACION.Properties.Resources.medical_42_icon_icons_com_73897;
-            this.pictureboxpersonal1.Location = new System.Drawing.Point(3, 3);
-            this.pictureboxpersonal1.Name = "pictureboxpersonal1";
-            this.pictureboxpersonal1.Size = new System.Drawing.Size(100, 106);
-            this.pictureboxpersonal1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureboxpersonal1.TabIndex = 0;
-            this.pictureboxpersonal1.TabStop = false;
+            this.comidin.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.comidin.Bordercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
+            this.comidin.Bordercolor2 = System.Drawing.Color.Cyan;
+            this.comidin.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.comidin.Bordersize = 5;
+            this.comidin.Gradient = 50F;
+            this.comidin.Image = global::CAPA_PRESENTACION.Properties.Resources.medical_42_icon_icons_com_73897;
+            this.comidin.Location = new System.Drawing.Point(3, 3);
+            this.comidin.Name = "comidin";
+            this.comidin.Size = new System.Drawing.Size(100, 106);
+            this.comidin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.comidin.TabIndex = 0;
+            this.comidin.TabStop = false;
             // 
-            // textboxpersonal1
+            // datetimepicker1
             // 
-            this.textboxpersonal1.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxpersonal1.BorderColor = System.Drawing.Color.Pink;
-            this.textboxpersonal1.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textboxpersonal1.BorderRadius = 0;
-            this.textboxpersonal1.BorderSize = 2;
-            this.textboxpersonal1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxpersonal1.IsFocused = false;
-            this.textboxpersonal1.IsPasswordChar = false;
-            this.textboxpersonal1.IsPlaceholder = false;
-            this.textboxpersonal1.Location = new System.Drawing.Point(93, 137);
-            this.textboxpersonal1.Margin = new System.Windows.Forms.Padding(4);
-            this.textboxpersonal1.Multiline = false;
-            this.textboxpersonal1.Name = "textboxpersonal1";
-            this.textboxpersonal1.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textboxpersonal1.PasswordChar = false;
-            this.textboxpersonal1.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textboxpersonal1.PlaceholderText = "";
-            this.textboxpersonal1.Size = new System.Drawing.Size(110, 31);
-            this.textboxpersonal1.TabIndex = 7;
-            this.textboxpersonal1.Texts = "";
-            this.textboxpersonal1.UnderlinedStyle = false;
+            this.datetimepicker1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.datetimepicker1.BorderSize = 0;
+            this.datetimepicker1.CustomFormat = "MMMM dd,yyy";
+            this.datetimepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datetimepicker1.Location = new System.Drawing.Point(130, 297);
+            this.datetimepicker1.MinimumSize = new System.Drawing.Size(0, 35);
+            this.datetimepicker1.Name = "datetimepicker1";
+            this.datetimepicker1.Size = new System.Drawing.Size(173, 35);
+            this.datetimepicker1.SkinColor = System.Drawing.Color.Teal;
+            this.datetimepicker1.TabIndex = 10;
+            this.datetimepicker1.TextColor = System.Drawing.Color.White;
+            this.datetimepicker1.ValueChanged += new System.EventHandler(this.datetimepicker1_ValueChanged);
             // 
-            // textboxpersonal2
+            // buttonpersolizado1
             // 
-            this.textboxpersonal2.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxpersonal2.BorderColor = System.Drawing.Color.Crimson;
-            this.textboxpersonal2.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textboxpersonal2.BorderRadius = 0;
-            this.textboxpersonal2.BorderSize = 2;
-            this.textboxpersonal2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxpersonal2.IsFocused = false;
-            this.textboxpersonal2.IsPasswordChar = false;
-            this.textboxpersonal2.IsPlaceholder = false;
-            this.textboxpersonal2.Location = new System.Drawing.Point(106, 189);
-            this.textboxpersonal2.Margin = new System.Windows.Forms.Padding(4);
-            this.textboxpersonal2.Multiline = false;
-            this.textboxpersonal2.Name = "textboxpersonal2";
-            this.textboxpersonal2.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textboxpersonal2.PasswordChar = false;
-            this.textboxpersonal2.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textboxpersonal2.PlaceholderText = "";
-            this.textboxpersonal2.Size = new System.Drawing.Size(183, 31);
-            this.textboxpersonal2.TabIndex = 8;
-            this.textboxpersonal2.Texts = "";
-            this.textboxpersonal2.UnderlinedStyle = false;
-            // 
-            // textboxpersonal3
-            // 
-            this.textboxpersonal3.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxpersonal3.BorderColor = System.Drawing.Color.Crimson;
-            this.textboxpersonal3.BorderFocusColor = System.Drawing.Color.HotPink;
-            this.textboxpersonal3.BorderRadius = 0;
-            this.textboxpersonal3.BorderSize = 2;
-            this.textboxpersonal3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textboxpersonal3.IsFocused = false;
-            this.textboxpersonal3.IsPasswordChar = false;
-            this.textboxpersonal3.IsPlaceholder = false;
-            this.textboxpersonal3.Location = new System.Drawing.Point(106, 244);
-            this.textboxpersonal3.Margin = new System.Windows.Forms.Padding(4);
-            this.textboxpersonal3.Multiline = false;
-            this.textboxpersonal3.Name = "textboxpersonal3";
-            this.textboxpersonal3.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textboxpersonal3.PasswordChar = false;
-            this.textboxpersonal3.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textboxpersonal3.PlaceholderText = "";
-            this.textboxpersonal3.Size = new System.Drawing.Size(183, 31);
-            this.textboxpersonal3.TabIndex = 9;
-            this.textboxpersonal3.Texts = "";
-            this.textboxpersonal3.UnderlinedStyle = false;
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.monthCalendar1.Location = new System.Drawing.Point(129, 306);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 10;
-            this.monthCalendar1.TitleForeColor = System.Drawing.Color.DarkRed;
-            this.monthCalendar1.TrailingForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.buttonpersolizado1.BackColor = System.Drawing.Color.Gold;
+            this.buttonpersolizado1.BackgroundColor = System.Drawing.Color.Gold;
+            this.buttonpersolizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.buttonpersolizado1.BorderRadius = 20;
+            this.buttonpersolizado1.BorderSize = 0;
+            this.buttonpersolizado1.FlatAppearance.BorderSize = 0;
+            this.buttonpersolizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonpersolizado1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonpersolizado1.ForeColor = System.Drawing.Color.White;
+            this.buttonpersolizado1.Location = new System.Drawing.Point(101, 355);
+            this.buttonpersolizado1.Name = "buttonpersolizado1";
+            this.buttonpersolizado1.Size = new System.Drawing.Size(150, 40);
+            this.buttonpersolizado1.TabIndex = 11;
+            this.buttonpersolizado1.Text = "Agendar cita";
+            this.buttonpersolizado1.TextColor = System.Drawing.Color.White;
+            this.buttonpersolizado1.UseVisualStyleBackColor = false;
             // 
             // Agendarcitahijo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.Azure;
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(832, 578);
             this.Controls.Add(this.panelagenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -224,7 +252,7 @@ namespace CAPA_PRESENTACION
             this.Text = "Agendarcitahijo";
             this.panelagenda.ResumeLayout(false);
             this.panelagenda.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxpersonal1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comidin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -232,14 +260,15 @@ namespace CAPA_PRESENTACION
         #endregion
         private Paneldegradado panelagenda;
         private System.Windows.Forms.Label label1;
-        private Pictureboxpersonal pictureboxpersonal1;
+        private Pictureboxpersonal comidin;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private textboxpersonal textboxpersonal3;
-        private textboxpersonal textboxpersonal2;
-        private textboxpersonal textboxpersonal1;
+        private textboxpersonal textapellido;
+        private textboxpersonal textnombre;
+        private textboxpersonal textcodigo;
+        private Datetimepicker datetimepicker1;
+        private Buttonpersolizado buttonpersolizado1;
     }
 }

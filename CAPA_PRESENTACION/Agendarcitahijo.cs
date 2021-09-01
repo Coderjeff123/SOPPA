@@ -17,7 +17,9 @@ namespace CAPA_PRESENTACION
             InitializeComponent();
         }
 
-      
-        
+        private void datetimepicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
