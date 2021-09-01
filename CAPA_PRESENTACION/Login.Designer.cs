@@ -29,53 +29,22 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtuser = new System.Windows.Forms.TextBox();
-            this.txtpass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnlogin = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblerror = new System.Windows.Forms.Label();
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
+            this.btnlogin = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.txtpass = new CAPA_PRESENTACION.textboxpersonal();
+            this.txtuser = new CAPA_PRESENTACION.textboxpersonal();
             this.lblnot = new System.Windows.Forms.Label();
-            ///this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-          ///  this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-           /// this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.paneldegradado2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // txtuser
-            // 
-            this.txtuser.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtuser.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtuser.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtuser.ForeColor = System.Drawing.Color.Black;
-            this.txtuser.Location = new System.Drawing.Point(131, 96);
-            this.txtuser.Name = "txtuser";
-            this.txtuser.Size = new System.Drawing.Size(286, 18);
-            this.txtuser.TabIndex = 2;
-            this.txtuser.Text = "User";
-            this.txtuser.Enter += new System.EventHandler(this.txtuser_Enter);
-            this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
-            // 
-            // txtpass
-            // 
-            this.txtpass.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txtpass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtpass.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpass.ForeColor = System.Drawing.Color.Black;
-            this.txtpass.Location = new System.Drawing.Point(131, 165);
-            this.txtpass.Name = "txtpass";
-            this.txtpass.Size = new System.Drawing.Size(286, 18);
-            this.txtpass.TabIndex = 2;
-            this.txtpass.Text = "Password";
-            this.txtpass.Enter += new System.EventHandler(this.txtpass_Enter);
-            this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
             // label1
             // 
@@ -88,23 +57,6 @@ namespace CAPA_PRESENTACION
             this.label1.Size = new System.Drawing.Size(94, 37);
             this.label1.TabIndex = 5;
             this.label1.Text = "LOGIN";
-            // 
-            // btnlogin
-            // 
-            this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(242)))), ((int)(((byte)(200)))));
-            this.btnlogin.FlatAppearance.BorderSize = 0;
-            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.ForeColor = System.Drawing.Color.Black;
-            this.btnlogin.Location = new System.Drawing.Point(140, 249);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(277, 33);
-            this.btnlogin.TabIndex = 3;
-            this.btnlogin.Text = "Acceder";
-            this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
-            this.btnlogin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.btnlogin_KeyDown);
             // 
             // pictureBox1
             // 
@@ -133,13 +85,13 @@ namespace CAPA_PRESENTACION
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.Aqua;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.SkyBlue;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
             this.paneldegradado1.Controls.Add(this.panel1);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Left;
             this.paneldegradado1.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(186, 336);
+            this.paneldegradado1.Size = new System.Drawing.Size(186, 310);
             this.paneldegradado1.TabIndex = 0;
             // 
             // panel1
@@ -167,20 +119,89 @@ namespace CAPA_PRESENTACION
             // 
             this.paneldegradado2.angulo = 0F;
             this.paneldegradado2.Colorleft = System.Drawing.Color.LightSkyBlue;
-            this.paneldegradado2.Colorrigth = System.Drawing.Color.Teal;
+            this.paneldegradado2.Colorrigth = System.Drawing.Color.LightSkyBlue;
+            this.paneldegradado2.Controls.Add(this.btnlogin);
+            this.paneldegradado2.Controls.Add(this.txtpass);
+            this.paneldegradado2.Controls.Add(this.txtuser);
             this.paneldegradado2.Controls.Add(this.lblnot);
             this.paneldegradado2.Controls.Add(this.pictureBox2);
             this.paneldegradado2.Controls.Add(this.pictureBox1);
             this.paneldegradado2.Controls.Add(this.label1);
-            this.paneldegradado2.Controls.Add(this.btnlogin);
-            this.paneldegradado2.Controls.Add(this.txtpass);
-            this.paneldegradado2.Controls.Add(this.txtuser);
-           // this.paneldegradado2.Controls.Add(this.shapeContainer1);
-            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneldegradado2.Location = new System.Drawing.Point(186, 0);
             this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(533, 336);
+            this.paneldegradado2.Size = new System.Drawing.Size(443, 310);
             this.paneldegradado2.TabIndex = 10;
+            // 
+            // btnlogin
+            // 
+            this.btnlogin.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.btnlogin.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.btnlogin.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnlogin.BorderRadius = 20;
+            this.btnlogin.BorderSize = 1;
+            this.btnlogin.FlatAppearance.BorderSize = 0;
+            this.btnlogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnlogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogin.Font = new System.Drawing.Font("Palatino Linotype", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogin.ForeColor = System.Drawing.Color.Black;
+            this.btnlogin.Location = new System.Drawing.Point(131, 229);
+            this.btnlogin.Name = "btnlogin";
+            this.btnlogin.Size = new System.Drawing.Size(150, 40);
+            this.btnlogin.TabIndex = 12;
+            this.btnlogin.Text = "Acceder";
+            this.btnlogin.TextColor = System.Drawing.Color.Black;
+            this.btnlogin.UseVisualStyleBackColor = false;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            // 
+            // txtpass
+            // 
+            this.txtpass.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtpass.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtpass.BorderFocusColor = System.Drawing.Color.DodgerBlue;
+            this.txtpass.BorderRadius = 0;
+            this.txtpass.BorderSize = 2;
+            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.IsFocused = true;
+            this.txtpass.IsPasswordChar = false;
+            this.txtpass.IsPlaceholder = false;
+            this.txtpass.Location = new System.Drawing.Point(86, 125);
+            this.txtpass.Margin = new System.Windows.Forms.Padding(4);
+            this.txtpass.Multiline = false;
+            this.txtpass.Name = "txtpass";
+            this.txtpass.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtpass.PasswordChar = true;
+            this.txtpass.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtpass.PlaceholderText = "";
+            this.txtpass.Size = new System.Drawing.Size(290, 31);
+            this.txtpass.TabIndex = 11;
+            this.txtpass.Texts = "";
+            this.txtpass.UnderlinedStyle = true;
+            // 
+            // txtuser
+            // 
+            this.txtuser.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtuser.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtuser.BorderFocusColor = System.Drawing.Color.DodgerBlue;
+            this.txtuser.BorderRadius = 0;
+            this.txtuser.BorderSize = 2;
+            this.txtuser.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuser.IsFocused = true;
+            this.txtuser.IsPasswordChar = false;
+            this.txtuser.IsPlaceholder = false;
+            this.txtuser.Location = new System.Drawing.Point(86, 60);
+            this.txtuser.Margin = new System.Windows.Forms.Padding(4);
+            this.txtuser.Multiline = true;
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtuser.PasswordChar = false;
+            this.txtuser.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtuser.PlaceholderText = "";
+            this.txtuser.Size = new System.Drawing.Size(286, 31);
+            this.txtuser.TabIndex = 10;
+            this.txtuser.Texts = "User";
+            this.txtuser.UnderlinedStyle = true;
             // 
             // lblnot
             // 
@@ -189,49 +210,19 @@ namespace CAPA_PRESENTACION
             this.lblnot.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblnot.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblnot.ForeColor = System.Drawing.Color.Red;
-            this.lblnot.Location = new System.Drawing.Point(131, 211);
+            this.lblnot.Location = new System.Drawing.Point(86, 174);
             this.lblnot.Name = "lblnot";
             this.lblnot.Size = new System.Drawing.Size(50, 19);
             this.lblnot.TabIndex = 9;
             this.lblnot.Text = "label2";
             this.lblnot.Visible = false;
             // 
-            // shapeContainer1
-            // 
-           // this.shapeContainer1.Location = new System.Drawing.Point(0, 0);
-           // this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
-           // this.shapeContainer1.Name = "shapeContainer1";
-          /*  this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.lineShape2,
-            this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(533, 336);
-            this.shapeContainer1.TabIndex = 10;
-            this.shapeContainer1.TabStop = false;
-            // 
-            // lineShape1
-            // 
-            this.lineShape1.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 132;
-            this.lineShape1.X2 = 417;
-            this.lineShape1.Y1 = 190;
-            this.lineShape1.Y2 = 190;
-            // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 130;
-            this.lineShape2.X2 = 418;
-            this.lineShape2.Y1 = 119;
-            this.lineShape2.Y2 = 119;*/
-            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SteelBlue;
-            this.ClientSize = new System.Drawing.Size(719, 336);
+            this.ClientSize = new System.Drawing.Size(629, 310);
             this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.lblerror);
             this.Controls.Add(this.paneldegradado1);
@@ -254,16 +245,16 @@ namespace CAPA_PRESENTACION
 
         private Paneldegradado paneldegradado1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox txtuser;
-        private System.Windows.Forms.TextBox txtpass;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblerror;
         private Paneldegradado paneldegradado2;
         private System.Windows.Forms.Label lblnot;
-       // private ShapeContainer shapeContainer1;
+        private textboxpersonal txtuser;
+        private textboxpersonal txtpass;
+        private Buttonpersolizado btnlogin;
+        // private ShapeContainer shapeContainer1;
         //private LineShape lineShape2;
         //private LineShape lineShape1;
     }

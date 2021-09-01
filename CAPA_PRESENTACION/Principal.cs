@@ -300,7 +300,7 @@ namespace CAPA_PRESENTACION
         {
             for(int f = 1; f <= 96; f++)
             {
-                dataGridView1.Rows.Add();                
+                dtaexpe.Rows.Add();                
             }
             Cargarfecha();
         }
@@ -328,7 +328,7 @@ namespace CAPA_PRESENTACION
             {
                 string linea1 = archivo2.ReadLine();
                 string linea2 = archivo2.ReadLine();
-                dataGridView1.Rows[x].Cells[0].Value = linea1;
+                dtaexpe.Rows[x].Cells[0].Value = linea1;
                 x++;
             }
         }

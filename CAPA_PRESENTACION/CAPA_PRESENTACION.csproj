@@ -78,6 +78,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="Datetimepicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Formwelcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -290,6 +293,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\organizer_calendar_pen_note_6134 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Calendario white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Calendario black.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Controlwhite.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

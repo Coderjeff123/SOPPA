@@ -173,6 +173,26 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Calendario_black {
+            get {
+                object obj = ResourceManager.GetObject("Calendario_black", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Calendario_white {
+            get {
+                object obj = ResourceManager.GetObject("Calendario_white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap canceltheapplication_cancelar_2901 {
             get {
                 object obj = ResourceManager.GetObject("canceltheapplication_cancelar_2901", resourceCulture);
@@ -186,6 +206,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap closewindowapplication_cerca_ventan_2874 {
             get {
                 object obj = ResourceManager.GetObject("closewindowapplication_cerca_ventan_2874", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Controlwhite {
+            get {
+                object obj = ResourceManager.GetObject("Controlwhite", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

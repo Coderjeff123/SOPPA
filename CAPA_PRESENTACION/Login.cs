@@ -24,9 +24,9 @@ namespace CAPA_PRESENTACION
 
         private void txtuser_Enter(object sender, EventArgs e)
         {
-            if (txtuser.Text == "User")
+            if (txtuser.Texts == "User")
             {
-                txtuser.Text = "";
+                txtuser.Texts = "";
                 txtuser.ForeColor = Color.Black;
                 nombre = txtuser.Text;
             }
@@ -34,9 +34,9 @@ namespace CAPA_PRESENTACION
 
         private void txtuser_Leave(object sender, EventArgs e)
         {
-            if (txtuser.Text == "")
+            if (txtuser.Texts == "")
             {
-                txtuser.Text = "User";
+                txtuser.Texts = "User";
                 txtuser.ForeColor = Color.FromArgb(45, 50, 61);
             }
         }
@@ -53,21 +53,22 @@ namespace CAPA_PRESENTACION
 
         private void txtpass_Enter(object sender, EventArgs e)
         {
-            if (txtpass.Text == "Password")
+            if (txtpass.Texts == "Password")
             {
-                txtpass.Text = "";
+                txtpass.Texts = "";
                 txtpass.ForeColor = Color.Black;
-                txtpass.UseSystemPasswordChar = true;
+                
+                
             }
         }
 
         private void txtpass_Leave(object sender, EventArgs e)
         {
-            if (txtpass.Text == "")
+            if (txtpass.Texts == "")
             {
-                txtpass.Text = "Password";
+                txtpass.Texts = "Password";
                 txtpass.ForeColor = Color.FromArgb(45, 50, 61);
-                txtpass.UseSystemPasswordChar = false;
+                
             }
         }
 
@@ -89,12 +90,12 @@ namespace CAPA_PRESENTACION
 
         private void inicio()
         {
-            if (txtuser.Text != "User")
+            if (txtuser.Texts != "User")
             {
-                if (txtpass.Text != "Pass")
+                if (txtpass.Texts != "Pass")
                 {
                     NLogin nLogin = new NLogin();
-                    string validation = nLogin.loginuser(txtuser.Text, txtpass.Text);
+                    string validation = nLogin.loginuser(txtuser.Texts, txtpass.Texts);
 
                     if (validation == retorno)
                     {
@@ -117,5 +118,7 @@ namespace CAPA_PRESENTACION
             }
             else msgError("Please enter User");
         }
+
+       
     }
 }
