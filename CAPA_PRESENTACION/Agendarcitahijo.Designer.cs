@@ -217,7 +217,7 @@ namespace CAPA_PRESENTACION
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(751, 578);
+            this.ClientSize = new System.Drawing.Size(832, 578);
             this.Controls.Add(this.panelagenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcitahijo";
