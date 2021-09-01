@@ -82,7 +82,9 @@ namespace CAPA_PRESENTACION
             mostrar();
         }
 
-        private void pimagen_Click(object sender, EventArgs e)
+     
+
+        private void pimagen_Click_1(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
             DialogResult result = open.ShowDialog();
@@ -94,7 +96,5 @@ namespace CAPA_PRESENTACION
 
             mostrar();
         }
-
-        
     }
 }

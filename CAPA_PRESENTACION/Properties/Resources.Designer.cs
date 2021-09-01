@@ -293,6 +293,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap medical_42_icon_icons_com_73897 {
+            get {
+                object obj = ResourceManager.GetObject("medical-42_icon-icons.com_73897", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap minimize_thewindow_theapplication_2872 {
             get {
                 object obj = ResourceManager.GetObject("minimize_thewindow_theapplication_2872", resourceCulture);
@@ -316,6 +326,36 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap ok_accept_3523 {
             get {
                 object obj = ResourceManager.GetObject("ok_accept_3523", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap organizer_calendar_pen_note_6134 {
+            get {
+                object obj = ResourceManager.GetObject("organizer_calendar_pen_note_6134", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap organizer_calendar_pen_note_6134__1_ {
+            get {
+                object obj = ResourceManager.GetObject("organizer_calendar_pen_note_6134 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap organizer_calendar_pen_note_6134__2_ {
+            get {
+                object obj = ResourceManager.GetObject("organizer_calendar_pen_note_6134 (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
