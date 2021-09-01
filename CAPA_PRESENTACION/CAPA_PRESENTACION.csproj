@@ -273,5 +273,11 @@
   <ItemGroup>
     <None Include="Resources\organizer_calendar_pen_note_6134.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\organizer_calendar_pen_note_6134 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\organizer_calendar_pen_note_6134 %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

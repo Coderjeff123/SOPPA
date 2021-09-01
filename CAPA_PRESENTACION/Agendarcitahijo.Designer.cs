@@ -35,9 +35,7 @@ namespace CAPA_PRESENTACION
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textagendar = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -55,9 +53,7 @@ namespace CAPA_PRESENTACION
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.textagendar);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
-            this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
@@ -70,7 +66,7 @@ namespace CAPA_PRESENTACION
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.groupBox1.Size = new System.Drawing.Size(577, 351);
+            this.groupBox1.Size = new System.Drawing.Size(403, 351);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.UseWaitCursor = true;
@@ -79,36 +75,41 @@ namespace CAPA_PRESENTACION
             // 
             this.button1.BackColor = System.Drawing.Color.OldLace;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.organizer_calendar_pen_note_6134;
-            this.button1.Location = new System.Drawing.Point(140, 274);
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.organizer_calendar_pen_note_6134__2_;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.button1.Location = new System.Drawing.Point(159, 265);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(155, 54);
+            this.button1.Size = new System.Drawing.Size(105, 38);
             this.button1.TabIndex = 11;
             this.button1.Text = "Agendar";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.UseWaitCursor = true;
             // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(130, 162);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 32);
+            this.textBox2.Size = new System.Drawing.Size(225, 27);
             this.textBox2.TabIndex = 10;
             this.textBox2.UseWaitCursor = true;
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(130, 114);
+            this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(225, 32);
+            this.textBox1.Size = new System.Drawing.Size(225, 27);
             this.textBox1.TabIndex = 9;
             this.textBox1.UseWaitCursor = true;
             // 
             // textagendar
             // 
             this.textagendar.Location = new System.Drawing.Point(130, 73);
+            this.textagendar.Multiline = true;
             this.textagendar.Name = "textagendar";
-            this.textagendar.Size = new System.Drawing.Size(134, 32);
+            this.textagendar.Size = new System.Drawing.Size(134, 23);
             this.textagendar.TabIndex = 8;
             this.textagendar.UseWaitCursor = true;
             // 
@@ -120,16 +121,6 @@ namespace CAPA_PRESENTACION
             this.dateTimePicker1.TabIndex = 7;
             this.dateTimePicker1.UseWaitCursor = true;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(346, 81);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(47, 24);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "label7";
-            this.label7.UseWaitCursor = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -139,16 +130,6 @@ namespace CAPA_PRESENTACION
             this.label6.TabIndex = 5;
             this.label6.Text = "Calendario:";
             this.label6.UseWaitCursor = true;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(356, 42);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(47, 24);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "label5";
-            this.label5.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -185,11 +166,14 @@ namespace CAPA_PRESENTACION
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 12F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
+                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(5)), true);
             this.label1.Location = new System.Drawing.Point(63, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 24);
+            this.label1.Size = new System.Drawing.Size(137, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Agenda de Citas";
+            this.label1.UseCompatibleTextRendering = true;
             this.label1.UseWaitCursor = true;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -197,7 +181,7 @@ namespace CAPA_PRESENTACION
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Azure;
-            this.ClientSize = new System.Drawing.Size(610, 413);
+            this.ClientSize = new System.Drawing.Size(751, 413);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcitahijo";
@@ -213,9 +197,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox textagendar;
         private System.Windows.Forms.GroupBox groupBox1;

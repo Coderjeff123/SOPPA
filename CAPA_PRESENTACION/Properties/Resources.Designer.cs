@@ -343,6 +343,26 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap organizer_calendar_pen_note_6134__1_ {
+            get {
+                object obj = ResourceManager.GetObject("organizer_calendar_pen_note_6134 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap organizer_calendar_pen_note_6134__2_ {
+            get {
+                object obj = ResourceManager.GetObject("organizer_calendar_pen_note_6134 (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap pensando {
             get {
                 object obj = ResourceManager.GetObject("pensando", resourceCulture);

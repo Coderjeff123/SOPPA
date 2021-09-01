@@ -121,6 +121,9 @@
   <data name="priority_low_icon_136291" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\priority_low_icon_136291.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="0-3895_smbolo-da-psicologia-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\0-3895_smbolo-da-psicologia-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="pensando" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\pensando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,8 +154,8 @@
   <data name="gui_form_checkbox_icon_157650" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\gui_form_checkbox_icon_157650.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="canceltheapplication_cancelar_2901" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\canceltheapplication_cancelar_2901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -162,9 +165,6 @@
   </data>
   <data name="login-square-arrow-button-outline_icon-icons.com_73220" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\login-square-arrow-button-outline_icon-icons.com_73220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="twocirclingarrows_120593" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\twocirclingarrows_120593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ok_accept_3523" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\ok_accept_3523.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,8 +181,17 @@
   <data name="newfile_85903" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\newfile_85903.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="organizer_calendar_pen_note_6134 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\organizer_calendar_pen_note_6134 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="organizer_calendar_pen_note_6134" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\organizer_calendar_pen_note_6134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="window_restore_icon_144027" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\window_restore_icon_144027.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="corazon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\corazon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,11 +211,11 @@
   <data name="download_arrow_icon_143023" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\download_arrow_icon_143023.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="canceltheapplication_cancelar_2901" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\canceltheapplication_cancelar_2901.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="corazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\corazon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0-3895_smbolo-da-psicologia-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\0-3895_smbolo-da-psicologia-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="twocirclingarrows_120593" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\twocirclingarrows_120593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="minimize_thewindow_theapplication_2872" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\minimize_thewindow_theapplication_2872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,10 +223,7 @@
   <data name="closewindowapplication_cerca_ventan_2874" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\closewindowapplication_cerca_ventan_2874.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="corazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\corazon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="organizer_calendar_pen_note_6134" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\organizer_calendar_pen_note_6134.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="organizer_calendar_pen_note_6134 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\organizer_calendar_pen_note_6134 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
