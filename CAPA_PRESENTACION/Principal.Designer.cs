@@ -41,7 +41,7 @@ namespace CAPA_PRESENTACION
             this.btnmaxform = new System.Windows.Forms.Button();
             this.btncloseform = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.dtaexpe = new System.Windows.Forms.DataGridView();
+            this.dtaactividad = new System.Windows.Forms.DataGridView();
             this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).BeginInit();
             this.panelmenu.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
             this.panelsubmenuinformes.SuspendLayout();
@@ -168,7 +168,7 @@ namespace CAPA_PRESENTACION
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panel4.Controls.Add(this.dtaexpe);
+            this.panel4.Controls.Add(this.dtaactividad);
             this.panel4.Controls.Add(this.Fecha);
             this.panel4.Controls.Add(this.monthCalendar1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -177,17 +177,17 @@ namespace CAPA_PRESENTACION
             this.panel4.Size = new System.Drawing.Size(768, 240);
             this.panel4.TabIndex = 2;
             // 
-            // dtaexpe
+            // dtaactividad
             // 
-            this.dtaexpe.AllowUserToAddRows = false;
-            this.dtaexpe.AllowUserToResizeColumns = false;
-            this.dtaexpe.AllowUserToResizeRows = false;
-            this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaexpe.BackgroundColor = System.Drawing.Color.LightSkyBlue;
-            this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtaactividad.AllowUserToAddRows = false;
+            this.dtaactividad.AllowUserToResizeColumns = false;
+            this.dtaactividad.AllowUserToResizeRows = false;
+            this.dtaactividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtaactividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dtaactividad.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.dtaactividad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtaactividad.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtaactividad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -195,10 +195,10 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaexpe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtaexpe.ColumnHeadersHeight = 30;
-            this.dtaexpe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtaexpe.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtaactividad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtaactividad.ColumnHeadersHeight = 30;
+            this.dtaactividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtaactividad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Hora,
             this.Cita});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -208,13 +208,13 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtaexpe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtaexpe.EnableHeadersVisualStyles = false;
-            this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dtaexpe.Location = new System.Drawing.Point(248, 0);
-            this.dtaexpe.Name = "dtaexpe";
-            this.dtaexpe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dtaactividad.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtaactividad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtaactividad.EnableHeadersVisualStyles = false;
+            this.dtaactividad.GridColor = System.Drawing.Color.PaleTurquoise;
+            this.dtaactividad.Location = new System.Drawing.Point(248, 0);
+            this.dtaactividad.Name = "dtaactividad";
+            this.dtaactividad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -222,14 +222,14 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaexpe.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtaexpe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtaexpe.ShowCellErrors = false;
-            this.dtaexpe.ShowCellToolTips = false;
-            this.dtaexpe.ShowEditingIcon = false;
-            this.dtaexpe.ShowRowErrors = false;
-            this.dtaexpe.Size = new System.Drawing.Size(520, 240);
-            this.dtaexpe.TabIndex = 3;
+            this.dtaactividad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtaactividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtaactividad.ShowCellErrors = false;
+            this.dtaactividad.ShowCellToolTips = false;
+            this.dtaactividad.ShowEditingIcon = false;
+            this.dtaactividad.ShowRowErrors = false;
+            this.dtaactividad.Size = new System.Drawing.Size(520, 240);
+            this.dtaactividad.TabIndex = 3;
             // 
             // Hora
             // 
@@ -694,7 +694,7 @@ namespace CAPA_PRESENTACION
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).EndInit();
             this.panelmenu.ResumeLayout(false);
             this.paneldegradado1.ResumeLayout(false);
             this.panelsubmenuinformes.ResumeLayout(false);
@@ -739,7 +739,7 @@ namespace CAPA_PRESENTACION
         private Paneldegradado paneldegradado1;
         private Paneldegradado paneldegradado2;
         private System.Windows.Forms.Label Fecha;
-        private System.Windows.Forms.DataGridView dtaexpe;
+        private System.Windows.Forms.DataGridView dtaactividad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
     }
