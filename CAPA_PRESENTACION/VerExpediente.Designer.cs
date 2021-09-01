@@ -43,12 +43,12 @@ namespace CAPA_PRESENTACION
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.btnbaja = new System.Windows.Forms.Button();
-            this.pictureboxpersonal1 = new CAPA_PRESENTACION.Pictureboxpersonal();
+            this.pimagen = new CAPA_PRESENTACION.Pictureboxpersonal();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
             this.paneldegra21.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxpersonal1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.SuspendLayout();
             // 
             // dtaexpe
@@ -228,20 +228,21 @@ namespace CAPA_PRESENTACION
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
-            // pictureboxpersonal1
+            // pimagen
             // 
-            this.pictureboxpersonal1.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pictureboxpersonal1.Bordercolor = System.Drawing.Color.DeepSkyBlue;
-            this.pictureboxpersonal1.Bordercolor2 = System.Drawing.Color.Cyan;
-            this.pictureboxpersonal1.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pictureboxpersonal1.Bordersize = 2;
-            this.pictureboxpersonal1.Gradient = 50F;
-            this.pictureboxpersonal1.Location = new System.Drawing.Point(20, 79);
-            this.pictureboxpersonal1.Name = "pictureboxpersonal1";
-            this.pictureboxpersonal1.Size = new System.Drawing.Size(150, 134);
-            this.pictureboxpersonal1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureboxpersonal1.TabIndex = 6;
-            this.pictureboxpersonal1.TabStop = false;
+            this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pimagen.Bordercolor = System.Drawing.Color.DeepSkyBlue;
+            this.pimagen.Bordercolor2 = System.Drawing.Color.Cyan;
+            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pimagen.Bordersize = 2;
+            this.pimagen.Gradient = 50F;
+            this.pimagen.Location = new System.Drawing.Point(20, 79);
+            this.pimagen.Name = "pimagen";
+            this.pimagen.Size = new System.Drawing.Size(150, 134);
+            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pimagen.TabIndex = 6;
+            this.pimagen.TabStop = false;
+            this.pimagen.Click += new System.EventHandler(this.pimagen_Click_1);
             // 
             // VerExpediente
             // 
@@ -251,7 +252,7 @@ namespace CAPA_PRESENTACION
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.pictureboxpersonal1);
+            this.Controls.Add(this.pimagen);
             this.Controls.Add(this.paneldegra21);
             this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.panel2);
@@ -267,7 +268,7 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.PerformLayout();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegradado1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureboxpersonal1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -284,7 +285,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.TextBox txtestado;
         private System.Windows.Forms.Button button2;
         private paneldegra2 paneldegra21;
-        private Pictureboxpersonal pictureboxpersonal1;
+        private Pictureboxpersonal pimagen;
         //private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
     }
 }
