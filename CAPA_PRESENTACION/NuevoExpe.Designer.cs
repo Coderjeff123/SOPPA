@@ -56,7 +56,7 @@ namespace CAPA_PRESENTACION
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
-            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
+            this.panel = new CAPA_PRESENTACION.paneldegra2();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.txtnom = new System.Windows.Forms.TextBox();
@@ -73,7 +73,7 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.paneldegradado2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
-            this.paneldegra21.SuspendLayout();
+            this.panel.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -318,7 +318,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.Colorleft = System.Drawing.Color.Transparent;
             this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
             this.paneldegradado2.Controls.Add(this.dtaexpe);
-            this.paneldegradado2.Controls.Add(this.paneldegra21);
+            this.paneldegradado2.Controls.Add(this.panel);
             this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado2.Name = "paneldegradado2";
             this.paneldegradado2.Size = new System.Drawing.Size(754, 467);
@@ -376,18 +376,18 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.TabIndex = 7;
             this.dtaexpe.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseDoubleClick);
             // 
-            // paneldegra21
+            // panel
             // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.paneldegra21.Controls.Add(this.label3);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.txtnom);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(754, 74);
-            this.paneldegra21.TabIndex = 6;
+            this.panel.Colorleft = System.Drawing.Color.Teal;
+            this.panel.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel.Controls.Add(this.label3);
+            this.panel.Controls.Add(this.button1);
+            this.panel.Controls.Add(this.txtnom);
+            this.panel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel.Location = new System.Drawing.Point(0, 0);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(754, 74);
+            this.panel.TabIndex = 6;
             // 
             // label3
             // 
@@ -534,8 +534,8 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.paneldegradado2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
-            this.paneldegra21.ResumeLayout(false);
-            this.paneldegra21.PerformLayout();
+            this.panel.ResumeLayout(false);
+            this.panel.PerformLayout();
             this.paneldegradado1.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -569,7 +569,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.ErrorProvider epError;
         private Paneldegradado paneldegradado2;
-        private paneldegra2 paneldegra21;
+        private paneldegra2 panel;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtnom;
