@@ -78,6 +78,9 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Class1.cs" />
+    <Compile Include="Combobox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Datetimepicker.cs">
       <SubType>Component</SubType>
     </Compile>

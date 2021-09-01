@@ -231,8 +231,8 @@ namespace CAPA_PRESENTACION
             // pimagen
             // 
             this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pimagen.Bordercolor = System.Drawing.Color.DeepSkyBlue;
-            this.pimagen.Bordercolor2 = System.Drawing.Color.Cyan;
+            this.pimagen.Bordercolor = System.Drawing.Color.DarkCyan;
+            this.pimagen.Bordercolor2 = System.Drawing.Color.DeepSkyBlue;
             this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
             this.pimagen.Bordersize = 2;
             this.pimagen.Gradient = 50F;
