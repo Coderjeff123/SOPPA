@@ -33,9 +33,6 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.paneltitulo = new System.Windows.Forms.Panel();
-            this.Titulo = new System.Windows.Forms.Label();
-            this.panelinfo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
@@ -45,13 +42,9 @@ namespace CAPA_PRESENTACION
             this.rbtnactivo = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.cmbxremitente = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.txtmotivo = new System.Windows.Forms.TextBox();
-            this.dtmfecharemi = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
@@ -64,55 +57,22 @@ namespace CAPA_PRESENTACION
             this.btnlimpiar = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnremitir = new System.Windows.Forms.Button();
-            this.paneltitulo.SuspendLayout();
-            this.panelinfo.SuspendLayout();
+            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
+            this.datetimepicker1 = new CAPA_PRESENTACION.Datetimepicker();
+            this.cmbxremitente = new CAPA_PRESENTACION.Combobox();
+            this.txtmotivo = new CAPA_PRESENTACION.textboxpersonal();
+            this.panelinfo = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.paneldegradado2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panelBuscaestu.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
+            this.paneldegra21.SuspendLayout();
+            this.panelinfo.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // paneltitulo
-            // 
-            this.paneltitulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.paneltitulo.Controls.Add(this.Titulo);
-            this.paneltitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneltitulo.Location = new System.Drawing.Point(0, 0);
-            this.paneltitulo.Name = "paneltitulo";
-            this.paneltitulo.Size = new System.Drawing.Size(754, 37);
-            this.paneltitulo.TabIndex = 0;
-            // 
-            // Titulo
-            // 
-            this.Titulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Titulo.AutoSize = true;
-            this.Titulo.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo.ForeColor = System.Drawing.Color.Black;
-            this.Titulo.Location = new System.Drawing.Point(312, 9);
-            this.Titulo.Name = "Titulo";
-            this.Titulo.Size = new System.Drawing.Size(149, 19);
-            this.Titulo.TabIndex = 4;
-            this.Titulo.Text = "Nuevo Expediente";
-            // 
-            // panelinfo
-            // 
-            this.panelinfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelinfo.BackColor = System.Drawing.Color.White;
-            this.panelinfo.Controls.Add(this.pictureBox1);
-            this.panelinfo.Controls.Add(this.label1);
-            this.panelinfo.Controls.Add(this.panelDatos);
-            this.panelinfo.Location = new System.Drawing.Point(0, 170);
-            this.panelinfo.Name = "panelinfo";
-            this.panelinfo.Size = new System.Drawing.Size(754, 272);
-            this.panelinfo.TabIndex = 3;
-            this.panelinfo.Visible = false;
             // 
             // pictureBox1
             // 
@@ -156,7 +116,7 @@ namespace CAPA_PRESENTACION
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.rbtninactivo);
             this.groupBox1.Controls.Add(this.rbtnactivo);
-            this.groupBox1.Location = new System.Drawing.Point(20, 68);
+            this.groupBox1.Location = new System.Drawing.Point(20, 82);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(200, 87);
             this.groupBox1.TabIndex = 9;
@@ -201,7 +161,7 @@ namespace CAPA_PRESENTACION
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label2.Location = new System.Drawing.Point(17, 11);
+            this.label2.Location = new System.Drawing.Point(17, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(56, 13);
             this.label2.TabIndex = 3;
@@ -209,58 +169,29 @@ namespace CAPA_PRESENTACION
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(122, 11);
+            this.txtnombre.Location = new System.Drawing.Point(122, 25);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(316, 20);
             this.txtnombre.TabIndex = 0;
             this.txtnombre.Validated += new System.EventHandler(this.txtnombre_Validated);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.cmbxremitente);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.txtmotivo);
-            this.panel1.Controls.Add(this.dtmfecharemi);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 37);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(754, 121);
-            this.panel1.TabIndex = 5;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(20, 77);
+            this.label9.Location = new System.Drawing.Point(18, 70);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(64, 13);
             this.label9.TabIndex = 11;
             this.label9.Text = "Remitente";
-            // 
-            // cmbxremitente
-            // 
-            this.cmbxremitente.FormattingEnabled = true;
-            this.cmbxremitente.Items.AddRange(new object[] {
-            "Coordinador General",
-            "Coordinador Social",
-            "Coordinador Secundaria",
-            "Coordinador Primaria"});
-            this.cmbxremitente.Location = new System.Drawing.Point(146, 74);
-            this.cmbxremitente.Name = "cmbxremitente";
-            this.cmbxremitente.Size = new System.Drawing.Size(121, 21);
-            this.cmbxremitente.TabIndex = 10;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(379, 33);
+            this.label8.Location = new System.Drawing.Point(377, 26);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 13);
             this.label8.TabIndex = 9;
@@ -271,35 +202,18 @@ namespace CAPA_PRESENTACION
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(20, 33);
+            this.label7.Location = new System.Drawing.Point(18, 26);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(110, 13);
             this.label7.TabIndex = 8;
             this.label7.Text = "Fecha de remision";
-            // 
-            // txtmotivo
-            // 
-            this.txtmotivo.Location = new System.Drawing.Point(504, 30);
-            this.txtmotivo.Multiline = true;
-            this.txtmotivo.Name = "txtmotivo";
-            this.txtmotivo.Size = new System.Drawing.Size(200, 70);
-            this.txtmotivo.TabIndex = 7;
-            this.txtmotivo.Validated += new System.EventHandler(this.txtmotivo_Validated);
-            // 
-            // dtmfecharemi
-            // 
-            this.dtmfecharemi.Location = new System.Drawing.Point(146, 30);
-            this.dtmfecharemi.Name = "dtmfecharemi";
-            this.dtmfecharemi.Size = new System.Drawing.Size(200, 20);
-            this.dtmfecharemi.TabIndex = 6;
-            this.dtmfecharemi.Value = new System.DateTime(2021, 8, 24, 10, 8, 13, 0);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(-3, 0);
+            this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 18);
             this.label6.TabIndex = 5;
@@ -321,7 +235,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.Controls.Add(this.panelBuscaestu);
             this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(754, 467);
+            this.paneldegradado2.Size = new System.Drawing.Size(754, 470);
             this.paneldegradado2.TabIndex = 6;
             // 
             // dtaexpe
@@ -331,7 +245,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.AllowUserToResizeRows = false;
             this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaexpe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtaexpe.BackgroundColor = System.Drawing.Color.SkyBlue;
             this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -372,14 +286,14 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowCellToolTips = false;
             this.dtaexpe.ShowEditingIcon = false;
             this.dtaexpe.ShowRowErrors = false;
-            this.dtaexpe.Size = new System.Drawing.Size(754, 393);
+            this.dtaexpe.Size = new System.Drawing.Size(754, 396);
             this.dtaexpe.TabIndex = 7;
             this.dtaexpe.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseDoubleClick);
             // 
             // panelBuscaestu
             // 
-            this.panelBuscaestu.Colorleft = System.Drawing.Color.Teal;
-            this.panelBuscaestu.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panelBuscaestu.Colorleft = System.Drawing.Color.DodgerBlue;
+            this.panelBuscaestu.Colorrigth = System.Drawing.Color.DeepSkyBlue;
             this.panelBuscaestu.Controls.Add(this.label3);
             this.panelBuscaestu.Controls.Add(this.button1);
             this.panelBuscaestu.Controls.Add(this.txtnom);
@@ -504,48 +418,135 @@ namespace CAPA_PRESENTACION
             this.btnremitir.UseVisualStyleBackColor = false;
             this.btnremitir.Click += new System.EventHandler(this.btnremitir_Click);
             // 
+            // paneldegra21
+            // 
+            this.paneldegra21.Colorleft = System.Drawing.Color.Empty;
+            this.paneldegra21.Colorrigth = System.Drawing.Color.Empty;
+            this.paneldegra21.Controls.Add(this.txtmotivo);
+            this.paneldegra21.Controls.Add(this.cmbxremitente);
+            this.paneldegra21.Controls.Add(this.datetimepicker1);
+            this.paneldegra21.Controls.Add(this.label9);
+            this.paneldegra21.Controls.Add(this.label6);
+            this.paneldegra21.Controls.Add(this.label8);
+            this.paneldegra21.Controls.Add(this.label7);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.Size = new System.Drawing.Size(754, 132);
+            this.paneldegra21.TabIndex = 7;
+            // 
+            // datetimepicker1
+            // 
+            this.datetimepicker1.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.datetimepicker1.BorderSize = 2;
+            this.datetimepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datetimepicker1.Location = new System.Drawing.Point(144, 23);
+            this.datetimepicker1.MinimumSize = new System.Drawing.Size(0, 35);
+            this.datetimepicker1.Name = "datetimepicker1";
+            this.datetimepicker1.Size = new System.Drawing.Size(179, 35);
+            this.datetimepicker1.SkinColor = System.Drawing.Color.CornflowerBlue;
+            this.datetimepicker1.TabIndex = 12;
+            this.datetimepicker1.TextColor = System.Drawing.Color.White;
+            // 
+            // cmbxremitente
+            // 
+            this.cmbxremitente.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmbxremitente.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.cmbxremitente.BorderSize = 1;
+            this.cmbxremitente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbxremitente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbxremitente.ForeColor = System.Drawing.Color.Gray;
+            this.cmbxremitente.IconColor = System.Drawing.Color.CornflowerBlue;
+            this.cmbxremitente.Items.AddRange(new object[] {
+            "Coordinador General",
+            "Coordinador Social",
+            "Coordinador de secundaria",
+            "Coordinador Primaria"});
+            this.cmbxremitente.ListBackColor = System.Drawing.Color.LightSkyBlue;
+            this.cmbxremitente.ListTextColor = System.Drawing.Color.White;
+            this.cmbxremitente.Location = new System.Drawing.Point(144, 70);
+            this.cmbxremitente.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxremitente.Name = "cmbxremitente";
+            this.cmbxremitente.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbxremitente.Size = new System.Drawing.Size(200, 30);
+            this.cmbxremitente.TabIndex = 13;
+            this.cmbxremitente.Texts = "";
+            // 
+            // txtmotivo
+            // 
+            this.txtmotivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtmotivo.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.txtmotivo.BorderFocusColor = System.Drawing.Color.RoyalBlue;
+            this.txtmotivo.BorderRadius = 0;
+            this.txtmotivo.BorderSize = 2;
+            this.txtmotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtmotivo.ForeColor = System.Drawing.Color.Black;
+            this.txtmotivo.IsFocused = false;
+            this.txtmotivo.IsPasswordChar = false;
+            this.txtmotivo.IsPlaceholder = false;
+            this.txtmotivo.Location = new System.Drawing.Point(492, 23);
+            this.txtmotivo.Margin = new System.Windows.Forms.Padding(4);
+            this.txtmotivo.Multiline = true;
+            this.txtmotivo.Name = "txtmotivo";
+            this.txtmotivo.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtmotivo.PasswordChar = false;
+            this.txtmotivo.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtmotivo.PlaceholderText = "";
+            this.txtmotivo.Size = new System.Drawing.Size(250, 31);
+            this.txtmotivo.TabIndex = 14;
+            this.txtmotivo.Texts = "";
+            this.txtmotivo.UnderlinedStyle = false;
+            this.txtmotivo._TextChanged += new System.EventHandler(this.txtmotivo_Validated);
+            // 
+            // panelinfo
+            // 
+            this.panelinfo.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelinfo.BackColor = System.Drawing.Color.Transparent;
+            this.panelinfo.Controls.Add(this.pictureBox1);
+            this.panelinfo.Controls.Add(this.label1);
+            this.panelinfo.Controls.Add(this.panelDatos);
+            this.panelinfo.Location = new System.Drawing.Point(0, 170);
+            this.panelinfo.Name = "panelinfo";
+            this.panelinfo.Size = new System.Drawing.Size(754, 272);
+            this.panelinfo.TabIndex = 3;
+            this.panelinfo.Visible = false;
+            // 
             // NuevoExpe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(754, 512);
             this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.paneldegradado1);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelinfo);
-            this.Controls.Add(this.paneltitulo);
+            this.Controls.Add(this.paneldegra21);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoExpe";
             this.ShowInTaskbar = false;
             this.Text = "NuevoExpe";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.paneltitulo.ResumeLayout(false);
-            this.paneltitulo.PerformLayout();
-            this.panelinfo.ResumeLayout(false);
-            this.panelinfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelDatos.ResumeLayout(false);
             this.panelDatos.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.paneldegradado2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panelBuscaestu.ResumeLayout(false);
             this.panelBuscaestu.PerformLayout();
             this.paneldegradado1.ResumeLayout(false);
+            this.paneldegra21.ResumeLayout(false);
+            this.paneldegra21.PerformLayout();
+            this.panelinfo.ResumeLayout(false);
+            this.panelinfo.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel paneltitulo;
-        private System.Windows.Forms.Label Titulo;
-        private System.Windows.Forms.Panel panelinfo;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton rbtninactivo;
@@ -553,14 +554,10 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Panel panelDatos;
         private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker dtmfecharemi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtmotivo;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cmbxremitente;
         private Paneldegradado paneldegradado1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnremitir;
@@ -574,5 +571,10 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtnom;
         private System.Windows.Forms.DataGridView dtaexpe;
+        private paneldegra2 paneldegra21;
+        private Datetimepicker datetimepicker1;
+        private Combobox cmbxremitente;
+        private textboxpersonal txtmotivo;
+        private System.Windows.Forms.Panel panelinfo;
     }
 }

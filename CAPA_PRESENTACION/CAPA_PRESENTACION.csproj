@@ -306,5 +306,8 @@
   <ItemGroup>
     <None Include="Resources\Controlwhite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\image_picture_icon_143762.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

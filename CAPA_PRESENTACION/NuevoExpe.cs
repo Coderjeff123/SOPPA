@@ -49,7 +49,7 @@ namespace CAPA_PRESENTACION
            
 
             RemisionN remisionN = new RemisionN();
-            remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,dtmfecharemi.Value);
+            remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,datetimepicker1.Value);
             MessageBox.Show("Se resgistro correctamente");
             limpiar();
         }
@@ -69,7 +69,7 @@ namespace CAPA_PRESENTACION
             rbtnactivo.Checked = true;
             txtmotivo.Text = "";
             txtnombre.Text = "";
-            dtmfecharemi.Value = DateTime.Now;
+            datetimepicker1.Value = DateTime.Now;
             cmbxremitente.Text = "";
             pictureBox1.Image = Properties.Resources.avatardefault_92824;
         }

@@ -313,6 +313,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image_picture_icon_143762 {
+            get {
+                object obj = ResourceManager.GetObject("image_picture_icon_143762", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_square_arrow_button_outline_icon_icons_com_73220 {
             get {
                 object obj = ResourceManager.GetObject("login-square-arrow-button-outline_icon-icons.com_73220", resourceCulture);
