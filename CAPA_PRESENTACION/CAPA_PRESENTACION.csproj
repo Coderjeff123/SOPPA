@@ -114,6 +114,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="textboxpersonal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="textboxpersonal.Designer.cs">
+      <DependentUpon>textboxpersonal.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,6 +155,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="textboxpersonal.resx">
+      <DependentUpon>textboxpersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerConsulta.resx">
       <DependentUpon>VerConsulta.cs</DependentUpon>

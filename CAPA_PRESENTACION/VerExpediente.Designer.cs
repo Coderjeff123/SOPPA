@@ -44,7 +44,7 @@ namespace CAPA_PRESENTACION
             this.id = new System.Windows.Forms.TextBox();
             this.btnbaja = new System.Windows.Forms.Button();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.dataRepeater1 = new Microsoft.VisualBasic.PowerPacks.DataRepeater();
+           // this.dataRepeater1 = new Microsoft.VisualBasic.PowerPacks.DataRepeater();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
@@ -244,11 +244,11 @@ namespace CAPA_PRESENTACION
             // 
             // dataRepeater1
             // 
-            this.dataRepeater1.Controls.Add(this.dataRepeater1.ItemTemplate);
+           /* this.dataRepeater1.Controls.Add(this.dataRepeater1.ItemTemplate);
             this.dataRepeater1.Location = new System.Drawing.Point(0, 0);
             this.dataRepeater1.Name = "dataRepeater1";
             this.dataRepeater1.Size = new System.Drawing.Size(240, 150);
-            this.dataRepeater1.TabIndex = 0;
+            this.dataRepeater1.TabIndex = 0*/
             // 
             // VerExpediente
             // 
@@ -292,6 +292,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.PictureBox pimagen;
         private paneldegra2 paneldegra21;
-        private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
+        //private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
     }
 }
