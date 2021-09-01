@@ -46,5 +46,10 @@ namespace CAPA_PRESENTACION
         {
 
         }
+
+        private void Agendarcitahijo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

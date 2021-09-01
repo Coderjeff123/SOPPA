@@ -231,6 +231,7 @@ namespace CAPA_PRESENTACION
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcitahijo";
             this.Text = "Agendarcitahijo";
+            this.Load += new System.EventHandler(this.Agendarcitahijo_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
