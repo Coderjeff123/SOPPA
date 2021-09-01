@@ -10,7 +10,7 @@ using System.ComponentModel;
 
 namespace CAPA_PRESENTACION
 {
-    class Buttonpersolizado:Button
+    public class Buttonpersolizado:Button
     {
         //Fields
         private int borderSize = 0;

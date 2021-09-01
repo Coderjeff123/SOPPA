@@ -10,7 +10,7 @@ using System.ComponentModel;
 
 namespace CAPA_PRESENTACION
 {
-    class Pictureboxpersonal:PictureBox
+   public class Pictureboxpersonal:PictureBox
     {
         private int bordersize = 2;
         private Color bordercolor = Color.DeepSkyBlue;

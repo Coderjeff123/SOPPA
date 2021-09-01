@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace CAPA_PRESENTACION
 {
-    class Paneldegradado : Panel
+    public class Paneldegradado : Panel
     {
         public Color Colorrigth { get; set; }
         public Color Colorleft { get; set; }

@@ -9,7 +9,7 @@ using System.Drawing.Drawing2D;
 
 namespace CAPA_PRESENTACION
 {
-    class Datetimepicker : DateTimePicker
+    public class Datetimepicker : DateTimePicker
     {
         //Fields
         //-> Appearance
