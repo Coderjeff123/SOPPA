@@ -49,11 +49,11 @@ namespace CAPA_PRESENTACION
 
             if (txtestado.Text == "I")
             {
-                btnbaja.Visible = false;
+                btnbaja.Enabled = false;
             }
             else
             {
-                btnbaja.Visible = true;
+                btnbaja.Enabled = true;
             }
 
            
