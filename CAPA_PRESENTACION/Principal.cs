@@ -337,6 +337,11 @@ namespace CAPA_PRESENTACION
         {
             Cargarfecha();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 } 
     
