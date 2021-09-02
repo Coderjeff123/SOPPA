@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
+using System.IO;
+
+
 
 namespace CAPA_PRESENTACION
 {
@@ -23,38 +27,45 @@ namespace CAPA_PRESENTACION
             {
                 dtacita.Rows.Add();
             }
-           // Cargarfecha();
+            Cargarfecha2();
         }
 
-       /* private void Cargarfecha()
+       private void Cargarfecha2()
         {
-            DateTime select = dttcalender.MaxDate;
-          //  Fecha.Text = "Fecha selecionada" + select.ToString("dd/MM/yy");
-            string fecha = select.Year.ToString() + select.Month.ToString() + select.Day.ToString();
-            if (!File.Exists(fecha))
+            DateTime select = Calendaragenda.SelectionStart;
+           Fechacita.Text = "Fecha selecionada" + select.ToString("dd/MM/yy");
+            string fechacita = select.Year.ToString() + select.Month.ToString() + select.Day.ToString();
+            if (!File.Exists(fechacita))
             {
-                StreamWriter archivo = new StreamWriter(fecha);
-                DateTime fe = DateTime.Today;
+                StreamWriter archivo1 = new StreamWriter(fechacita);
+                DateTime fecha = DateTime.Today;
                 for (int f = 1; f <= 96; f++)
                 {
-                    archivo.WriteLine(fe.ToString("HH:mm"));
-                    archivo.WriteLine("");
-                    fe = fe.AddMinutes(15);
+                    archivo1.WriteLine(fecha.ToString("HH:mm"));
+                    archivo1.WriteLine("");
+                    fecha = fecha.AddMinutes(15);
                 }
-                archivo.Close();
+                archivo1.Close();
             }
-            StreamReader archivo2 = new StreamReader(fecha);
+            StreamReader archivo3 = new StreamReader(fechacita);
             int x = 0;
-            while (!archivo2.EndOfStream)
+            while (!archivo3.EndOfStream)
             {
-                string linea1 = archivo2.ReadLine();
-                string linea2 = archivo2.ReadLine();
-                dttcalender.Rows[x].Cells[0].Value = linea1;
+                string linea1 = archivo3.ReadLine();
+                string linea2 = archivo3.ReadLine();
+                dtacita.Rows[x].Cells[0].Value = linea1;
+                dtacita.Rows[x].Cells[1].Value = linea2;
+
                 x++;
             }
-        }*/
+
+        }
 
 
+        private void Calendaragenda_DateChanged(object sender, DateRangeEventArgs e)
+        {
+            Cargarfecha2();
+        }
 
 
 
