@@ -342,6 +342,11 @@ namespace CAPA_PRESENTACION
         {
 
         }
+
+        private void dtaactividad_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 } 
     

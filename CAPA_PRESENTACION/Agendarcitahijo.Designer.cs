@@ -29,7 +29,11 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelagenda = new CAPA_PRESENTACION.Paneldegradado();
+            this.buttonpersolizado1 = new CAPA_PRESENTACION.Buttonpersolizado();
             this.textapellido = new CAPA_PRESENTACION.textboxpersonal();
             this.textnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.textcodigo = new CAPA_PRESENTACION.textboxpersonal();
@@ -39,10 +43,12 @@ namespace CAPA_PRESENTACION
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comidin = new CAPA_PRESENTACION.Pictureboxpersonal();
-            this.datetimepicker1 = new CAPA_PRESENTACION.Datetimepicker();
-            this.buttonpersolizado1 = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.dtacita = new System.Windows.Forms.DataGridView();
+            this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelagenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comidin)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtacita)).BeginInit();
             this.SuspendLayout();
             // 
             // panelagenda
@@ -51,7 +57,6 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Colorleft = System.Drawing.Color.Empty;
             this.panelagenda.Colorrigth = System.Drawing.Color.Empty;
             this.panelagenda.Controls.Add(this.buttonpersolizado1);
-            this.panelagenda.Controls.Add(this.datetimepicker1);
             this.panelagenda.Controls.Add(this.textapellido);
             this.panelagenda.Controls.Add(this.textnombre);
             this.panelagenda.Controls.Add(this.textcodigo);
@@ -66,18 +71,37 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Size = new System.Drawing.Size(386, 434);
             this.panelagenda.TabIndex = 5;
             // 
+            // buttonpersolizado1
+            // 
+            this.buttonpersolizado1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonpersolizado1.BackgroundColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonpersolizado1.BorderColor = System.Drawing.Color.DarkBlue;
+            this.buttonpersolizado1.BorderRadius = 20;
+            this.buttonpersolizado1.BorderSize = 0;
+            this.buttonpersolizado1.FlatAppearance.BorderSize = 0;
+            this.buttonpersolizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonpersolizado1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonpersolizado1.ForeColor = System.Drawing.Color.White;
+            this.buttonpersolizado1.Location = new System.Drawing.Point(101, 355);
+            this.buttonpersolizado1.Name = "buttonpersolizado1";
+            this.buttonpersolizado1.Size = new System.Drawing.Size(150, 40);
+            this.buttonpersolizado1.TabIndex = 11;
+            this.buttonpersolizado1.Text = "Agendar cita";
+            this.buttonpersolizado1.TextColor = System.Drawing.Color.White;
+            this.buttonpersolizado1.UseVisualStyleBackColor = false;
+            // 
             // textapellido
             // 
-            this.textapellido.BackColor = System.Drawing.SystemColors.Window;
-            this.textapellido.BorderColor = System.Drawing.Color.Crimson;
-            this.textapellido.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textapellido.BackColor = System.Drawing.Color.SkyBlue;
+            this.textapellido.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.textapellido.BorderFocusColor = System.Drawing.Color.Blue;
             this.textapellido.BorderRadius = 0;
             this.textapellido.BorderSize = 2;
             this.textapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textapellido.IsFocused = false;
             this.textapellido.IsPasswordChar = false;
             this.textapellido.IsPlaceholder = false;
-            this.textapellido.Location = new System.Drawing.Point(101, 244);
+            this.textapellido.Location = new System.Drawing.Point(101, 232);
             this.textapellido.Margin = new System.Windows.Forms.Padding(4);
             this.textapellido.Multiline = false;
             this.textapellido.Name = "textapellido";
@@ -85,23 +109,23 @@ namespace CAPA_PRESENTACION
             this.textapellido.PasswordChar = false;
             this.textapellido.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.textapellido.PlaceholderText = "";
-            this.textapellido.Size = new System.Drawing.Size(183, 31);
+            this.textapellido.Size = new System.Drawing.Size(188, 31);
             this.textapellido.TabIndex = 9;
             this.textapellido.Texts = "";
-            this.textapellido.UnderlinedStyle = false;
+            this.textapellido.UnderlinedStyle = true;
             // 
             // textnombre
             // 
-            this.textnombre.BackColor = System.Drawing.SystemColors.Window;
-            this.textnombre.BorderColor = System.Drawing.Color.Crimson;
-            this.textnombre.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textnombre.BackColor = System.Drawing.Color.SkyBlue;
+            this.textnombre.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.textnombre.BorderFocusColor = System.Drawing.Color.Blue;
             this.textnombre.BorderRadius = 0;
             this.textnombre.BorderSize = 2;
             this.textnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textnombre.IsFocused = false;
             this.textnombre.IsPasswordChar = false;
             this.textnombre.IsPlaceholder = false;
-            this.textnombre.Location = new System.Drawing.Point(101, 189);
+            this.textnombre.Location = new System.Drawing.Point(106, 177);
             this.textnombre.Margin = new System.Windows.Forms.Padding(4);
             this.textnombre.Multiline = false;
             this.textnombre.Name = "textnombre";
@@ -112,20 +136,20 @@ namespace CAPA_PRESENTACION
             this.textnombre.Size = new System.Drawing.Size(183, 31);
             this.textnombre.TabIndex = 8;
             this.textnombre.Texts = "";
-            this.textnombre.UnderlinedStyle = false;
+            this.textnombre.UnderlinedStyle = true;
             // 
             // textcodigo
             // 
-            this.textcodigo.BackColor = System.Drawing.SystemColors.Window;
-            this.textcodigo.BorderColor = System.Drawing.Color.Pink;
-            this.textcodigo.BorderFocusColor = System.Drawing.Color.HotPink;
+            this.textcodigo.BackColor = System.Drawing.Color.SkyBlue;
+            this.textcodigo.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.textcodigo.BorderFocusColor = System.Drawing.Color.Blue;
             this.textcodigo.BorderRadius = 0;
             this.textcodigo.BorderSize = 2;
             this.textcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textcodigo.IsFocused = false;
             this.textcodigo.IsPasswordChar = false;
             this.textcodigo.IsPlaceholder = false;
-            this.textcodigo.Location = new System.Drawing.Point(93, 137);
+            this.textcodigo.Location = new System.Drawing.Point(93, 128);
             this.textcodigo.Margin = new System.Windows.Forms.Padding(4);
             this.textcodigo.Multiline = false;
             this.textcodigo.Name = "textcodigo";
@@ -133,10 +157,10 @@ namespace CAPA_PRESENTACION
             this.textcodigo.PasswordChar = false;
             this.textcodigo.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.textcodigo.PlaceholderText = "";
-            this.textcodigo.Size = new System.Drawing.Size(110, 31);
+            this.textcodigo.Size = new System.Drawing.Size(92, 31);
             this.textcodigo.TabIndex = 7;
             this.textcodigo.Texts = "";
-            this.textcodigo.UnderlinedStyle = false;
+            this.textcodigo.UnderlinedStyle = true;
             // 
             // label6
             // 
@@ -206,53 +230,84 @@ namespace CAPA_PRESENTACION
             this.comidin.TabIndex = 0;
             this.comidin.TabStop = false;
             // 
-            // datetimepicker1
+            // dtacita
             // 
-            this.datetimepicker1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.datetimepicker1.BorderSize = 0;
-            this.datetimepicker1.CustomFormat = "MMMM dd,yyy";
-            this.datetimepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datetimepicker1.Location = new System.Drawing.Point(130, 297);
-            this.datetimepicker1.MinimumSize = new System.Drawing.Size(0, 35);
-            this.datetimepicker1.Name = "datetimepicker1";
-            this.datetimepicker1.Size = new System.Drawing.Size(173, 35);
-            this.datetimepicker1.SkinColor = System.Drawing.Color.Teal;
-            this.datetimepicker1.TabIndex = 10;
-            this.datetimepicker1.TextColor = System.Drawing.Color.White;
-            this.datetimepicker1.ValueChanged += new System.EventHandler(this.datetimepicker1_ValueChanged);
+            this.dtacita.AllowUserToResizeColumns = false;
+            this.dtacita.AllowUserToResizeRows = false;
+            this.dtacita.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtacita.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dtacita.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.dtacita.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtacita.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtacita.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtacita.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            this.dtacita.ColumnHeadersHeight = 30;
+            this.dtacita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtacita.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Hora,
+            this.Cita});
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtacita.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dtacita.EnableHeadersVisualStyles = false;
+            this.dtacita.GridColor = System.Drawing.Color.PaleTurquoise;
+            this.dtacita.Location = new System.Drawing.Point(422, 12);
+            this.dtacita.Name = "dtacita";
+            this.dtacita.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtacita.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            this.dtacita.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtacita.ShowCellErrors = false;
+            this.dtacita.ShowCellToolTips = false;
+            this.dtacita.ShowEditingIcon = false;
+            this.dtacita.ShowRowErrors = false;
+            this.dtacita.Size = new System.Drawing.Size(398, 434);
+            this.dtacita.TabIndex = 6;
             // 
-            // buttonpersolizado1
+            // Hora
             // 
-            this.buttonpersolizado1.BackColor = System.Drawing.Color.Gold;
-            this.buttonpersolizado1.BackgroundColor = System.Drawing.Color.Gold;
-            this.buttonpersolizado1.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.buttonpersolizado1.BorderRadius = 20;
-            this.buttonpersolizado1.BorderSize = 0;
-            this.buttonpersolizado1.FlatAppearance.BorderSize = 0;
-            this.buttonpersolizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonpersolizado1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonpersolizado1.ForeColor = System.Drawing.Color.White;
-            this.buttonpersolizado1.Location = new System.Drawing.Point(101, 355);
-            this.buttonpersolizado1.Name = "buttonpersolizado1";
-            this.buttonpersolizado1.Size = new System.Drawing.Size(150, 40);
-            this.buttonpersolizado1.TabIndex = 11;
-            this.buttonpersolizado1.Text = "Agendar cita";
-            this.buttonpersolizado1.TextColor = System.Drawing.Color.White;
-            this.buttonpersolizado1.UseVisualStyleBackColor = false;
+            this.Hora.HeaderText = "Hora de cita";
+            this.Hora.Name = "Hora";
+            this.Hora.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Cita
+            // 
+            this.Cita.HeaderText = "Nombre del estudiante";
+            this.Cita.Name = "Cita";
             // 
             // Agendarcitahijo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(832, 578);
+            this.ClientSize = new System.Drawing.Size(832, 507);
+            this.Controls.Add(this.dtacita);
             this.Controls.Add(this.panelagenda);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcitahijo";
             this.Text = "Agendarcitahijo";
+            this.Load += new System.EventHandler(this.Agendarcitahijo_Load);
             this.panelagenda.ResumeLayout(false);
             this.panelagenda.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comidin)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtacita)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -268,7 +323,9 @@ namespace CAPA_PRESENTACION
         private textboxpersonal textapellido;
         private textboxpersonal textnombre;
         private textboxpersonal textcodigo;
-        private Datetimepicker datetimepicker1;
         private Buttonpersolizado buttonpersolizado1;
+        private System.Windows.Forms.DataGridView dtacita;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
     }
 }
