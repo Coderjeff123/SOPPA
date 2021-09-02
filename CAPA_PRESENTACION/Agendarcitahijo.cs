@@ -33,7 +33,7 @@ namespace CAPA_PRESENTACION
        private void Cargarfecha2()
         {
             DateTime select = Calendaragenda.SelectionStart;
-           Fechacita.Text = "Fecha selecionada" + select.ToString("dd/MM/yy");
+           Fechacita.Text = "Fecha selecionada:" + select.ToString("dd/MM/yy");
             string fechacita = select.Year.ToString() + select.Month.ToString() + select.Day.ToString();
             if (!File.Exists(fechacita))
             {
@@ -58,7 +58,7 @@ namespace CAPA_PRESENTACION
 
                 x++;
             }
-
+            archivo3.Close();
         }
 
 
@@ -67,13 +67,25 @@ namespace CAPA_PRESENTACION
             Cargarfecha2();
         }
 
+        private void dtacita_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            DateTime select = Calendaragenda.SelectionStart;
+            string fechacita = select.Year.ToString() + select.Month.ToString() + select.Day.ToString();
+          StreamWriter archivo1 = new StreamWriter(fechacita);
+            
+            for (int f=0;f<dtacita.Rows.Count;f++)
+            {
+                archivo1.WriteLine(dtacita.Rows[f].Cells[0].Value.ToString());
+                if (dtacita.Rows[f].Cells[1].Value != null)
+                    archivo1.WriteLine(dtacita.Rows[f].Cells[1].Value.ToString());
+                else
+                    archivo1.WriteLine("");
+
+            }
+
+            archivo1.Close();
 
 
-
-
-
-
-
-
+        }
     }
 }
