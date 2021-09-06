@@ -11,11 +11,14 @@ using CAPA_NEGOCIO;
 
 namespace CAPA_PRESENTACION
 {
+
     public partial class NuevoExpe : Form
     {
         public NuevoExpe()
         {
             InitializeComponent();
+           
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -23,6 +26,7 @@ namespace CAPA_PRESENTACION
             this.Close();
         }
         Nexpediente datos = new Nexpediente();
+
 
         private void btnremitir_Click(object sender, EventArgs e)
         {
@@ -44,12 +48,12 @@ namespace CAPA_PRESENTACION
             }
 
             
-            nexpediente.insertexpediente(txtnombre.Text, estado, memory.GetBuffer(),dtaexpe.CurrentRow.Cells["NoExpediente"].Value.ToString());
+            nexpediente.insertexpediente(txtnombre.Texts, estado, memory.GetBuffer(),dtaexpe.CurrentRow.Cells["NoExpediente"].Value.ToString());
 
            
 
             RemisionN remisionN = new RemisionN();
-            remisionN.insertremision(01, cmbxremitente.Text, txtmotivo.Text,datetimepicker1.Value);
+            remisionN.insertremision(01, cmbxremitente.Texts, txtmotivo.Texts,datetimepicker1.Value);
             MessageBox.Show("Se resgistro correctamente");
             limpiar();
         }
@@ -67,10 +71,10 @@ namespace CAPA_PRESENTACION
         private void limpiar()
         {
             rbtnactivo.Checked = true;
-            txtmotivo.Text = "";
-            txtnombre.Text = "";
+            txtmotivo.Texts = "";
+            txtnombre.Texts = "";
             datetimepicker1.Value = DateTime.Now;
-            cmbxremitente.Text = "";
+            cmbxremitente.Texts = "";
             pictureBox1.Image = Properties.Resources.avatardefault_92824;
         }
 
@@ -81,7 +85,7 @@ namespace CAPA_PRESENTACION
 
         private void txtnombre_Validated(object sender, EventArgs e)
         {
-            if (txtnombre.Text.Trim() == "")
+            if (txtnombre.Texts.Trim() == "")
             {
                 epError.SetError(txtnombre, "Intruzca un valor");
                 txtnombre.Focus();
@@ -95,7 +99,7 @@ namespace CAPA_PRESENTACION
 
         private void txtmotivo_Validated(object sender, EventArgs e)
         {
-            if (txtmotivo.Text.Trim() == "")
+            if (txtmotivo.Texts.Trim() == "")
             {
                 epError.SetError(txtmotivo, "Intruzca un valor");
                 txtmotivo.Focus();
@@ -126,7 +130,7 @@ namespace CAPA_PRESENTACION
         private void button1_Click(object sender, EventArgs e)
         {
            
-            dtaexpe.DataSource = datos.mostrarestu(txtnom.Text);
+            dtaexpe.DataSource = datos.mostrarestu(txtnom.Texts);
         }
 
         private void dtaexpe_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -136,9 +140,6 @@ namespace CAPA_PRESENTACION
             txtnombre.Text = dtaexpe.CurrentRow.Cells["Nombre1"].Value.ToString();
         }
 
-        private void dtaexpe_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-        }
     }
 }

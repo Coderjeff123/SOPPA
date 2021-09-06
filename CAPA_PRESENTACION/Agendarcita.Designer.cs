@@ -29,11 +29,7 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textagendar = new System.Windows.Forms.TextBox();
@@ -44,10 +40,8 @@ namespace CAPA_PRESENTACION
             // 
             // paneldegra21
             // 
-            this.paneldegra21.BackColor = System.Drawing.Color.SkyBlue;
-            this.paneldegra21.Colorleft = System.Drawing.Color.Transparent;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.SkyBlue;
-            this.paneldegra21.Controls.Add(this.label2);
+            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
+            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.paneldegra21.Controls.Add(this.label1);
             this.paneldegra21.Controls.Add(this.button1);
             this.paneldegra21.Controls.Add(this.textagendar);
@@ -56,17 +50,6 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Name = "paneldegra21";
             this.paneldegra21.Size = new System.Drawing.Size(769, 73);
             this.paneldegra21.TabIndex = 6;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(3, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(313, 13);
-            this.label2.TabIndex = 8;
-            this.label2.Text = "Doble click en una celda para seleccionar expediente";
             // 
             // label1
             // 
@@ -114,45 +97,21 @@ namespace CAPA_PRESENTACION
             this.dtaagendar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaagendar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaagendar.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaagendar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtaagendar.ColumnHeadersHeight = 30;
             this.dtaagendar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaagendar.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtaagendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtaagendar.EnableHeadersVisualStyles = false;
             this.dtaagendar.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dtaagendar.Location = new System.Drawing.Point(0, 73);
             this.dtaagendar.Name = "dtaagendar";
             this.dtaagendar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaagendar.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtaagendar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtaagendar.ShowCellErrors = false;
             this.dtaagendar.ShowCellToolTips = false;
             this.dtaagendar.ShowEditingIcon = false;
             this.dtaagendar.ShowRowErrors = false;
             this.dtaagendar.Size = new System.Drawing.Size(769, 390);
-            this.dtaagendar.TabIndex = 7;
+            this.dtaagendar.TabIndex = 1;
             // 
             // Agendarcita
             // 
@@ -179,7 +138,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textagendar;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dtaagendar;
     }
 }

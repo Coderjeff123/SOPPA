@@ -21,7 +21,11 @@ namespace CAPA_PRESENTACION
 
         }
 
-        Nexpediente data1 = new Nexpediente();
+        Nexpediente data = new Nexpediente();
+
+
+
+
 
         private void Titulo_Click(object sender, EventArgs e)
         {
@@ -30,15 +34,22 @@ namespace CAPA_PRESENTACION
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtaagendar.DataSource= data1.buscarexpediente(textagendar.Text);
-            
+            dtaagendar.DataSource= data.buscarexpediente(textagendar.Text);
         }
 
-        private void dtaagendar_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtaagendar_Load(object sender, DataGridViewCellEventArgs e)
         {
            
         }
 
-       
+
+        private void dtaagendar_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            
+
+        }
+
+
+
     }
 }
