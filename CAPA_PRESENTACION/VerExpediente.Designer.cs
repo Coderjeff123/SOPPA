@@ -58,7 +58,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.AllowUserToResizeRows = false;
             this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaexpe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtaexpe.BackgroundColor = System.Drawing.Color.SkyBlue;
             this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -163,8 +163,8 @@ namespace CAPA_PRESENTACION
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Empty;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.Empty;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
             this.paneldegradado1.Controls.Add(this.button2);
             this.paneldegradado1.Controls.Add(this.btnbaja);
             this.paneldegradado1.Controls.Add(this.txtestado);
@@ -177,15 +177,17 @@ namespace CAPA_PRESENTACION
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.SteelBlue;
-            this.button2.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.button2.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.button2.BorderRadius = 20;
-            this.button2.BorderSize = 2;
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundColor = System.Drawing.Color.Transparent;
+            this.button2.BorderColor = System.Drawing.Color.Blue;
+            this.button2.BorderRadius = 15;
+            this.button2.BorderSize = 1;
             this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.image_picture_icon_143762;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(144, 8);
@@ -194,21 +196,23 @@ namespace CAPA_PRESENTACION
             this.button2.TabIndex = 8;
             this.button2.Text = "Cambiar Imagen";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextColor = System.Drawing.Color.White;
+            this.button2.TextColor = System.Drawing.Color.Black;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnbaja
             // 
-            this.btnbaja.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnbaja.BackgroundColor = System.Drawing.Color.SteelBlue;
-            this.btnbaja.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnbaja.BorderRadius = 20;
-            this.btnbaja.BorderSize = 2;
+            this.btnbaja.BackColor = System.Drawing.Color.Transparent;
+            this.btnbaja.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnbaja.BorderColor = System.Drawing.Color.Blue;
+            this.btnbaja.BorderRadius = 15;
+            this.btnbaja.BorderSize = 1;
             this.btnbaja.FlatAppearance.BorderSize = 0;
+            this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
+            this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbaja.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbaja.ForeColor = System.Drawing.Color.White;
+            this.btnbaja.ForeColor = System.Drawing.Color.Black;
             this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
             this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbaja.Location = new System.Drawing.Point(20, 8);
@@ -217,7 +221,7 @@ namespace CAPA_PRESENTACION
             this.btnbaja.TabIndex = 7;
             this.btnbaja.Text = "Dar de baja";
             this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbaja.TextColor = System.Drawing.Color.White;
+            this.btnbaja.TextColor = System.Drawing.Color.Black;
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
@@ -240,11 +244,12 @@ namespace CAPA_PRESENTACION
             // pimagen
             // 
             this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pimagen.Bordercolor = System.Drawing.Color.DarkCyan;
-            this.pimagen.Bordercolor2 = System.Drawing.Color.DeepSkyBlue;
-            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pimagen.Bordersize = 2;
+            this.pimagen.Bordercolor = System.Drawing.Color.Blue;
+            this.pimagen.Bordercolor2 = System.Drawing.Color.DodgerBlue;
+            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.pimagen.Bordersize = 3;
             this.pimagen.Gradient = 50F;
+            this.pimagen.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
             this.pimagen.Location = new System.Drawing.Point(20, 79);
             this.pimagen.Name = "pimagen";
             this.pimagen.Size = new System.Drawing.Size(150, 134);
