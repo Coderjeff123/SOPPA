@@ -17,7 +17,7 @@ namespace PSICOLOGIA
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Agendarcitahijo());
+            Application.Run(new Agendarcita());
         }
     }
 }

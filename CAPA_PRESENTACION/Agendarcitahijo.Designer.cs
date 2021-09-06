@@ -104,7 +104,6 @@ namespace CAPA_PRESENTACION
             this.dtacita.ShowRowErrors = false;
             this.dtacita.Size = new System.Drawing.Size(398, 532);
             this.dtacita.TabIndex = 6;
-           // this.dtacita.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtacita_CellEndEdit);
             // 
             // Hora
             // 
@@ -188,7 +187,7 @@ namespace CAPA_PRESENTACION
             this.textapellido.IsFocused = false;
             this.textapellido.IsPasswordChar = false;
             this.textapellido.IsPlaceholder = false;
-            this.textapellido.Location = new System.Drawing.Point(101, 232);
+            this.textapellido.Location = new System.Drawing.Point(106, 232);
             this.textapellido.Margin = new System.Windows.Forms.Padding(4);
             this.textapellido.Multiline = false;
             this.textapellido.Name = "textapellido";
@@ -346,14 +345,14 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private textboxpersonal textapellido;
-        private textboxpersonal textnombre;
-        private textboxpersonal textcodigo;
         private Buttonpersolizado buttonpersolizado1;
         private System.Windows.Forms.DataGridView dtacita;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
         private System.Windows.Forms.MonthCalendar Calendaragenda;
-        private System.Windows.Forms.Label Fechacita;
+        public textboxpersonal textapellido;
+        public textboxpersonal textnombre;
+        public textboxpersonal textcodigo;
+        public System.Windows.Forms.Label Fechacita;
     }
 }

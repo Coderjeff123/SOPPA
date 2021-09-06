@@ -36,14 +36,14 @@ namespace CAPA_PRESENTACION
             this.panel2 = new System.Windows.Forms.Panel();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.textver = new System.Windows.Forms.TextBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.button2 = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btnbaja = new CAPA_PRESENTACION.Buttonpersolizado();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
             this.pimagen = new CAPA_PRESENTACION.Pictureboxpersonal();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.btnbaja = new CAPA_PRESENTACION.Buttonpersolizado();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
             this.paneldegra21.SuspendLayout();
@@ -101,6 +101,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 193);
             this.dtaexpe.TabIndex = 1;
+            this.dtaexpe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellContentClick);
             this.dtaexpe.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseClick);
             // 
             // panel2
@@ -136,6 +137,22 @@ namespace CAPA_PRESENTACION
             this.label1.TabIndex = 2;
             this.label1.Text = "Buscar Expediente";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
+            this.button1.Location = new System.Drawing.Point(581, 15);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // textver
             // 
             this.textver.Location = new System.Drawing.Point(144, 36);
@@ -157,54 +174,6 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Name = "paneldegradado1";
             this.paneldegradado1.Size = new System.Drawing.Size(768, 60);
             this.paneldegradado1.TabIndex = 3;
-            // 
-            // txtestado
-            // 
-            this.txtestado.Location = new System.Drawing.Point(656, 14);
-            this.txtestado.Name = "txtestado";
-            this.txtestado.Size = new System.Drawing.Size(100, 20);
-            this.txtestado.TabIndex = 5;
-            this.txtestado.Visible = false;
-            // 
-            // id
-            // 
-            this.id.Location = new System.Drawing.Point(537, 14);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(100, 20);
-            this.id.TabIndex = 4;
-            this.id.Visible = false;
-            // 
-            // pimagen
-            // 
-            this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pimagen.Bordercolor = System.Drawing.Color.DarkCyan;
-            this.pimagen.Bordercolor2 = System.Drawing.Color.DeepSkyBlue;
-            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pimagen.Bordersize = 2;
-            this.pimagen.Gradient = 50F;
-            this.pimagen.Location = new System.Drawing.Point(20, 79);
-            this.pimagen.Name = "pimagen";
-            this.pimagen.Size = new System.Drawing.Size(150, 134);
-            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pimagen.TabIndex = 6;
-            this.pimagen.TabStop = false;
-            this.pimagen.Click += new System.EventHandler(this.pimagen_Click_1);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(581, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -251,6 +220,38 @@ namespace CAPA_PRESENTACION
             this.btnbaja.TextColor = System.Drawing.Color.White;
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
+            // 
+            // txtestado
+            // 
+            this.txtestado.Location = new System.Drawing.Point(656, 14);
+            this.txtestado.Name = "txtestado";
+            this.txtestado.Size = new System.Drawing.Size(100, 20);
+            this.txtestado.TabIndex = 5;
+            this.txtestado.Visible = false;
+            // 
+            // id
+            // 
+            this.id.Location = new System.Drawing.Point(537, 14);
+            this.id.Name = "id";
+            this.id.Size = new System.Drawing.Size(100, 20);
+            this.id.TabIndex = 4;
+            this.id.Visible = false;
+            // 
+            // pimagen
+            // 
+            this.pimagen.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pimagen.Bordercolor = System.Drawing.Color.DarkCyan;
+            this.pimagen.Bordercolor2 = System.Drawing.Color.DeepSkyBlue;
+            this.pimagen.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pimagen.Bordersize = 2;
+            this.pimagen.Gradient = 50F;
+            this.pimagen.Location = new System.Drawing.Point(20, 79);
+            this.pimagen.Name = "pimagen";
+            this.pimagen.Size = new System.Drawing.Size(150, 134);
+            this.pimagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pimagen.TabIndex = 6;
+            this.pimagen.TabStop = false;
+            this.pimagen.Click += new System.EventHandler(this.pimagen_Click_1);
             // 
             // VerExpediente
             // 

@@ -135,5 +135,10 @@ namespace CAPA_PRESENTACION
             paneldegradado2.Visible = false;
             txtnombre.Text = dtaexpe.CurrentRow.Cells["Nombre1"].Value.ToString();
         }
+
+        private void dtaexpe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

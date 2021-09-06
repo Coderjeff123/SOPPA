@@ -96,5 +96,10 @@ namespace CAPA_PRESENTACION
 
             mostrar();
         }
+
+        private void dtaexpe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

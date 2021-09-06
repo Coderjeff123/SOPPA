@@ -58,9 +58,9 @@ namespace CAPA_PRESENTACION
             this.button2 = new System.Windows.Forms.Button();
             this.btnremitir = new System.Windows.Forms.Button();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.datetimepicker1 = new CAPA_PRESENTACION.Datetimepicker();
-            this.cmbxremitente = new CAPA_PRESENTACION.Combobox();
             this.txtmotivo = new CAPA_PRESENTACION.textboxpersonal();
+            this.cmbxremitente = new CAPA_PRESENTACION.Combobox();
+            this.datetimepicker1 = new CAPA_PRESENTACION.Datetimepicker();
             this.panelinfo = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelDatos.SuspendLayout();
@@ -288,6 +288,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(754, 396);
             this.dtaexpe.TabIndex = 7;
+            this.dtaexpe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellContentClick);
             this.dtaexpe.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseDoubleClick);
             // 
             // panelBuscaestu
@@ -435,44 +436,6 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Size = new System.Drawing.Size(754, 132);
             this.paneldegra21.TabIndex = 7;
             // 
-            // datetimepicker1
-            // 
-            this.datetimepicker1.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.datetimepicker1.BorderSize = 2;
-            this.datetimepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datetimepicker1.Location = new System.Drawing.Point(144, 23);
-            this.datetimepicker1.MinimumSize = new System.Drawing.Size(0, 35);
-            this.datetimepicker1.Name = "datetimepicker1";
-            this.datetimepicker1.Size = new System.Drawing.Size(179, 35);
-            this.datetimepicker1.SkinColor = System.Drawing.Color.CornflowerBlue;
-            this.datetimepicker1.TabIndex = 12;
-            this.datetimepicker1.TextColor = System.Drawing.Color.White;
-            // 
-            // cmbxremitente
-            // 
-            this.cmbxremitente.BackColor = System.Drawing.Color.SkyBlue;
-            this.cmbxremitente.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.cmbxremitente.BorderSize = 1;
-            this.cmbxremitente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
-            this.cmbxremitente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.cmbxremitente.ForeColor = System.Drawing.Color.Gray;
-            this.cmbxremitente.IconColor = System.Drawing.Color.CornflowerBlue;
-            this.cmbxremitente.Items.AddRange(new object[] {
-            "Coordinador General",
-            "Coordinador Social",
-            "Coordinador de secundaria",
-            "Coordinador Primaria"});
-            this.cmbxremitente.ListBackColor = System.Drawing.Color.LightSkyBlue;
-            this.cmbxremitente.ListTextColor = System.Drawing.Color.White;
-            this.cmbxremitente.Location = new System.Drawing.Point(144, 70);
-            this.cmbxremitente.MinimumSize = new System.Drawing.Size(200, 30);
-            this.cmbxremitente.Name = "cmbxremitente";
-            this.cmbxremitente.Padding = new System.Windows.Forms.Padding(1);
-            this.cmbxremitente.Size = new System.Drawing.Size(200, 30);
-            this.cmbxremitente.TabIndex = 13;
-            this.cmbxremitente.Texts = "";
-            // 
             // txtmotivo
             // 
             this.txtmotivo.BackColor = System.Drawing.Color.SkyBlue;
@@ -498,6 +461,44 @@ namespace CAPA_PRESENTACION
             this.txtmotivo.Texts = "";
             this.txtmotivo.UnderlinedStyle = false;
             this.txtmotivo._TextChanged += new System.EventHandler(this.txtmotivo_Validated);
+            // 
+            // cmbxremitente
+            // 
+            this.cmbxremitente.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmbxremitente.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.cmbxremitente.BorderSize = 1;
+            this.cmbxremitente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
+            this.cmbxremitente.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.cmbxremitente.ForeColor = System.Drawing.Color.Gray;
+            this.cmbxremitente.IconColor = System.Drawing.Color.CornflowerBlue;
+            this.cmbxremitente.Items.AddRange(new object[] {
+            "Coordinador General",
+            "Coordinador Social",
+            "Coordinador de secundaria",
+            "Coordinador Primaria"});
+            this.cmbxremitente.ListBackColor = System.Drawing.Color.LightSkyBlue;
+            this.cmbxremitente.ListTextColor = System.Drawing.Color.White;
+            this.cmbxremitente.Location = new System.Drawing.Point(144, 70);
+            this.cmbxremitente.MinimumSize = new System.Drawing.Size(200, 30);
+            this.cmbxremitente.Name = "cmbxremitente";
+            this.cmbxremitente.Padding = new System.Windows.Forms.Padding(1);
+            this.cmbxremitente.Size = new System.Drawing.Size(200, 30);
+            this.cmbxremitente.TabIndex = 13;
+            this.cmbxremitente.Texts = "";
+            // 
+            // datetimepicker1
+            // 
+            this.datetimepicker1.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.datetimepicker1.BorderSize = 2;
+            this.datetimepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
+            this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datetimepicker1.Location = new System.Drawing.Point(144, 23);
+            this.datetimepicker1.MinimumSize = new System.Drawing.Size(4, 35);
+            this.datetimepicker1.Name = "datetimepicker1";
+            this.datetimepicker1.Size = new System.Drawing.Size(179, 35);
+            this.datetimepicker1.SkinColor = System.Drawing.Color.CornflowerBlue;
+            this.datetimepicker1.TabIndex = 12;
+            this.datetimepicker1.TextColor = System.Drawing.Color.White;
             // 
             // panelinfo
             // 
