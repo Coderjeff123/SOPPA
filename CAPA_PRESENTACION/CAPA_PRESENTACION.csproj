@@ -309,5 +309,14 @@
   <ItemGroup>
     <None Include="imagenes\image_picture_icon_143762.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\googleagenda_94054.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-16_86396.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01-16_86396 %281%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

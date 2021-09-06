@@ -73,6 +73,26 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _01_16_86396 {
+            get {
+                object obj = ResourceManager.GetObject("01-16_86396", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _01_16_86396__1_ {
+            get {
+                object obj = ResourceManager.GetObject("01-16_86396 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1 {
             get {
                 object obj = ResourceManager.GetObject("1", resourceCulture);
@@ -286,6 +306,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap edit_clear_all_icon_180807 {
             get {
                 object obj = ResourceManager.GetObject("edit_clear_all_icon_180807", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap googleagenda_94054 {
+            get {
+                object obj = ResourceManager.GetObject("googleagenda_94054", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

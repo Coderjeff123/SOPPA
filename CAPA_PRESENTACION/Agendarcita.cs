@@ -34,13 +34,27 @@ namespace CAPA_PRESENTACION
             
         }
 
-        private void dtaagendar_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dtaagendar_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            this.Hide();
-            Agendarcitahijo agen = new Agendarcitahijo();
-            agen.ShowDialog();
+            Agendarcitahijo agen= Owner as Agendarcitahijo;
+            agen.textnoex.Text = dtaagendar.CurrentRow.Cells[0].Value.ToString();
+            agen.textId.Text = dtaagendar.CurrentRow.Cells[1].Value.ToString();
+            agen.textnombre.Text = dtaagendar.CurrentRow.Cells[2].Value.ToString();
+            agen.textestado.Text = dtaagendar.CurrentRow.Cells[3].Value.ToString();
         }
 
-       
+        private void dtaagendar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtaagendar_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            Agendarcitahijo agen = Owner as Agendarcitahijo;
+            agen.textnoex.Text = dtaagendar.CurrentRow.Cells[0].Value.ToString();
+            agen.textId.Text = dtaagendar.CurrentRow.Cells[1].Value.ToString();
+            agen.textnombre.Text = dtaagendar.CurrentRow.Cells[2].Value.ToString();
+            agen.textestado.Text = dtaagendar.CurrentRow.Cells[3].Value.ToString();
+        }
     }
 }
