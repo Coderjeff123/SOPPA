@@ -129,9 +129,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="radiobuttonpersonal.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="textboxpersonal.cs">
       <SubType>UserControl</SubType>
     </Compile>

@@ -11,7 +11,7 @@ namespace CAPA_PRESENTACION
         public VerExpediente()
         {
             InitializeComponent();
-            btnbaja.Enabled = false;
+
 
         }
 
@@ -96,6 +96,11 @@ namespace CAPA_PRESENTACION
             }
 
             mostrar();
+        }
+
+        private void dtaexpe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

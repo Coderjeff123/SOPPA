@@ -81,7 +81,6 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtaexpe.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtaexpe.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.dtaexpe.EnableHeadersVisualStyles = false;
             this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dtaexpe.Location = new System.Drawing.Point(0, 0);
@@ -102,6 +101,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowRowErrors = false;
             this.dtaexpe.Size = new System.Drawing.Size(717, 193);
             this.dtaexpe.TabIndex = 1;
+            this.dtaexpe.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaexpe_CellContentClick);
             this.dtaexpe.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseClick);
             // 
             // panel2
