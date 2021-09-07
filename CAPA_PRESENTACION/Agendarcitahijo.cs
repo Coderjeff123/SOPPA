@@ -87,5 +87,17 @@ namespace CAPA_PRESENTACION
 
 
         }
+
+        private void buttonpersolizado1_Click(object sender, EventArgs e)
+        {
+            Agendarcita agen = new Agendarcita();
+            AddOwnedForm(agen);
+            agen.Show();
+        }
+
+        private void textcodigo__TextChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -174,6 +174,7 @@ namespace CAPA_PRESENTACION
             this.buttonpersolizado1.Text = "Agendar cita";
             this.buttonpersolizado1.TextColor = System.Drawing.Color.White;
             this.buttonpersolizado1.UseVisualStyleBackColor = false;
+            this.buttonpersolizado1.Click += new System.EventHandler(this.buttonpersolizado1_Click);
             // 
             // textapellido
             // 
@@ -249,6 +250,7 @@ namespace CAPA_PRESENTACION
             this.textcodigo.Texts = "";
             this.textcodigo.UnderlinedStyle = true;
             this.textcodigo.Visible = false;
+            this.textcodigo._TextChanged += new System.EventHandler(this.textcodigo__TextChanged);
             // 
             // label6
             // 

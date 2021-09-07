@@ -34,13 +34,29 @@ namespace CAPA_PRESENTACION
             
         }
 
-        private void dtaagendar_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            this.Hide();
-            Agendarcitahijo agen = new Agendarcitahijo();
-            agen.ShowDialog();
-        }
-
        
+
+
+
+
+
+
+        /*   private void dtaagendar_CellClick(object sender, DataGridViewCellEventArgs e)
+           {
+               this.Hide();
+               Agendarcitahijo agen = new Agendarcitahijo();
+               agen.ShowDialog();
+           }*/
+
+        /* private void btnagendar_Click(object sender, EventArgs e)
+         {
+             Agendarcitahijo agend = Owner as Agendarcitahijo;
+             //agend.textcodigo.text =  
+         }*/
+
+
+
+
+
     }
 }
