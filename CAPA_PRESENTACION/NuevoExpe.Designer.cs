@@ -58,8 +58,8 @@ namespace CAPA_PRESENTACION
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new CAPA_PRESENTACION.Pictureboxpersonal();
-            this.rbtninactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
-            this.rbtnactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
+////            this.rbtninactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
+           // this.rbtnactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
             this.txtnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
@@ -85,9 +85,9 @@ namespace CAPA_PRESENTACION
             // 
             // panelDatos
             // 
-            this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+         /*   this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            System.Windows.Forms.AnchorStyles.Left) 
+            System.Windows.Forms.AnchorStyles.Right)));
             this.panelDatos.Controls.Add(this.rbtninactivo);
             this.panelDatos.Controls.Add(this.rbtnactivo);
             this.panelDatos.Controls.Add(this.txtnombre);
@@ -96,7 +96,7 @@ namespace CAPA_PRESENTACION
             this.panelDatos.Location = new System.Drawing.Point(162, 29);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(580, 182);
-            this.panelDatos.TabIndex = 1;
+            this.panelDatos.TabIndex = 1;*/
             // 
             // label5
             // 
@@ -494,7 +494,7 @@ namespace CAPA_PRESENTACION
             // 
             // rbtninactivo
             // 
-            this.rbtninactivo.AutoSize = true;
+           /* this.rbtninactivo.AutoSize = true;
             this.rbtninactivo.BackColor = System.Drawing.Color.SkyBlue;
             this.rbtninactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
             this.rbtninactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -508,11 +508,11 @@ namespace CAPA_PRESENTACION
             this.rbtninactivo.TabStop = true;
             this.rbtninactivo.Text = "Inactivo";
             this.rbtninactivo.UnCheckedColor = System.Drawing.Color.CornflowerBlue;
-            this.rbtninactivo.UseVisualStyleBackColor = false;
+            this.rbtninactivo.UseVisualStyleBackColor = false;*/
             // 
             // rbtnactivo
             // 
-            this.rbtnactivo.AutoSize = true;
+           /* this.rbtnactivo.AutoSize = true;
             this.rbtnactivo.BackColor = System.Drawing.Color.SkyBlue;
             this.rbtnactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
             this.rbtnactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -526,7 +526,7 @@ namespace CAPA_PRESENTACION
             this.rbtnactivo.TabStop = true;
             this.rbtnactivo.Text = "Activo";
             this.rbtnactivo.UnCheckedColor = System.Drawing.Color.CornflowerBlue;
-            this.rbtnactivo.UseVisualStyleBackColor = false;
+            this.rbtnactivo.UseVisualStyleBackColor = false;*/
             // 
             // txtnombre
             // 
@@ -612,7 +612,7 @@ namespace CAPA_PRESENTACION
         private Pictureboxpersonal pictureBox1;
         private textboxpersonal txtnombre;
         private textboxpersonal txtnom;
-        private radiobuttonpersonal rbtnactivo;
-        private radiobuttonpersonal rbtninactivo;
+      //  private radiobuttonpersonal rbtnactivo;
+       // private radiobuttonpersonal rbtninactivo;
     }
 }
