@@ -34,7 +34,17 @@ namespace CAPA_PRESENTACION
             
         }
 
-       
+        private void dtaagendar_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Agendarcita_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
 
 
 
