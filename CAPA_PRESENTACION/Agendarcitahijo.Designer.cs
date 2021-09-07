@@ -36,12 +36,9 @@ namespace CAPA_PRESENTACION
             this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelagenda = new CAPA_PRESENTACION.Paneldegradado();
-            this.textId = new CAPA_PRESENTACION.textboxpersonal();
-            this.textestado = new CAPA_PRESENTACION.textboxpersonal();
-            this.textnoex = new CAPA_PRESENTACION.textboxpersonal();
-            this.btnBINCULO = new CAPA_PRESENTACION.Buttonpersolizado();
             this.Fechacita = new System.Windows.Forms.Label();
             this.Calendaragenda = new System.Windows.Forms.MonthCalendar();
+            this.buttonpersolizado1 = new CAPA_PRESENTACION.Buttonpersolizado();
             this.textapellido = new CAPA_PRESENTACION.textboxpersonal();
             this.textnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.textcodigo = new CAPA_PRESENTACION.textboxpersonal();
@@ -107,7 +104,6 @@ namespace CAPA_PRESENTACION
             this.dtacita.ShowRowErrors = false;
             this.dtacita.Size = new System.Drawing.Size(398, 532);
             this.dtacita.TabIndex = 6;
-            this.dtacita.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtacita_RowHeaderMouseDoubleClick);
             // 
             // Hora
             // 
@@ -125,12 +121,9 @@ namespace CAPA_PRESENTACION
             this.panelagenda.angulo = 0F;
             this.panelagenda.Colorleft = System.Drawing.Color.Empty;
             this.panelagenda.Colorrigth = System.Drawing.Color.Empty;
-            this.panelagenda.Controls.Add(this.textId);
-            this.panelagenda.Controls.Add(this.textestado);
-            this.panelagenda.Controls.Add(this.textnoex);
-            this.panelagenda.Controls.Add(this.btnBINCULO);
             this.panelagenda.Controls.Add(this.Fechacita);
             this.panelagenda.Controls.Add(this.Calendaragenda);
+            this.panelagenda.Controls.Add(this.buttonpersolizado1);
             this.panelagenda.Controls.Add(this.textapellido);
             this.panelagenda.Controls.Add(this.textnombre);
             this.panelagenda.Controls.Add(this.textcodigo);
@@ -144,104 +137,6 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Name = "panelagenda";
             this.panelagenda.Size = new System.Drawing.Size(386, 532);
             this.panelagenda.TabIndex = 5;
-            // 
-            // textId
-            // 
-            this.textId.BackColor = System.Drawing.Color.SkyBlue;
-            this.textId.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.textId.BorderFocusColor = System.Drawing.Color.Blue;
-            this.textId.BorderRadius = 0;
-            this.textId.BorderSize = 2;
-            this.textId.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textId.IsFocused = false;
-            this.textId.IsPasswordChar = false;
-            this.textId.IsPlaceholder = false;
-            this.textId.Location = new System.Drawing.Point(93, 128);
-            this.textId.Margin = new System.Windows.Forms.Padding(4);
-            this.textId.Multiline = false;
-            this.textId.Name = "textId";
-            this.textId.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textId.PasswordChar = false;
-            this.textId.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textId.PlaceholderText = "";
-            this.textId.Size = new System.Drawing.Size(92, 31);
-            this.textId.TabIndex = 9;
-            this.textId.Texts = "";
-            this.textId.UnderlinedStyle = true;
-            this.textId.Visible = false;
-            // 
-            // textestado
-            // 
-            this.textestado.BackColor = System.Drawing.Color.SkyBlue;
-            this.textestado.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.textestado.BorderFocusColor = System.Drawing.Color.Blue;
-            this.textestado.BorderRadius = 0;
-            this.textestado.BorderSize = 2;
-            this.textestado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textestado.IsFocused = false;
-            this.textestado.IsPasswordChar = false;
-            this.textestado.IsPlaceholder = false;
-            this.textestado.Location = new System.Drawing.Point(93, 128);
-            this.textestado.Margin = new System.Windows.Forms.Padding(4);
-            this.textestado.Multiline = false;
-            this.textestado.Name = "textestado";
-            this.textestado.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textestado.PasswordChar = false;
-            this.textestado.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textestado.PlaceholderText = "";
-            this.textestado.Size = new System.Drawing.Size(92, 31);
-            this.textestado.TabIndex = 10;
-            this.textestado.Texts = "";
-            this.textestado.UnderlinedStyle = true;
-            this.textestado.Visible = false;
-            // 
-            // textnoex
-            // 
-            this.textnoex.BackColor = System.Drawing.Color.SkyBlue;
-            this.textnoex.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.textnoex.BorderFocusColor = System.Drawing.Color.Blue;
-            this.textnoex.BorderRadius = 0;
-            this.textnoex.BorderSize = 2;
-            this.textnoex.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textnoex.IsFocused = false;
-            this.textnoex.IsPasswordChar = false;
-            this.textnoex.IsPlaceholder = false;
-            this.textnoex.Location = new System.Drawing.Point(93, 128);
-            this.textnoex.Margin = new System.Windows.Forms.Padding(4);
-            this.textnoex.Multiline = false;
-            this.textnoex.Name = "textnoex";
-            this.textnoex.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textnoex.PasswordChar = false;
-            this.textnoex.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textnoex.PlaceholderText = "";
-            this.textnoex.Size = new System.Drawing.Size(92, 31);
-            this.textnoex.TabIndex = 8;
-            this.textnoex.Texts = "";
-            this.textnoex.UnderlinedStyle = true;
-            this.textnoex.Visible = false;
-            // 
-            // btnBINCULO
-            // 
-            this.btnBINCULO.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnBINCULO.BackgroundColor = System.Drawing.Color.MediumTurquoise;
-            this.btnBINCULO.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.btnBINCULO.BorderRadius = 20;
-            this.btnBINCULO.BorderSize = 2;
-            this.btnBINCULO.FlatAppearance.BorderSize = 0;
-            this.btnBINCULO.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBINCULO.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBINCULO.ForeColor = System.Drawing.Color.White;
-            this.btnBINCULO.Image = global::CAPA_PRESENTACION.Properties.Resources._01_16_86396__1_;
-            this.btnBINCULO.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBINCULO.Location = new System.Drawing.Point(34, 484);
-            this.btnBINCULO.Name = "btnBINCULO";
-            this.btnBINCULO.Size = new System.Drawing.Size(206, 48);
-            this.btnBINCULO.TabIndex = 14;
-            this.btnBINCULO.Text = "Busqueda de expediente";
-            this.btnBINCULO.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnBINCULO.TextColor = System.Drawing.Color.White;
-            this.btnBINCULO.UseVisualStyleBackColor = false;
-            this.btnBINCULO.Click += new System.EventHandler(this.btnBINCULO_Click);
             // 
             // Fechacita
             // 
@@ -260,6 +155,25 @@ namespace CAPA_PRESENTACION
             this.Calendaragenda.Name = "Calendaragenda";
             this.Calendaragenda.TabIndex = 12;
             this.Calendaragenda.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Calendaragenda_DateChanged);
+            // 
+            // buttonpersolizado1
+            // 
+            this.buttonpersolizado1.BackColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonpersolizado1.BackgroundColor = System.Drawing.Color.MediumTurquoise;
+            this.buttonpersolizado1.BorderColor = System.Drawing.Color.DarkBlue;
+            this.buttonpersolizado1.BorderRadius = 20;
+            this.buttonpersolizado1.BorderSize = 0;
+            this.buttonpersolizado1.FlatAppearance.BorderSize = 0;
+            this.buttonpersolizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonpersolizado1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonpersolizado1.ForeColor = System.Drawing.Color.White;
+            this.buttonpersolizado1.Location = new System.Drawing.Point(82, 480);
+            this.buttonpersolizado1.Name = "buttonpersolizado1";
+            this.buttonpersolizado1.Size = new System.Drawing.Size(150, 40);
+            this.buttonpersolizado1.TabIndex = 11;
+            this.buttonpersolizado1.Text = "Agendar cita";
+            this.buttonpersolizado1.TextColor = System.Drawing.Color.White;
+            this.buttonpersolizado1.UseVisualStyleBackColor = false;
             // 
             // textapellido
             // 
@@ -431,6 +345,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
+        private Buttonpersolizado buttonpersolizado1;
         private System.Windows.Forms.DataGridView dtacita;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
@@ -439,9 +354,5 @@ namespace CAPA_PRESENTACION
         public textboxpersonal textnombre;
         public textboxpersonal textcodigo;
         public System.Windows.Forms.Label Fechacita;
-        private Buttonpersolizado btnBINCULO;
-        public textboxpersonal textnoex;
-        public textboxpersonal textId;
-        public textboxpersonal textestado;
     }
 }

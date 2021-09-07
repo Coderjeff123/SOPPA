@@ -87,21 +87,5 @@ namespace CAPA_PRESENTACION
 
 
         }
-
-        private void btnBINCULO_Click(object sender, EventArgs e)
-        {
-            
-            Agendarcita agen = new Agendarcita();
-            agen.Show();
-            AddOwnedForm(agen);
-
-           
-
-        }
-
-        private void dtacita_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-
-        }
     }
 }

@@ -30,6 +30,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
@@ -128,6 +131,9 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="radiobuttonpersonal.cs">
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="textboxpersonal.cs">
       <SubType>UserControl</SubType>
@@ -308,15 +314,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\image_picture_icon_143762.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\googleagenda_94054.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\01-16_86396.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\01-16_86396 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

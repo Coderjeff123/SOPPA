@@ -34,14 +34,14 @@ namespace CAPA_PRESENTACION
             System.IO.MemoryStream memory = new System.IO.MemoryStream();
             pictureBox1.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
             
-            /*if (rbtnactivo.Checked == true)
-            {
-                estado = "A";
-            }
-            else
-            {  
-                estado = "I";
-            }*/
+           //if (rbtnactivo.Checked == true)
+           // {
+           //     estado = "A";
+           // }
+           // else
+           // {  
+           //     estado = "I";
+           // }
 
             
             nexpediente.insertexpediente(txtnombre.Text, estado, memory.GetBuffer(),dtaexpe.CurrentRow.Cells["NoExpediente"].Value.ToString());

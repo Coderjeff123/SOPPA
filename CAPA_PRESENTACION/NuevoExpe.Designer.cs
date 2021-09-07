@@ -58,8 +58,8 @@ namespace CAPA_PRESENTACION
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox1 = new CAPA_PRESENTACION.Pictureboxpersonal();
-////            this.rbtninactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
-           // this.rbtnactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
+            this.rbtinactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
+            this.rbtnactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
             this.txtnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
@@ -85,10 +85,10 @@ namespace CAPA_PRESENTACION
             // 
             // panelDatos
             // 
-         /*   this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            System.Windows.Forms.AnchorStyles.Left) 
-            System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDatos.Controls.Add(this.rbtninactivo);
+            this.panelDatos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDatos.Controls.Add(this.rbtinactivo);
             this.panelDatos.Controls.Add(this.rbtnactivo);
             this.panelDatos.Controls.Add(this.txtnombre);
             this.panelDatos.Controls.Add(this.label5);
@@ -96,7 +96,7 @@ namespace CAPA_PRESENTACION
             this.panelDatos.Location = new System.Drawing.Point(162, 29);
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(580, 182);
-            this.panelDatos.TabIndex = 1;*/
+            this.panelDatos.TabIndex = 1;
             // 
             // label5
             // 
@@ -147,9 +147,9 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
             this.paneldegradado2.Controls.Add(this.dtaexpe);
             this.paneldegradado2.Controls.Add(this.panelBuscaestu);
-            this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
+            this.paneldegradado2.Location = new System.Drawing.Point(0, 387);
             this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(754, 465);
+            this.paneldegradado2.Size = new System.Drawing.Size(754, 78);
             this.paneldegradado2.TabIndex = 6;
             // 
             // dtaexpe
@@ -181,10 +181,9 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtaexpe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtaexpe.EnableHeadersVisualStyles = false;
             this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dtaexpe.Location = new System.Drawing.Point(0, 74);
+            this.dtaexpe.Location = new System.Drawing.Point(0, 173);
             this.dtaexpe.Name = "dtaexpe";
             this.dtaexpe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -200,7 +199,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowCellToolTips = false;
             this.dtaexpe.ShowEditingIcon = false;
             this.dtaexpe.ShowRowErrors = false;
-            this.dtaexpe.Size = new System.Drawing.Size(754, 391);
+            this.dtaexpe.Size = new System.Drawing.Size(754, 292);
             this.dtaexpe.TabIndex = 7;
             this.dtaexpe.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseDoubleClick);
             // 
@@ -492,41 +491,41 @@ namespace CAPA_PRESENTACION
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // rbtninactivo
+            // rbtinactivo
             // 
-           /* this.rbtninactivo.AutoSize = true;
-            this.rbtninactivo.BackColor = System.Drawing.Color.SkyBlue;
-            this.rbtninactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.rbtninactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtninactivo.ForeColor = System.Drawing.Color.White;
-            this.rbtninactivo.Location = new System.Drawing.Point(154, 136);
-            this.rbtninactivo.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rbtninactivo.Name = "rbtninactivo";
-            this.rbtninactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rbtninactivo.Size = new System.Drawing.Size(88, 21);
-            this.rbtninactivo.TabIndex = 4;
-            this.rbtninactivo.TabStop = true;
-            this.rbtninactivo.Text = "Inactivo";
-            this.rbtninactivo.UnCheckedColor = System.Drawing.Color.CornflowerBlue;
-            this.rbtninactivo.UseVisualStyleBackColor = false;*/
+            this.rbtinactivo.AutoSize = true;
+            this.rbtinactivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.rbtinactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
+            this.rbtinactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtinactivo.ForeColor = System.Drawing.Color.White;
+            this.rbtinactivo.Location = new System.Drawing.Point(146, 117);
+            this.rbtinactivo.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rbtinactivo.Name = "rbtinactivo";
+            this.rbtinactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rbtinactivo.Size = new System.Drawing.Size(88, 21);
+            this.rbtinactivo.TabIndex = 12;
+            this.rbtinactivo.TabStop = true;
+            this.rbtinactivo.Text = "Inactivo";
+            this.rbtinactivo.UnCheckedColor = System.Drawing.Color.SteelBlue;
+            this.rbtinactivo.UseVisualStyleBackColor = false;
             // 
             // rbtnactivo
             // 
-           /* this.rbtnactivo.AutoSize = true;
+            this.rbtnactivo.AutoSize = true;
             this.rbtnactivo.BackColor = System.Drawing.Color.SkyBlue;
             this.rbtnactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
             this.rbtnactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbtnactivo.ForeColor = System.Drawing.Color.White;
-            this.rbtnactivo.Location = new System.Drawing.Point(154, 104);
+            this.rbtnactivo.Location = new System.Drawing.Point(146, 79);
             this.rbtnactivo.MinimumSize = new System.Drawing.Size(0, 21);
             this.rbtnactivo.Name = "rbtnactivo";
             this.rbtnactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.rbtnactivo.Size = new System.Drawing.Size(78, 21);
-            this.rbtnactivo.TabIndex = 3;
+            this.rbtnactivo.TabIndex = 11;
             this.rbtnactivo.TabStop = true;
             this.rbtnactivo.Text = "Activo";
-            this.rbtnactivo.UnCheckedColor = System.Drawing.Color.CornflowerBlue;
-            this.rbtnactivo.UseVisualStyleBackColor = false;*/
+            this.rbtnactivo.UnCheckedColor = System.Drawing.Color.SteelBlue;
+            this.rbtnactivo.UseVisualStyleBackColor = false;
             // 
             // txtnombre
             // 
@@ -612,7 +611,9 @@ namespace CAPA_PRESENTACION
         private Pictureboxpersonal pictureBox1;
         private textboxpersonal txtnombre;
         private textboxpersonal txtnom;
-      //  private radiobuttonpersonal rbtnactivo;
-       // private radiobuttonpersonal rbtninactivo;
+        private radiobuttonpersonal rbtinactivo;
+        private radiobuttonpersonal rbtnactivo;
+        // private radiobuttonpersonal rbtnactivo;
+        // private radiobuttonpersonal rbtninactivo;
     }
 }
