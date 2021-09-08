@@ -48,6 +48,8 @@ namespace CAPA_PRESENTACION
                pimagen.Image = Image.FromStream(ms);
             }
 
+          
+
             if (txtestado.Text == "I")
             {
                 btnbaja.Enabled = false;

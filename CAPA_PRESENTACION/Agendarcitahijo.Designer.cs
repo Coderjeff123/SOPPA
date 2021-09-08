@@ -309,7 +309,7 @@ namespace CAPA_PRESENTACION
             this.comidin.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
             this.comidin.Bordercolor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.comidin.Bordercolor2 = System.Drawing.Color.Cyan;
-            this.comidin.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.comidin.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.DashDot;
             this.comidin.Bordersize = 5;
             this.comidin.Gradient = 50F;
             this.comidin.Image = global::CAPA_PRESENTACION.Properties.Resources.medical_42_icon_icons_com_73897;
