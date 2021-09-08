@@ -325,8 +325,8 @@ namespace CAPA_PRESENTACION
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(832, 612);
-            this.Controls.Add(this.dtacita);
             this.Controls.Add(this.panelagenda);
+            this.Controls.Add(this.dtacita);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcitahijo";
             this.Text = "Agendarcitahijo";
