@@ -34,6 +34,9 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Calendario">
+      <HintPath>..\..\..\..\..\Downloads\Calendario.dll</HintPath>
+    </Reference>
     <Reference Include="CircularProgressBar, Version=2.8.0.16, Culture=neutral, PublicKeyToken=310fd07b25df79b3, processorArchitecture=MSIL">
       <HintPath>..\packages\CircularProgressBar.2.8.0.16\lib\net40\CircularProgressBar.dll</HintPath>
     </Reference>
@@ -141,6 +144,12 @@
     <Compile Include="textboxpersonal.Designer.cs">
       <DependentUpon>textboxpersonal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Ver cita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ver cita.Designer.cs">
+      <DependentUpon>Ver cita.cs</DependentUpon>
+    </Compile>
     <Compile Include="VerConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="textboxpersonal.resx">
       <DependentUpon>textboxpersonal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ver cita.resx">
+      <DependentUpon>Ver cita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VerConsulta.resx">
       <DependentUpon>VerConsulta.cs</DependentUpon>

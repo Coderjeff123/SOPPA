@@ -12,7 +12,7 @@ namespace CAPA_NEGOCIO
     public class CitaN
     {
 
-        public static string insertcita(string iD_Cita1, string iD_Remision1, DateTime fecha1)
+        public  string insertcita(string iD_Cita1, string iD_Remision1, DateTime fecha1)
         {
             CitaD datos = new CitaD();
             datos.ID_Cita1 = iD_Cita1;
@@ -22,7 +22,7 @@ namespace CAPA_NEGOCIO
             return datos.insertcita(datos);
         }
 
-        public static string updatecita(string iD_Cita1, string iD_Remision1, DateTime fecha1)
+        public  string updatecita(string iD_Cita1, string iD_Remision1, DateTime fecha1)
         {
             CitaD datos = new CitaD();
             datos.ID_Cita1 = iD_Cita1;
@@ -32,7 +32,7 @@ namespace CAPA_NEGOCIO
             return datos.Updatecita(datos);
         }
 
-        public static DataTable showct()
+        public  DataTable showct()
         {
             DataTable tablec = new DataTable();
             CitaD datos = new CitaD();
@@ -40,7 +40,7 @@ namespace CAPA_NEGOCIO
             return tablec;
         }
 
-        public static DataTable buscarcita(string iD_Cita)
+        public  DataTable buscarcita(string iD_Cita)
         {
             CitaD datos = new CitaD();
             datos.ID_Cita1 = iD_Cita;

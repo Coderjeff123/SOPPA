@@ -35,10 +35,14 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
+            this.rbtinactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
+            this.rbtnactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
+            this.txtnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.label5 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.epError = new System.Windows.Forms.ErrorProvider(this.components);
             this.panelinfo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new CAPA_PRESENTACION.Pictureboxpersonal();
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panelBuscaestu = new CAPA_PRESENTACION.paneldegra2();
@@ -57,19 +61,15 @@ namespace CAPA_PRESENTACION
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new CAPA_PRESENTACION.Pictureboxpersonal();
-            this.rbtinactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
-            this.rbtnactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
-            this.txtnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.panelDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.epError)).BeginInit();
             this.panelinfo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.paneldegradado2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panelBuscaestu.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
             this.paneldegra21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -97,6 +97,68 @@ namespace CAPA_PRESENTACION
             this.panelDatos.Name = "panelDatos";
             this.panelDatos.Size = new System.Drawing.Size(580, 182);
             this.panelDatos.TabIndex = 1;
+            // 
+            // rbtinactivo
+            // 
+            this.rbtinactivo.AutoSize = true;
+            this.rbtinactivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.rbtinactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
+            this.rbtinactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtinactivo.ForeColor = System.Drawing.Color.White;
+            this.rbtinactivo.Location = new System.Drawing.Point(146, 117);
+            this.rbtinactivo.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rbtinactivo.Name = "rbtinactivo";
+            this.rbtinactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rbtinactivo.Size = new System.Drawing.Size(88, 21);
+            this.rbtinactivo.TabIndex = 12;
+            this.rbtinactivo.Text = "Inactivo";
+            this.rbtinactivo.UnCheckedColor = System.Drawing.Color.SteelBlue;
+            this.rbtinactivo.UseVisualStyleBackColor = false;
+            // 
+            // rbtnactivo
+            // 
+            this.rbtnactivo.AutoSize = true;
+            this.rbtnactivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.rbtnactivo.Checked = true;
+            this.rbtnactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
+            this.rbtnactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbtnactivo.ForeColor = System.Drawing.Color.White;
+            this.rbtnactivo.Location = new System.Drawing.Point(146, 79);
+            this.rbtnactivo.MinimumSize = new System.Drawing.Size(0, 21);
+            this.rbtnactivo.Name = "rbtnactivo";
+            this.rbtnactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.rbtnactivo.Size = new System.Drawing.Size(78, 21);
+            this.rbtnactivo.TabIndex = 11;
+            this.rbtnactivo.TabStop = true;
+            this.rbtnactivo.Text = "Activo";
+            this.rbtnactivo.UnCheckedColor = System.Drawing.Color.SteelBlue;
+            this.rbtnactivo.UseVisualStyleBackColor = false;
+            // 
+            // txtnombre
+            // 
+            this.txtnombre.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtnombre.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.txtnombre.BorderFocusColor = System.Drawing.Color.RoyalBlue;
+            this.txtnombre.BorderRadius = 0;
+            this.txtnombre.BorderSize = 2;
+            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnombre.ForeColor = System.Drawing.Color.White;
+            this.txtnombre.IsFocused = false;
+            this.txtnombre.IsPasswordChar = false;
+            this.txtnombre.IsPlaceholder = false;
+            this.txtnombre.Location = new System.Drawing.Point(85, 7);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(4);
+            this.txtnombre.Multiline = false;
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.txtnombre.PasswordChar = false;
+            this.txtnombre.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtnombre.PlaceholderText = "";
+            this.txtnombre.Size = new System.Drawing.Size(316, 31);
+            this.txtnombre.TabIndex = 10;
+            this.txtnombre.Texts = "";
+            this.txtnombre.UnderlinedStyle = true;
+            this.txtnombre.Validated += new System.EventHandler(this.txtnombre_Validated);
             // 
             // label5
             // 
@@ -131,25 +193,40 @@ namespace CAPA_PRESENTACION
             this.panelinfo.Controls.Add(this.pictureBox1);
             this.panelinfo.Controls.Add(this.label1);
             this.panelinfo.Controls.Add(this.panelDatos);
-            this.panelinfo.Location = new System.Drawing.Point(0, 170);
+            this.panelinfo.Location = new System.Drawing.Point(0, 191);
             this.panelinfo.Name = "panelinfo";
             this.panelinfo.Size = new System.Drawing.Size(754, 272);
             this.panelinfo.TabIndex = 3;
             this.panelinfo.Visible = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
+            this.pictureBox1.Bordercolor = System.Drawing.Color.DeepSkyBlue;
+            this.pictureBox1.Bordercolor2 = System.Drawing.Color.Cyan;
+            this.pictureBox1.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            this.pictureBox1.Bordersize = 2;
+            this.pictureBox1.Gradient = 50F;
+            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
+            this.pictureBox1.Location = new System.Drawing.Point(31, 29);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 5;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // paneldegradado2
             // 
-            this.paneldegradado2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.paneldegradado2.angulo = 0F;
-            this.paneldegradado2.BackColor = System.Drawing.Color.Transparent;
+            this.paneldegradado2.BackColor = System.Drawing.Color.SkyBlue;
             this.paneldegradado2.Colorleft = System.Drawing.Color.Transparent;
             this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
             this.paneldegradado2.Controls.Add(this.dtaexpe);
             this.paneldegradado2.Controls.Add(this.panelBuscaestu);
-            this.paneldegradado2.Location = new System.Drawing.Point(0, 387);
+            this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(754, 78);
+            this.paneldegradado2.Size = new System.Drawing.Size(754, 463);
             this.paneldegradado2.TabIndex = 6;
             // 
             // dtaexpe
@@ -181,9 +258,10 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtaexpe.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtaexpe.EnableHeadersVisualStyles = false;
             this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dtaexpe.Location = new System.Drawing.Point(0, 173);
+            this.dtaexpe.Location = new System.Drawing.Point(0, 83);
             this.dtaexpe.Name = "dtaexpe";
             this.dtaexpe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -199,7 +277,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowCellToolTips = false;
             this.dtaexpe.ShowEditingIcon = false;
             this.dtaexpe.ShowRowErrors = false;
-            this.dtaexpe.Size = new System.Drawing.Size(754, 292);
+            this.dtaexpe.Size = new System.Drawing.Size(754, 380);
             this.dtaexpe.TabIndex = 7;
             this.dtaexpe.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseDoubleClick);
             // 
@@ -213,7 +291,7 @@ namespace CAPA_PRESENTACION
             this.panelBuscaestu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelBuscaestu.Location = new System.Drawing.Point(0, 0);
             this.panelBuscaestu.Name = "panelBuscaestu";
-            this.panelBuscaestu.Size = new System.Drawing.Size(754, 74);
+            this.panelBuscaestu.Size = new System.Drawing.Size(754, 83);
             this.panelBuscaestu.TabIndex = 6;
             // 
             // txtnom
@@ -247,7 +325,7 @@ namespace CAPA_PRESENTACION
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(290, 6);
+            this.label3.Location = new System.Drawing.Point(293, 6);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(163, 20);
             this.label3.TabIndex = 2;
@@ -474,84 +552,6 @@ namespace CAPA_PRESENTACION
             this.label7.TabIndex = 8;
             this.label7.Text = "Fecha de remision";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Bordercapstyle = System.Drawing.Drawing2D.DashCap.Flat;
-            this.pictureBox1.Bordercolor = System.Drawing.Color.DeepSkyBlue;
-            this.pictureBox1.Bordercolor2 = System.Drawing.Color.Cyan;
-            this.pictureBox1.Borderlinestyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            this.pictureBox1.Bordersize = 2;
-            this.pictureBox1.Gradient = 50F;
-            this.pictureBox1.Image = global::CAPA_PRESENTACION.Properties.Resources.avatardefault_92824;
-            this.pictureBox1.Location = new System.Drawing.Point(31, 29);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 5;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // rbtinactivo
-            // 
-            this.rbtinactivo.AutoSize = true;
-            this.rbtinactivo.BackColor = System.Drawing.Color.SkyBlue;
-            this.rbtinactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.rbtinactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtinactivo.ForeColor = System.Drawing.Color.White;
-            this.rbtinactivo.Location = new System.Drawing.Point(146, 117);
-            this.rbtinactivo.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rbtinactivo.Name = "rbtinactivo";
-            this.rbtinactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rbtinactivo.Size = new System.Drawing.Size(88, 21);
-            this.rbtinactivo.TabIndex = 12;
-            this.rbtinactivo.TabStop = true;
-            this.rbtinactivo.Text = "Inactivo";
-            this.rbtinactivo.UnCheckedColor = System.Drawing.Color.SteelBlue;
-            this.rbtinactivo.UseVisualStyleBackColor = false;
-            // 
-            // rbtnactivo
-            // 
-            this.rbtnactivo.AutoSize = true;
-            this.rbtnactivo.BackColor = System.Drawing.Color.SkyBlue;
-            this.rbtnactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
-            this.rbtnactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnactivo.ForeColor = System.Drawing.Color.White;
-            this.rbtnactivo.Location = new System.Drawing.Point(146, 79);
-            this.rbtnactivo.MinimumSize = new System.Drawing.Size(0, 21);
-            this.rbtnactivo.Name = "rbtnactivo";
-            this.rbtnactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.rbtnactivo.Size = new System.Drawing.Size(78, 21);
-            this.rbtnactivo.TabIndex = 11;
-            this.rbtnactivo.TabStop = true;
-            this.rbtnactivo.Text = "Activo";
-            this.rbtnactivo.UnCheckedColor = System.Drawing.Color.SteelBlue;
-            this.rbtnactivo.UseVisualStyleBackColor = false;
-            // 
-            // txtnombre
-            // 
-            this.txtnombre.BackColor = System.Drawing.Color.SkyBlue;
-            this.txtnombre.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.txtnombre.BorderFocusColor = System.Drawing.Color.RoyalBlue;
-            this.txtnombre.BorderRadius = 0;
-            this.txtnombre.BorderSize = 2;
-            this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.IsFocused = false;
-            this.txtnombre.IsPasswordChar = false;
-            this.txtnombre.IsPlaceholder = false;
-            this.txtnombre.Location = new System.Drawing.Point(85, 7);
-            this.txtnombre.Margin = new System.Windows.Forms.Padding(4);
-            this.txtnombre.Multiline = false;
-            this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtnombre.PasswordChar = false;
-            this.txtnombre.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtnombre.PlaceholderText = "";
-            this.txtnombre.Size = new System.Drawing.Size(316, 31);
-            this.txtnombre.TabIndex = 10;
-            this.txtnombre.Texts = "";
-            this.txtnombre.UnderlinedStyle = true;
-            this.txtnombre.Validated += new System.EventHandler(this.txtnombre_Validated);
-            // 
             // NuevoExpe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -559,9 +559,9 @@ namespace CAPA_PRESENTACION
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(754, 512);
             this.Controls.Add(this.paneldegradado2);
+            this.Controls.Add(this.panelinfo);
             this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.paneldegra21);
-            this.Controls.Add(this.panelinfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "NuevoExpe";
             this.ShowInTaskbar = false;
@@ -572,6 +572,7 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.epError)).EndInit();
             this.panelinfo.ResumeLayout(false);
             this.panelinfo.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paneldegradado2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panelBuscaestu.ResumeLayout(false);
@@ -579,7 +580,6 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

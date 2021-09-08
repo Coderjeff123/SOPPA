@@ -228,16 +228,6 @@ namespace CAPA_PRESENTACION
             btnagendarcitas.BackColor = Color.Transparent;
         }
 
-        private void btnposponercita_MouseHover(object sender, EventArgs e)
-        {
-            btnposponercita.BackColor = Color.Aquamarine;
-        }
-
-        private void btnposponercita_MouseLeave(object sender, EventArgs e)
-        {
-            btnposponercita.BackColor = Color.Transparent;
-        }
-
         private void btnverexpe_MouseHover(object sender, EventArgs e)
         {
             btnverexpe.BackColor = Color.Aquamarine;
@@ -338,14 +328,14 @@ namespace CAPA_PRESENTACION
             Cargarfecha();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dtaactividad_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void dtaactividad_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btnvercitas_Click(object sender, EventArgs e)
         {
-
+            abrirForm(new Ver_cita());
         }
     }
 } 

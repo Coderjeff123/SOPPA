@@ -58,7 +58,6 @@ namespace CAPA_PRESENTACION
             this.btnverexpe = new System.Windows.Forms.Button();
             this.btnexpe = new System.Windows.Forms.Button();
             this.panelsubmenucita = new System.Windows.Forms.Panel();
-            this.btnposponercita = new System.Windows.Forms.Button();
             this.btnagendarcitas = new System.Windows.Forms.Button();
             this.btnvercitas = new System.Windows.Forms.Button();
             this.btncita = new System.Windows.Forms.Button();
@@ -477,7 +476,6 @@ namespace CAPA_PRESENTACION
             // panelsubmenucita
             // 
             this.panelsubmenucita.BackColor = System.Drawing.Color.Transparent;
-            this.panelsubmenucita.Controls.Add(this.btnposponercita);
             this.panelsubmenucita.Controls.Add(this.btnagendarcitas);
             this.panelsubmenucita.Controls.Add(this.btnvercitas);
             this.panelsubmenucita.Dock = System.Windows.Forms.DockStyle.Top;
@@ -485,30 +483,6 @@ namespace CAPA_PRESENTACION
             this.panelsubmenucita.Name = "panelsubmenucita";
             this.panelsubmenucita.Size = new System.Drawing.Size(207, 116);
             this.panelsubmenucita.TabIndex = 7;
-            // 
-            // btnposponercita
-            // 
-            this.btnposponercita.BackColor = System.Drawing.Color.Transparent;
-            this.btnposponercita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnposponercita.FlatAppearance.BorderSize = 0;
-            this.btnposponercita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnposponercita.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnposponercita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnposponercita.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnposponercita.ForeColor = System.Drawing.Color.White;
-            this.btnposponercita.Image = global::CAPA_PRESENTACION.Properties.Resources.twocirclingarrows_120593;
-            this.btnposponercita.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnposponercita.Location = new System.Drawing.Point(0, 70);
-            this.btnposponercita.Name = "btnposponercita";
-            this.btnposponercita.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnposponercita.Size = new System.Drawing.Size(207, 33);
-            this.btnposponercita.TabIndex = 2;
-            this.btnposponercita.Text = "Posponer Cita";
-            this.btnposponercita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnposponercita.UseVisualStyleBackColor = false;
-            this.btnposponercita.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
-            this.btnposponercita.MouseLeave += new System.EventHandler(this.btnposponercita_MouseLeave);
-            this.btnposponercita.MouseHover += new System.EventHandler(this.btnposponercita_MouseHover);
             // 
             // btnagendarcitas
             // 
@@ -555,6 +529,7 @@ namespace CAPA_PRESENTACION
             this.btnvercitas.Text = "Ver Citas";
             this.btnvercitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnvercitas.UseVisualStyleBackColor = false;
+            this.btnvercitas.Click += new System.EventHandler(this.btnvercitas_Click);
             this.btnvercitas.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             this.btnvercitas.MouseLeave += new System.EventHandler(this.btnvercitas_MouseLeave);
             this.btnvercitas.MouseHover += new System.EventHandler(this.btnvercitas_MouseHover);
@@ -727,12 +702,10 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Button btnverinformes;
         private System.Windows.Forms.Button btninforme;
         private System.Windows.Forms.Panel panelsubmenucita;
-        private System.Windows.Forms.Button btnposponercita;
         private System.Windows.Forms.Button btnagendarcitas;
         private System.Windows.Forms.Button btnvercitas;
         private System.Windows.Forms.Button btncon;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
         private System.Windows.Forms.Panel panelFormhijo;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btncita;
@@ -743,5 +716,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.DataGridView dtaactividad;
         private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
     }
 }
