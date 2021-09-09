@@ -62,6 +62,8 @@ namespace CAPA_PRESENTACION
         }
 
 
+
+
         private void Calendaragenda_DateChanged(object sender, DateRangeEventArgs e)
         {
             Cargarfecha2();
@@ -98,6 +100,11 @@ namespace CAPA_PRESENTACION
         private void textcodigo__TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void dtacita_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

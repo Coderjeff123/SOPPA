@@ -102,7 +102,7 @@ namespace CAPA_PRESENTACION
             {
                 fomractive.Close();
             }
-            fomractive = formhijo;
+            fomractive = formhijo; 
             formhijo.TopLevel = false;
             formhijo.FormBorderStyle = FormBorderStyle.None;
             formhijo.Dock = DockStyle.Fill;

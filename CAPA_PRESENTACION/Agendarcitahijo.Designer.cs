@@ -104,6 +104,7 @@ namespace CAPA_PRESENTACION
             this.dtacita.ShowRowErrors = false;
             this.dtacita.Size = new System.Drawing.Size(398, 532);
             this.dtacita.TabIndex = 6;
+            this.dtacita.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtacita_CellContentClick);
             // 
             // Hora
             // 

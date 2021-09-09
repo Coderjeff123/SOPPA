@@ -46,7 +46,7 @@ namespace CAPA_PRESENTACION
             btnagen.Visible = false;
             for (int f = 1; f <= 96; f++)
             {
-                dtacita.Rows.Add();
+                dataGridView2.Rows.Add();
             }
             Cargarfecha2();
         }
@@ -74,8 +74,8 @@ namespace CAPA_PRESENTACION
             {
                 string linea1 = archivo3.ReadLine();
                 string linea2 = archivo3.ReadLine();
-                dtacita.Rows[x].Cells[0].Value = linea1;
-                dtacita.Rows[x].Cells[1].Value = linea2;
+                dataGridView2.Rows[x].Cells[0].Value = linea1;
+                dataGridView2.Rows[x].Cells[1].Value = linea2;
 
                 x++;
             }
@@ -83,28 +83,7 @@ namespace CAPA_PRESENTACION
         }
 
 
-        private void Calendaragenda_DateChanged(object sender, DateRangeEventArgs e)
-        {
-            Cargarfecha2();
-        }
-
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void buttonpersolizado1_Click(object sender, EventArgs e)
         {
             paneldegra22.Visible = false;
@@ -116,10 +95,7 @@ namespace CAPA_PRESENTACION
             paneldegra21.Visible = true;
         }
 
-        private void paneldegra22_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void dtaagendar_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
@@ -137,6 +113,26 @@ namespace CAPA_PRESENTACION
         private void btnagen_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dtacita_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Calendaragenda_DateChanged_1(object sender, DateRangeEventArgs e)
+        {
+            Cargarfecha2();
         }
 
 

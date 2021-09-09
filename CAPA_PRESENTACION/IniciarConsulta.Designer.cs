@@ -49,9 +49,9 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.angulo = 0F;
             this.paneldegradado2.Colorleft = System.Drawing.Color.Empty;
             this.paneldegradado2.Colorrigth = System.Drawing.Color.Empty;
-            this.paneldegradado2.Location = new System.Drawing.Point(486, 322);
+            this.paneldegradado2.Location = new System.Drawing.Point(408, 75);
             this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(314, 235);
+            this.paneldegradado2.Size = new System.Drawing.Size(389, 475);
             this.paneldegradado2.TabIndex = 9;
             // 
             // paneldegradado1
