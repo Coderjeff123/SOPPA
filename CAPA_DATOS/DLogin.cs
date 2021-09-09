@@ -25,6 +25,7 @@ namespace CAPA_DATOS
             Contraseña = contraseña;
             this.Very = very;
         }
+            
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
