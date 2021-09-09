@@ -52,7 +52,7 @@ namespace CAPA_PRESENTACION
             // 
             // paneldegra21
             // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.paneldegra21.Colorleft = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(10)))));
             this.paneldegra21.Controls.Add(this.label1);
             this.paneldegra21.Controls.Add(this.label3);
@@ -95,7 +95,7 @@ namespace CAPA_PRESENTACION
             this.circularProgressBar1.BackColor = System.Drawing.Color.Transparent;
             this.circularProgressBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.circularProgressBar1.ForeColor = System.Drawing.Color.White;
-            this.circularProgressBar1.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(36)))), ((int)(((byte)(36)))));
+            this.circularProgressBar1.InnerColor = System.Drawing.Color.Transparent;
             this.circularProgressBar1.InnerMargin = 2;
             this.circularProgressBar1.InnerWidth = -1;
             this.circularProgressBar1.Location = new System.Drawing.Point(82, 205);
