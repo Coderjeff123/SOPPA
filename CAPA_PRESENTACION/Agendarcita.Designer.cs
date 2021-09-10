@@ -381,6 +381,7 @@ namespace CAPA_PRESENTACION
             this.btnagen.Text = "Agendar cita";
             this.btnagen.TextColor = System.Drawing.Color.White;
             this.btnagen.UseVisualStyleBackColor = false;
+            this.btnagen.Click += new System.EventHandler(this.btnagen_Click_1);
             // 
             // Fechacita
             // 

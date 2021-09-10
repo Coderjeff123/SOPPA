@@ -135,6 +135,17 @@ namespace CAPA_PRESENTACION
             Cargarfecha2();
         }
 
+        private void btnagen_Click_1(object sender, EventArgs e)
+        {
+           // DataGridViewRow fila = new DataGridViewRow();
+            //fila.CreateCells(dataGridView2);
+          //  fila.Cells[1].Value = textnombre.Texts;
+            dataGridView2.CurrentRow.Cells[1].Value = textnombre.Texts;
+           //buscra tabla procedimiento almacenado 
+           //dataGridView2.Rows.Add(fi);
+            textnombre.Texts = "";
+        }
+
 
 
 
