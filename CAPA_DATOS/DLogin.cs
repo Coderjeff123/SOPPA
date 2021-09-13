@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
+using CAPA_DATOS.usercache;
+
+
 
 
 namespace CAPA_DATOS
@@ -13,23 +16,23 @@ namespace CAPA_DATOS
     {
         string nombre;
         string contraseña;
-        string very;
+
 
         public DLogin()
         {
         }
 
-        public DLogin(string nombre, string contraseña, string very)
+        public DLogin(string nombre, string contraseña)
         {
             Nombre = nombre;
             Contraseña = contraseña;
-            this.Very = very;
+            
         }
             
 
         public string Nombre { get => nombre; set => nombre = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
-        public string Very { get => very; set => very = value; }
+   
 
         public string INICIO(DLogin sesion)
         {
@@ -47,7 +50,7 @@ namespace CAPA_DATOS
 
                 SqlParameter nom = new SqlParameter();
                 nom.ParameterName = "@Nombre";
-                nom.SqlDbType = SqlDbType.NChar;
+                nom.SqlDbType = SqlDbType.NVarChar;
                 nom.Value = sesion.Nombre;
                 splogin.Parameters.Add(nom);
 
@@ -62,6 +65,11 @@ namespace CAPA_DATOS
                 if (sqlDataReader.HasRows)
                 {
                     retorno = "Everithing its ok";
+                    while (sqlDataReader.Read())
+                    {
+                        USERcache.Nombre = sesion.Nombre;
+                        USERcache.Contraseña = sesion.Contraseña;
+                    }
                     
                 }
                 else
@@ -83,19 +91,6 @@ namespace CAPA_DATOS
             return retorno;
         }
 
-        public string secur(DLogin ver)
-        {
-            string retorno = "";
-            if (Nombre == "Admin")
-            {
-                retorno = "Admin";
-            }
-            if (Nombre == "Coordinador")
-            {
-                retorno = "Coordinador";
-            }
-            return retorno;
-        }
        
     }
 }

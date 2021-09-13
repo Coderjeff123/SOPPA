@@ -9,17 +9,30 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using CAPA_NEGOCIO;
+
 
 namespace CAPA_PRESENTACION
 {
     public partial class Principal : Form
     {
+        NLogin permisos = new NLogin();
         public Principal()
         {
             InitializeComponent();
             ocultarmenu();
+            if (permisos.anymetoth() == "coor")
+            {
+                btncon.Visible = false;
+                btncita.Visible = false;
+                btnexpe.Visible = false;
+            }
 
         }
+
+       
+
+      
        
      
         private void btncloseform_Click(object sender, EventArgs e)

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using CAPA_DATOS;
+using CAPA_DATOS.usercache;
 
 namespace CAPA_NEGOCIO
 {
@@ -23,16 +24,23 @@ namespace CAPA_NEGOCIO
             return dLogin.INICIO(dLogin);
         }
 
-        public string very(string res)
-        {
-            DLogin login = new DLogin();
-            res = login.Nombre;
-            
+     
 
-            return login.secur(login);
+        public string anymetoth()
+        {
+            string retorno;
+            if (USERcache.Nombre == Cargos.Administrador)
+            {
+                retorno = "Admin";
+            }
+            else 
+            {
+                retorno = "coor"; 
+            }
+
+            return retorno;
+
         }
-            
-        
-       }
+    }
     
 }
