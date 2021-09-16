@@ -41,6 +41,10 @@ namespace CAPA_PRESENTACION
             this.btnmaxform = new System.Windows.Forms.Button();
             this.btncloseform = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.opc = new CAPA_PRESENTACION.paneldegra2();
+            this.btncerrarsesion = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btncambiarcon = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btnimagenper = new CAPA_PRESENTACION.Buttonpersolizado();
             this.dtaactividad = new System.Windows.Forms.DataGridView();
             this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,6 +53,7 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo = new System.Windows.Forms.Panel();
             this.panelmenu = new System.Windows.Forms.Panel();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.Congf = new CAPA_PRESENTACION.Buttonpersolizado();
             this.panelsubmenuinformes = new System.Windows.Forms.Panel();
             this.btngenerarinfo = new System.Windows.Forms.Button();
             this.btnverinformes = new System.Windows.Forms.Button();
@@ -70,6 +75,7 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.opc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).BeginInit();
             this.panelmenu.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
@@ -167,14 +173,96 @@ namespace CAPA_PRESENTACION
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel4.Controls.Add(this.opc);
             this.panel4.Controls.Add(this.dtaactividad);
             this.panel4.Controls.Add(this.Fecha);
             this.panel4.Controls.Add(this.monthCalendar1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(224, 442);
+            this.panel4.Location = new System.Drawing.Point(224, 548);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(768, 240);
             this.panel4.TabIndex = 2;
+            // 
+            // opc
+            // 
+            this.opc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.opc.Colorleft = System.Drawing.Color.DodgerBlue;
+            this.opc.Colorrigth = System.Drawing.Color.DeepSkyBlue;
+            this.opc.Controls.Add(this.btncerrarsesion);
+            this.opc.Controls.Add(this.btncambiarcon);
+            this.opc.Controls.Add(this.btnimagenper);
+            this.opc.Location = new System.Drawing.Point(-1, 84);
+            this.opc.Name = "opc";
+            this.opc.Size = new System.Drawing.Size(200, 156);
+            this.opc.TabIndex = 4;
+            this.opc.Visible = false;
+            // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.BackColor = System.Drawing.Color.Transparent;
+            this.btncerrarsesion.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btncerrarsesion.BorderColor = System.Drawing.Color.Blue;
+            this.btncerrarsesion.BorderRadius = 0;
+            this.btncerrarsesion.BorderSize = 1;
+            this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncerrarsesion.FlatAppearance.BorderSize = 0;
+            this.btncerrarsesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncerrarsesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
+            this.btncerrarsesion.Location = new System.Drawing.Point(0, 80);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Size = new System.Drawing.Size(200, 40);
+            this.btncerrarsesion.TabIndex = 2;
+            this.btncerrarsesion.Text = "Cerrar Sesión";
+            this.btncerrarsesion.TextColor = System.Drawing.Color.White;
+            this.btncerrarsesion.UseVisualStyleBackColor = false;
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
+            // 
+            // btncambiarcon
+            // 
+            this.btncambiarcon.BackColor = System.Drawing.Color.Transparent;
+            this.btncambiarcon.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btncambiarcon.BorderColor = System.Drawing.Color.Blue;
+            this.btncambiarcon.BorderRadius = 0;
+            this.btncambiarcon.BorderSize = 1;
+            this.btncambiarcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncambiarcon.FlatAppearance.BorderSize = 0;
+            this.btncambiarcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncambiarcon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncambiarcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncambiarcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncambiarcon.ForeColor = System.Drawing.Color.White;
+            this.btncambiarcon.Location = new System.Drawing.Point(0, 40);
+            this.btncambiarcon.Name = "btncambiarcon";
+            this.btncambiarcon.Size = new System.Drawing.Size(200, 40);
+            this.btncambiarcon.TabIndex = 1;
+            this.btncambiarcon.Text = "Cambiar contraseña\r\n";
+            this.btncambiarcon.TextColor = System.Drawing.Color.White;
+            this.btncambiarcon.UseVisualStyleBackColor = false;
+            // 
+            // btnimagenper
+            // 
+            this.btnimagenper.BackColor = System.Drawing.Color.Transparent;
+            this.btnimagenper.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnimagenper.BorderColor = System.Drawing.Color.MediumBlue;
+            this.btnimagenper.BorderRadius = 0;
+            this.btnimagenper.BorderSize = 1;
+            this.btnimagenper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnimagenper.FlatAppearance.BorderSize = 0;
+            this.btnimagenper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnimagenper.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnimagenper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnimagenper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnimagenper.ForeColor = System.Drawing.Color.White;
+            this.btnimagenper.Location = new System.Drawing.Point(0, 0);
+            this.btnimagenper.Name = "btnimagenper";
+            this.btnimagenper.Size = new System.Drawing.Size(200, 40);
+            this.btnimagenper.TabIndex = 0;
+            this.btnimagenper.Text = "Cambiar imagen de perfil";
+            this.btnimagenper.TextColor = System.Drawing.Color.White;
+            this.btnimagenper.UseVisualStyleBackColor = false;
             // 
             // dtaactividad
             // 
@@ -189,7 +277,7 @@ namespace CAPA_PRESENTACION
             this.dtaactividad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
@@ -202,8 +290,8 @@ namespace CAPA_PRESENTACION
             this.Cita});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -271,28 +359,27 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 398);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 744);
             this.panelFormhijo.TabIndex = 3;
             // 
             // panelmenu
             // 
             this.panelmenu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.panelmenu.AutoScroll = true;
             this.panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(130)))), ((int)(((byte)(136)))));
             this.panelmenu.Controls.Add(this.paneldegradado1);
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 44);
             this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(224, 638);
+            this.panelmenu.Size = new System.Drawing.Size(224, 744);
             this.panelmenu.TabIndex = 1;
             // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.AutoScroll = true;
             this.paneldegradado1.BackColor = System.Drawing.Color.White;
             this.paneldegradado1.Colorleft = System.Drawing.Color.DodgerBlue;
             this.paneldegradado1.Colorrigth = System.Drawing.Color.DeepSkyBlue;
+            this.paneldegradado1.Controls.Add(this.Congf);
             this.paneldegradado1.Controls.Add(this.panelsubmenuinformes);
             this.paneldegradado1.Controls.Add(this.btninforme);
             this.paneldegradado1.Controls.Add(this.panelsubmenuexpe);
@@ -302,12 +389,34 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Controls.Add(this.panelsubmenuconsulta);
             this.paneldegradado1.Controls.Add(this.btncon);
             this.paneldegradado1.Controls.Add(this.panel3);
-            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneldegradado1.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(207, 1030);
+            this.paneldegradado1.Size = new System.Drawing.Size(224, 744);
             this.paneldegradado1.TabIndex = 0;
             this.paneldegradado1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
+            // 
+            // Congf
+            // 
+            this.Congf.BackColor = System.Drawing.Color.Transparent;
+            this.Congf.BackgroundColor = System.Drawing.Color.Transparent;
+            this.Congf.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Congf.BorderRadius = 0;
+            this.Congf.BorderSize = 0;
+            this.Congf.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Congf.FlatAppearance.BorderSize = 0;
+            this.Congf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
+            this.Congf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Aqua;
+            this.Congf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Congf.ForeColor = System.Drawing.Color.White;
+            this.Congf.Image = global::CAPA_PRESENTACION.Properties.Resources.settings_alt_icon_icons_com_72042__1_;
+            this.Congf.Location = new System.Drawing.Point(0, 655);
+            this.Congf.Name = "Congf";
+            this.Congf.Size = new System.Drawing.Size(224, 89);
+            this.Congf.TabIndex = 10;
+            this.Congf.TextColor = System.Drawing.Color.White;
+            this.Congf.UseVisualStyleBackColor = false;
+            this.Congf.Click += new System.EventHandler(this.Congf_Click);
             // 
             // panelsubmenuinformes
             // 
@@ -315,9 +424,9 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuinformes.Controls.Add(this.btngenerarinfo);
             this.panelsubmenuinformes.Controls.Add(this.btnverinformes);
             this.panelsubmenuinformes.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenuinformes.Location = new System.Drawing.Point(0, 682);
+            this.panelsubmenuinformes.Location = new System.Drawing.Point(0, 568);
             this.panelsubmenuinformes.Name = "panelsubmenuinformes";
-            this.panelsubmenuinformes.Size = new System.Drawing.Size(207, 100);
+            this.panelsubmenuinformes.Size = new System.Drawing.Size(224, 100);
             this.panelsubmenuinformes.TabIndex = 9;
             // 
             // btngenerarinfo
@@ -335,7 +444,7 @@ namespace CAPA_PRESENTACION
             this.btngenerarinfo.Location = new System.Drawing.Point(0, 38);
             this.btngenerarinfo.Name = "btngenerarinfo";
             this.btngenerarinfo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btngenerarinfo.Size = new System.Drawing.Size(207, 49);
+            this.btngenerarinfo.Size = new System.Drawing.Size(224, 43);
             this.btngenerarinfo.TabIndex = 1;
             this.btngenerarinfo.Text = "Generar Informes";
             this.btngenerarinfo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -359,7 +468,7 @@ namespace CAPA_PRESENTACION
             this.btnverinformes.Location = new System.Drawing.Point(0, 0);
             this.btnverinformes.Name = "btnverinformes";
             this.btnverinformes.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnverinformes.Size = new System.Drawing.Size(207, 38);
+            this.btnverinformes.Size = new System.Drawing.Size(224, 38);
             this.btnverinformes.TabIndex = 0;
             this.btnverinformes.Text = "Ver Informes";
             this.btnverinformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -378,9 +487,9 @@ namespace CAPA_PRESENTACION
             this.btninforme.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninforme.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninforme.ForeColor = System.Drawing.Color.White;
-            this.btninforme.Location = new System.Drawing.Point(0, 641);
+            this.btninforme.Location = new System.Drawing.Point(0, 527);
             this.btninforme.Name = "btninforme";
-            this.btninforme.Size = new System.Drawing.Size(207, 41);
+            this.btninforme.Size = new System.Drawing.Size(224, 41);
             this.btninforme.TabIndex = 8;
             this.btninforme.Text = "Informes";
             this.btninforme.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -396,9 +505,9 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuexpe.Controls.Add(this.btnnuevoexpe);
             this.panelsubmenuexpe.Controls.Add(this.btnverexpe);
             this.panelsubmenuexpe.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenuexpe.Location = new System.Drawing.Point(0, 525);
+            this.panelsubmenuexpe.Location = new System.Drawing.Point(0, 444);
             this.panelsubmenuexpe.Name = "panelsubmenuexpe";
-            this.panelsubmenuexpe.Size = new System.Drawing.Size(207, 116);
+            this.panelsubmenuexpe.Size = new System.Drawing.Size(224, 83);
             this.panelsubmenuexpe.TabIndex = 3;
             // 
             // btnnuevoexpe
@@ -416,7 +525,7 @@ namespace CAPA_PRESENTACION
             this.btnnuevoexpe.Location = new System.Drawing.Point(0, 35);
             this.btnnuevoexpe.Name = "btnnuevoexpe";
             this.btnnuevoexpe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnnuevoexpe.Size = new System.Drawing.Size(207, 35);
+            this.btnnuevoexpe.Size = new System.Drawing.Size(224, 35);
             this.btnnuevoexpe.TabIndex = 1;
             this.btnnuevoexpe.Text = "Nuevo Expediente";
             this.btnnuevoexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -441,7 +550,7 @@ namespace CAPA_PRESENTACION
             this.btnverexpe.Location = new System.Drawing.Point(0, 0);
             this.btnverexpe.Name = "btnverexpe";
             this.btnverexpe.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnverexpe.Size = new System.Drawing.Size(207, 35);
+            this.btnverexpe.Size = new System.Drawing.Size(224, 35);
             this.btnverexpe.TabIndex = 0;
             this.btnverexpe.Text = "Ver expediente";
             this.btnverexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -461,9 +570,9 @@ namespace CAPA_PRESENTACION
             this.btnexpe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnexpe.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnexpe.ForeColor = System.Drawing.Color.White;
-            this.btnexpe.Location = new System.Drawing.Point(0, 484);
+            this.btnexpe.Location = new System.Drawing.Point(0, 403);
             this.btnexpe.Name = "btnexpe";
-            this.btnexpe.Size = new System.Drawing.Size(207, 41);
+            this.btnexpe.Size = new System.Drawing.Size(224, 41);
             this.btnexpe.TabIndex = 4;
             this.btnexpe.Text = "Expediente";
             this.btnexpe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -479,9 +588,9 @@ namespace CAPA_PRESENTACION
             this.panelsubmenucita.Controls.Add(this.btnagendarcitas);
             this.panelsubmenucita.Controls.Add(this.btnvercitas);
             this.panelsubmenucita.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenucita.Location = new System.Drawing.Point(0, 368);
+            this.panelsubmenucita.Location = new System.Drawing.Point(0, 325);
             this.panelsubmenucita.Name = "panelsubmenucita";
-            this.panelsubmenucita.Size = new System.Drawing.Size(207, 116);
+            this.panelsubmenucita.Size = new System.Drawing.Size(224, 78);
             this.panelsubmenucita.TabIndex = 7;
             // 
             // btnagendarcitas
@@ -499,7 +608,7 @@ namespace CAPA_PRESENTACION
             this.btnagendarcitas.Location = new System.Drawing.Point(0, 35);
             this.btnagendarcitas.Name = "btnagendarcitas";
             this.btnagendarcitas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnagendarcitas.Size = new System.Drawing.Size(207, 35);
+            this.btnagendarcitas.Size = new System.Drawing.Size(224, 35);
             this.btnagendarcitas.TabIndex = 1;
             this.btnagendarcitas.Text = "Agendar Citas";
             this.btnagendarcitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -524,7 +633,7 @@ namespace CAPA_PRESENTACION
             this.btnvercitas.Location = new System.Drawing.Point(0, 0);
             this.btnvercitas.Name = "btnvercitas";
             this.btnvercitas.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnvercitas.Size = new System.Drawing.Size(207, 35);
+            this.btnvercitas.Size = new System.Drawing.Size(224, 35);
             this.btnvercitas.TabIndex = 0;
             this.btnvercitas.Text = "Ver Citas";
             this.btnvercitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -544,9 +653,9 @@ namespace CAPA_PRESENTACION
             this.btncita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncita.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncita.ForeColor = System.Drawing.Color.White;
-            this.btncita.Location = new System.Drawing.Point(0, 327);
+            this.btncita.Location = new System.Drawing.Point(0, 284);
             this.btncita.Name = "btncita";
-            this.btncita.Size = new System.Drawing.Size(207, 41);
+            this.btncita.Size = new System.Drawing.Size(224, 41);
             this.btncita.TabIndex = 2;
             this.btncita.Text = "Citas";
             this.btncita.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -562,9 +671,9 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuconsulta.Controls.Add(this.btniniciarconsulta);
             this.panelsubmenuconsulta.Controls.Add(this.btnverconsulta);
             this.panelsubmenuconsulta.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelsubmenuconsulta.Location = new System.Drawing.Point(0, 211);
+            this.panelsubmenuconsulta.Location = new System.Drawing.Point(0, 210);
             this.panelsubmenuconsulta.Name = "panelsubmenuconsulta";
-            this.panelsubmenuconsulta.Size = new System.Drawing.Size(207, 116);
+            this.panelsubmenuconsulta.Size = new System.Drawing.Size(224, 74);
             this.panelsubmenuconsulta.TabIndex = 5;
             this.panelsubmenuconsulta.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
@@ -583,7 +692,7 @@ namespace CAPA_PRESENTACION
             this.btniniciarconsulta.Location = new System.Drawing.Point(0, 35);
             this.btniniciarconsulta.Name = "btniniciarconsulta";
             this.btniniciarconsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btniniciarconsulta.Size = new System.Drawing.Size(207, 35);
+            this.btniniciarconsulta.Size = new System.Drawing.Size(224, 35);
             this.btniniciarconsulta.TabIndex = 2;
             this.btniniciarconsulta.Text = "Iniciar Consulta";
             this.btniniciarconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -608,7 +717,7 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta.Location = new System.Drawing.Point(0, 0);
             this.btnverconsulta.Name = "btnverconsulta";
             this.btnverconsulta.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnverconsulta.Size = new System.Drawing.Size(207, 35);
+            this.btnverconsulta.Size = new System.Drawing.Size(224, 35);
             this.btnverconsulta.TabIndex = 0;
             this.btnverconsulta.Text = "Ver Consulta";
             this.btnverconsulta.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -628,9 +737,9 @@ namespace CAPA_PRESENTACION
             this.btncon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncon.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncon.ForeColor = System.Drawing.Color.White;
-            this.btncon.Location = new System.Drawing.Point(0, 170);
+            this.btncon.Location = new System.Drawing.Point(0, 169);
             this.btncon.Name = "btncon";
-            this.btncon.Size = new System.Drawing.Size(207, 41);
+            this.btncon.Size = new System.Drawing.Size(224, 41);
             this.btncon.TabIndex = 6;
             this.btncon.Text = "Consulta";
             this.btncon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -647,7 +756,7 @@ namespace CAPA_PRESENTACION
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(207, 170);
+            this.panel3.Size = new System.Drawing.Size(224, 169);
             this.panel3.TabIndex = 0;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
@@ -655,9 +764,9 @@ namespace CAPA_PRESENTACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(992, 682);
-            this.Controls.Add(this.panelFormhijo);
+            this.ClientSize = new System.Drawing.Size(992, 788);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panelFormhijo);
             this.Controls.Add(this.panelmenu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -670,6 +779,7 @@ namespace CAPA_PRESENTACION
             this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.opc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).EndInit();
             this.panelmenu.ResumeLayout(false);
             this.paneldegradado1.ResumeLayout(false);
@@ -717,5 +827,10 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
         private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private Buttonpersolizado Congf;
+        private paneldegra2 opc;
+        private Buttonpersolizado btncerrarsesion;
+        private Buttonpersolizado btncambiarcon;
+        private Buttonpersolizado btnimagenper;
     }
 }

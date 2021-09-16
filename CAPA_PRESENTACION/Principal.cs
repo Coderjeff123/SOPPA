@@ -21,7 +21,7 @@ namespace CAPA_PRESENTACION
         {
             InitializeComponent();
             ocultarmenu();
-            if (permisos.anymetoth() == "coor")
+            if (permisos.anymetoth() == "Coordinador")
             {
                 btncon.Visible = false;
                 btncita.Visible = false;
@@ -349,6 +349,20 @@ namespace CAPA_PRESENTACION
         private void btnvercitas_Click(object sender, EventArgs e)
         {
             abrirForm(new Ver_cita());
+        }
+
+        private void Congf_Click(object sender, EventArgs e)
+        {
+            opc.Visible = true;
+        }
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Formcierre formcierre = new Formcierre();
+            formcierre.ShowDialog();
+            Login login = new Login();
+            login.Show();
         }
     }
 } 

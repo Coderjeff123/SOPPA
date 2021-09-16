@@ -90,6 +90,12 @@
     <Compile Include="Datetimepicker.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Formcierre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formcierre.Designer.cs">
+      <DependentUpon>Formcierre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formwelcome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -169,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agendarcitahijo.resx">
       <DependentUpon>Agendarcitahijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formcierre.resx">
+      <DependentUpon>Formcierre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formwelcome.resx">
       <DependentUpon>Formwelcome.cs</DependentUpon>
@@ -338,6 +347,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\googleagenda_94054.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\settings_alt_icon-icons.com_72042 %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

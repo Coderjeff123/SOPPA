@@ -35,7 +35,7 @@ namespace CAPA_NEGOCIO
             }
             else 
             {
-                retorno = "coor"; 
+                retorno = "Coordinador"; 
             }
 
             return retorno;

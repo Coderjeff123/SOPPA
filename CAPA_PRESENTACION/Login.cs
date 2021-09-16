@@ -57,8 +57,7 @@ namespace CAPA_PRESENTACION
             {
                 txtpass.Texts = "";
                 txtpass.ForeColor = Color.Black;
-                
-                
+                txtpass.PasswordChar = true;
             }
         }
 
@@ -68,7 +67,12 @@ namespace CAPA_PRESENTACION
             {
                 txtpass.Texts = "Password";
                 txtpass.ForeColor = Color.FromArgb(45, 50, 61);
-                
+                txtpass.PasswordChar = false;
+
+            }
+            else
+            {
+                txtpass.PasswordChar = true;
             }
         }
 

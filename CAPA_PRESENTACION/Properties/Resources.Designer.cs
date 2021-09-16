@@ -483,6 +483,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap settings_alt_icon_icons_com_72042__1_ {
+            get {
+                object obj = ResourceManager.GetObject("settings_alt_icon-icons.com_72042 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap twocirclingarrows_120593 {
             get {
                 object obj = ResourceManager.GetObject("twocirclingarrows_120593", resourceCulture);

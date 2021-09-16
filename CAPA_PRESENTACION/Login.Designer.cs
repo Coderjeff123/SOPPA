@@ -79,14 +79,15 @@ namespace CAPA_PRESENTACION
             // 
             // txtpass
             // 
-            this.txtpass.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtpass.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtpass.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtpass.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.txtpass.BorderFocusColor = System.Drawing.Color.Aqua;
             this.txtpass.BorderRadius = 0;
             this.txtpass.BorderSize = 2;
-            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.ForeColor = System.Drawing.Color.White;
             this.txtpass.IsFocused = true;
-            this.txtpass.IsPasswordChar = false;
+            this.txtpass.IsPasswordChar = true;
             this.txtpass.IsPlaceholder = false;
             this.txtpass.Location = new System.Drawing.Point(28, 266);
             this.txtpass.Margin = new System.Windows.Forms.Padding(4);
@@ -94,7 +95,7 @@ namespace CAPA_PRESENTACION
             this.txtpass.Name = "txtpass";
             this.txtpass.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtpass.PasswordChar = true;
-            this.txtpass.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtpass.PlaceholderColor = System.Drawing.Color.White;
             this.txtpass.PlaceholderText = "";
             this.txtpass.Size = new System.Drawing.Size(286, 31);
             this.txtpass.TabIndex = 18;
@@ -105,8 +106,8 @@ namespace CAPA_PRESENTACION
             // 
             // txtuser
             // 
-            this.txtuser.BackColor = System.Drawing.Color.SteelBlue;
-            this.txtuser.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.txtuser.BackColor = System.Drawing.Color.DodgerBlue;
+            this.txtuser.BorderColor = System.Drawing.Color.DeepSkyBlue;
             this.txtuser.BorderFocusColor = System.Drawing.Color.Aqua;
             this.txtuser.BorderRadius = 0;
             this.txtuser.BorderSize = 2;
@@ -121,7 +122,7 @@ namespace CAPA_PRESENTACION
             this.txtuser.Name = "txtuser";
             this.txtuser.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
             this.txtuser.PasswordChar = false;
-            this.txtuser.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.txtuser.PlaceholderColor = System.Drawing.Color.White;
             this.txtuser.PlaceholderText = "";
             this.txtuser.Size = new System.Drawing.Size(286, 31);
             this.txtuser.TabIndex = 17;
@@ -200,7 +201,7 @@ namespace CAPA_PRESENTACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SteelBlue;
+            this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(342, 500);
             this.Controls.Add(this.pictureboxpersonal1);
             this.Controls.Add(this.btnlogin);
