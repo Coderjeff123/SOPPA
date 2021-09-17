@@ -38,6 +38,7 @@ namespace CAPA_PRESENTACION
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureboxpersonal1 = new CAPA_PRESENTACION.Pictureboxpersonal();
+            this.btnver = new CAPA_PRESENTACION.Buttonpersolizado();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureboxpersonal1)).BeginInit();
@@ -197,12 +198,32 @@ namespace CAPA_PRESENTACION
             this.pictureboxpersonal1.TabIndex = 20;
             this.pictureboxpersonal1.TabStop = false;
             // 
+            // btnver
+            // 
+            this.btnver.BackColor = System.Drawing.Color.Transparent;
+            this.btnver.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnver.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnver.BorderRadius = 0;
+            this.btnver.BorderSize = 0;
+            this.btnver.FlatAppearance.BorderSize = 0;
+            this.btnver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnver.ForeColor = System.Drawing.Color.White;
+            this.btnver.Image = global::CAPA_PRESENTACION.Properties.Resources.eye_watch_icon_icons_com_74456;
+            this.btnver.Location = new System.Drawing.Point(268, 272);
+            this.btnver.Name = "btnver";
+            this.btnver.Size = new System.Drawing.Size(45, 20);
+            this.btnver.TabIndex = 21;
+            this.btnver.TextColor = System.Drawing.Color.White;
+            this.btnver.UseVisualStyleBackColor = false;
+            this.btnver.Click += new System.EventHandler(this.btnver_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(342, 500);
+            this.Controls.Add(this.btnver);
             this.Controls.Add(this.pictureboxpersonal1);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtpass);
@@ -235,6 +256,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private Pictureboxpersonal pictureboxpersonal1;
+        private Buttonpersolizado btnver;
         // private ShapeContainer shapeContainer1;
         //private LineShape lineShape2;
         //private LineShape lineShape1;

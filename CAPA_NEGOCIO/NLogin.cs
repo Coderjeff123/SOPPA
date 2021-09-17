@@ -41,6 +41,35 @@ namespace CAPA_NEGOCIO
             return retorno;
 
         }
+
+        public string anymetothcon( string con)
+        {
+            string retorno;
+            if (USERcache.Contraseña == con)
+            {
+                retorno = "ok";
+            }
+            else
+            {
+                retorno = "No";
+            }
+
+            return retorno;
+
+        }
+
+
+
+        public string cambiopassword(string user, string pass, string ncon)
+        {
+            DLogin dLogin = new DLogin();
+
+            dLogin.Nombre = user;
+            dLogin.Contraseña = pass;
+            dLogin.Camcontra = ncon;
+
+            return dLogin.Cpassword(dLogin);
+        }
     }
     
 }

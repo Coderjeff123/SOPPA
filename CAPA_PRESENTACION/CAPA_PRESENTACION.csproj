@@ -83,6 +83,12 @@
     <Compile Include="Buttonpersolizado.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Cambiar contraseña.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cambiar contraseña.Designer.cs">
+      <DependentUpon>Cambiar contraseña.cs</DependentUpon>
+    </Compile>
     <Compile Include="Class1.cs" />
     <Compile Include="Combobox.cs">
       <SubType>UserControl</SubType>
@@ -175,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Agendarcitahijo.resx">
       <DependentUpon>Agendarcitahijo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cambiar contraseña.resx">
+      <DependentUpon>Cambiar contraseña.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formcierre.resx">
       <DependentUpon>Formcierre.cs</DependentUpon>
@@ -350,6 +359,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\settings_alt_icon-icons.com_72042 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\change_password_icon_154438.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\eye-watch_icon-icons.com_74456.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

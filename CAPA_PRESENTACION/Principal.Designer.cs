@@ -241,6 +241,7 @@ namespace CAPA_PRESENTACION
             this.btncambiarcon.Text = "Cambiar contraseña\r\n";
             this.btncambiarcon.TextColor = System.Drawing.Color.White;
             this.btncambiarcon.UseVisualStyleBackColor = false;
+            this.btncambiarcon.Click += new System.EventHandler(this.btncambiarcon_Click);
             // 
             // btnimagenper
             // 

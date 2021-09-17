@@ -130,11 +130,14 @@
   <data name="Calendario_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\Calendario white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="0-3895_smbolo-da-psicologia-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\0-3895_smbolo-da-psicologia-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="01-16_86396 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\01-16_86396 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="pensando" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\pensando.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="0-3895_smbolo-da-psicologia-png-transparent-png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\0-3895_smbolo-da-psicologia-png-transparent-png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="googleagenda_94054" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\googleagenda_94054.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +160,8 @@
   <data name="delete_remove_close_icon_1815331" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\delete_remove_close_icon_181533.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar_10823 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar_10823 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="3844476-eye-see-show-view-watch_110339" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\3844476-eye-see-show-view-watch_110339.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="calendar_10823" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_10823.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,6 +184,9 @@
   <data name="login-square-arrow-button-outline_icon-icons.com_73220" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\login-square-arrow-button-outline_icon-icons.com_73220.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="twocirclingarrows_120593" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\twocirclingarrows_120593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ok_accept_3523" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\ok_accept_3523.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -192,9 +198,6 @@
   </data>
   <data name="brain_storming_settings_thought_preferences_icon_124677" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\brain_storming_settings_thought_preferences_icon_124677.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="corazon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\corazon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newfile_85903" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\newfile_85903.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,17 +211,26 @@
   <data name="window_restore_icon_144027" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\window_restore_icon_144027.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="appointment_icon_179680" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\appointment_icon_179680.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="corazon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\corazon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="minimize_thewindow_theapplication_2872" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\minimize_thewindow_theapplication_2872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="corazon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\corazon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="avatardefault_92824" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\avatardefault_92824.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="3844476-eye-see-show-view-watch_110339" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\3844476-eye-see-show-view-watch_110339.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="settings_alt_icon-icons.com_72042 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\settings_alt_icon-icons.com_72042 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calendar_10823 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar_10823 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="closewindowapplication_cerca_ventan_28741" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\closewindowapplication_cerca_ventan_2874.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="organizer_calendar_pen_note_6134 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\organizer_calendar_pen_note_6134 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,20 +238,17 @@
   <data name="1486395886-checkmark_80611" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\1486395886-checkmark_80611.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="01-16_86396 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\01-16_86396 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\327-3273204_psicologia-educativa-png-logos-de-psicologia-clinica-transparent.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="appointment_icon_179680" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\appointment_icon_179680.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="download_arrow_icon_143023" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\download_arrow_icon_143023.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="corazon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\corazon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="corazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\corazon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="twocirclingarrows_120593" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\twocirclingarrows_120593.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="change_password_icon_154438" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\change_password_icon_154438.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Calendario_black" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\Calendario black.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,10 +256,10 @@
   <data name="closewindowapplication_cerca_ventan_2874" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\closewindowapplication_cerca_ventan_2874.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="corazon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\corazon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="minimize_thewindow_theapplication_2872" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\minimize_thewindow_theapplication_2872.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="settings_alt_icon-icons.com_72042 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\imagenes\settings_alt_icon-icons.com_72042 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="eye-watch_icon-icons.com_74456" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\eye-watch_icon-icons.com_74456.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

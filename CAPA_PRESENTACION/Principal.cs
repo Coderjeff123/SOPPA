@@ -353,7 +353,15 @@ namespace CAPA_PRESENTACION
 
         private void Congf_Click(object sender, EventArgs e)
         {
-            opc.Visible = true;
+            
+            if (opc.Visible == false)
+            {
+                opc.Visible = true;
+            }
+            else
+            {
+                opc.Visible = false;
+            }
         }
 
         private void btncerrarsesion_Click(object sender, EventArgs e)
@@ -363,6 +371,12 @@ namespace CAPA_PRESENTACION
             formcierre.ShowDialog();
             Login login = new Login();
             login.Show();
+        }
+
+        private void btncambiarcon_Click(object sender, EventArgs e)
+        {
+            Cambiar_contraseña cambiar = new Cambiar_contraseña();
+            cambiar.Show();
         }
     }
 } 
