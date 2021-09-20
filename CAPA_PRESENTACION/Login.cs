@@ -18,6 +18,7 @@ namespace CAPA_PRESENTACION
         public Login()
         {
             InitializeComponent();
+            
         }
 
         public string nombre;
@@ -57,8 +58,7 @@ namespace CAPA_PRESENTACION
             {
                 txtpass.Texts = "";
                 txtpass.ForeColor = Color.Black;
-                
-                
+                txtpass.PasswordChar = true;
             }
         }
 
@@ -68,7 +68,12 @@ namespace CAPA_PRESENTACION
             {
                 txtpass.Texts = "Password";
                 txtpass.ForeColor = Color.FromArgb(45, 50, 61);
-                
+                txtpass.PasswordChar = false;
+
+            }
+            else
+            {
+                txtpass.PasswordChar = true;
             }
         }
 
@@ -119,6 +124,21 @@ namespace CAPA_PRESENTACION
             else msgError("Please enter User");
         }
 
-       
+        private void btnver_Click(object sender, EventArgs e)
+        {
+
+            if (txtpass.Texts != "")
+            {
+                if (txtpass.PasswordChar == true)
+                {
+                    txtpass.PasswordChar = false;
+                }
+                else
+                {
+                    txtpass.PasswordChar = true;
+                }
+            }
+           
+        }
     }
 }

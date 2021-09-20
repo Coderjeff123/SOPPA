@@ -9,17 +9,30 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.IO;
+using CAPA_NEGOCIO;
+
 
 namespace CAPA_PRESENTACION
 {
     public partial class Principal : Form
     {
+        NLogin permisos = new NLogin();
         public Principal()
         {
             InitializeComponent();
             ocultarmenu();
+            if (permisos.anymetoth() == "Coordinador")
+            {
+                btncon.Visible = false;
+                btncita.Visible = false;
+                btnexpe.Visible = false;
+            }
 
         }
+
+       
+
+      
        
      
         private void btncloseform_Click(object sender, EventArgs e)
@@ -336,6 +349,34 @@ namespace CAPA_PRESENTACION
         private void btnvercitas_Click(object sender, EventArgs e)
         {
             abrirForm(new Ver_cita());
+        }
+
+        private void Congf_Click(object sender, EventArgs e)
+        {
+            
+            if (opc.Visible == false)
+            {
+                opc.Visible = true;
+            }
+            else
+            {
+                opc.Visible = false;
+            }
+        }
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Formcierre formcierre = new Formcierre();
+            formcierre.ShowDialog();
+            Login login = new Login();
+            login.Show();
+        }
+
+        private void btncambiarcon_Click(object sender, EventArgs e)
+        {
+            Cambiar_contraseña cambiar = new Cambiar_contraseña();
+            cambiar.Show();
         }
     }
 } 

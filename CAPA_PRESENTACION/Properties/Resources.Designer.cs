@@ -233,9 +233,29 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap change_password_icon_154438 {
+            get {
+                object obj = ResourceManager.GetObject("change_password_icon_154438", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap closewindowapplication_cerca_ventan_2874 {
             get {
                 object obj = ResourceManager.GetObject("closewindowapplication_cerca_ventan_2874", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap closewindowapplication_cerca_ventan_28741 {
+            get {
+                object obj = ResourceManager.GetObject("closewindowapplication_cerca_ventan_28741", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -316,6 +336,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap edit_clear_all_icon_180807 {
             get {
                 object obj = ResourceManager.GetObject("edit_clear_all_icon_180807", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap eye_watch_icon_icons_com_74456 {
+            get {
+                object obj = ResourceManager.GetObject("eye-watch_icon-icons.com_74456", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -476,6 +506,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap search_locate_find_icon_icons_com_67287 {
             get {
                 object obj = ResourceManager.GetObject("search_locate_find_icon-icons.com_67287", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap settings_alt_icon_icons_com_72042__1_ {
+            get {
+                object obj = ResourceManager.GetObject("settings_alt_icon-icons.com_72042 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
