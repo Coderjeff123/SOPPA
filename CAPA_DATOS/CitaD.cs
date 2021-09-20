@@ -216,15 +216,28 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "psci.SP_BuscarCT";
+                sp_Newcita.CommandText = "SP_combinacion2";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Cita = new SqlParameter();
-                Cita.ParameterName = "@ID_Cita";
-                Cita.SqlDbType = SqlDbType.Int;
-                //Cita.Size = 0;
-                Cita.Value = expCt.ID_Cita1;
-                sp_Newcita.Parameters.Add(Cita);
+                SqlParameter Nombre = new SqlParameter();
+                Nombre.ParameterName = "@Nombre";
+                Nombre.SqlDbType = SqlDbType.NVarChar;
+                Nombre.Size = 50;
+                Nombre.Value = expCT.Nombre1;
+                SP_New.Parameters.Add(Nombre);
+
+                SqlParameter Estado = new SqlParameter();
+                Estado.ParameterName = "@Estado";
+                Estado.SqlDbType = SqlDbType.NChar;
+                Estado.Value = expCT.Estado1;
+                SP_NewEX.Parameters.Add(Estado);
+
+                SqlParameter Foto = new SqlParameter();
+                Foto.ParameterName = "@Foto";
+                Foto.SqlDbType = SqlDbType.Image;
+                //Nombre.Size = 50;
+                Foto.Value = expCT.Foto1;
+                SP_NewEX.Parameters.Add(Foto);
 
 
 
