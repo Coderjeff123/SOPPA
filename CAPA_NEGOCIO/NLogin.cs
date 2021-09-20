@@ -31,11 +31,11 @@ namespace CAPA_NEGOCIO
             string retorno;
             if (USERcache.Nombre == Cargos.Administrador)
             {
-                retorno = "Admin";
+                retorno = Cargos.Administrador;
             }
             else 
             {
-                retorno = "Coordinador"; 
+                retorno =Cargos.Coordinador; 
             }
 
             return retorno;
@@ -69,6 +69,10 @@ namespace CAPA_NEGOCIO
             dLogin.Camcontra = ncon;
 
             return dLogin.Cpassword(dLogin);
+        }
+        public void cerrarsecion()
+        {
+            
         }
     }
     

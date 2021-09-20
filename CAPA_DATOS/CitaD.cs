@@ -39,7 +39,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "psci.SP_NewCi";
+                sp_Newcita.CommandText = "ps+ci.SP_NewCi";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Cita = new SqlParameter();
