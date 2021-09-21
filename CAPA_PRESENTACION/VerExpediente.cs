@@ -67,7 +67,7 @@ namespace CAPA_PRESENTACION
             {
                 txtestado.Text = "I";
                 Nexpediente expe = new Nexpediente();
-                expe.Baja(id.Text, txtestado.Text);
+                expe.Baja(Convert.ToInt32(id.Text), txtestado.Text);
 
             }
             mostrar();
@@ -79,7 +79,7 @@ namespace CAPA_PRESENTACION
                 System.IO.MemoryStream memory = new System.IO.MemoryStream();
                pimagen.Image.Save(memory, System.Drawing.Imaging.ImageFormat.Jpeg);
                 Nexpediente expe = new Nexpediente();
-                expe.UpdateDexpediente(id.Text, memory.GetBuffer());
+                expe.UpdateDexpediente(Convert.ToInt32(id.Text), memory.GetBuffer());
             MessageBox.Show("Se ha dado cambiado la imagen exitosamente exitosamente");
 
             mostrar();

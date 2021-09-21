@@ -12,7 +12,7 @@ namespace CAPA_DATOS
     public class Dexpediente
     {
 
-        string ID_Expediente;
+        int ID_Expediente;
         string Nombre;
         string Estado;
         byte[] Foto;
@@ -30,7 +30,7 @@ namespace CAPA_DATOS
             Noexpediente = noexpediente;
         }*/
 
-        public Dexpediente( string id_Expediente,string nombre1, string estado1, byte[] foto1, string noexpediente1,string estu)
+        public Dexpediente( int id_Expediente,string nombre1, string estado1, byte[] foto1, string noexpediente1,string estu)
         {
             ID_Expediente1 = id_Expediente;
             Nombre1 = nombre1;
@@ -41,7 +41,7 @@ namespace CAPA_DATOS
         }
 
 
-        public string ID_Expediente1 { get => ID_Expediente; set => ID_Expediente = value; }
+        public int ID_Expediente1 { get => ID_Expediente; set => ID_Expediente = value; }
         public string Nombre1 { get => Nombre; set => Nombre = value; }
         public string Estado1 { get => Estado; set => Estado = value; }
         public byte[] Foto1 { get => Foto; set => Foto = value; }
@@ -61,6 +61,13 @@ namespace CAPA_DATOS
                 SP_NewEX.Connection = Conectar;
                 SP_NewEX.CommandText = "psci.SP_NewE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter id_expediente = new SqlParameter();
+                id_expediente.ParameterName = "@ID_Expediente";
+                id_expediente.SqlDbType = SqlDbType.Int;
+                //Nombre.Size = 50;
+                id_expediente.Value = expE.ID_Expediente1;
+                SP_NewEX.Parameters.Add(ID_Expediente1);
 
 
                 SqlParameter Nombre = new SqlParameter();
@@ -135,7 +142,7 @@ namespace CAPA_DATOS
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter id = new SqlParameter();
-                id.ParameterName = "@id_expe";
+                id.ParameterName = "@ID_Expediente";
                 id.SqlDbType = SqlDbType.Int;
                 id.Value = expE.ID_Expediente1;
                 SP_NewEX.Parameters.Add(id);
@@ -302,7 +309,7 @@ namespace CAPA_DATOS
                 bajaex.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ID = new SqlParameter();
-                ID.ParameterName = "@Id_ex";
+                ID.ParameterName = "@ID_Expediente1";
                 ID.SqlDbType = SqlDbType.Int;
                 ID.Value = esta.ID_Expediente1;
                 bajaex.Parameters.Add(ID);
@@ -354,7 +361,7 @@ namespace CAPA_DATOS
                 expe.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ID = new SqlParameter();
-                ID.ParameterName = "@id";
+                ID.ParameterName = "@ID_Expediente";
                 ID.SqlDbType = SqlDbType.Int;
                 ID.Value = fo.ID_Expediente1;
                 expe.Parameters.Add(ID);

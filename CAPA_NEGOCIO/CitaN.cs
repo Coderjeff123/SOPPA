@@ -40,11 +40,15 @@ namespace CAPA_NEGOCIO
             return tablec;
         }
 
-        public  DataTable buscarcita(string iD_Cita)
+        public  DataTable buscarcitas(string nombre)
         {
+            DataTable table = new DataTable();
             CitaD datos = new CitaD();
-            datos.ID_Cita1 = iD_Cita;
-            return datos.buscarcita(datos);
+            Dexpediente dato = new Dexpediente();
+            dato.Nombre1 = nombre;
+            table = datos.buscarcita(dato);
+            return table;
+            
         }
 
 
