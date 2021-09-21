@@ -366,7 +366,7 @@ namespace CAPA_PRESENTACION
 
         private void btncerrarsesion_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
             Formcierre formcierre = new Formcierre();
             formcierre.ShowDialog();
             Login login = new Login();
