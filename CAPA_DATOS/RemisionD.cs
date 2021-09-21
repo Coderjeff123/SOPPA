@@ -10,7 +10,7 @@ namespace CAPA_DATOS
 {
     public class RemisionD
     {
-
+        int ID_Remision;
         int ID_Expediente;
         string Remitente;
         string MotivoRemision;
@@ -18,9 +18,9 @@ namespace CAPA_DATOS
 
         public RemisionD() { }
 
-        public RemisionD(int iD_Expediente1, string remitente1, string motivoRemision1, DateTime fecha)
+        public RemisionD(int iD_remision,int iD_Expediente1, string remitente1, string motivoRemision1, DateTime fecha)
         {
-            
+            ID_Remision = iD_remision;
             ID_Expediente2 = iD_Expediente1;
             Remitente1 = remitente1;
             MotivoRemision1 = motivoRemision1;
@@ -33,6 +33,7 @@ namespace CAPA_DATOS
         public string MotivoRemision1 { get => MotivoRemision; set => MotivoRemision = value; }
         public DateTime Fecha { get => fecha; set => fecha = value; }
         public int ID_Expediente2 { get => ID_Expediente; set => ID_Expediente = value; }
+        public int ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
 
         public string insertremision(RemisionD expR)
         {
@@ -138,7 +139,7 @@ namespace CAPA_DATOS
                 SP_NewRe.Parameters.Add(remitente);
 
                 SqlParameter motivo = new SqlParameter();
-                motivo.ParameterName = "@ID_Remision";
+                motivo.ParameterName = "@MotivoRemision";
                 motivo.SqlDbType = SqlDbType.NVarChar;
                 motivo.Size = 100;
                 motivo.Value = expR.MotivoRemision1;

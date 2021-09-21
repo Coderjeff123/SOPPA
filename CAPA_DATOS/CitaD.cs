@@ -203,10 +203,10 @@ namespace CAPA_DATOS
         }
 
 
-        public DataTable buscarcita(CitaD expCt)
+        public DataTable buscarcita(Dexpediente expCt)
         {
 
-            DataTable showcita = new DataTable("cita");
+            DataTable buscarcita = new DataTable("cita");
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
             try
@@ -214,40 +214,28 @@ namespace CAPA_DATOS
                 //Asignamos la cadena de conexión
                 Conectar.ConnectionString = Conet.cnx;
                 Conectar.Open();
-                SqlCommand sp_Newcita = new SqlCommand();
-                sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "SP_combinacion2";
-                sp_Newcita.CommandType = CommandType.StoredProcedure;
+                SqlCommand sp_New = new SqlCommand();
+                sp_New.Connection = Conectar;
+                sp_New.CommandText = "SP_combinacion2";
+                sp_New.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter Nombre = new SqlParameter();
                 Nombre.ParameterName = "@Nombre";
                 Nombre.SqlDbType = SqlDbType.NVarChar;
                 Nombre.Size = 50;
-                Nombre.Value = expCT.Nombre1;
-                SP_New.Parameters.Add(Nombre);
+                Nombre.Value = expCt.Nombre1;
+                sp_New.Parameters.Add(Nombre);
 
-                SqlParameter Estado = new SqlParameter();
-                Estado.ParameterName = "@Estado";
-                Estado.SqlDbType = SqlDbType.NChar;
-                Estado.Value = expCT.Estado1;
-                SP_NewEX.Parameters.Add(Estado);
-
-                SqlParameter Foto = new SqlParameter();
-                Foto.ParameterName = "@Foto";
-                Foto.SqlDbType = SqlDbType.Image;
-                //Nombre.Size = 50;
-                Foto.Value = expCT.Foto1;
-                SP_NewEX.Parameters.Add(Foto);
+               
 
 
 
-
-                SqlDataAdapter adartar = new SqlDataAdapter(sp_Newcita);
-                adartar.Fill(showcita);
-
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_New);
+                adartar.Fill(buscarcita);
 
 
-                if (sp_Newcita.ExecuteNonQuery() == 1)
+
+                if (sp_New.ExecuteNonQuery() == 1)
                 {
                     retorno = "Everything it's ok";
                 }
@@ -269,7 +257,7 @@ namespace CAPA_DATOS
                     Conectar.Close();
                 }
             }
-            return showcita;
+            return buscarcita;
 
 
         }
