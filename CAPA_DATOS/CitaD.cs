@@ -203,10 +203,10 @@ namespace CAPA_DATOS
         }
 
 
-        public DataTable buscarcita(Dexpediente expCt)
+        public DataTable buscarcita(CitaD expCt)
         {
 
-            DataTable buscarcita = new DataTable("cita");
+            DataTable showcita = new DataTable("cita");
             string retorno = "";
             SqlConnection Conectar = new SqlConnection();
             try
@@ -214,28 +214,27 @@ namespace CAPA_DATOS
                 //Asignamos la cadena de conexión
                 Conectar.ConnectionString = Conet.cnx;
                 Conectar.Open();
-                SqlCommand sp_New = new SqlCommand();
-                sp_New.Connection = Conectar;
-                sp_New.CommandText = "SP_combinacion2";
-                sp_New.CommandType = CommandType.StoredProcedure;
+                SqlCommand sp_Newcita = new SqlCommand();
+                sp_Newcita.Connection = Conectar;
+                sp_Newcita.CommandText = "psci.SP_BuscarCT";
+                sp_Newcita.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Nombre = new SqlParameter();
-                Nombre.ParameterName = "@Nombre";
-                Nombre.SqlDbType = SqlDbType.NVarChar;
-                Nombre.Size = 50;
-                Nombre.Value = expCt.Nombre1;
-                sp_New.Parameters.Add(Nombre);
-
-               
+                SqlParameter Cita = new SqlParameter();
+                Cita.ParameterName = "@ID_Cita";
+                Cita.SqlDbType = SqlDbType.Int;
+                //Cita.Size = 0;
+                Cita.Value = expCt.ID_Cita1;
+                sp_Newcita.Parameters.Add(Cita);
 
 
 
-                SqlDataAdapter adartar = new SqlDataAdapter(sp_New);
-                adartar.Fill(buscarcita);
+
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_Newcita);
+                adartar.Fill(showcita);
 
 
 
-                if (sp_New.ExecuteNonQuery() == 1)
+                if (sp_Newcita.ExecuteNonQuery() == 1)
                 {
                     retorno = "Everything it's ok";
                 }
@@ -257,7 +256,7 @@ namespace CAPA_DATOS
                     Conectar.Close();
                 }
             }
-            return buscarcita;
+            return showcita;
 
 
         }
