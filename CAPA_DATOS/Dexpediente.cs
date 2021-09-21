@@ -438,6 +438,76 @@ namespace CAPA_DATOS
             }
             return mostraestu;
         }
+
+
+        public DataTable buscarexpedientecita(Dexpediente expe)
+        {
+
+            DataTable showexpedientecita = new DataTable("expediente");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand SP_NewEX = new SqlCommand();
+                SP_NewEX.Connection = Conectar;
+                SP_NewEX.CommandText = "psci.SP_combinacion2";
+                SP_NewEX.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter nombre = new SqlParameter();
+                nombre.ParameterName = "@Nombre";
+                nombre.SqlDbType = SqlDbType.NChar;
+                nombre.Value = expe.Nombre1;
+                SP_NewEX.Parameters.Add(nombre);
+
+
+
+
+
+                SqlDataAdapter adartar = new SqlDataAdapter(SP_NewEX);
+                adartar.Fill(showexpedientecita);
+
+
+
+                if (SP_NewEX.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return showexpedientecita;
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
@@ -456,7 +526,7 @@ namespace CAPA_DATOS
 
 
 
-    }
+}
 
 
 

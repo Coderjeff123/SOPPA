@@ -21,7 +21,7 @@ namespace CAPA_PRESENTACION
 
         }
 
-        CitaN data1 = new CitaN();
+        Nexpediente data1 = new Nexpediente();
 
         private void Titulo_Click(object sender, EventArgs e)
         {
@@ -30,7 +30,7 @@ namespace CAPA_PRESENTACION
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtaagendar.DataSource= data1.buscarcitas(textagendar.Text);
+            dtaagendar.DataSource= data1.buscarexpedientecita(textagendar.Text);
             
         }
 

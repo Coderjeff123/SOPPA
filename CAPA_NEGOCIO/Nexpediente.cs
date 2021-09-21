@@ -58,6 +58,15 @@ namespace CAPA_NEGOCIO
             return table;
 
         }
+        public DataTable buscarexpedientecita(string nombre)
+        {
+            DataTable table = new DataTable();
+            Dexpediente datos = new Dexpediente();
+            datos.Nombre1 = nombre;
+            table = datos.buscarexpedientecita(datos);
+            return table;
+
+        }
 
         public string Baja(int ID, string estado)
         {
