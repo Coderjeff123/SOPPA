@@ -248,7 +248,9 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand SP_NewEX = new SqlCommand();
                 SP_NewEX.Connection = Conectar;
-                SP_NewEX.CommandText = "psci.SP_BuscarE";
+                SP_NewEX.CommandText = "psci" +
+                    "" +
+                    ".SP_BuscarE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter nombre = new SqlParameter();
