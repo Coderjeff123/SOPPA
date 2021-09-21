@@ -203,7 +203,7 @@ namespace CAPA_PRESENTACION
             this.btncerrarsesion.BackgroundColor = System.Drawing.Color.Transparent;
             this.btncerrarsesion.BorderColor = System.Drawing.Color.Blue;
             this.btncerrarsesion.BorderRadius = 0;
-            this.btncerrarsesion.BorderSize = 1;
+            this.btncerrarsesion.BorderSize = 0;
             this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncerrarsesion.FlatAppearance.BorderSize = 0;
             this.btncerrarsesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -226,7 +226,7 @@ namespace CAPA_PRESENTACION
             this.btncambiarcon.BackgroundColor = System.Drawing.Color.Transparent;
             this.btncambiarcon.BorderColor = System.Drawing.Color.Blue;
             this.btncambiarcon.BorderRadius = 0;
-            this.btncambiarcon.BorderSize = 1;
+            this.btncambiarcon.BorderSize = 0;
             this.btncambiarcon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncambiarcon.FlatAppearance.BorderSize = 0;
             this.btncambiarcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -249,7 +249,7 @@ namespace CAPA_PRESENTACION
             this.btnimagenper.BackgroundColor = System.Drawing.Color.Transparent;
             this.btnimagenper.BorderColor = System.Drawing.Color.MediumBlue;
             this.btnimagenper.BorderRadius = 0;
-            this.btnimagenper.BorderSize = 1;
+            this.btnimagenper.BorderSize = 0;
             this.btnimagenper.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnimagenper.FlatAppearance.BorderSize = 0;
             this.btnimagenper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;

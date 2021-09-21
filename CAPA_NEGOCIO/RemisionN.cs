@@ -11,10 +11,11 @@ namespace CAPA_NEGOCIO
 {
     public class RemisionN
     {
-        public string insertremision(int iD_remision, string remitente, string motivoRemision, DateTime Fecha)
+        public string insertremision( int iD_Expediente, string remitente, string motivoRemision, DateTime Fecha)
         {
             RemisionD datos = new RemisionD();
-            datos.ID_Remision1 = iD_remision;
+            
+            datos.ID_Expediente2 = iD_Expediente;
             datos.Remitente1 = remitente;
             datos.MotivoRemision1 = motivoRemision;
             datos.Fecha = Fecha;

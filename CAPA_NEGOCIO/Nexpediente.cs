@@ -27,7 +27,7 @@ namespace CAPA_NEGOCIO
 
         }
 
-        public string UpdateDexpediente(int id ,byte[] foto)
+        public string UpdateDexpediente(string id ,byte[] foto)
         {
 
             Dexpediente datos = new Dexpediente();
@@ -59,7 +59,7 @@ namespace CAPA_NEGOCIO
 
         }
 
-        public string Baja(int ID, string estado)
+        public string Baja(string ID, string estado)
         {
             Dexpediente datos = new Dexpediente();
             datos.ID_Expediente1 = ID;
@@ -67,7 +67,7 @@ namespace CAPA_NEGOCIO
            return datos.baja(datos);
         }
 
-        public DataTable mostrarfoto(int id)
+        public DataTable mostrarfoto(string id)
         {
             DataTable tabla = new DataTable();
             Dexpediente datos = new Dexpediente();

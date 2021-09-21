@@ -21,7 +21,7 @@ namespace CAPA_PRESENTACION
 
         }
 
-        CitaN data1 = new CitaN();
+        Nexpediente data1 = new Nexpediente();
 
         private void Titulo_Click(object sender, EventArgs e)
         {
@@ -30,7 +30,7 @@ namespace CAPA_PRESENTACION
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtaagendar.DataSource= data1.buscarcitas(textagendar.Text);
+            dtaagendar.DataSource= data1.buscarexpediente(textagendar.Text);
             
         }
 
@@ -105,30 +105,8 @@ namespace CAPA_PRESENTACION
             btnagen.Visible = true;
         }
 
-        private void buttonpersolizado2_Click(object sender, EventArgs e)
-        {
+   
 
-        }
-
-        private void btnagen_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dtacita_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void Calendaragenda_DateChanged_1(object sender, DateRangeEventArgs e)
         {
