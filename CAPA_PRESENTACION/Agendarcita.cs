@@ -31,6 +31,7 @@ namespace CAPA_PRESENTACION
         private void button1_Click(object sender, EventArgs e)
         {
             dtaagendar.DataSource= data1.buscarexpedientecita(textagendar.Text);
+
             
         }
 
@@ -144,6 +145,12 @@ namespace CAPA_PRESENTACION
            //buscra tabla procedimiento almacenado 
            //dataGridView2.Rows.Add(fi);
             textnombre.Texts = "";
+
+            texvalor.Text = Calendaragenda.SelectionStart.Day.ToString() + "/" + Calendaragenda.SelectionStart.Month.ToString() + "/" + Calendaragenda.SelectionStart.Year.ToString();
+             
+            
+
+
         }
 
 

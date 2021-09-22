@@ -40,6 +40,7 @@ namespace CAPA_PRESENTACION
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelagenda = new CAPA_PRESENTACION.Paneldegradado();
+            this.texvalor = new System.Windows.Forms.TextBox();
             this.btnagen = new CAPA_PRESENTACION.Buttonpersolizado();
             this.Fechacita = new System.Windows.Forms.Label();
             this.Calendaragenda = new System.Windows.Forms.MonthCalendar();
@@ -79,6 +80,7 @@ namespace CAPA_PRESENTACION
             // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToDeleteRows = false;
             this.dataGridView2.AllowUserToResizeColumns = false;
             this.dataGridView2.AllowUserToResizeRows = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -146,6 +148,7 @@ namespace CAPA_PRESENTACION
             this.panelagenda.angulo = 0F;
             this.panelagenda.Colorleft = System.Drawing.Color.Empty;
             this.panelagenda.Colorrigth = System.Drawing.Color.Empty;
+            this.panelagenda.Controls.Add(this.texvalor);
             this.panelagenda.Controls.Add(this.btnagen);
             this.panelagenda.Controls.Add(this.Fechacita);
             this.panelagenda.Controls.Add(this.Calendaragenda);
@@ -163,6 +166,13 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Name = "panelagenda";
             this.panelagenda.Size = new System.Drawing.Size(372, 560);
             this.panelagenda.TabIndex = 6;
+            // 
+            // texvalor
+            // 
+            this.texvalor.Location = new System.Drawing.Point(220, 507);
+            this.texvalor.Name = "texvalor";
+            this.texvalor.Size = new System.Drawing.Size(100, 20);
+            this.texvalor.TabIndex = 15;
             // 
             // btnagen
             // 
@@ -523,5 +533,6 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         public System.Windows.Forms.DataGridView dtaagendar;
+        private System.Windows.Forms.TextBox texvalor;
     }
 }
