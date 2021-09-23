@@ -111,7 +111,7 @@ namespace CAPA_PRESENTACION
                         principal.Show();
 
                     }
-                    else msgError("Usuario incorrecto");
+                    else msgError("Usuario incorrecto o contraseña incorrecta");
 
 
 

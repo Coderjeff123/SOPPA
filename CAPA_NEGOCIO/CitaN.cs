@@ -52,7 +52,12 @@ namespace CAPA_NEGOCIO
         }
 
 
-
+        public void ingresar()
+        {
+            int dia;
+            int mes;
+            int anio;
+        }
 
 
 

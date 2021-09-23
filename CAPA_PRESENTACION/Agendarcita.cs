@@ -147,13 +147,11 @@ namespace CAPA_PRESENTACION
             textnombre.Texts = "";
 
             texvalor.Text = Calendaragenda.SelectionStart.Day.ToString() + "/" + Calendaragenda.SelectionStart.Month.ToString() + "/" + Calendaragenda.SelectionStart.Year.ToString();
-             
             
-
-
         }
 
-
+        
+        
 
 
 
