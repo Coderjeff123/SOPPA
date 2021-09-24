@@ -10,27 +10,27 @@ namespace CAPA_DATOS
 {
     public class CitaD
     {
-        string ID_Cita;
-        string ID_Remision;
+        int ID_Cita;
+        int ID_Remision;
         DateTime Fecha;
 
         public CitaD(){}
 
-        public CitaD(string iD_Cita1, string iD_Remision1, DateTime fecha1)
+        public CitaD(int iD_Cita1, int iD_Remision1, DateTime fecha1)
         {
             ID_Cita1 = iD_Cita1;
             ID_Remision1 = iD_Remision1;
             Fecha1 = fecha1;
         }
 
-        public string ID_Cita1 { get => ID_Cita; set => ID_Cita = value; }
-        public string ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
+        public int ID_Cita1 { get => ID_Cita; set => ID_Cita = value; }
+        public int ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
         public DateTime Fecha1 { get => Fecha; set => Fecha = value; }
 
 
         public string insertcita(CitaD expCt)
         {
-            string retorno = "";
+           string retorno = "";
             SqlConnection Conectar = new SqlConnection();
             try
             {
@@ -39,15 +39,17 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_Newcita = new SqlCommand();
                 sp_Newcita.Connection = Conectar;
-                sp_Newcita.CommandText = "ps+ci.SP_NewCi";
+                sp_Newcita.CommandText = "psci.SP_NewCi";
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter Cita = new SqlParameter();
-                Cita.ParameterName = "@ID_Cita";
-                Cita.SqlDbType = SqlDbType.Int;
+
+
+                SqlParameter remision = new SqlParameter();
+                remision.ParameterName = "@ID_Remision";
+                remision.SqlDbType = SqlDbType.Int;
                 //Cita.Size = 0;
-                Cita.Value = expCt.ID_Cita1;
-                sp_Newcita.Parameters.Add(Cita);
+                remision.Value = expCt.ID_Remision1;
+                sp_Newcita.Parameters.Add(remision);
 
 
                 SqlParameter fecha = new SqlParameter();
@@ -57,9 +59,9 @@ namespace CAPA_DATOS
                 fecha.Value = expCt.Fecha1;
                 sp_Newcita.Parameters.Add(fecha);
 
-                SqlDataReader sqlDataReader1 = sp_Newcita.ExecuteReader();
+               
 
-                if (sqlDataReader1.HasRows)
+                if (sp_Newcita.ExecuteNonQuery()==1)
                 {
                     retorno = "Everything it's ok";
                 }

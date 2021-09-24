@@ -12,17 +12,16 @@ namespace CAPA_NEGOCIO
     public class CitaN
     {
 
-        public  string insertcita(string iD_Cita1, string iD_Remision1, DateTime fecha1)
+        public  string insertcita(int iD_Remision1, DateTime fecha1)
         {
             CitaD datos = new CitaD();
-            datos.ID_Cita1 = iD_Cita1;
             datos.ID_Remision1 = iD_Remision1;
             datos.Fecha1 = fecha1;
 
             return datos.insertcita(datos);
         }
 
-        public  string updatecita(string iD_Cita1, string iD_Remision1, DateTime fecha1)
+        public  string updatecita(int iD_Cita1, int iD_Remision1, DateTime fecha1)
         {
             CitaD datos = new CitaD();
             datos.ID_Cita1 = iD_Cita1;
@@ -52,11 +51,15 @@ namespace CAPA_NEGOCIO
         }
 
 
-        public void ingresar()
+        public void ingresar(DateTime fecha1)
         {
-            int dia;
-            int mes;
-            int anio;
+           
+
+
+
+
+
+
         }
 
 

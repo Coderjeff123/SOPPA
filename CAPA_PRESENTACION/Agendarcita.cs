@@ -22,7 +22,7 @@ namespace CAPA_PRESENTACION
         }
 
         Nexpediente data1 = new Nexpediente();
-
+        CitaN ins = new CitaN();
         private void Titulo_Click(object sender, EventArgs e)
         {
 
@@ -101,6 +101,7 @@ namespace CAPA_PRESENTACION
         private void dtaagendar_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             textnombre.Texts = dtaagendar.CurrentRow.Cells["Nombre"].Value.ToString();
+            textcodici.Texts = dtaagendar.CurrentRow.Cells["ID_Remision"].Value.ToString();
             paneldegra22.Visible = true;
             buttonpersolizado1.Visible = false;
             btnagen.Visible = true;
@@ -146,12 +147,33 @@ namespace CAPA_PRESENTACION
            //dataGridView2.Rows.Add(fi);
             textnombre.Texts = "";
 
+           
             texvalor.Text = Calendaragenda.SelectionStart.Day.ToString() + "/" + Calendaragenda.SelectionStart.Month.ToString() + "/" + Calendaragenda.SelectionStart.Year.ToString();
             
+            
+            
+            
+           // int ins;
+
+            CitaN ins = new CitaN();
+            //ins= CitaN.insertcita( Convert.ToChar( textcodigo.Texts), Convert.ToChar(textcodici.Texts), Convert.ToDateTime(texvalor.Text));
+            //ins = CitaN.(Convert.ToInt32(textcodigo.Texts), Convert.ToInt32(textcodici.Texts), Convert.ToDateTime(texvalor.Text));
+           int codigo = Convert.ToInt32(textcodici.Texts);
+          //  int codigoci = Convert.ToInt32(textcodici.Texts);
+
+            ins.insertcita(codigo,Convert.ToDateTime(texvalor.Text));
+
+
+
         }
 
-        
-        
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
 
 
 
