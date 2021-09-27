@@ -34,17 +34,7 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnresform = new System.Windows.Forms.Button();
-            this.btnminform = new System.Windows.Forms.Button();
-            this.btnmaxform = new System.Windows.Forms.Button();
-            this.btncloseform = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.opc = new CAPA_PRESENTACION.paneldegra2();
-            this.btncerrarsesion = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.btncambiarcon = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.btnimagenper = new CAPA_PRESENTACION.Buttonpersolizado();
             this.dtaactividad = new System.Windows.Forms.DataGridView();
             this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -52,6 +42,10 @@ namespace CAPA_PRESENTACION
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panelFormhijo = new System.Windows.Forms.Panel();
             this.panelmenu = new System.Windows.Forms.Panel();
+            this.opc = new CAPA_PRESENTACION.paneldegra2();
+            this.btncerrarsesion = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btncambiarcon = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btnimagenper = new CAPA_PRESENTACION.Buttonpersolizado();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.Congf = new CAPA_PRESENTACION.Buttonpersolizado();
             this.panelsubmenuinformes = new System.Windows.Forms.Panel();
@@ -71,18 +65,24 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta = new System.Windows.Forms.Button();
             this.btncon = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnresform = new System.Windows.Forms.Button();
+            this.btnminform = new System.Windows.Forms.Button();
+            this.btnmaxform = new System.Windows.Forms.Button();
+            this.btncloseform = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
-            this.paneldegradado2.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.opc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).BeginInit();
             this.panelmenu.SuspendLayout();
+            this.opc.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
             this.panelsubmenuinformes.SuspendLayout();
             this.panelsubmenuexpe.SuspendLayout();
             this.panelsubmenucita.SuspendLayout();
             this.panelsubmenuconsulta.SuspendLayout();
+            this.paneldegradado2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,81 +94,6 @@ namespace CAPA_PRESENTACION
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(992, 44);
             this.panel1.TabIndex = 0;
-            // 
-            // paneldegradado2
-            // 
-            this.paneldegradado2.angulo = 0F;
-            this.paneldegradado2.Colorleft = System.Drawing.Color.DodgerBlue;
-            this.paneldegradado2.Colorrigth = System.Drawing.Color.DeepSkyBlue;
-            this.paneldegradado2.Controls.Add(this.panel2);
-            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
-            this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(992, 44);
-            this.paneldegradado2.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.btnresform);
-            this.panel2.Controls.Add(this.btnminform);
-            this.panel2.Controls.Add(this.btnmaxform);
-            this.panel2.Controls.Add(this.btncloseform);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(868, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(124, 44);
-            this.panel2.TabIndex = 7;
-            // 
-            // btnresform
-            // 
-            this.btnresform.FlatAppearance.BorderSize = 0;
-            this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
-            this.btnresform.Location = new System.Drawing.Point(44, 2);
-            this.btnresform.Name = "btnresform";
-            this.btnresform.Size = new System.Drawing.Size(38, 41);
-            this.btnresform.TabIndex = 4;
-            this.btnresform.UseVisualStyleBackColor = true;
-            this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
-            // 
-            // btnminform
-            // 
-            this.btnminform.FlatAppearance.BorderSize = 0;
-            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
-            this.btnminform.Location = new System.Drawing.Point(3, 0);
-            this.btnminform.Name = "btnminform";
-            this.btnminform.Size = new System.Drawing.Size(38, 41);
-            this.btnminform.TabIndex = 6;
-            this.btnminform.UseVisualStyleBackColor = true;
-            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
-            // 
-            // btnmaxform
-            // 
-            this.btnmaxform.FlatAppearance.BorderSize = 0;
-            this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
-            this.btnmaxform.Location = new System.Drawing.Point(44, 2);
-            this.btnmaxform.Name = "btnmaxform";
-            this.btnmaxform.Size = new System.Drawing.Size(38, 36);
-            this.btnmaxform.TabIndex = 5;
-            this.btnmaxform.UseVisualStyleBackColor = true;
-            this.btnmaxform.Visible = false;
-            this.btnmaxform.Click += new System.EventHandler(this.btnmaxform_Click);
-            // 
-            // btncloseform
-            // 
-            this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btncloseform.FlatAppearance.BorderSize = 0;
-            this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.delete_remove_close_icon_1815331;
-            this.btncloseform.Location = new System.Drawing.Point(89, 0);
-            this.btncloseform.Name = "btncloseform";
-            this.btncloseform.Size = new System.Drawing.Size(35, 44);
-            this.btncloseform.TabIndex = 1;
-            this.btncloseform.UseVisualStyleBackColor = true;
-            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
             // 
             // panel4
             // 
@@ -182,6 +107,117 @@ namespace CAPA_PRESENTACION
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(768, 240);
             this.panel4.TabIndex = 2;
+            // 
+            // dtaactividad
+            // 
+            this.dtaactividad.AllowUserToAddRows = false;
+            this.dtaactividad.AllowUserToResizeColumns = false;
+            this.dtaactividad.AllowUserToResizeRows = false;
+            this.dtaactividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtaactividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dtaactividad.BackgroundColor = System.Drawing.Color.White;
+            this.dtaactividad.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtaactividad.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtaactividad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaactividad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtaactividad.ColumnHeadersHeight = 30;
+            this.dtaactividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dtaactividad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Hora,
+            this.Cita});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtaactividad.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtaactividad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtaactividad.EnableHeadersVisualStyles = false;
+            this.dtaactividad.GridColor = System.Drawing.Color.PaleTurquoise;
+            this.dtaactividad.Location = new System.Drawing.Point(248, 0);
+            this.dtaactividad.Name = "dtaactividad";
+            this.dtaactividad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaactividad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtaactividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtaactividad.ShowCellErrors = false;
+            this.dtaactividad.ShowCellToolTips = false;
+            this.dtaactividad.ShowEditingIcon = false;
+            this.dtaactividad.ShowRowErrors = false;
+            this.dtaactividad.Size = new System.Drawing.Size(520, 240);
+            this.dtaactividad.TabIndex = 3;
+            this.dtaactividad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaactividad_CellContentClick);
+            // 
+            // Hora
+            // 
+            this.Hora.HeaderText = "Hora";
+            this.Hora.Name = "Hora";
+            this.Hora.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Cita
+            // 
+            this.Cita.HeaderText = "Cita";
+            this.Cita.Name = "Cita";
+            // 
+            // Fecha
+            // 
+            this.Fecha.AutoSize = true;
+            this.Fecha.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Fecha.ForeColor = System.Drawing.Color.White;
+            this.Fecha.Location = new System.Drawing.Point(7, 175);
+            this.Fecha.Name = "Fecha";
+            this.Fecha.Size = new System.Drawing.Size(52, 16);
+            this.Fecha.TabIndex = 2;
+            this.Fecha.Text = "label1";
+            // 
+            // monthCalendar1
+            // 
+            this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
+            this.monthCalendar1.Name = "monthCalendar1";
+            this.monthCalendar1.TabIndex = 1;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // panelFormhijo
+            // 
+            this.panelFormhijo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelFormhijo.AutoSize = true;
+            this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(101)))), ((int)(((byte)(138)))));
+            this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panelFormhijo.ForeColor = System.Drawing.Color.White;
+            this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
+            this.panelFormhijo.Name = "panelFormhijo";
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 505);
+            this.panelFormhijo.TabIndex = 3;
+            // 
+            // panelmenu
+            // 
+            this.panelmenu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(130)))), ((int)(((byte)(136)))));
+            this.panelmenu.Controls.Add(this.paneldegradado1);
+            this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelmenu.Location = new System.Drawing.Point(0, 44);
+            this.panelmenu.Name = "panelmenu";
+            this.panelmenu.Size = new System.Drawing.Size(224, 744);
+            this.panelmenu.TabIndex = 1;
             // 
             // opc
             // 
@@ -265,121 +301,12 @@ namespace CAPA_PRESENTACION
             this.btnimagenper.TextColor = System.Drawing.Color.White;
             this.btnimagenper.UseVisualStyleBackColor = false;
             // 
-            // dtaactividad
-            // 
-            this.dtaactividad.AllowUserToAddRows = false;
-            this.dtaactividad.AllowUserToResizeColumns = false;
-            this.dtaactividad.AllowUserToResizeRows = false;
-            this.dtaactividad.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtaactividad.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaactividad.BackgroundColor = System.Drawing.Color.LightSkyBlue;
-            this.dtaactividad.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtaactividad.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtaactividad.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaactividad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtaactividad.ColumnHeadersHeight = 30;
-            this.dtaactividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtaactividad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Hora,
-            this.Cita});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaactividad.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtaactividad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtaactividad.EnableHeadersVisualStyles = false;
-            this.dtaactividad.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dtaactividad.Location = new System.Drawing.Point(248, 0);
-            this.dtaactividad.Name = "dtaactividad";
-            this.dtaactividad.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaactividad.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dtaactividad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtaactividad.ShowCellErrors = false;
-            this.dtaactividad.ShowCellToolTips = false;
-            this.dtaactividad.ShowEditingIcon = false;
-            this.dtaactividad.ShowRowErrors = false;
-            this.dtaactividad.Size = new System.Drawing.Size(520, 240);
-            this.dtaactividad.TabIndex = 3;
-            this.dtaactividad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaactividad_CellContentClick);
-            // 
-            // Hora
-            // 
-            this.Hora.HeaderText = "Hora";
-            this.Hora.Name = "Hora";
-            this.Hora.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Cita
-            // 
-            this.Cita.HeaderText = "Cita";
-            this.Cita.Name = "Cita";
-            // 
-            // Fecha
-            // 
-            this.Fecha.AutoSize = true;
-            this.Fecha.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Fecha.ForeColor = System.Drawing.Color.White;
-            this.Fecha.Location = new System.Drawing.Point(7, 175);
-            this.Fecha.Name = "Fecha";
-            this.Fecha.Size = new System.Drawing.Size(52, 16);
-            this.Fecha.TabIndex = 2;
-            this.Fecha.Text = "label1";
-            // 
-            // monthCalendar1
-            // 
-            this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 1;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
-            // 
-            // panelFormhijo
-            // 
-            this.panelFormhijo.AutoSize = true;
-            this.panelFormhijo.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.panelFormhijo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panelFormhijo.ForeColor = System.Drawing.Color.White;
-            this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
-            this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 744);
-            this.panelFormhijo.TabIndex = 3;
-            // 
-            // panelmenu
-            // 
-            this.panelmenu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
-            this.panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(130)))), ((int)(((byte)(136)))));
-            this.panelmenu.Controls.Add(this.paneldegradado1);
-            this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelmenu.Location = new System.Drawing.Point(0, 44);
-            this.panelmenu.Name = "panelmenu";
-            this.panelmenu.Size = new System.Drawing.Size(224, 744);
-            this.panelmenu.TabIndex = 1;
-            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.BackColor = System.Drawing.Color.White;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.DodgerBlue;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.DeepSkyBlue;
+            this.paneldegradado1.BackColor = System.Drawing.Color.CadetBlue;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.Transparent;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.Transparent;
             this.paneldegradado1.Controls.Add(this.Congf);
             this.paneldegradado1.Controls.Add(this.panelsubmenuinformes);
             this.paneldegradado1.Controls.Add(this.btninforme);
@@ -411,9 +338,9 @@ namespace CAPA_PRESENTACION
             this.Congf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Congf.ForeColor = System.Drawing.Color.White;
             this.Congf.Image = global::CAPA_PRESENTACION.Properties.Resources.settings_alt_icon_icons_com_72042__1_;
-            this.Congf.Location = new System.Drawing.Point(0, 655);
+            this.Congf.Location = new System.Drawing.Point(0, 674);
             this.Congf.Name = "Congf";
-            this.Congf.Size = new System.Drawing.Size(224, 89);
+            this.Congf.Size = new System.Drawing.Size(224, 70);
             this.Congf.TabIndex = 10;
             this.Congf.TextColor = System.Drawing.Color.White;
             this.Congf.UseVisualStyleBackColor = false;
@@ -427,7 +354,7 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuinformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuinformes.Location = new System.Drawing.Point(0, 568);
             this.panelsubmenuinformes.Name = "panelsubmenuinformes";
-            this.panelsubmenuinformes.Size = new System.Drawing.Size(224, 100);
+            this.panelsubmenuinformes.Size = new System.Drawing.Size(224, 94);
             this.panelsubmenuinformes.TabIndex = 9;
             // 
             // btngenerarinfo
@@ -761,10 +688,87 @@ namespace CAPA_PRESENTACION
             this.panel3.TabIndex = 0;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
+            // paneldegradado2
+            // 
+            this.paneldegradado2.angulo = 0F;
+            this.paneldegradado2.BackColor = System.Drawing.Color.CadetBlue;
+            this.paneldegradado2.Colorleft = System.Drawing.Color.Transparent;
+            this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
+            this.paneldegradado2.Controls.Add(this.panel2);
+            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
+            this.paneldegradado2.Name = "paneldegradado2";
+            this.paneldegradado2.Size = new System.Drawing.Size(992, 44);
+            this.paneldegradado2.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.btnresform);
+            this.panel2.Controls.Add(this.btnminform);
+            this.panel2.Controls.Add(this.btnmaxform);
+            this.panel2.Controls.Add(this.btncloseform);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(868, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(124, 44);
+            this.panel2.TabIndex = 7;
+            // 
+            // btnresform
+            // 
+            this.btnresform.FlatAppearance.BorderSize = 0;
+            this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
+            this.btnresform.Location = new System.Drawing.Point(44, 2);
+            this.btnresform.Name = "btnresform";
+            this.btnresform.Size = new System.Drawing.Size(38, 41);
+            this.btnresform.TabIndex = 4;
+            this.btnresform.UseVisualStyleBackColor = true;
+            this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
+            // 
+            // btnminform
+            // 
+            this.btnminform.FlatAppearance.BorderSize = 0;
+            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
+            this.btnminform.Location = new System.Drawing.Point(3, 0);
+            this.btnminform.Name = "btnminform";
+            this.btnminform.Size = new System.Drawing.Size(38, 41);
+            this.btnminform.TabIndex = 6;
+            this.btnminform.UseVisualStyleBackColor = true;
+            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
+            // 
+            // btnmaxform
+            // 
+            this.btnmaxform.FlatAppearance.BorderSize = 0;
+            this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
+            this.btnmaxform.Location = new System.Drawing.Point(44, 2);
+            this.btnmaxform.Name = "btnmaxform";
+            this.btnmaxform.Size = new System.Drawing.Size(38, 36);
+            this.btnmaxform.TabIndex = 5;
+            this.btnmaxform.UseVisualStyleBackColor = true;
+            this.btnmaxform.Visible = false;
+            this.btnmaxform.Click += new System.EventHandler(this.btnmaxform_Click);
+            // 
+            // btncloseform
+            // 
+            this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btncloseform.FlatAppearance.BorderSize = 0;
+            this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.delete_remove_close_icon_1815331;
+            this.btncloseform.Location = new System.Drawing.Point(89, 0);
+            this.btncloseform.Name = "btncloseform";
+            this.btncloseform.Size = new System.Drawing.Size(35, 44);
+            this.btncloseform.TabIndex = 1;
+            this.btncloseform.UseVisualStyleBackColor = true;
+            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
+            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(167)))), ((int)(((byte)(164)))));
             this.ClientSize = new System.Drawing.Size(992, 788);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelFormhijo);
@@ -776,18 +780,18 @@ namespace CAPA_PRESENTACION
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panel1.ResumeLayout(false);
-            this.paneldegradado2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.opc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).EndInit();
             this.panelmenu.ResumeLayout(false);
+            this.opc.ResumeLayout(false);
             this.paneldegradado1.ResumeLayout(false);
             this.panelsubmenuinformes.ResumeLayout(false);
             this.panelsubmenuexpe.ResumeLayout(false);
             this.panelsubmenucita.ResumeLayout(false);
             this.panelsubmenuconsulta.ResumeLayout(false);
+            this.paneldegradado2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

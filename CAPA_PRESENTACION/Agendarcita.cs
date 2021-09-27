@@ -146,11 +146,11 @@ namespace CAPA_PRESENTACION
            //buscra tabla procedimiento almacenado 
            //dataGridView2.Rows.Add(fi);
             textnombre.Texts = "";
-            texthora.Text = "";
+
            
             texvalor.Text = Calendaragenda.SelectionStart.Day.ToString() + "/" + Calendaragenda.SelectionStart.Month.ToString() + "/" + Calendaragenda.SelectionStart.Year.ToString();
-             texthora.Text =    dataGridView2.CurrentRow.Cells[0].Value.ToString()   ;
-             
+            
+            
             
             
            // int ins;
@@ -159,11 +159,9 @@ namespace CAPA_PRESENTACION
             //ins= CitaN.insertcita( Convert.ToChar( textcodigo.Texts), Convert.ToChar(textcodici.Texts), Convert.ToDateTime(texvalor.Text));
             //ins = CitaN.(Convert.ToInt32(textcodigo.Texts), Convert.ToInt32(textcodici.Texts), Convert.ToDateTime(texvalor.Text));
            int codigo = Convert.ToInt32(textcodici.Texts);
-            
+          //  int codigoci = Convert.ToInt32(textcodici.Texts);
 
-            //  int codigoci = Convert.ToInt32(textcodici.Texts);
-
-            ins.insertcita(codigo,Convert.ToDateTime(texvalor.Text),Convert.ToDateTime(texthora.Text));
+            ins.insertcita(codigo,Convert.ToDateTime(texvalor.Text));
 
 
 

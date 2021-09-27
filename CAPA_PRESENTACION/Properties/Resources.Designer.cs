@@ -303,6 +303,16 @@ namespace CAPA_PRESENTACION.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap delete_remove_close_checkbox_check_icon_181586 {
+            get {
+                object obj = ResourceManager.GetObject("delete_remove_close_checkbox_check_icon_181586", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap delete_remove_close_icon_181533 {
             get {
                 object obj = ResourceManager.GetObject("delete_remove_close_icon_181533", resourceCulture);
@@ -316,6 +326,16 @@ namespace CAPA_PRESENTACION.Properties {
         internal static System.Drawing.Bitmap delete_remove_close_icon_1815331 {
             get {
                 object obj = ResourceManager.GetObject("delete_remove_close_icon_1815331", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete_remove_minus_icon_181585 {
+            get {
+                object obj = ResourceManager.GetObject("delete_remove_minus_icon_181585", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

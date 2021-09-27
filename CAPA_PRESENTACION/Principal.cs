@@ -306,6 +306,21 @@ namespace CAPA_PRESENTACION
                 dtaactividad.Rows.Add();                
             }
             Cargarfecha();
+            Class1.ElegirTema("Celeste");
+            paneldegradado1.Colorleft = Class1.PanelBotones;
+            paneldegradado1.Colorrigth = Class1.panlebotones;
+            panelFormhijo.BackColor = Class1.PanelPadre;
+            paneldegradado2.BackColor = Class1.BarraTitulo;
+            panel4.BackColor = Class1.BarraTitulo;
+            opc.Colorleft = Class1.PanelBotones;
+            opc.Colorrigth = Class1.panlebotones;
+            dtaactividad.GridColor = Class1.PanelPadre;
+            dtaactividad.ColumnHeadersDefaultCellStyle.BackColor = Class1.PanelPadre;
+            dtaactividad.ColumnHeadersDefaultCellStyle.SelectionBackColor = Class1.PanelBotones;
+            dtaactividad.DefaultCellStyle.BackColor = Class1.BarraTitulo;
+            dtaactividad.DefaultCellStyle.SelectionBackColor = Class1.panlebotones;
+            dtaactividad.RowHeadersDefaultCellStyle.BackColor = Class1.BarraTitulo;
+            dtaactividad.RowHeadersDefaultCellStyle.SelectionBackColor = Class1.PanelBotones;
         }
 
         private void Cargarfecha()

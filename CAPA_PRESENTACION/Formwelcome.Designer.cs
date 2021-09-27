@@ -62,7 +62,6 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Controls.Add(this.label3);
             this.paneldegra21.Controls.Add(this.circularProgressBar1);
             this.paneldegra21.Controls.Add(this.label2);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneldegra21.Location = new System.Drawing.Point(0, 0);
             this.paneldegra21.Name = "paneldegra21";
             this.paneldegra21.Size = new System.Drawing.Size(328, 457);
@@ -140,7 +139,7 @@ namespace CAPA_PRESENTACION
             this.circularProgressBar1.Location = new System.Drawing.Point(86, 207);
             this.circularProgressBar1.MarqueeAnimationSpeed = 2000;
             this.circularProgressBar1.Name = "circularProgressBar1";
-            this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.circularProgressBar1.OuterColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.circularProgressBar1.OuterMargin = -25;
             this.circularProgressBar1.OuterWidth = 26;
             this.circularProgressBar1.ProgressColor = System.Drawing.Color.DodgerBlue;

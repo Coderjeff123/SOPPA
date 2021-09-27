@@ -74,6 +74,12 @@
     <Compile Include="Agendarcita.Designer.cs">
       <DependentUpon>Agendarcita.cs</DependentUpon>
     </Compile>
+    <Compile Include="Agendarcitahijo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Agendarcitahijo.Designer.cs">
+      <DependentUpon>Agendarcitahijo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Buttonpersolizado.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -172,6 +178,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Agendarcita.resx">
       <DependentUpon>Agendarcita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Agendarcitahijo.resx">
+      <DependentUpon>Agendarcitahijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cambiar contraseña.resx">
       <DependentUpon>Cambiar contraseña.cs</DependentUpon>
@@ -356,6 +365,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\eye-watch_icon-icons.com_74456.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\delete_remove_minus_icon_181585.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_remove_close_checkbox_check_icon_181586.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

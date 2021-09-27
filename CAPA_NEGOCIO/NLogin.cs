@@ -70,10 +70,7 @@ namespace CAPA_NEGOCIO
 
             return dLogin.Cpassword(dLogin);
         }
-        public void cerrarsecion()
-        {
-            
-        }
+       
     }
     
 }
