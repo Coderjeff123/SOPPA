@@ -29,20 +29,24 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dtacita = new System.Windows.Forms.DataGridView();
             this.Titulo1 = new System.Windows.Forms.Label();
-            this.btnposponer = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.monthfechaactu = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.texthoraA = new System.Windows.Forms.TextBox();
+            this.selecion = new System.Windows.Forms.Label();
+            this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
+            this.texfecha2 = new System.Windows.Forms.TextBox();
+            this.textfecha = new System.Windows.Forms.TextBox();
+            this.textremision = new System.Windows.Forms.TextBox();
+            this.textidcita = new System.Windows.Forms.TextBox();
+            this.btnposponer = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.fecha3 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtacita)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
@@ -58,37 +62,37 @@ namespace CAPA_PRESENTACION
             this.dtacita.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtacita.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtacita.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtacita.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtacita.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtacita.ColumnHeadersHeight = 30;
             this.dtacita.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtacita.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtacita.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtacita.EnableHeadersVisualStyles = false;
             this.dtacita.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dtacita.Location = new System.Drawing.Point(35, 62);
             this.dtacita.Name = "dtacita";
             this.dtacita.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtacita.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtacita.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtacita.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtacita.ShowCellErrors = false;
             this.dtacita.ShowCellToolTips = false;
@@ -109,6 +113,98 @@ namespace CAPA_PRESENTACION
             this.Titulo1.Size = new System.Drawing.Size(77, 16);
             this.Titulo1.TabIndex = 9;
             this.Titulo1.Text = "Ver Citas";
+            // 
+            // monthfechaactu
+            // 
+            this.monthfechaactu.Location = new System.Drawing.Point(470, 281);
+            this.monthfechaactu.Name = "monthfechaactu";
+            this.monthfechaactu.TabIndex = 12;
+            this.monthfechaactu.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(297, 281);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(161, 19);
+            this.label1.TabIndex = 13;
+            this.label1.Text = "Selecione nueva fecha:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 340);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(156, 19);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Selecione nueva hora:";
+            // 
+            // texthoraA
+            // 
+            this.texthoraA.Location = new System.Drawing.Point(174, 341);
+            this.texthoraA.Name = "texthoraA";
+            this.texthoraA.Size = new System.Drawing.Size(100, 20);
+            this.texthoraA.TabIndex = 15;
+            // 
+            // selecion
+            // 
+            this.selecion.AutoSize = true;
+            this.selecion.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.selecion.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.selecion.Location = new System.Drawing.Point(297, 340);
+            this.selecion.Name = "selecion";
+            this.selecion.Size = new System.Drawing.Size(0, 19);
+            this.selecion.TabIndex = 16;
+            // 
+            // paneldegradado1
+            // 
+            this.paneldegradado1.angulo = 0F;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
+            this.paneldegradado1.Controls.Add(this.texfecha2);
+            this.paneldegradado1.Controls.Add(this.textfecha);
+            this.paneldegradado1.Controls.Add(this.textremision);
+            this.paneldegradado1.Controls.Add(this.textidcita);
+            this.paneldegradado1.Controls.Add(this.btnposponer);
+            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.paneldegradado1.Location = new System.Drawing.Point(0, 448);
+            this.paneldegradado1.Name = "paneldegradado1";
+            this.paneldegradado1.Size = new System.Drawing.Size(768, 57);
+            this.paneldegradado1.TabIndex = 11;
+            // 
+            // texfecha2
+            // 
+            this.texfecha2.Location = new System.Drawing.Point(587, 25);
+            this.texfecha2.Name = "texfecha2";
+            this.texfecha2.Size = new System.Drawing.Size(100, 20);
+            this.texfecha2.TabIndex = 19;
+            this.texfecha2.Visible = false;
+            // 
+            // textfecha
+            // 
+            this.textfecha.Location = new System.Drawing.Point(481, 25);
+            this.textfecha.Name = "textfecha";
+            this.textfecha.Size = new System.Drawing.Size(100, 20);
+            this.textfecha.TabIndex = 18;
+            this.textfecha.Visible = false;
+            // 
+            // textremision
+            // 
+            this.textremision.Location = new System.Drawing.Point(358, 25);
+            this.textremision.Name = "textremision";
+            this.textremision.Size = new System.Drawing.Size(100, 20);
+            this.textremision.TabIndex = 17;
+            this.textremision.Visible = false;
+            // 
+            // textidcita
+            // 
+            this.textidcita.Location = new System.Drawing.Point(230, 25);
+            this.textidcita.Name = "textidcita";
+            this.textidcita.Size = new System.Drawing.Size(100, 20);
+            this.textidcita.TabIndex = 16;
+            this.textidcita.Visible = false;
             // 
             // btnposponer
             // 
@@ -133,76 +229,27 @@ namespace CAPA_PRESENTACION
             this.btnposponer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnposponer.TextColor = System.Drawing.Color.Black;
             this.btnposponer.UseVisualStyleBackColor = false;
+            this.btnposponer.Click += new System.EventHandler(this.btnposponer_Click);
             // 
-            // paneldegradado1
+            // fecha3
             // 
-            this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
-            this.paneldegradado1.Controls.Add(this.textBox4);
-            this.paneldegradado1.Controls.Add(this.textBox3);
-            this.paneldegradado1.Controls.Add(this.textBox2);
-            this.paneldegradado1.Controls.Add(this.btnposponer);
-            this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.paneldegradado1.Location = new System.Drawing.Point(0, 448);
-            this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(768, 57);
-            this.paneldegradado1.TabIndex = 11;
+            this.fecha3.AutoSize = true;
+            this.fecha3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha3.Location = new System.Drawing.Point(303, 330);
+            this.fecha3.Name = "fecha3";
+            this.fecha3.Size = new System.Drawing.Size(0, 19);
+            this.fecha3.TabIndex = 17;
             // 
-            // monthCalendar1
+            // label3
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(470, 281);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 12;
-            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(297, 281);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(161, 19);
-            this.label1.TabIndex = 13;
-            this.label1.Text = "Selecione nueva fecha:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 340);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(156, 19);
-            this.label2.TabIndex = 14;
-            this.label2.Text = "Selecione nueva hora:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(212, 388);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 15;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(230, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 16;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(358, 25);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 17;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(481, 25);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 18;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(328, 345);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "label3";
             // 
             // Ver_cita
             // 
@@ -210,10 +257,13 @@ namespace CAPA_PRESENTACION
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.fecha3);
+            this.Controls.Add(this.selecion);
+            this.Controls.Add(this.texthoraA);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.monthfechaactu);
             this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.Titulo1);
             this.Controls.Add(this.dtacita);
@@ -234,12 +284,16 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label Titulo1;
         private Buttonpersolizado btnposponer;
         private Paneldegradado paneldegradado1;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.MonthCalendar monthfechaactu;
+        private System.Windows.Forms.TextBox textfecha;
+        private System.Windows.Forms.TextBox textremision;
+        private System.Windows.Forms.TextBox textidcita;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox texthoraA;
+        private System.Windows.Forms.TextBox texfecha2;
+        private System.Windows.Forms.Label selecion;
+        private System.Windows.Forms.Label fecha3;
+        private System.Windows.Forms.Label label3;
     }
 }

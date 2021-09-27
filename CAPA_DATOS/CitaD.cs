@@ -135,7 +135,7 @@ namespace CAPA_DATOS
 
 
                 SqlParameter hora = new SqlParameter();
-                hora.ParameterName = "@Fecha";
+                hora.ParameterName = "@Hora";
                 hora.SqlDbType = SqlDbType.DateTime;
                 //Id_seguimiento.Size = 50;
                 hora.Value = expCt.Hora1;
@@ -143,7 +143,7 @@ namespace CAPA_DATOS
 
 
 
-                if (sp_Newcita.ExecuteNonQuery() == 1)
+                if (sp_Newcita.ExecuteNonQuery() == 0)
                 {
                     retorno = "Everything it's ok";
                 }

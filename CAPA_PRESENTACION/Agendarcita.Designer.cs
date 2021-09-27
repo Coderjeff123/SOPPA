@@ -236,6 +236,7 @@ namespace CAPA_PRESENTACION
             this.texvalor.Size = new System.Drawing.Size(100, 20);
             this.texvalor.TabIndex = 15;
             this.texvalor.Visible = false;
+            this.texvalor.TextChanged += new System.EventHandler(this.texvalor_TextChanged);
             // 
             // btnagen
             // 

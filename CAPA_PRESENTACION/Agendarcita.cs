@@ -178,6 +178,11 @@ namespace CAPA_PRESENTACION
 
         }
 
+        private void texvalor_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
 
 
 
