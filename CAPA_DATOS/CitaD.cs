@@ -184,7 +184,7 @@ namespace CAPA_DATOS
                 sp_Newcita.CommandType = CommandType.StoredProcedure;
 
 
-
+                /// hya ta
 
                 SqlDataAdapter adartar = new SqlDataAdapter(sp_Newcita);
                 adartar.Fill(showcita);
