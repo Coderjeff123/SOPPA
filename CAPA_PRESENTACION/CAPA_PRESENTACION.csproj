@@ -74,12 +74,6 @@
     <Compile Include="Agendarcita.Designer.cs">
       <DependentUpon>Agendarcita.cs</DependentUpon>
     </Compile>
-    <Compile Include="Agendarcitahijo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Agendarcitahijo.Designer.cs">
-      <DependentUpon>Agendarcitahijo.cs</DependentUpon>
-    </Compile>
     <Compile Include="Buttonpersolizado.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -178,9 +172,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Agendarcita.resx">
       <DependentUpon>Agendarcita.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Agendarcitahijo.resx">
-      <DependentUpon>Agendarcitahijo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cambiar contraseña.resx">
       <DependentUpon>Cambiar contraseña.cs</DependentUpon>

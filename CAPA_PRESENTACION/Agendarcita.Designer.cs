@@ -38,7 +38,10 @@ namespace CAPA_PRESENTACION
             this.dtaagendar = new System.Windows.Forms.DataGridView();
             this.paneldegra22 = new CAPA_PRESENTACION.paneldegra2();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelagenda = new CAPA_PRESENTACION.Paneldegradado();
+            this.texthora = new System.Windows.Forms.TextBox();
             this.texvalor = new System.Windows.Forms.TextBox();
             this.btnagen = new CAPA_PRESENTACION.Buttonpersolizado();
             this.Fechacita = new System.Windows.Forms.Label();
@@ -57,8 +60,6 @@ namespace CAPA_PRESENTACION
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textagendar = new System.Windows.Forms.TextBox();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).BeginInit();
             this.paneldegra22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -181,15 +182,27 @@ namespace CAPA_PRESENTACION
             this.dataGridView2.ShowCellToolTips = false;
             this.dataGridView2.ShowEditingIcon = false;
             this.dataGridView2.ShowRowErrors = false;
-            this.dataGridView2.Size = new System.Drawing.Size(390, 555);
+            this.dataGridView2.Size = new System.Drawing.Size(390, 569);
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Hora";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre del estudiante";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // panelagenda
             // 
             this.panelagenda.angulo = 0F;
             this.panelagenda.Colorleft = System.Drawing.Color.Empty;
             this.panelagenda.Colorrigth = System.Drawing.Color.Empty;
+            this.panelagenda.Controls.Add(this.texthora);
             this.panelagenda.Controls.Add(this.texvalor);
             this.panelagenda.Controls.Add(this.btnagen);
             this.panelagenda.Controls.Add(this.Fechacita);
@@ -209,9 +222,17 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Size = new System.Drawing.Size(372, 560);
             this.panelagenda.TabIndex = 6;
             // 
+            // texthora
+            // 
+            this.texthora.Location = new System.Drawing.Point(224, 533);
+            this.texthora.Name = "texthora";
+            this.texthora.Size = new System.Drawing.Size(100, 20);
+            this.texthora.TabIndex = 16;
+            this.texthora.Visible = false;
+            // 
             // texvalor
             // 
-            this.texvalor.Location = new System.Drawing.Point(220, 507);
+            this.texvalor.Location = new System.Drawing.Point(104, 533);
             this.texvalor.Name = "texvalor";
             this.texvalor.Size = new System.Drawing.Size(100, 20);
             this.texvalor.TabIndex = 15;
@@ -473,17 +494,6 @@ namespace CAPA_PRESENTACION
             this.textagendar.Size = new System.Drawing.Size(415, 20);
             this.textagendar.TabIndex = 1;
             // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Hora";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Nombre del estudiante";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
             // Agendarcita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -536,5 +546,6 @@ namespace CAPA_PRESENTACION
         public System.Windows.Forms.MonthCalendar Calendaragenda;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.TextBox texthora;
     }
 }
