@@ -232,7 +232,7 @@ namespace CAPA_PRESENTACION
             // 
             // texvalor
             // 
-            this.texvalor.Location = new System.Drawing.Point(104, 533);
+            this.texvalor.Location = new System.Drawing.Point(108, 533);
             this.texvalor.Name = "texvalor";
             this.texvalor.Size = new System.Drawing.Size(100, 20);
             this.texvalor.TabIndex = 15;
