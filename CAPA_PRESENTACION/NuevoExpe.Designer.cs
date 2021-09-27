@@ -30,9 +30,9 @@ namespace CAPA_PRESENTACION
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
             this.rbtinactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
@@ -240,7 +240,7 @@ namespace CAPA_PRESENTACION
             this.panelBuscaestu.Controls.Add(this.button1);
             this.panelBuscaestu.Location = new System.Drawing.Point(0, 0);
             this.panelBuscaestu.Name = "panelBuscaestu";
-            this.panelBuscaestu.Size = new System.Drawing.Size(818, 67);
+            this.panelBuscaestu.Size = new System.Drawing.Size(770, 67);
             this.panelBuscaestu.TabIndex = 6;
             // 
             // txtnom
@@ -309,37 +309,37 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaexpe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaexpe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtaexpe.ColumnHeadersHeight = 30;
             this.dtaexpe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtaexpe.EnableHeadersVisualStyles = false;
             this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dtaexpe.Location = new System.Drawing.Point(-3, 67);
             this.dtaexpe.Name = "dtaexpe";
             this.dtaexpe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaexpe.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaexpe.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dtaexpe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dtaexpe.ShowCellErrors = false;
             this.dtaexpe.ShowCellToolTips = false;
@@ -358,9 +358,9 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Controls.Add(this.button2);
             this.paneldegradado1.Controls.Add(this.btnremitir);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.paneldegradado1.Location = new System.Drawing.Point(0, 552);
+            this.paneldegradado1.Location = new System.Drawing.Point(0, 458);
             this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(770, 47);
+            this.paneldegradado1.Size = new System.Drawing.Size(768, 47);
             this.paneldegradado1.TabIndex = 6;
             // 
             // btnlimpiar
@@ -375,7 +375,7 @@ namespace CAPA_PRESENTACION
             this.btnlimpiar.ForeColor = System.Drawing.Color.Black;
             this.btnlimpiar.Image = global::CAPA_PRESENTACION.Properties.Resources.edit_clear_all_icon_180807;
             this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlimpiar.Location = new System.Drawing.Point(11, 1);
+            this.btnlimpiar.Location = new System.Drawing.Point(10, 1);
             this.btnlimpiar.Name = "btnlimpiar";
             this.btnlimpiar.Size = new System.Drawing.Size(104, 39);
             this.btnlimpiar.TabIndex = 9;
@@ -397,7 +397,7 @@ namespace CAPA_PRESENTACION
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.canceltheapplication_cancelar_2901;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(646, 3);
+            this.button2.Location = new System.Drawing.Point(645, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(116, 39);
             this.button2.TabIndex = 8;
@@ -419,7 +419,7 @@ namespace CAPA_PRESENTACION
             this.btnremitir.ForeColor = System.Drawing.Color.Black;
             this.btnremitir.Image = global::CAPA_PRESENTACION.Properties.Resources.ok_accept_3523;
             this.btnremitir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnremitir.Location = new System.Drawing.Point(536, 4);
+            this.btnremitir.Location = new System.Drawing.Point(535, 4);
             this.btnremitir.Name = "btnremitir";
             this.btnremitir.Size = new System.Drawing.Size(104, 39);
             this.btnremitir.TabIndex = 7;
@@ -443,7 +443,7 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneldegra21.Location = new System.Drawing.Point(0, 0);
             this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(770, 132);
+            this.paneldegra21.Size = new System.Drawing.Size(768, 132);
             this.paneldegra21.TabIndex = 7;
             // 
             // txtmotivo
@@ -559,7 +559,7 @@ namespace CAPA_PRESENTACION
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(770, 599);
+            this.ClientSize = new System.Drawing.Size(768, 505);
             this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.panelinfo);
             this.Controls.Add(this.paneldegradado1);

@@ -51,24 +51,13 @@ namespace CAPA_PRESENTACION
 
         //Tema Acua
         private static readonly Color PanelPadreA = Color.FromArgb(17, 47, 51);
-        private static readonly Color PanelBotonesA = Color.FromArgb(33, 92, 99);
+        private static readonly Color PanelBotonesAL = Color.FromArgb(33, 92, 99);
+        private static readonly Color PanelBotonesAF = Color.FromArgb(95, 158, 160);
         private static readonly Color BarraTituloA = Color.FromArgb(37, 115, 125);
         private static readonly Color TextBusquedaA = Color.FromArgb(58, 162, 176);
         private static readonly Color FuenteIconosA = Color.White;
 
-        //Tema Naranja
-        private static readonly Color PanelPadreN = Color.FromArgb(51, 35, 3);
-        private static readonly Color PanelBotonesN = Color.FromArgb(99, 68, 6);
-        private static readonly Color BarraTituloN = Color.FromArgb(125, 85, 4);
-        private static readonly Color TextBusquedaN = Color.FromArgb(181, 124, 11);
-        private static readonly Color FuenteIconosN = Color.White;
 
-        //tema Blue
-        private static readonly Color PanelPadreB = Color.FromArgb(15, 6, 51);
-        private static readonly Color PanelBotonesB = Color.FromArgb(30, 11, 99);
-        private static readonly Color BarraTituloB = Color.FromArgb(35, 10, 125);
-        private static readonly Color TextBusquedaB = Color.FromArgb(55, 20, 179);
-        private static readonly Color FuenteIconosB = Color.White;
 
         //SeleccionarColores
         #region -> Metodos
@@ -113,29 +102,13 @@ namespace CAPA_PRESENTACION
             if (Tema == "Acua")
             {
                 PanelPadre = PanelPadreA;
-                PanelBotones = PanelBotonesA;
+                PanelBotones = PanelBotonesAL;
+                panlebotones = PanelBotonesAF;
                 BarraTitulo = BarraTituloA;
                 TextBusqueda = TextBusquedaA;
                 FuenteIconos = FuenteIconosA;
             }
 
-            if (Tema == "Naranja")
-            {
-                PanelPadre = PanelPadreN;
-                PanelBotones = PanelBotonesN;
-                BarraTitulo = BarraTituloN;
-                TextBusqueda = TextBusquedaN;
-                FuenteIconos = FuenteIconosN;
-            }
-
-            if (Tema == "Azul")
-            {
-                PanelPadre = PanelPadreB;
-                PanelBotones = PanelBotonesB;
-                BarraTitulo = BarraTituloB;
-                TextBusqueda = TextBusquedaB;
-                FuenteIconos = FuenteIconosB;
-            }
         }
         #endregion
     }

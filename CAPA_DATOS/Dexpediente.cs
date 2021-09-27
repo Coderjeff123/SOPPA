@@ -62,14 +62,6 @@ namespace CAPA_DATOS
                 SP_NewEX.CommandText = "psci.SP_NewE";
                 SP_NewEX.CommandType = CommandType.StoredProcedure;
 
-                SqlParameter id_expediente = new SqlParameter();
-                id_expediente.ParameterName = "@ID_Expediente";
-                id_expediente.SqlDbType = SqlDbType.Int;
-                //Nombre.Size = 50;
-                id_expediente.Value = expE.ID_Expediente1;
-                SP_NewEX.Parameters.Add(ID_Expediente1);
-
-
                 SqlParameter Nombre = new SqlParameter();
                 Nombre.ParameterName = "@Nombre";
                 Nombre.SqlDbType = SqlDbType.NVarChar;

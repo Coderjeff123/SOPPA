@@ -306,7 +306,13 @@ namespace CAPA_PRESENTACION
                 dtaactividad.Rows.Add();                
             }
             Cargarfecha();
-            Class1.ElegirTema("Celeste");
+            Temas("Acua");
+           
+        }
+
+        private void Temas(string tema)
+        {
+            Class1.ElegirTema(tema);
             paneldegradado1.Colorleft = Class1.PanelBotones;
             paneldegradado1.Colorrigth = Class1.panlebotones;
             panelFormhijo.BackColor = Class1.PanelPadre;
@@ -392,6 +398,19 @@ namespace CAPA_PRESENTACION
         {
             Cambiar_contraseña cambiar = new Cambiar_contraseña();
             cambiar.Show();
+        }
+
+        private void btncambiartema_Click(object sender, EventArgs e)
+        {
+
+            
+            Temas temas = new Temas();
+            temas.ShowDialog();
+            Temas(temas.Tema);
+            this.Refresh();
+
+
+
         }
     }
 } 

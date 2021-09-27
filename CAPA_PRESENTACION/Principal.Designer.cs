@@ -42,6 +42,7 @@ namespace CAPA_PRESENTACION
             this.btncloseform = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.opc = new CAPA_PRESENTACION.paneldegra2();
+            this.btncambiartema = new CAPA_PRESENTACION.Buttonpersolizado();
             this.btncerrarsesion = new CAPA_PRESENTACION.Buttonpersolizado();
             this.btncambiarcon = new CAPA_PRESENTACION.Buttonpersolizado();
             this.btnimagenper = new CAPA_PRESENTACION.Buttonpersolizado();
@@ -189,14 +190,38 @@ namespace CAPA_PRESENTACION
             this.opc.BackColor = System.Drawing.Color.DodgerBlue;
             this.opc.Colorleft = System.Drawing.Color.DodgerBlue;
             this.opc.Colorrigth = System.Drawing.Color.DeepSkyBlue;
+            this.opc.Controls.Add(this.btncambiartema);
             this.opc.Controls.Add(this.btncerrarsesion);
             this.opc.Controls.Add(this.btncambiarcon);
             this.opc.Controls.Add(this.btnimagenper);
-            this.opc.Location = new System.Drawing.Point(-1, 84);
+            this.opc.Location = new System.Drawing.Point(-1, 70);
             this.opc.Name = "opc";
-            this.opc.Size = new System.Drawing.Size(200, 156);
+            this.opc.Size = new System.Drawing.Size(200, 170);
             this.opc.TabIndex = 4;
             this.opc.Visible = false;
+            // 
+            // btncambiartema
+            // 
+            this.btncambiartema.BackColor = System.Drawing.Color.Transparent;
+            this.btncambiartema.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btncambiartema.BorderColor = System.Drawing.Color.Blue;
+            this.btncambiartema.BorderRadius = 0;
+            this.btncambiartema.BorderSize = 1;
+            this.btncambiartema.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncambiartema.FlatAppearance.BorderSize = 0;
+            this.btncambiartema.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncambiartema.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncambiartema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncambiartema.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncambiartema.ForeColor = System.Drawing.Color.White;
+            this.btncambiartema.Location = new System.Drawing.Point(0, 85);
+            this.btncambiartema.Name = "btncambiartema";
+            this.btncambiartema.Size = new System.Drawing.Size(200, 41);
+            this.btncambiartema.TabIndex = 3;
+            this.btncambiartema.Text = "Cambiar Tema";
+            this.btncambiartema.TextColor = System.Drawing.Color.White;
+            this.btncambiartema.UseVisualStyleBackColor = false;
+            this.btncambiartema.Click += new System.EventHandler(this.btncambiartema_Click);
             // 
             // btncerrarsesion
             // 
@@ -205,16 +230,16 @@ namespace CAPA_PRESENTACION
             this.btncerrarsesion.BorderColor = System.Drawing.Color.Blue;
             this.btncerrarsesion.BorderRadius = 0;
             this.btncerrarsesion.BorderSize = 1;
-            this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btncerrarsesion.FlatAppearance.BorderSize = 0;
             this.btncerrarsesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btncerrarsesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
             this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncerrarsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
-            this.btncerrarsesion.Location = new System.Drawing.Point(0, 80);
+            this.btncerrarsesion.Location = new System.Drawing.Point(0, 124);
             this.btncerrarsesion.Name = "btncerrarsesion";
-            this.btncerrarsesion.Size = new System.Drawing.Size(200, 40);
+            this.btncerrarsesion.Size = new System.Drawing.Size(200, 46);
             this.btncerrarsesion.TabIndex = 2;
             this.btncerrarsesion.Text = "Cerrar Sesión";
             this.btncerrarsesion.TextColor = System.Drawing.Color.White;
@@ -235,7 +260,7 @@ namespace CAPA_PRESENTACION
             this.btncambiarcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btncambiarcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btncambiarcon.ForeColor = System.Drawing.Color.White;
-            this.btncambiarcon.Location = new System.Drawing.Point(0, 40);
+            this.btncambiarcon.Location = new System.Drawing.Point(0, 45);
             this.btncambiarcon.Name = "btncambiarcon";
             this.btncambiarcon.Size = new System.Drawing.Size(200, 40);
             this.btncambiarcon.TabIndex = 1;
@@ -260,7 +285,7 @@ namespace CAPA_PRESENTACION
             this.btnimagenper.ForeColor = System.Drawing.Color.White;
             this.btnimagenper.Location = new System.Drawing.Point(0, 0);
             this.btnimagenper.Name = "btnimagenper";
-            this.btnimagenper.Size = new System.Drawing.Size(200, 40);
+            this.btnimagenper.Size = new System.Drawing.Size(200, 45);
             this.btnimagenper.TabIndex = 0;
             this.btnimagenper.Text = "Cambiar imagen de perfil";
             this.btnimagenper.TextColor = System.Drawing.Color.White;
@@ -837,5 +862,6 @@ namespace CAPA_PRESENTACION
         private Buttonpersolizado btncerrarsesion;
         private Buttonpersolizado btncambiarcon;
         private Buttonpersolizado btnimagenper;
+        private Buttonpersolizado btncambiartema;
     }
 }
