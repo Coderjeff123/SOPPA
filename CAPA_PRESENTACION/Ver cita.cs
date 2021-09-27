@@ -30,5 +30,15 @@ namespace CAPA_PRESENTACION
         {
             btnposponer.Enabled = true;
         }
+
+        private void dtacita_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
     }
 }

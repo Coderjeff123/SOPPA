@@ -146,13 +146,13 @@ namespace CAPA_PRESENTACION
            //buscra tabla procedimiento almacenado 
            //dataGridView2.Rows.Add(fi);
             textnombre.Texts = "";
-
+            texthora.Text = "";
            
             texvalor.Text = Calendaragenda.SelectionStart.Day.ToString() + "/" + Calendaragenda.SelectionStart.Month.ToString() + "/" + Calendaragenda.SelectionStart.Year.ToString();
-            
-            
-            
-            
+            texthora.Text = dataGridView2.CurrentRow.Cells[0].Value.ToString();
+
+
+
            // int ins;
 
             CitaN ins = new CitaN();
@@ -161,13 +161,19 @@ namespace CAPA_PRESENTACION
            int codigo = Convert.ToInt32(textcodici.Texts);
           //  int codigoci = Convert.ToInt32(textcodici.Texts);
 
-            ins.insertcita(codigo,Convert.ToDateTime(texvalor.Text));
+            ins.insertcita(codigo,Convert.ToDateTime(texvalor.Text),Convert.ToDateTime(texthora.Text));
 
+            MessageBox.Show("Se ha agendado exitosamente la cita");
 
 
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click_1(object sender, EventArgs e)
         {
 
         }

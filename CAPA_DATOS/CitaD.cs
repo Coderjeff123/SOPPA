@@ -13,20 +13,22 @@ namespace CAPA_DATOS
         int ID_Cita;
         int ID_Remision;
         DateTime Fecha;
+        DateTime Hora;
 
         public CitaD(){}
 
-        public CitaD(int iD_Cita1, int iD_Remision1, DateTime fecha1)
+        public CitaD(int iD_Cita1, int iD_Remision1, DateTime fecha1,DateTime hora1)
         {
             ID_Cita1 = iD_Cita1;
             ID_Remision1 = iD_Remision1;
             Fecha1 = fecha1;
+            Hora1 = hora1;
         }
 
         public int ID_Cita1 { get => ID_Cita; set => ID_Cita = value; }
         public int ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
         public DateTime Fecha1 { get => Fecha; set => Fecha = value; }
-
+        public DateTime Hora1 { get => Hora; set => Hora = value; }
 
         public string insertcita(CitaD expCt)
         {
@@ -59,7 +61,15 @@ namespace CAPA_DATOS
                 fecha.Value = expCt.Fecha1;
                 sp_Newcita.Parameters.Add(fecha);
 
-               
+                SqlParameter hora = new SqlParameter();
+                hora.ParameterName = "@Hora";
+                hora.SqlDbType = SqlDbType.DateTime;
+                //Id_seguimiento.Size = 50;
+                hora.Value = expCt.Hora1;
+                sp_Newcita.Parameters.Add(hora);
+
+
+
 
                 if (sp_Newcita.ExecuteNonQuery()==1)
                 {
@@ -124,6 +134,12 @@ namespace CAPA_DATOS
                 sp_Newcita.Parameters.Add(fecha);
 
 
+                SqlParameter hora = new SqlParameter();
+                hora.ParameterName = "@Fecha";
+                hora.SqlDbType = SqlDbType.DateTime;
+                //Id_seguimiento.Size = 50;
+                hora.Value = expCt.Hora1;
+                sp_Newcita.Parameters.Add(hora);
 
 
 

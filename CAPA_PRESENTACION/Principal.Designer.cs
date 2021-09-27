@@ -34,7 +34,17 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnresform = new System.Windows.Forms.Button();
+            this.btnminform = new System.Windows.Forms.Button();
+            this.btnmaxform = new System.Windows.Forms.Button();
+            this.btncloseform = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.opc = new CAPA_PRESENTACION.paneldegra2();
+            this.btncerrarsesion = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btncambiarcon = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.btnimagenper = new CAPA_PRESENTACION.Buttonpersolizado();
             this.dtaactividad = new System.Windows.Forms.DataGridView();
             this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,10 +52,6 @@ namespace CAPA_PRESENTACION
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panelFormhijo = new System.Windows.Forms.Panel();
             this.panelmenu = new System.Windows.Forms.Panel();
-            this.opc = new CAPA_PRESENTACION.paneldegra2();
-            this.btncerrarsesion = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.btncambiarcon = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.btnimagenper = new CAPA_PRESENTACION.Buttonpersolizado();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.Congf = new CAPA_PRESENTACION.Buttonpersolizado();
             this.panelsubmenuinformes = new System.Windows.Forms.Panel();
@@ -65,24 +71,18 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta = new System.Windows.Forms.Button();
             this.btncon = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnresform = new System.Windows.Forms.Button();
-            this.btnminform = new System.Windows.Forms.Button();
-            this.btnmaxform = new System.Windows.Forms.Button();
-            this.btncloseform = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.paneldegradado2.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel4.SuspendLayout();
+            this.opc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).BeginInit();
             this.panelmenu.SuspendLayout();
-            this.opc.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
             this.panelsubmenuinformes.SuspendLayout();
             this.panelsubmenuexpe.SuspendLayout();
             this.panelsubmenucita.SuspendLayout();
             this.panelsubmenuconsulta.SuspendLayout();
-            this.paneldegradado2.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,6 +94,82 @@ namespace CAPA_PRESENTACION
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(992, 44);
             this.panel1.TabIndex = 0;
+            // 
+            // paneldegradado2
+            // 
+            this.paneldegradado2.angulo = 0F;
+            this.paneldegradado2.BackColor = System.Drawing.Color.CadetBlue;
+            this.paneldegradado2.Colorleft = System.Drawing.Color.Transparent;
+            this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
+            this.paneldegradado2.Controls.Add(this.panel2);
+            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
+            this.paneldegradado2.Name = "paneldegradado2";
+            this.paneldegradado2.Size = new System.Drawing.Size(992, 44);
+            this.paneldegradado2.TabIndex = 0;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.btnresform);
+            this.panel2.Controls.Add(this.btnminform);
+            this.panel2.Controls.Add(this.btnmaxform);
+            this.panel2.Controls.Add(this.btncloseform);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(868, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(124, 44);
+            this.panel2.TabIndex = 7;
+            // 
+            // btnresform
+            // 
+            this.btnresform.FlatAppearance.BorderSize = 0;
+            this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
+            this.btnresform.Location = new System.Drawing.Point(44, 2);
+            this.btnresform.Name = "btnresform";
+            this.btnresform.Size = new System.Drawing.Size(38, 41);
+            this.btnresform.TabIndex = 4;
+            this.btnresform.UseVisualStyleBackColor = true;
+            this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
+            // 
+            // btnminform
+            // 
+            this.btnminform.FlatAppearance.BorderSize = 0;
+            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
+            this.btnminform.Location = new System.Drawing.Point(3, 0);
+            this.btnminform.Name = "btnminform";
+            this.btnminform.Size = new System.Drawing.Size(38, 41);
+            this.btnminform.TabIndex = 6;
+            this.btnminform.UseVisualStyleBackColor = true;
+            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
+            // 
+            // btnmaxform
+            // 
+            this.btnmaxform.FlatAppearance.BorderSize = 0;
+            this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
+            this.btnmaxform.Location = new System.Drawing.Point(44, 2);
+            this.btnmaxform.Name = "btnmaxform";
+            this.btnmaxform.Size = new System.Drawing.Size(38, 36);
+            this.btnmaxform.TabIndex = 5;
+            this.btnmaxform.UseVisualStyleBackColor = true;
+            this.btnmaxform.Visible = false;
+            this.btnmaxform.Click += new System.EventHandler(this.btnmaxform_Click);
+            // 
+            // btncloseform
+            // 
+            this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btncloseform.FlatAppearance.BorderSize = 0;
+            this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.delete_remove_close_icon_1815331;
+            this.btncloseform.Location = new System.Drawing.Point(89, 0);
+            this.btncloseform.Name = "btncloseform";
+            this.btncloseform.Size = new System.Drawing.Size(35, 44);
+            this.btncloseform.TabIndex = 1;
+            this.btncloseform.UseVisualStyleBackColor = true;
+            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
             // 
             // panel4
             // 
@@ -107,6 +183,88 @@ namespace CAPA_PRESENTACION
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(768, 240);
             this.panel4.TabIndex = 2;
+            // 
+            // opc
+            // 
+            this.opc.BackColor = System.Drawing.Color.DodgerBlue;
+            this.opc.Colorleft = System.Drawing.Color.DodgerBlue;
+            this.opc.Colorrigth = System.Drawing.Color.DeepSkyBlue;
+            this.opc.Controls.Add(this.btncerrarsesion);
+            this.opc.Controls.Add(this.btncambiarcon);
+            this.opc.Controls.Add(this.btnimagenper);
+            this.opc.Location = new System.Drawing.Point(-1, 84);
+            this.opc.Name = "opc";
+            this.opc.Size = new System.Drawing.Size(200, 156);
+            this.opc.TabIndex = 4;
+            this.opc.Visible = false;
+            // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.BackColor = System.Drawing.Color.Transparent;
+            this.btncerrarsesion.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btncerrarsesion.BorderColor = System.Drawing.Color.Blue;
+            this.btncerrarsesion.BorderRadius = 0;
+            this.btncerrarsesion.BorderSize = 1;
+            this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncerrarsesion.FlatAppearance.BorderSize = 0;
+            this.btncerrarsesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncerrarsesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncerrarsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
+            this.btncerrarsesion.Location = new System.Drawing.Point(0, 80);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Size = new System.Drawing.Size(200, 40);
+            this.btncerrarsesion.TabIndex = 2;
+            this.btncerrarsesion.Text = "Cerrar Sesión";
+            this.btncerrarsesion.TextColor = System.Drawing.Color.White;
+            this.btncerrarsesion.UseVisualStyleBackColor = false;
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
+            // 
+            // btncambiarcon
+            // 
+            this.btncambiarcon.BackColor = System.Drawing.Color.Transparent;
+            this.btncambiarcon.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btncambiarcon.BorderColor = System.Drawing.Color.Blue;
+            this.btncambiarcon.BorderRadius = 0;
+            this.btncambiarcon.BorderSize = 1;
+            this.btncambiarcon.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btncambiarcon.FlatAppearance.BorderSize = 0;
+            this.btncambiarcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncambiarcon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btncambiarcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btncambiarcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncambiarcon.ForeColor = System.Drawing.Color.White;
+            this.btncambiarcon.Location = new System.Drawing.Point(0, 40);
+            this.btncambiarcon.Name = "btncambiarcon";
+            this.btncambiarcon.Size = new System.Drawing.Size(200, 40);
+            this.btncambiarcon.TabIndex = 1;
+            this.btncambiarcon.Text = "Cambiar contraseña\r\n";
+            this.btncambiarcon.TextColor = System.Drawing.Color.White;
+            this.btncambiarcon.UseVisualStyleBackColor = false;
+            this.btncambiarcon.Click += new System.EventHandler(this.btncambiarcon_Click);
+            // 
+            // btnimagenper
+            // 
+            this.btnimagenper.BackColor = System.Drawing.Color.Transparent;
+            this.btnimagenper.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnimagenper.BorderColor = System.Drawing.Color.MediumBlue;
+            this.btnimagenper.BorderRadius = 0;
+            this.btnimagenper.BorderSize = 1;
+            this.btnimagenper.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnimagenper.FlatAppearance.BorderSize = 0;
+            this.btnimagenper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnimagenper.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnimagenper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnimagenper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnimagenper.ForeColor = System.Drawing.Color.White;
+            this.btnimagenper.Location = new System.Drawing.Point(0, 0);
+            this.btnimagenper.Name = "btnimagenper";
+            this.btnimagenper.Size = new System.Drawing.Size(200, 40);
+            this.btnimagenper.TabIndex = 0;
+            this.btnimagenper.Text = "Cambiar imagen de perfil";
+            this.btnimagenper.TextColor = System.Drawing.Color.White;
+            this.btnimagenper.UseVisualStyleBackColor = false;
             // 
             // dtaactividad
             // 
@@ -218,88 +376,6 @@ namespace CAPA_PRESENTACION
             this.panelmenu.Name = "panelmenu";
             this.panelmenu.Size = new System.Drawing.Size(224, 744);
             this.panelmenu.TabIndex = 1;
-            // 
-            // opc
-            // 
-            this.opc.BackColor = System.Drawing.Color.DodgerBlue;
-            this.opc.Colorleft = System.Drawing.Color.DodgerBlue;
-            this.opc.Colorrigth = System.Drawing.Color.DeepSkyBlue;
-            this.opc.Controls.Add(this.btncerrarsesion);
-            this.opc.Controls.Add(this.btncambiarcon);
-            this.opc.Controls.Add(this.btnimagenper);
-            this.opc.Location = new System.Drawing.Point(-1, 84);
-            this.opc.Name = "opc";
-            this.opc.Size = new System.Drawing.Size(200, 156);
-            this.opc.TabIndex = 4;
-            this.opc.Visible = false;
-            // 
-            // btncerrarsesion
-            // 
-            this.btncerrarsesion.BackColor = System.Drawing.Color.Transparent;
-            this.btncerrarsesion.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btncerrarsesion.BorderColor = System.Drawing.Color.Blue;
-            this.btncerrarsesion.BorderRadius = 0;
-            this.btncerrarsesion.BorderSize = 1;
-            this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btncerrarsesion.FlatAppearance.BorderSize = 0;
-            this.btncerrarsesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btncerrarsesion.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btncerrarsesion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncerrarsesion.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncerrarsesion.ForeColor = System.Drawing.Color.White;
-            this.btncerrarsesion.Location = new System.Drawing.Point(0, 80);
-            this.btncerrarsesion.Name = "btncerrarsesion";
-            this.btncerrarsesion.Size = new System.Drawing.Size(200, 40);
-            this.btncerrarsesion.TabIndex = 2;
-            this.btncerrarsesion.Text = "Cerrar Sesión";
-            this.btncerrarsesion.TextColor = System.Drawing.Color.White;
-            this.btncerrarsesion.UseVisualStyleBackColor = false;
-            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
-            // 
-            // btncambiarcon
-            // 
-            this.btncambiarcon.BackColor = System.Drawing.Color.Transparent;
-            this.btncambiarcon.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btncambiarcon.BorderColor = System.Drawing.Color.Blue;
-            this.btncambiarcon.BorderRadius = 0;
-            this.btncambiarcon.BorderSize = 1;
-            this.btncambiarcon.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btncambiarcon.FlatAppearance.BorderSize = 0;
-            this.btncambiarcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btncambiarcon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btncambiarcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncambiarcon.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncambiarcon.ForeColor = System.Drawing.Color.White;
-            this.btncambiarcon.Location = new System.Drawing.Point(0, 40);
-            this.btncambiarcon.Name = "btncambiarcon";
-            this.btncambiarcon.Size = new System.Drawing.Size(200, 40);
-            this.btncambiarcon.TabIndex = 1;
-            this.btncambiarcon.Text = "Cambiar contraseña\r\n";
-            this.btncambiarcon.TextColor = System.Drawing.Color.White;
-            this.btncambiarcon.UseVisualStyleBackColor = false;
-            this.btncambiarcon.Click += new System.EventHandler(this.btncambiarcon_Click);
-            // 
-            // btnimagenper
-            // 
-            this.btnimagenper.BackColor = System.Drawing.Color.Transparent;
-            this.btnimagenper.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnimagenper.BorderColor = System.Drawing.Color.MediumBlue;
-            this.btnimagenper.BorderRadius = 0;
-            this.btnimagenper.BorderSize = 1;
-            this.btnimagenper.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnimagenper.FlatAppearance.BorderSize = 0;
-            this.btnimagenper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnimagenper.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DeepSkyBlue;
-            this.btnimagenper.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnimagenper.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnimagenper.ForeColor = System.Drawing.Color.White;
-            this.btnimagenper.Location = new System.Drawing.Point(0, 0);
-            this.btnimagenper.Name = "btnimagenper";
-            this.btnimagenper.Size = new System.Drawing.Size(200, 40);
-            this.btnimagenper.TabIndex = 0;
-            this.btnimagenper.Text = "Cambiar imagen de perfil";
-            this.btnimagenper.TextColor = System.Drawing.Color.White;
-            this.btnimagenper.UseVisualStyleBackColor = false;
             // 
             // paneldegradado1
             // 
@@ -688,82 +764,6 @@ namespace CAPA_PRESENTACION
             this.panel3.TabIndex = 0;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
             // 
-            // paneldegradado2
-            // 
-            this.paneldegradado2.angulo = 0F;
-            this.paneldegradado2.BackColor = System.Drawing.Color.CadetBlue;
-            this.paneldegradado2.Colorleft = System.Drawing.Color.Transparent;
-            this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
-            this.paneldegradado2.Controls.Add(this.panel2);
-            this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
-            this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(992, 44);
-            this.paneldegradado2.TabIndex = 0;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Transparent;
-            this.panel2.Controls.Add(this.btnresform);
-            this.panel2.Controls.Add(this.btnminform);
-            this.panel2.Controls.Add(this.btnmaxform);
-            this.panel2.Controls.Add(this.btncloseform);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(868, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(124, 44);
-            this.panel2.TabIndex = 7;
-            // 
-            // btnresform
-            // 
-            this.btnresform.FlatAppearance.BorderSize = 0;
-            this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
-            this.btnresform.Location = new System.Drawing.Point(44, 2);
-            this.btnresform.Name = "btnresform";
-            this.btnresform.Size = new System.Drawing.Size(38, 41);
-            this.btnresform.TabIndex = 4;
-            this.btnresform.UseVisualStyleBackColor = true;
-            this.btnresform.Click += new System.EventHandler(this.btnresform_Click);
-            // 
-            // btnminform
-            // 
-            this.btnminform.FlatAppearance.BorderSize = 0;
-            this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
-            this.btnminform.Location = new System.Drawing.Point(3, 0);
-            this.btnminform.Name = "btnminform";
-            this.btnminform.Size = new System.Drawing.Size(38, 41);
-            this.btnminform.TabIndex = 6;
-            this.btnminform.UseVisualStyleBackColor = true;
-            this.btnminform.Click += new System.EventHandler(this.btnminform_Click);
-            // 
-            // btnmaxform
-            // 
-            this.btnmaxform.FlatAppearance.BorderSize = 0;
-            this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
-            this.btnmaxform.Location = new System.Drawing.Point(44, 2);
-            this.btnmaxform.Name = "btnmaxform";
-            this.btnmaxform.Size = new System.Drawing.Size(38, 36);
-            this.btnmaxform.TabIndex = 5;
-            this.btnmaxform.UseVisualStyleBackColor = true;
-            this.btnmaxform.Visible = false;
-            this.btnmaxform.Click += new System.EventHandler(this.btnmaxform_Click);
-            // 
-            // btncloseform
-            // 
-            this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btncloseform.FlatAppearance.BorderSize = 0;
-            this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btncloseform.Image = global::CAPA_PRESENTACION.Properties.Resources.delete_remove_close_icon_1815331;
-            this.btncloseform.Location = new System.Drawing.Point(89, 0);
-            this.btncloseform.Name = "btncloseform";
-            this.btncloseform.Size = new System.Drawing.Size(35, 44);
-            this.btncloseform.TabIndex = 1;
-            this.btncloseform.UseVisualStyleBackColor = true;
-            this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -780,18 +780,18 @@ namespace CAPA_PRESENTACION
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Principal_Load);
             this.panel1.ResumeLayout(false);
+            this.paneldegradado2.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            this.opc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).EndInit();
             this.panelmenu.ResumeLayout(false);
-            this.opc.ResumeLayout(false);
             this.paneldegradado1.ResumeLayout(false);
             this.panelsubmenuinformes.ResumeLayout(false);
             this.panelsubmenuexpe.ResumeLayout(false);
             this.panelsubmenucita.ResumeLayout(false);
             this.panelsubmenuconsulta.ResumeLayout(false);
-            this.paneldegradado2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -35,16 +35,19 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dtaagendar = new System.Windows.Forms.DataGridView();
             this.paneldegra22 = new CAPA_PRESENTACION.paneldegra2();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panelagenda = new CAPA_PRESENTACION.Paneldegradado();
+            this.texthora = new System.Windows.Forms.TextBox();
+            this.texvalor = new System.Windows.Forms.TextBox();
             this.btnagen = new CAPA_PRESENTACION.Buttonpersolizado();
             this.Fechacita = new System.Windows.Forms.Label();
             this.Calendaragenda = new System.Windows.Forms.MonthCalendar();
             this.buttonpersolizado1 = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.textapellido = new CAPA_PRESENTACION.textboxpersonal();
+            this.textcodici = new CAPA_PRESENTACION.textboxpersonal();
             this.textnombre = new CAPA_PRESENTACION.textboxpersonal();
             this.textcodigo = new CAPA_PRESENTACION.textboxpersonal();
             this.label6 = new System.Windows.Forms.Label();
@@ -57,14 +60,66 @@ namespace CAPA_PRESENTACION
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textagendar = new System.Windows.Forms.TextBox();
-            this.dtaagendar = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).BeginInit();
             this.paneldegra22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.panelagenda.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.comidin)).BeginInit();
             this.paneldegra21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).BeginInit();
             this.SuspendLayout();
+            // 
+            // dtaagendar
+            // 
+            this.dtaagendar.AllowUserToAddRows = false;
+            this.dtaagendar.AllowUserToResizeColumns = false;
+            this.dtaagendar.AllowUserToResizeRows = false;
+            this.dtaagendar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtaagendar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.dtaagendar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtaagendar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dtaagendar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dtaagendar.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaagendar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtaagendar.ColumnHeadersHeight = 30;
+            this.dtaagendar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtaagendar.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtaagendar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtaagendar.EnableHeadersVisualStyles = false;
+            this.dtaagendar.GridColor = System.Drawing.Color.SkyBlue;
+            this.dtaagendar.Location = new System.Drawing.Point(0, 73);
+            this.dtaagendar.Name = "dtaagendar";
+            this.dtaagendar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaagendar.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtaagendar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtaagendar.ShowCellErrors = false;
+            this.dtaagendar.ShowCellToolTips = false;
+            this.dtaagendar.ShowEditingIcon = false;
+            this.dtaagendar.ShowRowErrors = false;
+            this.dtaagendar.Size = new System.Drawing.Size(770, 526);
+            this.dtaagendar.TabIndex = 7;
+            this.dtaagendar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaagendar_CellDoubleClick);
+            this.dtaagendar.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaagendar_RowHeaderMouseClick);
             // 
             // paneldegra22
             // 
@@ -87,40 +142,40 @@ namespace CAPA_PRESENTACION
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DeepSkyBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView2.ColumnHeadersHeight = 30;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dataGridView2.Location = new System.Drawing.Point(388, 3);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSkyBlue;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView2.ShowCellErrors = false;
             this.dataGridView2.ShowCellToolTips = false;
@@ -146,11 +201,13 @@ namespace CAPA_PRESENTACION
             this.panelagenda.angulo = 0F;
             this.panelagenda.Colorleft = System.Drawing.Color.Empty;
             this.panelagenda.Colorrigth = System.Drawing.Color.Empty;
+            this.panelagenda.Controls.Add(this.texthora);
+            this.panelagenda.Controls.Add(this.texvalor);
             this.panelagenda.Controls.Add(this.btnagen);
             this.panelagenda.Controls.Add(this.Fechacita);
             this.panelagenda.Controls.Add(this.Calendaragenda);
             this.panelagenda.Controls.Add(this.buttonpersolizado1);
-            this.panelagenda.Controls.Add(this.textapellido);
+            this.panelagenda.Controls.Add(this.textcodici);
             this.panelagenda.Controls.Add(this.textnombre);
             this.panelagenda.Controls.Add(this.textcodigo);
             this.panelagenda.Controls.Add(this.label6);
@@ -163,6 +220,22 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Name = "panelagenda";
             this.panelagenda.Size = new System.Drawing.Size(372, 560);
             this.panelagenda.TabIndex = 6;
+            // 
+            // texthora
+            // 
+            this.texthora.Location = new System.Drawing.Point(223, 537);
+            this.texthora.Name = "texthora";
+            this.texthora.Size = new System.Drawing.Size(100, 20);
+            this.texthora.TabIndex = 16;
+            this.texthora.Visible = false;
+            // 
+            // texvalor
+            // 
+            this.texvalor.Location = new System.Drawing.Point(117, 537);
+            this.texvalor.Name = "texvalor";
+            this.texvalor.Size = new System.Drawing.Size(100, 20);
+            this.texvalor.TabIndex = 15;
+            this.texvalor.Visible = false;
             // 
             // btnagen
             // 
@@ -191,7 +264,7 @@ namespace CAPA_PRESENTACION
             this.Fechacita.AutoSize = true;
             this.Fechacita.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fechacita.ForeColor = System.Drawing.Color.White;
-            this.Fechacita.Location = new System.Drawing.Point(121, 266);
+            this.Fechacita.Location = new System.Drawing.Point(119, 275);
             this.Fechacita.Name = "Fechacita";
             this.Fechacita.Size = new System.Drawing.Size(52, 16);
             this.Fechacita.TabIndex = 13;
@@ -199,7 +272,7 @@ namespace CAPA_PRESENTACION
             // 
             // Calendaragenda
             // 
-            this.Calendaragenda.Location = new System.Drawing.Point(117, 291);
+            this.Calendaragenda.Location = new System.Drawing.Point(115, 300);
             this.Calendaragenda.Name = "Calendaragenda";
             this.Calendaragenda.TabIndex = 12;
             this.Calendaragenda.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Calendaragenda_DateChanged_1);
@@ -226,31 +299,31 @@ namespace CAPA_PRESENTACION
             this.buttonpersolizado1.UseVisualStyleBackColor = false;
             this.buttonpersolizado1.Click += new System.EventHandler(this.buttonpersolizado1_Click);
             // 
-            // textapellido
+            // textcodici
             // 
-            this.textapellido.BackColor = System.Drawing.Color.SkyBlue;
-            this.textapellido.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.textapellido.BorderFocusColor = System.Drawing.Color.Blue;
-            this.textapellido.BorderRadius = 0;
-            this.textapellido.BorderSize = 2;
-            this.textapellido.Enabled = false;
-            this.textapellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textapellido.ForeColor = System.Drawing.Color.White;
-            this.textapellido.IsFocused = false;
-            this.textapellido.IsPasswordChar = false;
-            this.textapellido.IsPlaceholder = false;
-            this.textapellido.Location = new System.Drawing.Point(94, 217);
-            this.textapellido.Margin = new System.Windows.Forms.Padding(4);
-            this.textapellido.Multiline = false;
-            this.textapellido.Name = "textapellido";
-            this.textapellido.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.textapellido.PasswordChar = false;
-            this.textapellido.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.textapellido.PlaceholderText = "";
-            this.textapellido.Size = new System.Drawing.Size(188, 31);
-            this.textapellido.TabIndex = 9;
-            this.textapellido.Texts = "";
-            this.textapellido.UnderlinedStyle = true;
+            this.textcodici.BackColor = System.Drawing.Color.SkyBlue;
+            this.textcodici.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.textcodici.BorderFocusColor = System.Drawing.Color.Blue;
+            this.textcodici.BorderRadius = 0;
+            this.textcodici.BorderSize = 2;
+            this.textcodici.Enabled = false;
+            this.textcodici.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textcodici.ForeColor = System.Drawing.Color.White;
+            this.textcodici.IsFocused = false;
+            this.textcodici.IsPasswordChar = false;
+            this.textcodici.IsPlaceholder = false;
+            this.textcodici.Location = new System.Drawing.Point(161, 162);
+            this.textcodici.Margin = new System.Windows.Forms.Padding(4);
+            this.textcodici.Multiline = false;
+            this.textcodici.Name = "textcodici";
+            this.textcodici.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
+            this.textcodici.PasswordChar = false;
+            this.textcodici.PlaceholderColor = System.Drawing.Color.DarkGray;
+            this.textcodici.PlaceholderText = "";
+            this.textcodici.Size = new System.Drawing.Size(56, 31);
+            this.textcodici.TabIndex = 9;
+            this.textcodici.Texts = "";
+            this.textcodici.UnderlinedStyle = true;
             // 
             // textnombre
             // 
@@ -265,7 +338,7 @@ namespace CAPA_PRESENTACION
             this.textnombre.IsFocused = false;
             this.textnombre.IsPasswordChar = false;
             this.textnombre.IsPlaceholder = false;
-            this.textnombre.Location = new System.Drawing.Point(94, 162);
+            this.textnombre.Location = new System.Drawing.Point(178, 209);
             this.textnombre.Margin = new System.Windows.Forms.Padding(4);
             this.textnombre.Multiline = false;
             this.textnombre.Name = "textnombre";
@@ -273,7 +346,7 @@ namespace CAPA_PRESENTACION
             this.textnombre.PasswordChar = false;
             this.textnombre.PlaceholderColor = System.Drawing.Color.DarkGray;
             this.textnombre.PlaceholderText = "";
-            this.textnombre.Size = new System.Drawing.Size(183, 31);
+            this.textnombre.Size = new System.Drawing.Size(118, 31);
             this.textnombre.TabIndex = 8;
             this.textnombre.Texts = "";
             this.textnombre.UnderlinedStyle = true;
@@ -290,7 +363,7 @@ namespace CAPA_PRESENTACION
             this.textcodigo.IsFocused = false;
             this.textcodigo.IsPasswordChar = false;
             this.textcodigo.IsPlaceholder = false;
-            this.textcodigo.Location = new System.Drawing.Point(94, 110);
+            this.textcodigo.Location = new System.Drawing.Point(134, 110);
             this.textcodigo.Margin = new System.Windows.Forms.Padding(4);
             this.textcodigo.Multiline = false;
             this.textcodigo.Name = "textcodigo";
@@ -308,27 +381,27 @@ namespace CAPA_PRESENTACION
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(18, 174);
+            this.label6.Location = new System.Drawing.Point(4, 221);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(69, 19);
+            this.label6.Size = new System.Drawing.Size(167, 19);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Nombre:";
+            this.label6.Text = "Nombre del estudiante:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(12, 229);
+            this.label5.Location = new System.Drawing.Point(9, 174);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 19);
+            this.label5.Size = new System.Drawing.Size(145, 19);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Apellido:";
+            this.label5.Text = "Codigo de remision:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 291);
+            this.label4.Location = new System.Drawing.Point(10, 300);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 19);
             this.label4.TabIndex = 4;
@@ -340,9 +413,10 @@ namespace CAPA_PRESENTACION
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 122);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 19);
+            this.label2.Size = new System.Drawing.Size(115, 19);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Codigo :";
+            this.label2.Text = "Codigo de cita :";
+            this.label2.Click += new System.EventHandler(this.label2_Click_1);
             // 
             // label3
             // 
@@ -422,59 +496,6 @@ namespace CAPA_PRESENTACION
             this.textagendar.Size = new System.Drawing.Size(415, 20);
             this.textagendar.TabIndex = 1;
             // 
-            // dtaagendar
-            // 
-            this.dtaagendar.AllowUserToAddRows = false;
-            this.dtaagendar.AllowUserToResizeColumns = false;
-            this.dtaagendar.AllowUserToResizeRows = false;
-            this.dtaagendar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtaagendar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaagendar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.dtaagendar.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dtaagendar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dtaagendar.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaagendar.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dtaagendar.ColumnHeadersHeight = 30;
-            this.dtaagendar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaagendar.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dtaagendar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtaagendar.EnableHeadersVisualStyles = false;
-            this.dtaagendar.GridColor = System.Drawing.Color.SkyBlue;
-            this.dtaagendar.Location = new System.Drawing.Point(0, 73);
-            this.dtaagendar.Name = "dtaagendar";
-            this.dtaagendar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaagendar.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dtaagendar.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtaagendar.ShowCellErrors = false;
-            this.dtaagendar.ShowCellToolTips = false;
-            this.dtaagendar.ShowEditingIcon = false;
-            this.dtaagendar.ShowRowErrors = false;
-            this.dtaagendar.Size = new System.Drawing.Size(770, 526);
-            this.dtaagendar.TabIndex = 7;
-            this.dtaagendar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaagendar_CellDoubleClick);
-            this.dtaagendar.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaagendar_RowHeaderMouseClick);
-            // 
             // Agendarcita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -489,6 +510,7 @@ namespace CAPA_PRESENTACION
             this.Text = "Agendarcita";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.Load += new System.EventHandler(this.Agendarcita_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).EndInit();
             this.paneldegra22.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.panelagenda.ResumeLayout(false);
@@ -496,7 +518,6 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.comidin)).EndInit();
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -512,7 +533,7 @@ namespace CAPA_PRESENTACION
         public System.Windows.Forms.Label Fechacita;
         private System.Windows.Forms.MonthCalendar Calendaragenda;
         private Buttonpersolizado buttonpersolizado1;
-        public textboxpersonal textapellido;
+        public textboxpersonal textcodici;
         public textboxpersonal textnombre;
         public textboxpersonal textcodigo;
         private System.Windows.Forms.Label label6;
@@ -526,5 +547,7 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         public System.Windows.Forms.DataGridView dtaagendar;
+        private System.Windows.Forms.TextBox texthora;
+        private System.Windows.Forms.TextBox texvalor;
     }
 }
