@@ -39,14 +39,14 @@ namespace CAPA_PRESENTACION
             this.label2 = new System.Windows.Forms.Label();
             this.texthoraA = new System.Windows.Forms.TextBox();
             this.selecion = new System.Windows.Forms.Label();
+            this.fecha3 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.texfecha2 = new System.Windows.Forms.TextBox();
             this.textfecha = new System.Windows.Forms.TextBox();
             this.textremision = new System.Windows.Forms.TextBox();
             this.textidcita = new System.Windows.Forms.TextBox();
             this.btnposponer = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.fecha3 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtacita)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
@@ -84,6 +84,7 @@ namespace CAPA_PRESENTACION
             this.dtacita.GridColor = System.Drawing.Color.PaleTurquoise;
             this.dtacita.Location = new System.Drawing.Point(35, 62);
             this.dtacita.Name = "dtacita";
+            this.dtacita.ReadOnly = true;
             this.dtacita.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
@@ -158,6 +159,26 @@ namespace CAPA_PRESENTACION
             this.selecion.Size = new System.Drawing.Size(0, 19);
             this.selecion.TabIndex = 16;
             // 
+            // fecha3
+            // 
+            this.fecha3.AutoSize = true;
+            this.fecha3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha3.Location = new System.Drawing.Point(303, 330);
+            this.fecha3.Name = "fecha3";
+            this.fecha3.Size = new System.Drawing.Size(0, 19);
+            this.fecha3.TabIndex = 17;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label3.Location = new System.Drawing.Point(330, 340);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "label3";
+            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
@@ -180,7 +201,6 @@ namespace CAPA_PRESENTACION
             this.texfecha2.Name = "texfecha2";
             this.texfecha2.Size = new System.Drawing.Size(100, 20);
             this.texfecha2.TabIndex = 19;
-            this.texfecha2.Visible = false;
             // 
             // textfecha
             // 
@@ -188,7 +208,6 @@ namespace CAPA_PRESENTACION
             this.textfecha.Name = "textfecha";
             this.textfecha.Size = new System.Drawing.Size(100, 20);
             this.textfecha.TabIndex = 18;
-            this.textfecha.Visible = false;
             // 
             // textremision
             // 
@@ -230,26 +249,6 @@ namespace CAPA_PRESENTACION
             this.btnposponer.TextColor = System.Drawing.Color.Black;
             this.btnposponer.UseVisualStyleBackColor = false;
             this.btnposponer.Click += new System.EventHandler(this.btnposponer_Click);
-            // 
-            // fecha3
-            // 
-            this.fecha3.AutoSize = true;
-            this.fecha3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fecha3.Location = new System.Drawing.Point(303, 330);
-            this.fecha3.Name = "fecha3";
-            this.fecha3.Size = new System.Drawing.Size(0, 19);
-            this.fecha3.TabIndex = 17;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label3.Location = new System.Drawing.Point(328, 345);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
-            this.label3.TabIndex = 18;
-            this.label3.Text = "label3";
             // 
             // Ver_cita
             // 

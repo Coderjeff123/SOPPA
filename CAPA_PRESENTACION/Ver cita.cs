@@ -38,6 +38,8 @@ namespace CAPA_PRESENTACION
             textfecha.Text = dtacita.CurrentRow.Cells["Fecha"].Value.ToString();
             texthoraA.Text = dtacita.CurrentRow.Cells["Hora"].Value.ToString();
 
+          
+
         }
 
         private void dtacita_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -47,13 +49,13 @@ namespace CAPA_PRESENTACION
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            cargarcita();
+           cargarcita();
         }
 
         private void btnposponer_Click(object sender, EventArgs e)
         {
             texfecha2.Text= monthfechaactu.SelectionStart.Day.ToString() + "/" + monthfechaactu.SelectionStart.Month.ToString() + "/" + monthfechaactu.SelectionStart.Year.ToString();
-
+            //monthfechaactu.SelectionStart = Convert.ToDateTime( texfecha2.Text);
             CitaN up = new CitaN();
             int cita = Convert.ToInt32(textidcita.Text);
             int remision = Convert.ToInt32(textremision.Text);
