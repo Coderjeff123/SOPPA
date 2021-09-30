@@ -122,7 +122,7 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneldegra21.Location = new System.Drawing.Point(0, 0);
             this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(768, 73);
+            this.paneldegra21.Size = new System.Drawing.Size(795, 73);
             this.paneldegra21.TabIndex = 5;
             // 
             // label1
@@ -170,9 +170,9 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Controls.Add(this.txtestado);
             this.paneldegradado1.Controls.Add(this.id);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.paneldegradado1.Location = new System.Drawing.Point(0, 445);
+            this.paneldegradado1.Location = new System.Drawing.Point(0, 451);
             this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(768, 60);
+            this.paneldegradado1.Size = new System.Drawing.Size(795, 60);
             this.paneldegradado1.TabIndex = 3;
             // 
             // button2
@@ -265,7 +265,7 @@ namespace CAPA_PRESENTACION
             this.AutoScroll = true;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(768, 505);
+            this.ClientSize = new System.Drawing.Size(795, 511);
             this.Controls.Add(this.pimagen);
             this.Controls.Add(this.paneldegra21);
             this.Controls.Add(this.paneldegradado1);

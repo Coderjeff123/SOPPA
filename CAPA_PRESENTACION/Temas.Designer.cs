@@ -56,6 +56,7 @@ namespace CAPA_PRESENTACION
             this.combobox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.combobox1.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.combobox1.BorderSize = 1;
+            this.combobox1.DisplayMember = "Acua";
             this.combobox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
             this.combobox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.combobox1.ForeColor = System.Drawing.Color.DimGray;

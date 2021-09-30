@@ -15,9 +15,10 @@ namespace CAPA_PRESENTACION
 
         private string tema;
 
-        string te;
+       
 
-        public string Tema { get { return te; } }
+        public string Tema { get { return combobox1.Texts; } }
+        string te;
 
         public Temas()
         {
@@ -31,7 +32,7 @@ namespace CAPA_PRESENTACION
 
         private void combobox1_OnSelectedIndexChanged(object sender, EventArgs e)
         {
-            te = combobox1.Texts;
+            combobox1.Texts = combobox1.SelectedItem.ToString();
         }
 
         private void buttonpersolizado1_Click(object sender, EventArgs e)

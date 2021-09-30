@@ -150,6 +150,7 @@
     <Compile Include="radiobuttonpersonal.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Tema.cs" />
     <Compile Include="Temas.cs">
       <SubType>Form</SubType>
     </Compile>

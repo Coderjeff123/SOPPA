@@ -18,10 +18,15 @@ namespace CAPA_PRESENTACION
 
 
         Nexpediente data = new Nexpediente();
+        Principal principal = new Principal();
 
+        
         private void VerExpediente_Load(object sender, EventArgs e)
         {
             mostrar();
+            
+            tema(principal.Tema2);
+
 
         }
 
@@ -34,6 +39,15 @@ namespace CAPA_PRESENTACION
         private void button1_Click(object sender, EventArgs e)
         {
             dtaexpe.DataSource = data.buscarexpediente(textver.Text);
+        }
+
+        private void tema(string tema)
+        {
+
+            Tema.ElegirTema(tema);
+            paneldegra21.Colorleft = Tema.BarraTituloL;
+            paneldegra21.Colorrigth = Tema.BarraTituloF;
+            this.Refresh();
         }
 
 

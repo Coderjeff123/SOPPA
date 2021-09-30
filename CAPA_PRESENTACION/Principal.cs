@@ -27,14 +27,92 @@ namespace CAPA_PRESENTACION
                 btncita.Visible = false;
                 btnexpe.Visible = false;
             }
+            
 
         }
 
-       
+        private string tema;
+        private string tema2;
+        private string te;
+        private bool Ver;
+        Temas temas = new Temas();
 
-      
-       
-     
+
+        public string Tema { get { return textBox1.Text; } }
+
+        public string Tema2 { get {return textBox2.Text; } }
+
+
+        private void Principal_Load(object sender, EventArgs e)
+        {
+            Temas("Acua");
+            for (int f = 1; f <= 96; f++)
+            {
+                dtaactividad.Rows.Add();
+            }
+            Cargarfecha();
+           
+
+        }
+        private void btncambiartema_Click(object sender, EventArgs e)
+        {
+           
+            temas.ShowDialog();
+            Temas(temas.Tema);
+        }
+
+
+        private void Temas(string tema)
+        {
+
+            Class1.ElegirTema(tema);
+            paneldegradado1.Colorleft = Class1.PanelBotones;
+            paneldegradado1.Colorrigth = Class1.panlebotones;
+            panelFormhijo.BackColor = Class1.PanelPadre;
+            paneldegradado2.BackColor = Class1.BarraTitulo;
+            panel4.BackColor = Class1.BarraTitulo;
+            opc.Colorleft = Class1.PanelBotones;
+            opc.Colorrigth = Class1.panlebotones;
+            dtaactividad.GridColor = Class1.PanelPadre;
+            dtaactividad.ColumnHeadersDefaultCellStyle.BackColor = Class1.PanelPadre;
+            dtaactividad.ColumnHeadersDefaultCellStyle.SelectionBackColor = Class1.PanelBotones;
+            dtaactividad.DefaultCellStyle.BackColor = Class1.BarraTitulo;
+            dtaactividad.DefaultCellStyle.SelectionBackColor = Class1.panlebotones;
+            dtaactividad.RowHeadersDefaultCellStyle.BackColor = Class1.BarraTitulo;
+
+            if (tema == "Acua")
+            {
+                textBox1.Text = "Acua";
+               
+            }
+            else if (tema == "Celeste")
+            {
+                textBox1.Text = "Celeste";
+                textBox1.Text = "Celeste";
+            }
+            else if (tema == "Morado")
+            {
+                textBox1.Text = "Morado";
+                textBox2.Text = "Morado";
+            }
+            else if (tema == "Verde")
+            {
+                textBox1.Text = "Verde";
+                textBox2.Text = "Verde";
+            }
+            else if (tema == "Defecto")
+            {
+                textBox1.Text = "Defecto";
+                textBox2.Text = "Defecto";
+            }
+
+            this.Refresh();
+        }
+        
+
+
+
+
         private void btncloseform_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -109,6 +187,9 @@ namespace CAPA_PRESENTACION
             mostrarsubmenu(panelsubmenuinformes);
         }
         private Form fomractive = null;
+
+      
+
         private void abrirForm(Form formhijo)
         {
             if (fomractive != null)
@@ -129,6 +210,7 @@ namespace CAPA_PRESENTACION
         {
             ocultarsubmenu();
             abrirForm(new VerExpediente());
+            
         }
 
         private void btnnuevoexpe_Click(object sender, EventArgs e)
@@ -285,6 +367,8 @@ namespace CAPA_PRESENTACION
         {
             ocultarsubmenu();
             abrirForm(new IniciarConsulta());
+            this.Refresh();
+            
         }
 
   
@@ -297,37 +381,9 @@ namespace CAPA_PRESENTACION
         {
             ocultarsubmenu();
             abrirForm(new Agendarcita());
+            this.Refresh();
         }
-
-        private void Principal_Load(object sender, EventArgs e)
-        {
-            for(int f = 1; f <= 96; f++)
-            {
-                dtaactividad.Rows.Add();                
-            }
-            Cargarfecha();
-            Temas("Acua");
-           
-        }
-
-        private void Temas(string tema)
-        {
-            Class1.ElegirTema(tema);
-            paneldegradado1.Colorleft = Class1.PanelBotones;
-            paneldegradado1.Colorrigth = Class1.panlebotones;
-            panelFormhijo.BackColor = Class1.PanelPadre;
-            paneldegradado2.BackColor = Class1.BarraTitulo;
-            panel4.BackColor = Class1.BarraTitulo;
-            opc.Colorleft = Class1.PanelBotones;
-            opc.Colorrigth = Class1.panlebotones;
-            dtaactividad.GridColor = Class1.PanelPadre;
-            dtaactividad.ColumnHeadersDefaultCellStyle.BackColor = Class1.PanelPadre;
-            dtaactividad.ColumnHeadersDefaultCellStyle.SelectionBackColor = Class1.PanelBotones;
-            dtaactividad.DefaultCellStyle.BackColor = Class1.BarraTitulo;
-            dtaactividad.DefaultCellStyle.SelectionBackColor = Class1.panlebotones;
-            dtaactividad.RowHeadersDefaultCellStyle.BackColor = Class1.BarraTitulo;
-            dtaactividad.RowHeadersDefaultCellStyle.SelectionBackColor = Class1.PanelBotones;
-        }
+       
 
         private void Cargarfecha()
         {
@@ -370,6 +426,7 @@ namespace CAPA_PRESENTACION
         private void btnvercitas_Click(object sender, EventArgs e)
         {
             abrirForm(new Ver_cita());
+            this.Refresh();
         }
 
         private void Congf_Click(object sender, EventArgs e)
@@ -400,18 +457,9 @@ namespace CAPA_PRESENTACION
             cambiar.Show();
         }
 
-        private void btncambiartema_Click(object sender, EventArgs e)
-        {
+       
 
-            
-            Temas temas = new Temas();
-            temas.ShowDialog();
-            Temas(temas.Tema);
-            this.Refresh();
-
-
-
-        }
+        
     }
 } 
     
