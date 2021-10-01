@@ -36,8 +36,6 @@ namespace CAPA_PRESENTACION
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dtaactividad = new System.Windows.Forms.DataGridView();
-            this.Hora = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cita = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Fecha = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.panelFormhijo = new System.Windows.Forms.Panel();
@@ -67,13 +65,13 @@ namespace CAPA_PRESENTACION
             this.btncon = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnresform = new System.Windows.Forms.Button();
             this.btnminform = new System.Windows.Forms.Button();
             this.btnmaxform = new System.Windows.Forms.Button();
             this.btncloseform = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaactividad)).BeginInit();
@@ -132,9 +130,6 @@ namespace CAPA_PRESENTACION
             this.dtaactividad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtaactividad.ColumnHeadersHeight = 30;
             this.dtaactividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.dtaactividad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Hora,
-            this.Cita});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -165,17 +160,6 @@ namespace CAPA_PRESENTACION
             this.dtaactividad.Size = new System.Drawing.Size(520, 240);
             this.dtaactividad.TabIndex = 3;
             this.dtaactividad.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaactividad_CellContentClick);
-            // 
-            // Hora
-            // 
-            this.Hora.HeaderText = "Hora";
-            this.Hora.Name = "Hora";
-            this.Hora.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Cita
-            // 
-            this.Cita.HeaderText = "Cita";
-            this.Cita.Name = "Cita";
             // 
             // Fecha
             // 
@@ -730,6 +714,13 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.Size = new System.Drawing.Size(992, 44);
             this.paneldegradado2.TabIndex = 0;
             // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(138, 4);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 9;
+            // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(32, 4);
@@ -800,13 +791,6 @@ namespace CAPA_PRESENTACION
             this.btncloseform.UseVisualStyleBackColor = true;
             this.btncloseform.Click += new System.EventHandler(this.btncloseform_Click);
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(138, 4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 9;
-            // 
             // Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -873,8 +857,6 @@ namespace CAPA_PRESENTACION
         private Paneldegradado paneldegradado2;
         private System.Windows.Forms.Label Fecha;
         private System.Windows.Forms.DataGridView dtaactividad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Hora;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cita;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private Buttonpersolizado Congf;
         private paneldegra2 opc;

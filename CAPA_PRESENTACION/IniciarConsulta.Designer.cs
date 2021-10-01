@@ -35,10 +35,10 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
-            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
             this.paneldegradado1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.paneldegra21.SuspendLayout();
@@ -49,15 +49,9 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.angulo = 0F;
             this.paneldegradado2.Colorleft = System.Drawing.Color.Empty;
             this.paneldegradado2.Colorrigth = System.Drawing.Color.Empty;
-
-            this.paneldegradado2.Location = new System.Drawing.Point(0, 75);
-            this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(800, 482);
-
-            this.paneldegradado2.Location = new System.Drawing.Point(408, 75);
+            this.paneldegradado2.Location = new System.Drawing.Point(411, 75);
             this.paneldegradado2.Name = "paneldegradado2";
             this.paneldegradado2.Size = new System.Drawing.Size(389, 475);
-
             this.paneldegradado2.TabIndex = 9;
             // 
             // paneldegradado1
@@ -122,30 +116,12 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.Size = new System.Drawing.Size(314, 248);
             this.dtaexpe.TabIndex = 7;
             // 
-            // paneldegra21
+            // textBox1
             // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.paneldegra21.Controls.Add(this.label1);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textBox1);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(800, 73);
-            this.paneldegra21.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(299, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar Expediente";
+            this.textBox1.Location = new System.Drawing.Point(144, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(415, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // button1
             // 
@@ -163,12 +139,30 @@ namespace CAPA_PRESENTACION
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox1
+            // label1
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 20);
-            this.textBox1.TabIndex = 1;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(299, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar Expediente";
+            // 
+            // paneldegra21
+            // 
+            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
+            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.paneldegra21.Controls.Add(this.label1);
+            this.paneldegra21.Controls.Add(this.button1);
+            this.paneldegra21.Controls.Add(this.textBox1);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.Size = new System.Drawing.Size(800, 73);
+            this.paneldegra21.TabIndex = 6;
             // 
             // IniciarConsulta
             // 
@@ -176,9 +170,9 @@ namespace CAPA_PRESENTACION
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 556);
-            this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.paneldegra21);
+            this.Controls.Add(this.paneldegradado2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IniciarConsulta";
             this.Text = "IniciarConsulta";
@@ -191,13 +185,12 @@ namespace CAPA_PRESENTACION
         }
 
         #endregion
-
-        private paneldegra2 paneldegra21;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridView dtaexpe;
         private Paneldegradado paneldegradado1;
         private Paneldegradado paneldegradado2;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private paneldegra2 paneldegra21;
     }
 }

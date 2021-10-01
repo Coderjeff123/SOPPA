@@ -46,12 +46,8 @@ namespace CAPA_PRESENTACION
         private void Principal_Load(object sender, EventArgs e)
         {
             Temas("Acua");
-            for (int f = 1; f <= 96; f++)
-            {
-                dtaactividad.Rows.Add();
-            }
+
             Cargarfecha();
-           
 
         }
         private void btncambiartema_Click(object sender, EventArgs e)
@@ -383,39 +379,33 @@ namespace CAPA_PRESENTACION
             abrirForm(new Agendarcita());
             this.Refresh();
         }
-       
 
+        CitaN cita = new CitaN();
         private void Cargarfecha()
         {
-            DateTime select = monthCalendar1.SelectionStart;
-            Fecha.Text = "Fecha selecionada" + select.ToString("dd/MM/yy");
-            string fecha = select.Year.ToString() + select.Month.ToString() + select.Day.ToString();
-            if (!File.Exists(fecha))
-            {
-                StreamWriter archivo = new StreamWriter(fecha);
-                DateTime fe = DateTime.Today;
-                for(int f = 1; f <= 96; f++)
+
+            dtaactividad.DataSource = cita.showct();
+           string fec= DateTime.Today.ToString();
+            textBox2.Text = fec;
+            for(int i = 1; i < dtaactividad.Rows.Count; i++) 
+            { 
+                if (fec == dtaactividad.CurrentRow.Cells["Fecha"].Value.ToString())
                 {
-                    archivo.WriteLine(fe.ToString("HH:mm"));
-                    archivo.WriteLine("");
-                    fe = fe.AddMinutes(15);
+                    dtaactividad.Rows[i].Visible = true;
                 }
-                archivo.Close();
+                else
+                {
+                       dtaactividad.Rows[i].Visible = false;
+                }
             }
-            StreamReader archivo2 = new StreamReader(fecha);
-            int x = 0;
-            while (!archivo2.EndOfStream)
-            {
-                string linea1 = archivo2.ReadLine();
-                string linea2 = archivo2.ReadLine();
-                dtaactividad.Rows[x].Cells[0].Value = linea1;
-                x++;
-            }
+            dtaactividad.Columns[0].Visible = false;
+            dtaactividad.Columns[1].Visible = false;
+            dtaactividad.Columns[3].Visible = false;
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            Cargarfecha();
+            
         }
 
         private void dtaactividad_CellContentClick(object sender, DataGridViewCellEventArgs e)

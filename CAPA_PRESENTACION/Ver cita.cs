@@ -23,6 +23,8 @@ namespace CAPA_PRESENTACION
         private void Ver_cita_Load(object sender, EventArgs e)
         {
             dtacita.DataSource = datos.showct();
+            dtacita.Columns[0].Visible = false;
+            dtacita.Columns[1].Visible = false;
             btnposponer.Enabled = false;
 
             cargarcita();
@@ -33,12 +35,14 @@ namespace CAPA_PRESENTACION
             btnposponer.Enabled = true;
 
 
+            
+            
             textidcita.Text = dtacita.CurrentRow.Cells["ID_Cita"].Value.ToString();
             textremision.Text = dtacita.CurrentRow.Cells["ID_Remision"].Value.ToString();
             textfecha.Text = dtacita.CurrentRow.Cells["Fecha"].Value.ToString();
             texthoraA.Text = dtacita.CurrentRow.Cells["Hora"].Value.ToString();
 
-          
+            
 
         }
 

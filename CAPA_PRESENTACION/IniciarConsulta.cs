@@ -19,11 +19,10 @@ namespace CAPA_PRESENTACION
         }
 
         Nexpediente dto = new Nexpediente();
-        ConsultaN data = new ConsultaN();
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtaexpe.DataSource = dto.buscarexpediente(textBox1.Text); ;
+            dtaexpe.DataSource = dto.buscarexpedientecita(textBox1.Text); 
         }
     }
 }

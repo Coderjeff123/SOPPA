@@ -27,17 +27,17 @@ namespace CAPA_PRESENTACION
 
         //Tema Morado
         private static readonly Color PanelPadreM = Color.FromArgb(92, 36, 97);
-        private static readonly Color PanelBotonesML = Color.FromArgb(94, 65, 97);
-        private static readonly Color PanelBotonesMF = Color.FromArgb(94, 65, 97);
+        private static readonly Color PanelBotonesML = Color.FromArgb(149, 240, 137);
+        private static readonly Color PanelBotonesMF = Color.FromArgb(157, 235, 200);
         private static readonly Color BarraTituloM = Color.FromArgb(164, 64, 173);
         private static readonly Color TextBusquedaM = Color.FromArgb(223, 154, 230);
         private static readonly Color FuenteIconosM = Color.White;
 
         //Tema Verde
-        private static readonly Color PanelPadreV = Color.FromArgb(71, 102, 0);
-        private static readonly Color PanelBotonesVL = Color.FromArgb(121, 173, 0);
-        private static readonly Color PanelBotonesVF = Color.FromArgb(121, 173, 0);
-        private static readonly Color BarraTituloV = Color.FromArgb(157, 224, 0);
+        private static readonly Color PanelPadreV = Color.FromArgb(157, 235, 200);
+        private static readonly Color PanelBotonesVL = Color.FromArgb(164, 217, 170);
+        private static readonly Color PanelBotonesVF = Color.FromArgb(170, 240, 191);
+        private static readonly Color BarraTituloV = Color.FromArgb(176, 240, 170);
         private static readonly Color TextBusquedaV = Color.FromArgb(181, 230, 63);
         private static readonly Color FuenteIconosV = Color.White;
 
