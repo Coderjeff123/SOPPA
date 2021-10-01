@@ -54,7 +54,7 @@ namespace CAPA_PRESENTACION
 
         private void btnposponer_Click(object sender, EventArgs e)
         {
-            texfecha2.Text= monthfechaactu.SelectionStart.Day.ToString() + "/" + monthfechaactu.SelectionStart.Month.ToString() + "/" + monthfechaactu.SelectionStart.Year.ToString();
+           texfecha2.Text= monthfechaactu.SelectionStart.Day.ToString() + "/" + monthfechaactu.SelectionStart.Month.ToString() + "/" + monthfechaactu.SelectionStart.Year.ToString();
             //monthfechaactu.SelectionStart = Convert.ToDateTime( texfecha2.Text);
             CitaN up = new CitaN();
             int cita = Convert.ToInt32(textidcita.Text);
