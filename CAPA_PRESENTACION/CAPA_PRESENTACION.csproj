@@ -145,6 +145,11 @@
     <Compile Include="informe.Designer.cs">
       <DependentUpon>informe.cs</DependentUpon>
     </Compile>
+    <Compile Include="informees.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>informees.xsd</DependentUpon>
+    </Compile>
     <Compile Include="IniciarConsulta.cs">
       <SubType>Form</SubType>
     </Compile>
