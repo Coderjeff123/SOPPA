@@ -47,7 +47,6 @@ namespace CAPA_PRESENTACION
             this.textremision = new System.Windows.Forms.TextBox();
             this.textidcita = new System.Windows.Forms.TextBox();
             this.btnposponer = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtacita)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
@@ -202,6 +201,7 @@ namespace CAPA_PRESENTACION
             this.texfecha2.Name = "texfecha2";
             this.texfecha2.Size = new System.Drawing.Size(100, 20);
             this.texfecha2.TabIndex = 19;
+            this.texfecha2.Visible = false;
             // 
             // textfecha
             // 
@@ -209,6 +209,7 @@ namespace CAPA_PRESENTACION
             this.textfecha.Name = "textfecha";
             this.textfecha.Size = new System.Drawing.Size(100, 20);
             this.textfecha.TabIndex = 18;
+            this.textfecha.Visible = false;
             // 
             // textremision
             // 
@@ -251,22 +252,12 @@ namespace CAPA_PRESENTACION
             this.btnposponer.UseVisualStyleBackColor = false;
             this.btnposponer.Click += new System.EventHandler(this.btnposponer_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(238, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "label4";
-            // 
             // Ver_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.fecha3);
             this.Controls.Add(this.selecion);
@@ -305,6 +296,5 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label selecion;
         private System.Windows.Forms.Label fecha3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
     }
 }
