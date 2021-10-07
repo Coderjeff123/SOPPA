@@ -29,10 +29,13 @@ namespace CAPA_PRESENTACION
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Principal));
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation2 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -72,6 +75,8 @@ namespace CAPA_PRESENTACION
             this.btnverconsulta = new System.Windows.Forms.Button();
             this.btncon = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.bunifuTransition2 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.panel1.SuspendLayout();
             this.paneldegradado2.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -90,6 +95,8 @@ namespace CAPA_PRESENTACION
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.paneldegradado2);
+            this.bunifuTransition2.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -105,6 +112,8 @@ namespace CAPA_PRESENTACION
             this.paneldegradado2.Controls.Add(this.textBox2);
             this.paneldegradado2.Controls.Add(this.textBox1);
             this.paneldegradado2.Controls.Add(this.panel2);
+            this.bunifuTransition2.SetDecoration(this.paneldegradado2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.paneldegradado2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.paneldegradado2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado2.Name = "paneldegradado2";
@@ -113,6 +122,8 @@ namespace CAPA_PRESENTACION
             // 
             // textBox2
             // 
+            this.bunifuTransition1.SetDecoration(this.textBox2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBox2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.textBox2.Location = new System.Drawing.Point(138, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
@@ -120,6 +131,8 @@ namespace CAPA_PRESENTACION
             // 
             // textBox1
             // 
+            this.bunifuTransition1.SetDecoration(this.textBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.textBox1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.textBox1.Location = new System.Drawing.Point(32, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
@@ -132,6 +145,8 @@ namespace CAPA_PRESENTACION
             this.panel2.Controls.Add(this.btnminform);
             this.panel2.Controls.Add(this.btnmaxform);
             this.panel2.Controls.Add(this.btncloseform);
+            this.bunifuTransition2.SetDecoration(this.panel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.Location = new System.Drawing.Point(868, 0);
             this.panel2.Name = "panel2";
@@ -140,6 +155,8 @@ namespace CAPA_PRESENTACION
             // 
             // btnresform
             // 
+            this.bunifuTransition1.SetDecoration(this.btnresform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnresform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnresform.FlatAppearance.BorderSize = 0;
             this.btnresform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnresform.Image = global::CAPA_PRESENTACION.Properties.Resources.window_restore_icon_144027;
@@ -152,6 +169,8 @@ namespace CAPA_PRESENTACION
             // 
             // btnminform
             // 
+            this.bunifuTransition1.SetDecoration(this.btnminform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnminform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnminform.FlatAppearance.BorderSize = 0;
             this.btnminform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnminform.Image = global::CAPA_PRESENTACION.Properties.Resources.minimize_thewindow_theapplication_2872;
@@ -164,6 +183,8 @@ namespace CAPA_PRESENTACION
             // 
             // btnmaxform
             // 
+            this.bunifuTransition1.SetDecoration(this.btnmaxform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnmaxform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnmaxform.FlatAppearance.BorderSize = 0;
             this.btnmaxform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmaxform.Image = global::CAPA_PRESENTACION.Properties.Resources.gui_form_checkbox_icon_157650;
@@ -177,6 +198,8 @@ namespace CAPA_PRESENTACION
             // 
             // btncloseform
             // 
+            this.bunifuTransition1.SetDecoration(this.btncloseform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btncloseform, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btncloseform.Dock = System.Windows.Forms.DockStyle.Right;
             this.btncloseform.FlatAppearance.BorderSize = 0;
             this.btncloseform.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -195,6 +218,8 @@ namespace CAPA_PRESENTACION
             this.panel4.Controls.Add(this.dtaactividad);
             this.panel4.Controls.Add(this.Fecha);
             this.panel4.Controls.Add(this.monthCalendar1);
+            this.bunifuTransition2.SetDecoration(this.panel4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(224, 548);
             this.panel4.Name = "panel4";
@@ -210,6 +235,8 @@ namespace CAPA_PRESENTACION
             this.opc.Controls.Add(this.btncerrarsesion);
             this.opc.Controls.Add(this.btncambiarcon);
             this.opc.Controls.Add(this.btnimagenper);
+            this.bunifuTransition2.SetDecoration(this.opc, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.opc, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.opc.Location = new System.Drawing.Point(-1, 70);
             this.opc.Name = "opc";
             this.opc.Size = new System.Drawing.Size(200, 170);
@@ -223,6 +250,8 @@ namespace CAPA_PRESENTACION
             this.btncambiartema.BorderColor = System.Drawing.Color.Blue;
             this.btncambiartema.BorderRadius = 0;
             this.btncambiartema.BorderSize = 1;
+            this.bunifuTransition1.SetDecoration(this.btncambiartema, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btncambiartema, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btncambiartema.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncambiartema.FlatAppearance.BorderSize = 0;
             this.btncambiartema.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -246,6 +275,8 @@ namespace CAPA_PRESENTACION
             this.btncerrarsesion.BorderColor = System.Drawing.Color.Blue;
             this.btncerrarsesion.BorderRadius = 0;
             this.btncerrarsesion.BorderSize = 1;
+            this.bunifuTransition1.SetDecoration(this.btncerrarsesion, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btncerrarsesion, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btncerrarsesion.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btncerrarsesion.FlatAppearance.BorderSize = 0;
             this.btncerrarsesion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -269,6 +300,8 @@ namespace CAPA_PRESENTACION
             this.btncambiarcon.BorderColor = System.Drawing.Color.Blue;
             this.btncambiarcon.BorderRadius = 0;
             this.btncambiarcon.BorderSize = 1;
+            this.bunifuTransition1.SetDecoration(this.btncambiarcon, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btncambiarcon, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btncambiarcon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncambiarcon.FlatAppearance.BorderSize = 0;
             this.btncambiarcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -292,6 +325,8 @@ namespace CAPA_PRESENTACION
             this.btnimagenper.BorderColor = System.Drawing.Color.MediumBlue;
             this.btnimagenper.BorderRadius = 0;
             this.btnimagenper.BorderSize = 1;
+            this.bunifuTransition1.SetDecoration(this.btnimagenper, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnimagenper, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnimagenper.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnimagenper.FlatAppearance.BorderSize = 0;
             this.btnimagenper.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -328,6 +363,8 @@ namespace CAPA_PRESENTACION
             this.dtaactividad.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtaactividad.ColumnHeadersHeight = 30;
             this.dtaactividad.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.bunifuTransition2.SetDecoration(this.dtaactividad, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.dtaactividad, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -362,6 +399,8 @@ namespace CAPA_PRESENTACION
             // Fecha
             // 
             this.Fecha.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.Fecha, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Fecha, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.Fecha.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Fecha.ForeColor = System.Drawing.Color.White;
             this.Fecha.Location = new System.Drawing.Point(7, 175);
@@ -372,6 +411,8 @@ namespace CAPA_PRESENTACION
             // 
             // monthCalendar1
             // 
+            this.bunifuTransition1.SetDecoration(this.monthCalendar1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.monthCalendar1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.monthCalendar1.Dock = System.Windows.Forms.DockStyle.Left;
             this.monthCalendar1.Location = new System.Drawing.Point(0, 0);
             this.monthCalendar1.Name = "monthCalendar1";
@@ -386,11 +427,13 @@ namespace CAPA_PRESENTACION
             this.panelFormhijo.AutoSize = true;
             this.panelFormhijo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(101)))), ((int)(((byte)(138)))));
             this.panelFormhijo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.bunifuTransition2.SetDecoration(this.panelFormhijo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelFormhijo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelFormhijo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panelFormhijo.ForeColor = System.Drawing.Color.White;
             this.panelFormhijo.Location = new System.Drawing.Point(224, 44);
             this.panelFormhijo.Name = "panelFormhijo";
-            this.panelFormhijo.Size = new System.Drawing.Size(768, 505);
+            this.panelFormhijo.Size = new System.Drawing.Size(768, 514);
             this.panelFormhijo.TabIndex = 3;
             // 
             // panelmenu
@@ -398,6 +441,8 @@ namespace CAPA_PRESENTACION
             this.panelmenu.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
             this.panelmenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(130)))), ((int)(((byte)(136)))));
             this.panelmenu.Controls.Add(this.paneldegradado1);
+            this.bunifuTransition2.SetDecoration(this.panelmenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelmenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelmenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelmenu.Location = new System.Drawing.Point(0, 44);
             this.panelmenu.Name = "panelmenu";
@@ -420,6 +465,8 @@ namespace CAPA_PRESENTACION
             this.paneldegradado1.Controls.Add(this.panelsubmenuconsulta);
             this.paneldegradado1.Controls.Add(this.btncon);
             this.paneldegradado1.Controls.Add(this.panel3);
+            this.bunifuTransition2.SetDecoration(this.paneldegradado1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.paneldegradado1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paneldegradado1.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado1.Name = "paneldegradado1";
@@ -434,6 +481,8 @@ namespace CAPA_PRESENTACION
             this.Congf.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.Congf.BorderRadius = 0;
             this.Congf.BorderSize = 0;
+            this.bunifuTransition1.SetDecoration(this.Congf, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.Congf, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.Congf.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.Congf.FlatAppearance.BorderSize = 0;
             this.Congf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
@@ -454,6 +503,8 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuinformes.BackColor = System.Drawing.Color.Transparent;
             this.panelsubmenuinformes.Controls.Add(this.btngenerarinfo);
             this.panelsubmenuinformes.Controls.Add(this.btnverinformes);
+            this.bunifuTransition2.SetDecoration(this.panelsubmenuinformes, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelsubmenuinformes, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelsubmenuinformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuinformes.Location = new System.Drawing.Point(0, 568);
             this.panelsubmenuinformes.Name = "panelsubmenuinformes";
@@ -463,6 +514,8 @@ namespace CAPA_PRESENTACION
             // btngenerarinfo
             // 
             this.btngenerarinfo.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btngenerarinfo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btngenerarinfo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btngenerarinfo.Dock = System.Windows.Forms.DockStyle.Top;
             this.btngenerarinfo.FlatAppearance.BorderSize = 0;
             this.btngenerarinfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -487,6 +540,8 @@ namespace CAPA_PRESENTACION
             // btnverinformes
             // 
             this.btnverinformes.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnverinformes, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnverinformes, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnverinformes.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverinformes.FlatAppearance.BorderSize = 0;
             this.btnverinformes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -511,6 +566,8 @@ namespace CAPA_PRESENTACION
             // btninforme
             // 
             this.btninforme.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btninforme, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btninforme, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btninforme.Dock = System.Windows.Forms.DockStyle.Top;
             this.btninforme.FlatAppearance.BorderSize = 0;
             this.btninforme.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
@@ -535,6 +592,8 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuexpe.BackColor = System.Drawing.Color.Transparent;
             this.panelsubmenuexpe.Controls.Add(this.btnnuevoexpe);
             this.panelsubmenuexpe.Controls.Add(this.btnverexpe);
+            this.bunifuTransition2.SetDecoration(this.panelsubmenuexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelsubmenuexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelsubmenuexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuexpe.Location = new System.Drawing.Point(0, 444);
             this.panelsubmenuexpe.Name = "panelsubmenuexpe";
@@ -544,6 +603,8 @@ namespace CAPA_PRESENTACION
             // btnnuevoexpe
             // 
             this.btnnuevoexpe.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnnuevoexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnnuevoexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnnuevoexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnnuevoexpe.FlatAppearance.BorderSize = 0;
             this.btnnuevoexpe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -569,6 +630,8 @@ namespace CAPA_PRESENTACION
             // btnverexpe
             // 
             this.btnverexpe.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnverexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnverexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnverexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverexpe.FlatAppearance.BorderSize = 0;
             this.btnverexpe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -594,6 +657,8 @@ namespace CAPA_PRESENTACION
             // btnexpe
             // 
             this.btnexpe.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnexpe, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnexpe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnexpe.FlatAppearance.BorderSize = 0;
             this.btnexpe.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
@@ -618,6 +683,8 @@ namespace CAPA_PRESENTACION
             this.panelsubmenucita.BackColor = System.Drawing.Color.Transparent;
             this.panelsubmenucita.Controls.Add(this.btnagendarcitas);
             this.panelsubmenucita.Controls.Add(this.btnvercitas);
+            this.bunifuTransition2.SetDecoration(this.panelsubmenucita, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelsubmenucita, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelsubmenucita.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenucita.Location = new System.Drawing.Point(0, 325);
             this.panelsubmenucita.Name = "panelsubmenucita";
@@ -627,6 +694,8 @@ namespace CAPA_PRESENTACION
             // btnagendarcitas
             // 
             this.btnagendarcitas.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnagendarcitas, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnagendarcitas, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnagendarcitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnagendarcitas.FlatAppearance.BorderSize = 0;
             this.btnagendarcitas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -652,6 +721,8 @@ namespace CAPA_PRESENTACION
             // btnvercitas
             // 
             this.btnvercitas.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnvercitas, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnvercitas, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnvercitas.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnvercitas.FlatAppearance.BorderSize = 0;
             this.btnvercitas.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -677,6 +748,8 @@ namespace CAPA_PRESENTACION
             // btncita
             // 
             this.btncita.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btncita, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btncita, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btncita.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncita.FlatAppearance.BorderSize = 0;
             this.btncita.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
@@ -701,6 +774,8 @@ namespace CAPA_PRESENTACION
             this.panelsubmenuconsulta.BackColor = System.Drawing.Color.Transparent;
             this.panelsubmenuconsulta.Controls.Add(this.btniniciarconsulta);
             this.panelsubmenuconsulta.Controls.Add(this.btnverconsulta);
+            this.bunifuTransition2.SetDecoration(this.panelsubmenuconsulta, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panelsubmenuconsulta, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelsubmenuconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelsubmenuconsulta.Location = new System.Drawing.Point(0, 210);
             this.panelsubmenuconsulta.Name = "panelsubmenuconsulta";
@@ -711,6 +786,8 @@ namespace CAPA_PRESENTACION
             // btniniciarconsulta
             // 
             this.btniniciarconsulta.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btniniciarconsulta, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btniniciarconsulta, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btniniciarconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btniniciarconsulta.FlatAppearance.BorderSize = 0;
             this.btniniciarconsulta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -736,6 +813,8 @@ namespace CAPA_PRESENTACION
             // btnverconsulta
             // 
             this.btnverconsulta.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btnverconsulta, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btnverconsulta, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnverconsulta.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnverconsulta.FlatAppearance.BorderSize = 0;
             this.btnverconsulta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DeepSkyBlue;
@@ -761,6 +840,8 @@ namespace CAPA_PRESENTACION
             // btncon
             // 
             this.btncon.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.btncon, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition2.SetDecoration(this.btncon, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btncon.Dock = System.Windows.Forms.DockStyle.Top;
             this.btncon.FlatAppearance.BorderSize = 0;
             this.btncon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Aqua;
@@ -784,12 +865,60 @@ namespace CAPA_PRESENTACION
             this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.BackgroundImage = global::CAPA_PRESENTACION.Properties.Resources.human_brain_psychiatrist_icon_131296;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.bunifuTransition2.SetDecoration(this.panel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this.panel3, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(224, 169);
             this.panel3.TabIndex = 0;
             this.panel3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.paneldegradado2_MouseDown_1);
+            // 
+            // bunifuTransition1
+            // 
+            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertBlind;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
+            this.bunifuTransition1.Interval = 20;
+            this.bunifuTransition1.MaxAnimationTime = 1600;
+            // 
+            // bunifuTransition2
+            // 
+            this.bunifuTransition2.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.VertBlind;
+            this.bunifuTransition2.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition2.DefaultAnimation = animation2;
+            this.bunifuTransition2.Interval = 20;
+            this.bunifuTransition2.MaxAnimationTime = 1600;
             // 
             // Principal
             // 
@@ -801,6 +930,8 @@ namespace CAPA_PRESENTACION
             this.Controls.Add(this.panelFormhijo);
             this.Controls.Add(this.panelmenu);
             this.Controls.Add(this.panel1);
+            this.bunifuTransition2.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.bunifuTransition1.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Principal";
             this.Text = "Principal";
@@ -866,5 +997,7 @@ namespace CAPA_PRESENTACION
         private Buttonpersolizado btncambiartema;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
+        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
+        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition2;
     }
 }

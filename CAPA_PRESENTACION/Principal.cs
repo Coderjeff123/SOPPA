@@ -223,13 +223,17 @@ namespace CAPA_PRESENTACION
 
         private void btncon_Click(object sender, EventArgs e)
         {
+            bunifuTransition1.ShowSync(panelsubmenuconsulta);
             mostrarsubmenu(panelsubmenuconsulta);
+            
 
         }
 
         private void btncita_Click(object sender, EventArgs e)
         {
+            bunifuTransition2.ShowSync(panelsubmenucita);
             mostrarsubmenu(panelsubmenucita);
+           
         }
 
         private void btnexpe_Click(object sender, EventArgs e)
@@ -446,10 +450,6 @@ namespace CAPA_PRESENTACION
             Cambiar_contraseña cambiar = new Cambiar_contraseña();
             cambiar.Show();
         }
-
-       
-
-        
     }
 } 
     

@@ -22,7 +22,9 @@ namespace CAPA_PRESENTACION
 
         private void button1_Click(object sender, EventArgs e)
         {
-            dtaexpe.DataSource = dto.buscarexpedientecita(textBox1.Text); 
+            paneldegra21.Visible = false;
+            dtaexpe.DataSource = dto.buscarexpedientecita(textBox1.Text);
+            dtaexpe.Visible = true;
         }
     }
 }

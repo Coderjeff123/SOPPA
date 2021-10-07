@@ -32,96 +32,99 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
-            this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
-            this.dtaexpe = new System.Windows.Forms.DataGridView();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.dtaexpe = new Bunifu.UI.WinForms.BunifuDataGridView();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.paneldegradado1.SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.paneldegra21.SuspendLayout();
             this.SuspendLayout();
             // 
-            // paneldegradado2
-            // 
-            this.paneldegradado2.angulo = 0F;
-            this.paneldegradado2.Colorleft = System.Drawing.Color.Empty;
-            this.paneldegradado2.Colorrigth = System.Drawing.Color.Empty;
-            this.paneldegradado2.Location = new System.Drawing.Point(411, 75);
-            this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(389, 475);
-            this.paneldegradado2.TabIndex = 9;
-            // 
-            // paneldegradado1
-            // 
-            this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Empty;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.Empty;
-            this.paneldegradado1.Controls.Add(this.dtaexpe);
-            this.paneldegradado1.Location = new System.Drawing.Point(486, 75);
-            this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(314, 248);
-            this.paneldegradado1.TabIndex = 8;
-            // 
             // dtaexpe
             // 
-            this.dtaexpe.AllowUserToAddRows = false;
-            this.dtaexpe.AllowUserToResizeColumns = false;
-            this.dtaexpe.AllowUserToResizeRows = false;
+            this.dtaexpe.AllowCustomTheming = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            this.dtaexpe.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaexpe.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DeepSkyBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaexpe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dtaexpe.ColumnHeadersHeight = 30;
-            this.dtaexpe.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dtaexpe.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtaexpe.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dtaexpe.ColumnHeadersHeight = 40;
+            this.dtaexpe.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            this.dtaexpe.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dtaexpe.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtaexpe.CurrentTheme.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dtaexpe.CurrentTheme.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dtaexpe.CurrentTheme.BackColor = System.Drawing.Color.White;
+            this.dtaexpe.CurrentTheme.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dtaexpe.CurrentTheme.HeaderStyle.BackColor = System.Drawing.Color.DodgerBlue;
+            this.dtaexpe.CurrentTheme.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            this.dtaexpe.CurrentTheme.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dtaexpe.CurrentTheme.HeaderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            this.dtaexpe.CurrentTheme.HeaderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dtaexpe.CurrentTheme.Name = null;
+            this.dtaexpe.CurrentTheme.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dtaexpe.CurrentTheme.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.dtaexpe.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.dtaexpe.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            this.dtaexpe.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle3;
             this.dtaexpe.EnableHeadersVisualStyles = false;
-            this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
+            this.dtaexpe.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
+            this.dtaexpe.HeaderBackColor = System.Drawing.Color.DodgerBlue;
+            this.dtaexpe.HeaderBgColor = System.Drawing.Color.Empty;
+            this.dtaexpe.HeaderForeColor = System.Drawing.Color.White;
             this.dtaexpe.Location = new System.Drawing.Point(0, 0);
             this.dtaexpe.Name = "dtaexpe";
-            this.dtaexpe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSkyBlue;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtaexpe.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dtaexpe.RowHeadersVisible = false;
+            this.dtaexpe.RowTemplate.Height = 40;
             this.dtaexpe.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtaexpe.ShowCellErrors = false;
-            this.dtaexpe.ShowCellToolTips = false;
-            this.dtaexpe.ShowEditingIcon = false;
-            this.dtaexpe.ShowRowErrors = false;
-            this.dtaexpe.Size = new System.Drawing.Size(314, 248);
+            this.dtaexpe.Size = new System.Drawing.Size(800, 247);
             this.dtaexpe.TabIndex = 7;
+            this.dtaexpe.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.dtaexpe.Visible = false;
             // 
-            // textBox1
+            // paneldegra21
             // 
-            this.textBox1.Location = new System.Drawing.Point(144, 36);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(415, 20);
-            this.textBox1.TabIndex = 1;
+            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
+            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.paneldegra21.Controls.Add(this.label1);
+            this.paneldegra21.Controls.Add(this.button1);
+            this.paneldegra21.Controls.Add(this.textBox1);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.Size = new System.Drawing.Size(800, 78);
+            this.paneldegra21.TabIndex = 6;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(299, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(113, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Buscar Expediente";
             // 
             // button1
             // 
@@ -139,30 +142,12 @@ namespace CAPA_PRESENTACION
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label1
+            // textBox1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(299, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar Expediente";
-            // 
-            // paneldegra21
-            // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.Teal;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.paneldegra21.Controls.Add(this.label1);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textBox1);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(800, 73);
-            this.paneldegra21.TabIndex = 6;
+            this.textBox1.Location = new System.Drawing.Point(144, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(415, 20);
+            this.textBox1.TabIndex = 1;
             // 
             // IniciarConsulta
             // 
@@ -170,13 +155,11 @@ namespace CAPA_PRESENTACION
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(800, 556);
-            this.Controls.Add(this.paneldegradado1);
+            this.Controls.Add(this.dtaexpe);
             this.Controls.Add(this.paneldegra21);
-            this.Controls.Add(this.paneldegradado2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "IniciarConsulta";
             this.Text = "IniciarConsulta";
-            this.paneldegradado1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.paneldegra21.ResumeLayout(false);
             this.paneldegra21.PerformLayout();
@@ -185,12 +168,10 @@ namespace CAPA_PRESENTACION
         }
 
         #endregion
-        private System.Windows.Forms.DataGridView dtaexpe;
-        private Paneldegradado paneldegradado1;
-        private Paneldegradado paneldegradado2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
         private paneldegra2 paneldegra21;
+        private Bunifu.UI.WinForms.BunifuDataGridView dtaexpe;
     }
 }
