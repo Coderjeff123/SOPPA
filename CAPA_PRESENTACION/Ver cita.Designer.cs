@@ -41,13 +41,13 @@ namespace CAPA_PRESENTACION
             this.selecion = new System.Windows.Forms.Label();
             this.fecha3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.textfecha = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.texfecha2 = new System.Windows.Forms.TextBox();
-            this.textfecha = new System.Windows.Forms.TextBox();
             this.textremision = new System.Windows.Forms.TextBox();
             this.textidcita = new System.Windows.Forms.TextBox();
             this.btnposponer = new CAPA_PRESENTACION.Buttonpersolizado();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtacita)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.SuspendLayout();
@@ -180,13 +180,30 @@ namespace CAPA_PRESENTACION
             this.label3.TabIndex = 18;
             this.label3.Text = "label3";
             // 
+            // textfecha
+            // 
+            this.textfecha.Location = new System.Drawing.Point(174, 384);
+            this.textfecha.Name = "textfecha";
+            this.textfecha.Size = new System.Drawing.Size(100, 20);
+            this.textfecha.TabIndex = 18;
+            this.textfecha.TextChanged += new System.EventHandler(this.textfecha_TextChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(56, 383);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(102, 19);
+            this.label4.TabIndex = 19;
+            this.label4.Text = "Fecha de Cita:";
+            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
             this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
             this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
             this.paneldegradado1.Controls.Add(this.texfecha2);
-            this.paneldegradado1.Controls.Add(this.textfecha);
             this.paneldegradado1.Controls.Add(this.textremision);
             this.paneldegradado1.Controls.Add(this.textidcita);
             this.paneldegradado1.Controls.Add(this.btnposponer);
@@ -202,13 +219,7 @@ namespace CAPA_PRESENTACION
             this.texfecha2.Name = "texfecha2";
             this.texfecha2.Size = new System.Drawing.Size(100, 20);
             this.texfecha2.TabIndex = 19;
-            // 
-            // textfecha
-            // 
-            this.textfecha.Location = new System.Drawing.Point(481, 25);
-            this.textfecha.Name = "textfecha";
-            this.textfecha.Size = new System.Drawing.Size(100, 20);
-            this.textfecha.TabIndex = 18;
+            this.texfecha2.Visible = false;
             // 
             // textremision
             // 
@@ -251,15 +262,6 @@ namespace CAPA_PRESENTACION
             this.btnposponer.UseVisualStyleBackColor = false;
             this.btnposponer.Click += new System.EventHandler(this.btnposponer_Click);
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(238, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "label4";
-            // 
             // Ver_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -268,6 +270,7 @@ namespace CAPA_PRESENTACION
             this.ClientSize = new System.Drawing.Size(768, 505);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.textfecha);
             this.Controls.Add(this.fecha3);
             this.Controls.Add(this.selecion);
             this.Controls.Add(this.texthoraA);
