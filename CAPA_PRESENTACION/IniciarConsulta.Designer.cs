@@ -150,7 +150,7 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.BorderColor = System.Drawing.Color.Transparent;
             this.paneldegra21.Controls.Add(this.bunifuLabel1);
             this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textBox1);
+           // this.paneldegra21.Controls.Add(this.textBox1);
             this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
             this.paneldegra21.Location = new System.Drawing.Point(0, 0);
             this.paneldegra21.Name = "paneldegra21";
@@ -399,7 +399,7 @@ namespace CAPA_PRESENTACION
         private Bunifu.UI.WinForms.BunifuDataGridView dtaexpe;
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel bunifuShadowPanel2;
         private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel paneldegra21;
-        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox textBox1;
+       // private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox textBox1;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private paneldegra2 paneldegra22;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel5;
