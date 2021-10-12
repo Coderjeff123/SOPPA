@@ -52,6 +52,7 @@ namespace CAPA_PRESENTACION
             remisionN.insertremision(01,cmbxremitente.Texts, txtmotivo.Texts,datetimepicker1.Value);
             MessageBox.Show("Se resgistro correctamente");
             limpiar();
+            paneldegradado2.Visible = true;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -126,7 +127,7 @@ namespace CAPA_PRESENTACION
         private void button1_Click(object sender, EventArgs e)
         {
            
-            dtaexpe.DataSource = datos.mostrarestu(txtnom.Texts);
+            dtaexpe.DataSource = datos.mostrarestu(txtnom.Text);
         }
 
         private void dtaexpe_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
@@ -135,5 +136,7 @@ namespace CAPA_PRESENTACION
             paneldegradado2.Visible = false;
             txtnombre.Texts = dtaexpe.CurrentRow.Cells["Nombre1"].Value.ToString();
         }
+
+      
     }
 }

@@ -25,7 +25,7 @@ namespace CAPA_PRESENTACION
         {
             mostrar();
             
-            tema(principal.Tema2);
+            tema(principal.Tema);
 
 
         }
@@ -34,6 +34,7 @@ namespace CAPA_PRESENTACION
         {
             dtaexpe.DataSource = data.showEX();
             dtaexpe.Columns["Foto"].Visible = false;
+            this.Refresh();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -45,8 +46,7 @@ namespace CAPA_PRESENTACION
         {
 
             Tema.ElegirTema(tema);
-            paneldegra21.Colorleft = Tema.BarraTituloL;
-            paneldegra21.Colorrigth = Tema.BarraTituloF;
+          
             this.Refresh();
         }
 
@@ -115,6 +115,41 @@ namespace CAPA_PRESENTACION
         }
 
         private void dtaexpe_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void paneldegra21_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textver_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textver_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtestado_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -59,6 +59,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemisionD.cs" />
     <Compile Include="SeguimientoD.cs" />
+    <Compile Include="ServidorCorreo\MasterMailServer.cs" />
+    <Compile Include="ServidorCorreo\SystemSuportMail.cs" />
     <Compile Include="usercache\Cargos.cs" />
     <Compile Include="usercache\USERcache.cs" />
     <Compile Include="UserD.cs" />

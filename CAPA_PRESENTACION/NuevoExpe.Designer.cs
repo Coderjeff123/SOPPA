@@ -30,9 +30,23 @@ namespace CAPA_PRESENTACION
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NuevoExpe));
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties9 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties stateProperties10 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.StateProperties();
             this.label1 = new System.Windows.Forms.Label();
             this.panelDatos = new System.Windows.Forms.Panel();
             this.rbtinactivo = new CAPA_PRESENTACION.radiobuttonpersonal();
@@ -44,19 +58,19 @@ namespace CAPA_PRESENTACION
             this.panelinfo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new CAPA_PRESENTACION.Pictureboxpersonal();
             this.paneldegradado2 = new CAPA_PRESENTACION.Paneldegradado();
-            this.panelBuscaestu = new CAPA_PRESENTACION.paneldegra2();
-            this.txtnom = new CAPA_PRESENTACION.textboxpersonal();
-            this.label3 = new System.Windows.Forms.Label();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.txtnom = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
-            this.btnlimpiar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnremitir = new System.Windows.Forms.Button();
+            this.Button2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnlimpiar = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.btnremitir = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
+            this.datetimepicker1 = new Bunifu.UI.WinForms.BunifuDatePicker();
             this.txtmotivo = new CAPA_PRESENTACION.textboxpersonal();
             this.cmbxremitente = new CAPA_PRESENTACION.Combobox();
-            this.datetimepicker1 = new CAPA_PRESENTACION.Datetimepicker();
             this.label9 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -66,7 +80,7 @@ namespace CAPA_PRESENTACION
             this.panelinfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.paneldegradado2.SuspendLayout();
-            this.panelBuscaestu.SuspendLayout();
+            this.bunifuShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.paneldegradado1.SuspendLayout();
             this.paneldegra21.SuspendLayout();
@@ -76,7 +90,7 @@ namespace CAPA_PRESENTACION
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(304, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(129, 20);
@@ -95,17 +109,17 @@ namespace CAPA_PRESENTACION
             this.panelDatos.Controls.Add(this.label2);
             this.panelDatos.Location = new System.Drawing.Point(162, 29);
             this.panelDatos.Name = "panelDatos";
-            this.panelDatos.Size = new System.Drawing.Size(580, 182);
+            this.panelDatos.Size = new System.Drawing.Size(580, 174);
             this.panelDatos.TabIndex = 1;
             // 
             // rbtinactivo
             // 
             this.rbtinactivo.AutoSize = true;
-            this.rbtinactivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.rbtinactivo.BackColor = System.Drawing.Color.White;
             this.rbtinactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
             this.rbtinactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtinactivo.ForeColor = System.Drawing.Color.White;
-            this.rbtinactivo.Location = new System.Drawing.Point(146, 117);
+            this.rbtinactivo.ForeColor = System.Drawing.Color.Black;
+            this.rbtinactivo.Location = new System.Drawing.Point(117, 114);
             this.rbtinactivo.MinimumSize = new System.Drawing.Size(0, 21);
             this.rbtinactivo.Name = "rbtinactivo";
             this.rbtinactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -118,12 +132,12 @@ namespace CAPA_PRESENTACION
             // rbtnactivo
             // 
             this.rbtnactivo.AutoSize = true;
-            this.rbtnactivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.rbtnactivo.BackColor = System.Drawing.Color.White;
             this.rbtnactivo.Checked = true;
             this.rbtnactivo.CheckedColor = System.Drawing.Color.DodgerBlue;
             this.rbtnactivo.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbtnactivo.ForeColor = System.Drawing.Color.White;
-            this.rbtnactivo.Location = new System.Drawing.Point(146, 79);
+            this.rbtnactivo.ForeColor = System.Drawing.Color.Black;
+            this.rbtnactivo.Location = new System.Drawing.Point(117, 76);
             this.rbtnactivo.MinimumSize = new System.Drawing.Size(0, 21);
             this.rbtnactivo.Name = "rbtnactivo";
             this.rbtnactivo.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
@@ -136,13 +150,13 @@ namespace CAPA_PRESENTACION
             // 
             // txtnombre
             // 
-            this.txtnombre.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtnombre.BackColor = System.Drawing.Color.White;
             this.txtnombre.BorderColor = System.Drawing.Color.DodgerBlue;
             this.txtnombre.BorderFocusColor = System.Drawing.Color.RoyalBlue;
             this.txtnombre.BorderRadius = 0;
             this.txtnombre.BorderSize = 2;
             this.txtnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnombre.ForeColor = System.Drawing.Color.White;
+            this.txtnombre.ForeColor = System.Drawing.Color.Black;
             this.txtnombre.IsFocused = false;
             this.txtnombre.IsPasswordChar = false;
             this.txtnombre.IsPlaceholder = false;
@@ -163,11 +177,11 @@ namespace CAPA_PRESENTACION
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(24, 102);
+            this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(24, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 20);
+            this.label5.Size = new System.Drawing.Size(55, 14);
             this.label5.TabIndex = 2;
             this.label5.Text = "Estado:";
             // 
@@ -175,7 +189,7 @@ namespace CAPA_PRESENTACION
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(17, 25);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 14);
@@ -193,9 +207,10 @@ namespace CAPA_PRESENTACION
             this.panelinfo.Controls.Add(this.pictureBox1);
             this.panelinfo.Controls.Add(this.label1);
             this.panelinfo.Controls.Add(this.panelDatos);
+            this.panelinfo.ForeColor = System.Drawing.Color.Black;
             this.panelinfo.Location = new System.Drawing.Point(0, 191);
             this.panelinfo.Name = "panelinfo";
-            this.panelinfo.Size = new System.Drawing.Size(754, 272);
+            this.panelinfo.Size = new System.Drawing.Size(754, 264);
             this.panelinfo.TabIndex = 3;
             this.panelinfo.Visible = false;
             // 
@@ -219,66 +234,119 @@ namespace CAPA_PRESENTACION
             // paneldegradado2
             // 
             this.paneldegradado2.angulo = 0F;
-            this.paneldegradado2.BackColor = System.Drawing.Color.SkyBlue;
+            this.paneldegradado2.BackColor = System.Drawing.Color.White;
             this.paneldegradado2.Colorleft = System.Drawing.Color.Transparent;
             this.paneldegradado2.Colorrigth = System.Drawing.Color.Transparent;
-            this.paneldegradado2.Controls.Add(this.panelBuscaestu);
+            this.paneldegradado2.Controls.Add(this.bunifuShadowPanel1);
             this.paneldegradado2.Controls.Add(this.dtaexpe);
             this.paneldegradado2.Location = new System.Drawing.Point(0, 0);
             this.paneldegradado2.Name = "paneldegradado2";
-            this.paneldegradado2.Size = new System.Drawing.Size(770, 560);
+            this.paneldegradado2.Size = new System.Drawing.Size(765, 452);
             this.paneldegradado2.TabIndex = 6;
             // 
-            // panelBuscaestu
+            // bunifuShadowPanel1
             // 
-            this.panelBuscaestu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelBuscaestu.Colorleft = System.Drawing.Color.DodgerBlue;
-            this.panelBuscaestu.Colorrigth = System.Drawing.Color.DeepSkyBlue;
-            this.panelBuscaestu.Controls.Add(this.txtnom);
-            this.panelBuscaestu.Controls.Add(this.label3);
-            this.panelBuscaestu.Controls.Add(this.button1);
-            this.panelBuscaestu.Location = new System.Drawing.Point(0, 0);
-            this.panelBuscaestu.Name = "panelBuscaestu";
-            this.panelBuscaestu.Size = new System.Drawing.Size(770, 67);
-            this.panelBuscaestu.TabIndex = 6;
+            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.Transparent;
+            this.bunifuShadowPanel1.Controls.Add(this.bunifuLabel1);
+            this.bunifuShadowPanel1.Controls.Add(this.txtnom);
+            this.bunifuShadowPanel1.Controls.Add(this.button1);
+            this.bunifuShadowPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.Empty;
+            this.bunifuShadowPanel1.ShadowDept = 5;
+            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(765, 73);
+            this.bunifuShadowPanel1.TabIndex = 10;
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AutoEllipsis = true;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel1.Location = new System.Drawing.Point(53, 26);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(126, 21);
+            this.bunifuLabel1.TabIndex = 9;
+            this.bunifuLabel1.Text = " Buscar expediente";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
             // 
             // txtnom
             // 
-            this.txtnom.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.txtnom.BorderColor = System.Drawing.Color.Blue;
-            this.txtnom.BorderFocusColor = System.Drawing.Color.DodgerBlue;
-            this.txtnom.BorderRadius = 0;
-            this.txtnom.BorderSize = 2;
-            this.txtnom.Font = new System.Drawing.Font("Mongolian Baiti", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtnom.ForeColor = System.Drawing.Color.White;
-            this.txtnom.IsFocused = false;
-            this.txtnom.IsPasswordChar = false;
-            this.txtnom.IsPlaceholder = false;
-            this.txtnom.Location = new System.Drawing.Point(116, 30);
-            this.txtnom.Margin = new System.Windows.Forms.Padding(4);
+            this.txtnom.AcceptsReturn = false;
+            this.txtnom.AcceptsTab = false;
+            this.txtnom.AnimationSpeed = 200;
+            this.txtnom.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.txtnom.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.txtnom.BackColor = System.Drawing.Color.White;
+            this.txtnom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtnom.BackgroundImage")));
+            this.txtnom.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.txtnom.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.txtnom.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.txtnom.BorderColorIdle = System.Drawing.Color.DodgerBlue;
+            this.txtnom.BorderRadius = 3;
+            this.txtnom.BorderThickness = 1;
+            this.txtnom.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.txtnom.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnom.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.txtnom.DefaultText = "";
+            this.txtnom.FillColor = System.Drawing.Color.White;
+            this.txtnom.ForeColor = System.Drawing.Color.Black;
+            this.txtnom.HideSelection = true;
+            this.txtnom.IconLeft = global::CAPA_PRESENTACION.Properties.Resources.icons8_nombre_32;
+            this.txtnom.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnom.IconPadding = 10;
+            this.txtnom.IconRight = null;
+            this.txtnom.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtnom.Lines = new string[0];
+            this.txtnom.Location = new System.Drawing.Point(191, 15);
+            this.txtnom.MaxLength = 32767;
+            this.txtnom.MinimumSize = new System.Drawing.Size(100, 35);
+            this.txtnom.Modified = false;
             this.txtnom.Multiline = false;
             this.txtnom.Name = "txtnom";
-            this.txtnom.Padding = new System.Windows.Forms.Padding(10, 7, 10, 7);
-            this.txtnom.PasswordChar = false;
-            this.txtnom.PlaceholderColor = System.Drawing.Color.DarkGray;
-            this.txtnom.PlaceholderText = "";
-            this.txtnom.Size = new System.Drawing.Size(461, 32);
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtnom.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtnom.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtnom.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.txtnom.OnIdleState = stateProperties4;
+            this.txtnom.PasswordChar = '\0';
+            this.txtnom.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txtnom.PlaceholderText = "Nombres";
+            this.txtnom.ReadOnly = false;
+            this.txtnom.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.txtnom.SelectedText = "";
+            this.txtnom.SelectionLength = 0;
+            this.txtnom.SelectionStart = 0;
+            this.txtnom.ShortcutsEnabled = true;
+            this.txtnom.Size = new System.Drawing.Size(446, 35);
+            this.txtnom.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Material;
             this.txtnom.TabIndex = 4;
-            this.txtnom.Texts = "";
-            this.txtnom.UnderlinedStyle = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(293, 6);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 20);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Buscar Estudiante";
+            this.txtnom.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtnom.TextMarginBottom = 0;
+            this.txtnom.TextMarginLeft = 5;
+            this.txtnom.TextMarginTop = 0;
+            this.txtnom.TextPlaceholder = "Nombres";
+            this.txtnom.UseSystemPasswordChar = false;
+            this.txtnom.WordWrap = true;
             // 
             // button1
             // 
@@ -288,8 +356,8 @@ namespace CAPA_PRESENTACION
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(584, 23);
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.icons8_google_web_search_322;
+            this.button1.Location = new System.Drawing.Point(643, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 41);
             this.button1.TabIndex = 3;
@@ -301,11 +369,9 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.AllowUserToAddRows = false;
             this.dtaexpe.AllowUserToResizeColumns = false;
             this.dtaexpe.AllowUserToResizeRows = false;
-            this.dtaexpe.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaexpe.BackgroundColor = System.Drawing.Color.SkyBlue;
+            this.dtaexpe.BackgroundColor = System.Drawing.Color.White;
             this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -329,7 +395,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.DefaultCellStyle = dataGridViewCellStyle2;
             this.dtaexpe.EnableHeadersVisualStyles = false;
             this.dtaexpe.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dtaexpe.Location = new System.Drawing.Point(-3, 67);
+            this.dtaexpe.Location = new System.Drawing.Point(3, 70);
             this.dtaexpe.Name = "dtaexpe";
             this.dtaexpe.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -345,97 +411,223 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.ShowCellToolTips = false;
             this.dtaexpe.ShowEditingIcon = false;
             this.dtaexpe.ShowRowErrors = false;
-            this.dtaexpe.Size = new System.Drawing.Size(770, 429);
+            this.dtaexpe.Size = new System.Drawing.Size(762, 147);
             this.dtaexpe.TabIndex = 7;
             this.dtaexpe.RowHeaderMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaexpe_RowHeaderMouseDoubleClick);
             // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.White;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.White;
+            this.paneldegradado1.Controls.Add(this.Button2);
             this.paneldegradado1.Controls.Add(this.btnlimpiar);
-            this.paneldegradado1.Controls.Add(this.button2);
             this.paneldegradado1.Controls.Add(this.btnremitir);
             this.paneldegradado1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.paneldegradado1.Location = new System.Drawing.Point(0, 458);
+            this.paneldegradado1.Location = new System.Drawing.Point(0, 446);
             this.paneldegradado1.Name = "paneldegradado1";
-            this.paneldegradado1.Size = new System.Drawing.Size(768, 47);
+            this.paneldegradado1.Size = new System.Drawing.Size(768, 59);
             this.paneldegradado1.TabIndex = 6;
+            // 
+            // Button2
+            // 
+            this.Button2.AllowToggling = false;
+            this.Button2.AnimationSpeed = 200;
+            this.Button2.AutoGenerateColors = false;
+            this.Button2.BackColor = System.Drawing.Color.Transparent;
+            this.Button2.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.Button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button2.BackgroundImage")));
+            this.Button2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.Button2.ButtonText = "Limpiar";
+            this.Button2.ButtonTextMarginLeft = 10;
+            this.Button2.ColorContrastOnClick = 45;
+            this.Button2.ColorContrastOnHover = 45;
+            this.Button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.Button2.CustomizableEdges = borderEdges1;
+            this.Button2.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Button2.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.Button2.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.Button2.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.Button2.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.Button2.ForeColor = System.Drawing.Color.White;
+            this.Button2.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button2.IconMarginLeft = 11;
+            this.Button2.IconPadding = 10;
+            this.Button2.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.Button2.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.Button2.IdleBorderRadius = 3;
+            this.Button2.IdleBorderThickness = 1;
+            this.Button2.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.Button2.IdleIconLeftImage = global::CAPA_PRESENTACION.Properties.Resources.icons8_cancelar_32;
+            this.Button2.IdleIconRightImage = null;
+            this.Button2.IndicateFocus = false;
+            this.Button2.Location = new System.Drawing.Point(650, 2);
+            this.Button2.Name = "Button2";
+            stateProperties5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties5.BorderRadius = 3;
+            stateProperties5.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties5.BorderThickness = 1;
+            stateProperties5.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties5.ForeColor = System.Drawing.Color.White;
+            stateProperties5.IconLeftImage = null;
+            stateProperties5.IconRightImage = null;
+            this.Button2.onHoverState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.BorderRadius = 3;
+            stateProperties6.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties6.BorderThickness = 1;
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties6.ForeColor = System.Drawing.Color.White;
+            stateProperties6.IconLeftImage = null;
+            stateProperties6.IconRightImage = null;
+            this.Button2.OnPressedState = stateProperties6;
+            this.Button2.Size = new System.Drawing.Size(111, 43);
+            this.Button2.TabIndex = 13;
+            this.Button2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Button2.TextMarginLeft = 10;
+            this.Button2.UseDefaultRadiusAndThickness = true;
+            this.Button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnlimpiar
             // 
-            this.btnlimpiar.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnlimpiar.AllowToggling = false;
+            this.btnlimpiar.AnimationSpeed = 200;
+            this.btnlimpiar.AutoGenerateColors = false;
             this.btnlimpiar.BackColor = System.Drawing.Color.Transparent;
-            this.btnlimpiar.FlatAppearance.BorderSize = 0;
-            this.btnlimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnlimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btnlimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlimpiar.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlimpiar.ForeColor = System.Drawing.Color.Black;
-            this.btnlimpiar.Image = global::CAPA_PRESENTACION.Properties.Resources.edit_clear_all_icon_180807;
-            this.btnlimpiar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnlimpiar.Location = new System.Drawing.Point(10, 1);
+            this.btnlimpiar.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnlimpiar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnlimpiar.BackgroundImage")));
+            this.btnlimpiar.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnlimpiar.ButtonText = "Limpiar";
+            this.btnlimpiar.ButtonTextMarginLeft = 10;
+            this.btnlimpiar.ColorContrastOnClick = 45;
+            this.btnlimpiar.ColorContrastOnHover = 45;
+            this.btnlimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.btnlimpiar.CustomizableEdges = borderEdges2;
+            this.btnlimpiar.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnlimpiar.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnlimpiar.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnlimpiar.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnlimpiar.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnlimpiar.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.btnlimpiar.ForeColor = System.Drawing.Color.White;
+            this.btnlimpiar.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlimpiar.IconMarginLeft = 11;
+            this.btnlimpiar.IconPadding = 10;
+            this.btnlimpiar.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnlimpiar.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnlimpiar.IdleBorderRadius = 3;
+            this.btnlimpiar.IdleBorderThickness = 1;
+            this.btnlimpiar.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnlimpiar.IdleIconLeftImage = global::CAPA_PRESENTACION.Properties.Resources.icons8_formato_claro_32;
+            this.btnlimpiar.IdleIconRightImage = null;
+            this.btnlimpiar.IndicateFocus = false;
+            this.btnlimpiar.Location = new System.Drawing.Point(6, 2);
             this.btnlimpiar.Name = "btnlimpiar";
-            this.btnlimpiar.Size = new System.Drawing.Size(104, 39);
-            this.btnlimpiar.TabIndex = 9;
-            this.btnlimpiar.Text = "Limpiar";
-            this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnlimpiar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnlimpiar.UseVisualStyleBackColor = false;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.BorderRadius = 3;
+            stateProperties7.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties7.BorderThickness = 1;
+            stateProperties7.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.ForeColor = System.Drawing.Color.White;
+            stateProperties7.IconLeftImage = null;
+            stateProperties7.IconRightImage = null;
+            this.btnlimpiar.onHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties8.BorderRadius = 3;
+            stateProperties8.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties8.BorderThickness = 1;
+            stateProperties8.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties8.ForeColor = System.Drawing.Color.White;
+            stateProperties8.IconLeftImage = null;
+            stateProperties8.IconRightImage = null;
+            this.btnlimpiar.OnPressedState = stateProperties8;
+            this.btnlimpiar.Size = new System.Drawing.Size(141, 43);
+            this.btnlimpiar.TabIndex = 12;
+            this.btnlimpiar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnlimpiar.TextMarginLeft = 10;
+            this.btnlimpiar.UseDefaultRadiusAndThickness = true;
             this.btnlimpiar.Click += new System.EventHandler(this.btnlimpiar_Click);
-            // 
-            // button2
-            // 
-            this.button2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
-            this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.canceltheapplication_cancelar_2901;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(645, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(116, 39);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Cancelar";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnremitir
             // 
-            this.btnremitir.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnremitir.AllowToggling = false;
+            this.btnremitir.AnimationSpeed = 200;
+            this.btnremitir.AutoGenerateColors = false;
             this.btnremitir.BackColor = System.Drawing.Color.Transparent;
-            this.btnremitir.FlatAppearance.BorderSize = 0;
-            this.btnremitir.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.btnremitir.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btnremitir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnremitir.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnremitir.ForeColor = System.Drawing.Color.Black;
-            this.btnremitir.Image = global::CAPA_PRESENTACION.Properties.Resources.ok_accept_3523;
-            this.btnremitir.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnremitir.Location = new System.Drawing.Point(535, 4);
+            this.btnremitir.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.btnremitir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnremitir.BackgroundImage")));
+            this.btnremitir.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.btnremitir.ButtonText = "Remitir";
+            this.btnremitir.ButtonTextMarginLeft = 10;
+            this.btnremitir.ColorContrastOnClick = 45;
+            this.btnremitir.ColorContrastOnHover = 45;
+            this.btnremitir.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnremitir.CustomizableEdges = borderEdges3;
+            this.btnremitir.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnremitir.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.btnremitir.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.btnremitir.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.btnremitir.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.btnremitir.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.btnremitir.ForeColor = System.Drawing.Color.White;
+            this.btnremitir.IconLeftCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnremitir.IconMarginLeft = 11;
+            this.btnremitir.IconPadding = 10;
+            this.btnremitir.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.btnremitir.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnremitir.IdleBorderRadius = 3;
+            this.btnremitir.IdleBorderThickness = 1;
+            this.btnremitir.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.btnremitir.IdleIconLeftImage = global::CAPA_PRESENTACION.Properties.Resources.icons8_inscripción_32__1_;
+            this.btnremitir.IdleIconRightImage = null;
+            this.btnremitir.IndicateFocus = false;
+            this.btnremitir.Location = new System.Drawing.Point(505, 2);
             this.btnremitir.Name = "btnremitir";
-            this.btnremitir.Size = new System.Drawing.Size(104, 39);
-            this.btnremitir.TabIndex = 7;
-            this.btnremitir.Text = "Remitir";
-            this.btnremitir.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnremitir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnremitir.UseVisualStyleBackColor = false;
+            stateProperties9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties9.BorderRadius = 3;
+            stateProperties9.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties9.BorderThickness = 1;
+            stateProperties9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties9.ForeColor = System.Drawing.Color.White;
+            stateProperties9.IconLeftImage = null;
+            stateProperties9.IconRightImage = null;
+            this.btnremitir.onHoverState = stateProperties9;
+            stateProperties10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties10.BorderRadius = 3;
+            stateProperties10.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            stateProperties10.BorderThickness = 1;
+            stateProperties10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(96)))), ((int)(((byte)(144)))));
+            stateProperties10.ForeColor = System.Drawing.Color.White;
+            stateProperties10.IconLeftImage = null;
+            stateProperties10.IconRightImage = null;
+            this.btnremitir.OnPressedState = stateProperties10;
+            this.btnremitir.Size = new System.Drawing.Size(141, 43);
+            this.btnremitir.TabIndex = 11;
+            this.btnremitir.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnremitir.TextMarginLeft = 10;
+            this.btnremitir.UseDefaultRadiusAndThickness = true;
             this.btnremitir.Click += new System.EventHandler(this.btnremitir_Click);
             // 
             // paneldegra21
             // 
             this.paneldegra21.Colorleft = System.Drawing.Color.Empty;
             this.paneldegra21.Colorrigth = System.Drawing.Color.Empty;
+            this.paneldegra21.Controls.Add(this.datetimepicker1);
             this.paneldegra21.Controls.Add(this.txtmotivo);
             this.paneldegra21.Controls.Add(this.cmbxremitente);
-            this.paneldegra21.Controls.Add(this.datetimepicker1);
             this.paneldegra21.Controls.Add(this.label9);
             this.paneldegra21.Controls.Add(this.label6);
             this.paneldegra21.Controls.Add(this.label8);
@@ -446,9 +638,30 @@ namespace CAPA_PRESENTACION
             this.paneldegra21.Size = new System.Drawing.Size(768, 132);
             this.paneldegra21.TabIndex = 7;
             // 
+            // datetimepicker1
+            // 
+            this.datetimepicker1.BorderRadius = 1;
+            this.datetimepicker1.Color = System.Drawing.Color.DodgerBlue;
+            this.datetimepicker1.DateBorderThickness = Bunifu.UI.WinForms.BunifuDatePicker.BorderThickness.Thick;
+            this.datetimepicker1.DateTextAlign = Bunifu.UI.WinForms.BunifuDatePicker.TextAlign.Left;
+            this.datetimepicker1.DisabledColor = System.Drawing.Color.Gray;
+            this.datetimepicker1.DisplayWeekNumbers = false;
+            this.datetimepicker1.DPHeight = 0;
+            this.datetimepicker1.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.datetimepicker1.FillDatePicker = false;
+            this.datetimepicker1.ForeColor = System.Drawing.Color.Black;
+            this.datetimepicker1.Icon = ((System.Drawing.Image)(resources.GetObject("datetimepicker1.Icon")));
+            this.datetimepicker1.IconColor = System.Drawing.Color.DodgerBlue;
+            this.datetimepicker1.IconLocation = Bunifu.UI.WinForms.BunifuDatePicker.Indicator.Right;
+            this.datetimepicker1.Location = new System.Drawing.Point(140, 17);
+            this.datetimepicker1.MinimumSize = new System.Drawing.Size(217, 32);
+            this.datetimepicker1.Name = "datetimepicker1";
+            this.datetimepicker1.Size = new System.Drawing.Size(217, 32);
+            this.datetimepicker1.TabIndex = 15;
+            // 
             // txtmotivo
             // 
-            this.txtmotivo.BackColor = System.Drawing.Color.SkyBlue;
+            this.txtmotivo.BackColor = System.Drawing.Color.White;
             this.txtmotivo.BorderColor = System.Drawing.Color.DodgerBlue;
             this.txtmotivo.BorderFocusColor = System.Drawing.Color.RoyalBlue;
             this.txtmotivo.BorderRadius = 0;
@@ -458,7 +671,7 @@ namespace CAPA_PRESENTACION
             this.txtmotivo.IsFocused = false;
             this.txtmotivo.IsPasswordChar = false;
             this.txtmotivo.IsPlaceholder = false;
-            this.txtmotivo.Location = new System.Drawing.Point(492, 23);
+            this.txtmotivo.Location = new System.Drawing.Point(497, 14);
             this.txtmotivo.Margin = new System.Windows.Forms.Padding(4);
             this.txtmotivo.Multiline = true;
             this.txtmotivo.Name = "txtmotivo";
@@ -474,7 +687,7 @@ namespace CAPA_PRESENTACION
             // 
             // cmbxremitente
             // 
-            this.cmbxremitente.BackColor = System.Drawing.Color.SkyBlue;
+            this.cmbxremitente.BackColor = System.Drawing.Color.White;
             this.cmbxremitente.BorderColor = System.Drawing.Color.DodgerBlue;
             this.cmbxremitente.BorderSize = 2;
             this.cmbxremitente.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDown;
@@ -486,8 +699,8 @@ namespace CAPA_PRESENTACION
             "Coordinador Social",
             "Coordinador de secundaria",
             "Coordinador Primaria"});
-            this.cmbxremitente.ListBackColor = System.Drawing.Color.LightSkyBlue;
-            this.cmbxremitente.ListTextColor = System.Drawing.Color.White;
+            this.cmbxremitente.ListBackColor = System.Drawing.Color.White;
+            this.cmbxremitente.ListTextColor = System.Drawing.Color.Black;
             this.cmbxremitente.Location = new System.Drawing.Point(144, 70);
             this.cmbxremitente.MinimumSize = new System.Drawing.Size(200, 30);
             this.cmbxremitente.Name = "cmbxremitente";
@@ -496,28 +709,14 @@ namespace CAPA_PRESENTACION
             this.cmbxremitente.TabIndex = 13;
             this.cmbxremitente.Texts = "";
             // 
-            // datetimepicker1
-            // 
-            this.datetimepicker1.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.datetimepicker1.BorderSize = 2;
-            this.datetimepicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F);
-            this.datetimepicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datetimepicker1.Location = new System.Drawing.Point(144, 23);
-            this.datetimepicker1.MinimumSize = new System.Drawing.Size(4, 35);
-            this.datetimepicker1.Name = "datetimepicker1";
-            this.datetimepicker1.Size = new System.Drawing.Size(166, 35);
-            this.datetimepicker1.SkinColor = System.Drawing.Color.SkyBlue;
-            this.datetimepicker1.TabIndex = 12;
-            this.datetimepicker1.TextColor = System.Drawing.Color.White;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(0, 67);
+            this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Black;
+            this.label9.Location = new System.Drawing.Point(15, 67);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 16);
+            this.label9.Size = new System.Drawing.Size(72, 14);
             this.label9.TabIndex = 11;
             this.label9.Text = "Remitente";
             // 
@@ -525,7 +724,7 @@ namespace CAPA_PRESENTACION
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Mongolian Baiti", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 20);
@@ -535,22 +734,22 @@ namespace CAPA_PRESENTACION
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(336, 23);
+            this.label8.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(359, 23);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(149, 16);
+            this.label8.Size = new System.Drawing.Size(132, 14);
             this.label8.TabIndex = 9;
             this.label8.Text = "Motivo de remision";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(0, 23);
+            this.label7.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(15, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 16);
+            this.label7.Size = new System.Drawing.Size(122, 14);
             this.label7.TabIndex = 8;
             this.label7.Text = "Fecha de remision";
             // 
@@ -558,7 +757,8 @@ namespace CAPA_PRESENTACION
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 505);
             this.Controls.Add(this.paneldegradado2);
             this.Controls.Add(this.panelinfo);
@@ -576,8 +776,8 @@ namespace CAPA_PRESENTACION
             this.panelinfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.paneldegradado2.ResumeLayout(false);
-            this.panelBuscaestu.ResumeLayout(false);
-            this.panelBuscaestu.PerformLayout();
+            this.bunifuShadowPanel1.ResumeLayout(false);
+            this.bunifuShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegra21.ResumeLayout(false);
@@ -595,26 +795,26 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label9;
         private Paneldegradado paneldegradado1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnremitir;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnlimpiar;
         private System.Windows.Forms.ErrorProvider epError;
         private Paneldegradado paneldegradado2;
-        private paneldegra2 panelBuscaestu;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridView dtaexpe;
         private paneldegra2 paneldegra21;
-        private Datetimepicker datetimepicker1;
         private Combobox cmbxremitente;
         private textboxpersonal txtmotivo;
         private System.Windows.Forms.Panel panelinfo;
         private Pictureboxpersonal pictureBox1;
         private textboxpersonal txtnombre;
-        private textboxpersonal txtnom;
         private radiobuttonpersonal rbtinactivo;
         private radiobuttonpersonal rbtnactivo;
+        private Bunifu.UI.WinForms.BunifuDatePicker datetimepicker1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnremitir;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton btnlimpiar;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton Button2;
+        private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel bunifuShadowPanel1;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox txtnom;
         // private radiobuttonpersonal rbtnactivo;
         // private radiobuttonpersonal rbtninactivo;
     }

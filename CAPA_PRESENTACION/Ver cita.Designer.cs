@@ -32,24 +32,29 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ver_cita));
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.dtacita = new System.Windows.Forms.DataGridView();
-            this.Titulo1 = new System.Windows.Forms.Label();
             this.monthfechaactu = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.texthoraA = new System.Windows.Forms.TextBox();
             this.selecion = new System.Windows.Forms.Label();
             this.fecha3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.textfecha = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.texfecha2 = new System.Windows.Forms.TextBox();
+            this.textfecha = new System.Windows.Forms.TextBox();
             this.textremision = new System.Windows.Forms.TextBox();
             this.textidcita = new System.Windows.Forms.TextBox();
             this.btnposponer = new CAPA_PRESENTACION.Buttonpersolizado();
+            this.bunifuShadowPanel1 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.texthoraA = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtacita)).BeginInit();
             this.paneldegradado1.SuspendLayout();
+            this.bunifuShadowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dtacita
@@ -59,7 +64,7 @@ namespace CAPA_PRESENTACION
             this.dtacita.AllowUserToResizeRows = false;
             this.dtacita.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtacita.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtacita.BackgroundColor = System.Drawing.Color.SkyBlue;
+            this.dtacita.BackgroundColor = System.Drawing.Color.White;
             this.dtacita.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtacita.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtacita.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -81,9 +86,10 @@ namespace CAPA_PRESENTACION
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dtacita.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dtacita.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtacita.EnableHeadersVisualStyles = false;
             this.dtacita.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dtacita.Location = new System.Drawing.Point(35, 62);
+            this.dtacita.Location = new System.Drawing.Point(0, 0);
             this.dtacita.Name = "dtacita";
             this.dtacita.ReadOnly = true;
             this.dtacita.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -100,25 +106,14 @@ namespace CAPA_PRESENTACION
             this.dtacita.ShowCellToolTips = false;
             this.dtacita.ShowEditingIcon = false;
             this.dtacita.ShowRowErrors = false;
-            this.dtacita.Size = new System.Drawing.Size(683, 207);
+            this.dtacita.Size = new System.Drawing.Size(768, 244);
             this.dtacita.TabIndex = 8;
             this.dtacita.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtacita_CellContentClick);
             this.dtacita.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtacita_RowHeaderMouseClick);
             // 
-            // Titulo1
-            // 
-            this.Titulo1.AutoSize = true;
-            this.Titulo1.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Titulo1.ForeColor = System.Drawing.Color.White;
-            this.Titulo1.Location = new System.Drawing.Point(32, 25);
-            this.Titulo1.Name = "Titulo1";
-            this.Titulo1.Size = new System.Drawing.Size(77, 16);
-            this.Titulo1.TabIndex = 9;
-            this.Titulo1.Text = "Ver Citas";
-            // 
             // monthfechaactu
             // 
-            this.monthfechaactu.Location = new System.Drawing.Point(470, 281);
+            this.monthfechaactu.Location = new System.Drawing.Point(502, 269);
             this.monthfechaactu.Name = "monthfechaactu";
             this.monthfechaactu.TabIndex = 12;
             this.monthfechaactu.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
@@ -127,7 +122,8 @@ namespace CAPA_PRESENTACION
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(297, 281);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(326, 265);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(161, 19);
             this.label1.TabIndex = 13;
@@ -137,18 +133,13 @@ namespace CAPA_PRESENTACION
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 340);
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(12, 266);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 19);
             this.label2.TabIndex = 14;
             this.label2.Text = "Selecione nueva hora:";
-            // 
-            // texthoraA
-            // 
-            this.texthoraA.Location = new System.Drawing.Point(174, 341);
-            this.texthoraA.Name = "texthoraA";
-            this.texthoraA.Size = new System.Drawing.Size(100, 20);
-            this.texthoraA.TabIndex = 15;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // selecion
             // 
@@ -179,31 +170,15 @@ namespace CAPA_PRESENTACION
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 18;
             this.label3.Text = "label3";
-            // 
-            // textfecha
-            // 
-            this.textfecha.Location = new System.Drawing.Point(174, 384);
-            this.textfecha.Name = "textfecha";
-            this.textfecha.Size = new System.Drawing.Size(100, 20);
-            this.textfecha.TabIndex = 18;
-            this.textfecha.TextChanged += new System.EventHandler(this.textfecha_TextChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(56, 383);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 19);
-            this.label4.TabIndex = 19;
-            this.label4.Text = "Fecha de Cita:";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.White;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.White;
             this.paneldegradado1.Controls.Add(this.texfecha2);
+            this.paneldegradado1.Controls.Add(this.textfecha);
             this.paneldegradado1.Controls.Add(this.textremision);
             this.paneldegradado1.Controls.Add(this.textidcita);
             this.paneldegradado1.Controls.Add(this.btnposponer);
@@ -219,7 +194,13 @@ namespace CAPA_PRESENTACION
             this.texfecha2.Name = "texfecha2";
             this.texfecha2.Size = new System.Drawing.Size(100, 20);
             this.texfecha2.TabIndex = 19;
-            this.texfecha2.Visible = false;
+            // 
+            // textfecha
+            // 
+            this.textfecha.Location = new System.Drawing.Point(481, 25);
+            this.textfecha.Name = "textfecha";
+            this.textfecha.Size = new System.Drawing.Size(100, 20);
+            this.textfecha.TabIndex = 18;
             // 
             // textremision
             // 
@@ -239,8 +220,8 @@ namespace CAPA_PRESENTACION
             // 
             // btnposponer
             // 
-            this.btnposponer.BackColor = System.Drawing.Color.Transparent;
-            this.btnposponer.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnposponer.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnposponer.BackgroundColor = System.Drawing.Color.DodgerBlue;
             this.btnposponer.BorderColor = System.Drawing.Color.DodgerBlue;
             this.btnposponer.BorderRadius = 5;
             this.btnposponer.BorderSize = 1;
@@ -249,7 +230,7 @@ namespace CAPA_PRESENTACION
             this.btnposponer.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnposponer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnposponer.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnposponer.ForeColor = System.Drawing.Color.Black;
+            this.btnposponer.ForeColor = System.Drawing.Color.White;
             this.btnposponer.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
             this.btnposponer.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnposponer.Location = new System.Drawing.Point(20, 7);
@@ -258,28 +239,111 @@ namespace CAPA_PRESENTACION
             this.btnposponer.TabIndex = 10;
             this.btnposponer.Text = "Posponer cita";
             this.btnposponer.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnposponer.TextColor = System.Drawing.Color.Black;
+            this.btnposponer.TextColor = System.Drawing.Color.White;
             this.btnposponer.UseVisualStyleBackColor = false;
             this.btnposponer.Click += new System.EventHandler(this.btnposponer_Click);
+            // 
+            // bunifuShadowPanel1
+            // 
+            this.bunifuShadowPanel1.BorderColor = System.Drawing.Color.Gainsboro;
+            this.bunifuShadowPanel1.Controls.Add(this.dtacita);
+            this.bunifuShadowPanel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.bunifuShadowPanel1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuShadowPanel1.Name = "bunifuShadowPanel1";
+            this.bunifuShadowPanel1.PanelColor = System.Drawing.Color.Empty;
+            this.bunifuShadowPanel1.ShadowDept = 2;
+            this.bunifuShadowPanel1.ShadowTopLeftVisible = false;
+            this.bunifuShadowPanel1.Size = new System.Drawing.Size(768, 244);
+            this.bunifuShadowPanel1.TabIndex = 19;
+            // 
+            // texthoraA
+            // 
+            this.texthoraA.AcceptsReturn = false;
+            this.texthoraA.AcceptsTab = false;
+            this.texthoraA.AnimationSpeed = 200;
+            this.texthoraA.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.texthoraA.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.texthoraA.BackColor = System.Drawing.Color.White;
+            this.texthoraA.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("texthoraA.BackgroundImage")));
+            this.texthoraA.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.texthoraA.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.texthoraA.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.texthoraA.BorderColorIdle = System.Drawing.Color.DodgerBlue;
+            this.texthoraA.BorderRadius = 1;
+            this.texthoraA.BorderThickness = 1;
+            this.texthoraA.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.texthoraA.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.texthoraA.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.texthoraA.DefaultText = "";
+            this.texthoraA.FillColor = System.Drawing.Color.White;
+            this.texthoraA.HideSelection = true;
+            this.texthoraA.IconLeft = null;
+            this.texthoraA.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.texthoraA.IconPadding = 10;
+            this.texthoraA.IconRight = null;
+            this.texthoraA.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.texthoraA.Lines = new string[0];
+            this.texthoraA.Location = new System.Drawing.Point(172, 250);
+            this.texthoraA.MaxLength = 32767;
+            this.texthoraA.MinimumSize = new System.Drawing.Size(100, 35);
+            this.texthoraA.Modified = false;
+            this.texthoraA.Multiline = false;
+            this.texthoraA.Name = "texthoraA";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.texthoraA.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.texthoraA.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.texthoraA.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Empty;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.texthoraA.OnIdleState = stateProperties4;
+            this.texthoraA.PasswordChar = '\0';
+            this.texthoraA.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.texthoraA.PlaceholderText = "";
+            this.texthoraA.ReadOnly = false;
+            this.texthoraA.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.texthoraA.SelectedText = "";
+            this.texthoraA.SelectionLength = 0;
+            this.texthoraA.SelectionStart = 0;
+            this.texthoraA.ShortcutsEnabled = true;
+            this.texthoraA.Size = new System.Drawing.Size(128, 35);
+            this.texthoraA.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Material;
+            this.texthoraA.TabIndex = 20;
+            this.texthoraA.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.texthoraA.TextMarginBottom = 0;
+            this.texthoraA.TextMarginLeft = 5;
+            this.texthoraA.TextMarginTop = 0;
+            this.texthoraA.TextPlaceholder = "";
+            this.texthoraA.UseSystemPasswordChar = false;
+            this.texthoraA.WordWrap = true;
             // 
             // Ver_cita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 505);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.texthoraA);
+            this.Controls.Add(this.bunifuShadowPanel1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textfecha);
             this.Controls.Add(this.fecha3);
             this.Controls.Add(this.selecion);
-            this.Controls.Add(this.texthoraA);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.monthfechaactu);
             this.Controls.Add(this.paneldegradado1);
-            this.Controls.Add(this.Titulo1);
-            this.Controls.Add(this.dtacita);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Ver_cita";
             this.Text = "Ver_cita";
@@ -287,6 +351,7 @@ namespace CAPA_PRESENTACION
             ((System.ComponentModel.ISupportInitialize)(this.dtacita)).EndInit();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegradado1.PerformLayout();
+            this.bunifuShadowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -294,7 +359,6 @@ namespace CAPA_PRESENTACION
 
         #endregion
         private System.Windows.Forms.DataGridView dtacita;
-        private System.Windows.Forms.Label Titulo1;
         private Buttonpersolizado btnposponer;
         private Paneldegradado paneldegradado1;
         private System.Windows.Forms.MonthCalendar monthfechaactu;
@@ -303,11 +367,11 @@ namespace CAPA_PRESENTACION
         private System.Windows.Forms.TextBox textidcita;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox texthoraA;
         private System.Windows.Forms.TextBox texfecha2;
         private System.Windows.Forms.Label selecion;
         private System.Windows.Forms.Label fecha3;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel bunifuShadowPanel1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox texthoraA;
     }
 }

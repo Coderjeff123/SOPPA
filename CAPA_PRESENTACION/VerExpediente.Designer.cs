@@ -32,22 +32,27 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VerExpediente));
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.dtaexpe = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textver = new System.Windows.Forms.TextBox();
             this.paneldegradado1 = new CAPA_PRESENTACION.Paneldegradado();
             this.button2 = new CAPA_PRESENTACION.Buttonpersolizado();
             this.btnbaja = new CAPA_PRESENTACION.Buttonpersolizado();
             this.txtestado = new System.Windows.Forms.TextBox();
             this.id = new System.Windows.Forms.TextBox();
+            this.paneldegra21 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.textver = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.pimagen = new CAPA_PRESENTACION.Pictureboxpersonal();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).BeginInit();
             this.panel2.SuspendLayout();
-            this.paneldegra21.SuspendLayout();
             this.paneldegradado1.SuspendLayout();
+            this.paneldegra21.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pimagen)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,7 +63,7 @@ namespace CAPA_PRESENTACION
             this.dtaexpe.AllowUserToResizeRows = false;
             this.dtaexpe.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtaexpe.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaexpe.BackgroundColor = System.Drawing.Color.SkyBlue;
+            this.dtaexpe.BackgroundColor = System.Drawing.Color.White;
             this.dtaexpe.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaexpe.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaexpe.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -112,59 +117,12 @@ namespace CAPA_PRESENTACION
             this.panel2.Size = new System.Drawing.Size(717, 193);
             this.panel2.TabIndex = 2;
             // 
-            // paneldegra21
-            // 
-            this.paneldegra21.Colorleft = System.Drawing.Color.DodgerBlue;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.DeepSkyBlue;
-            this.paneldegra21.Controls.Add(this.label1);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textver);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(795, 73);
-            this.paneldegra21.TabIndex = 5;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(299, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar Expediente";
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(581, 15);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(56, 41);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // textver
-            // 
-            this.textver.Location = new System.Drawing.Point(144, 36);
-            this.textver.Name = "textver";
-            this.textver.Size = new System.Drawing.Size(415, 20);
-            this.textver.TabIndex = 1;
-            // 
             // paneldegradado1
             // 
             this.paneldegradado1.angulo = 0F;
-            this.paneldegradado1.Colorleft = System.Drawing.Color.Aqua;
-            this.paneldegradado1.Colorrigth = System.Drawing.Color.DodgerBlue;
+            this.paneldegradado1.BackColor = System.Drawing.Color.White;
+            this.paneldegradado1.Colorleft = System.Drawing.Color.White;
+            this.paneldegradado1.Colorrigth = System.Drawing.Color.White;
             this.paneldegradado1.Controls.Add(this.button2);
             this.paneldegradado1.Controls.Add(this.btnbaja);
             this.paneldegradado1.Controls.Add(this.txtestado);
@@ -177,17 +135,17 @@ namespace CAPA_PRESENTACION
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.Transparent;
-            this.button2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.button2.BorderColor = System.Drawing.Color.Blue;
-            this.button2.BorderRadius = 15;
+            this.button2.BackColor = System.Drawing.Color.DodgerBlue;
+            this.button2.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.button2.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.button2.BorderRadius = 5;
             this.button2.BorderSize = 1;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SkyBlue;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SkyBlue;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Black;
+            this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Image = global::CAPA_PRESENTACION.Properties.Resources.image_picture_icon_143762;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button2.Location = new System.Drawing.Point(144, 8);
@@ -196,23 +154,23 @@ namespace CAPA_PRESENTACION
             this.button2.TabIndex = 8;
             this.button2.Text = "Cambiar Imagen";
             this.button2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.TextColor = System.Drawing.Color.Black;
+            this.button2.TextColor = System.Drawing.Color.White;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // btnbaja
             // 
-            this.btnbaja.BackColor = System.Drawing.Color.Transparent;
-            this.btnbaja.BackgroundColor = System.Drawing.Color.Transparent;
-            this.btnbaja.BorderColor = System.Drawing.Color.Blue;
-            this.btnbaja.BorderRadius = 15;
+            this.btnbaja.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnbaja.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.btnbaja.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnbaja.BorderRadius = 5;
             this.btnbaja.BorderSize = 1;
             this.btnbaja.FlatAppearance.BorderSize = 0;
             this.btnbaja.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Teal;
             this.btnbaja.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
             this.btnbaja.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnbaja.Font = new System.Drawing.Font("Mongolian Baiti", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbaja.ForeColor = System.Drawing.Color.Black;
+            this.btnbaja.ForeColor = System.Drawing.Color.White;
             this.btnbaja.Image = global::CAPA_PRESENTACION.Properties.Resources.priority_low_icon_136291;
             this.btnbaja.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnbaja.Location = new System.Drawing.Point(20, 8);
@@ -221,7 +179,7 @@ namespace CAPA_PRESENTACION
             this.btnbaja.TabIndex = 7;
             this.btnbaja.Text = "Dar de baja";
             this.btnbaja.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnbaja.TextColor = System.Drawing.Color.Black;
+            this.btnbaja.TextColor = System.Drawing.Color.White;
             this.btnbaja.UseVisualStyleBackColor = false;
             this.btnbaja.Click += new System.EventHandler(this.btnbaja_Click);
             // 
@@ -232,6 +190,7 @@ namespace CAPA_PRESENTACION
             this.txtestado.Size = new System.Drawing.Size(100, 20);
             this.txtestado.TabIndex = 5;
             this.txtestado.Visible = false;
+            this.txtestado.TextChanged += new System.EventHandler(this.txtestado_TextChanged);
             // 
             // id
             // 
@@ -240,6 +199,112 @@ namespace CAPA_PRESENTACION
             this.id.Size = new System.Drawing.Size(100, 20);
             this.id.TabIndex = 4;
             this.id.Visible = false;
+            // 
+            // paneldegra21
+            // 
+            this.paneldegra21.BorderColor = System.Drawing.Color.Transparent;
+            this.paneldegra21.Controls.Add(this.textver);
+            this.paneldegra21.Controls.Add(this.button1);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.PanelColor = System.Drawing.Color.Empty;
+            this.paneldegra21.ShadowDept = 5;
+            this.paneldegra21.ShadowTopLeftVisible = false;
+            this.paneldegra21.Size = new System.Drawing.Size(795, 73);
+            this.paneldegra21.TabIndex = 7;
+            this.paneldegra21.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuShadowPanel1_Paint);
+            // 
+            // textver
+            // 
+            this.textver.AcceptsReturn = false;
+            this.textver.AcceptsTab = false;
+            this.textver.AnimationSpeed = 200;
+            this.textver.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textver.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textver.BackColor = System.Drawing.Color.White;
+            this.textver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textver.BackgroundImage")));
+            this.textver.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.textver.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.textver.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.textver.BorderColorIdle = System.Drawing.Color.DodgerBlue;
+            this.textver.BorderRadius = 3;
+            this.textver.BorderThickness = 1;
+            this.textver.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textver.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textver.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.textver.DefaultText = "";
+            this.textver.FillColor = System.Drawing.Color.White;
+            this.textver.ForeColor = System.Drawing.Color.Black;
+            this.textver.HideSelection = true;
+            this.textver.IconLeft = global::CAPA_PRESENTACION.Properties.Resources.icons8_nombre_32;
+            this.textver.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textver.IconPadding = 10;
+            this.textver.IconRight = null;
+            this.textver.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textver.Lines = new string[0];
+            this.textver.Location = new System.Drawing.Point(191, 15);
+            this.textver.MaxLength = 32767;
+            this.textver.MinimumSize = new System.Drawing.Size(100, 35);
+            this.textver.Modified = false;
+            this.textver.Multiline = false;
+            this.textver.Name = "textver";
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textver.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.textver.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textver.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textver.OnIdleState = stateProperties4;
+            this.textver.PasswordChar = '\0';
+            this.textver.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.textver.PlaceholderText = "Nombres";
+            this.textver.ReadOnly = false;
+            this.textver.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textver.SelectedText = "";
+            this.textver.SelectionLength = 0;
+            this.textver.SelectionStart = 0;
+            this.textver.ShortcutsEnabled = true;
+            this.textver.Size = new System.Drawing.Size(446, 35);
+            this.textver.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Material;
+            this.textver.TabIndex = 4;
+            this.textver.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textver.TextMarginBottom = 0;
+            this.textver.TextMarginLeft = 5;
+            this.textver.TextMarginTop = 0;
+            this.textver.TextPlaceholder = "Nombres";
+            this.textver.UseSystemPasswordChar = false;
+            this.textver.WordWrap = true;
+            this.textver.TextChanged += new System.EventHandler(this.textver_TextChanged_1);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.LightSkyBlue;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.icons8_google_web_search_32;
+            this.button1.Location = new System.Drawing.Point(648, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(70, 41);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pimagen
             // 
@@ -258,16 +323,33 @@ namespace CAPA_PRESENTACION
             this.pimagen.TabStop = false;
             this.pimagen.Click += new System.EventHandler(this.pimagen_Click_1);
             // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AutoEllipsis = true;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel1.Location = new System.Drawing.Point(45, 23);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(120, 21);
+            this.bunifuLabel1.TabIndex = 8;
+            this.bunifuLabel1.Text = " Buscar estudiante";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.bunifuLabel1.Click += new System.EventHandler(this.bunifuLabel1_Click);
+            // 
             // VerExpediente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(795, 511);
-            this.Controls.Add(this.pimagen);
+            this.Controls.Add(this.bunifuLabel1);
             this.Controls.Add(this.paneldegra21);
+            this.Controls.Add(this.pimagen);
             this.Controls.Add(this.paneldegradado1);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -278,28 +360,28 @@ namespace CAPA_PRESENTACION
             this.Load += new System.EventHandler(this.VerExpediente_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtaexpe)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.paneldegra21.ResumeLayout(false);
-            this.paneldegra21.PerformLayout();
             this.paneldegradado1.ResumeLayout(false);
             this.paneldegradado1.PerformLayout();
+            this.paneldegra21.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pimagen)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textver;
         private System.Windows.Forms.DataGridView dtaexpe;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Button button1;
         private Paneldegradado paneldegradado1;
         private System.Windows.Forms.TextBox id;
         private System.Windows.Forms.TextBox txtestado;
-        private paneldegra2 paneldegra21;
         private Pictureboxpersonal pimagen;
         private Buttonpersolizado btnbaja;
         private Buttonpersolizado button2;
+        private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel paneldegra21;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox textver;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         //private Microsoft.VisualBasic.PowerPacks.DataRepeater dataRepeater1;
     }
 }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using CAPA_DATOS.usercache;
+using CAPA_DATOS.ServidorCorreo;
 
 
 
@@ -17,6 +18,7 @@ namespace CAPA_DATOS
         string nombre;
         string contraseña;
         string camcontra;
+       
 
 
         public DLogin()
@@ -28,6 +30,8 @@ namespace CAPA_DATOS
             Nombre = nombre;
             Contraseña = contraseña;
             Camcontra = cacontra;
+           
+
             
         }
             
@@ -35,6 +39,7 @@ namespace CAPA_DATOS
         public string Nombre { get => nombre; set => nombre = value; }
         public string Contraseña { get => contraseña; set => contraseña = value; }
         public string Camcontra { get => camcontra; set => camcontra = value; }
+     
 
         public string INICIO(DLogin sesion)
         {
@@ -150,6 +155,66 @@ namespace CAPA_DATOS
             return retorno;
 
         }
+
+        public string recovery(DLogin recor)
+        {
+            string retorno = "";
+            SqlConnection conectar = new SqlConnection();
+
+           
+            try
+            {
+                conectar.ConnectionString = Conet.cnx;
+                conectar.Open();
+
+                SqlCommand splogin = new SqlCommand();
+                splogin.Connection = conectar;
+                splogin.CommandText = "SELECT * from [psci].[User] where Nombre=@nombre";
+                splogin.CommandType = CommandType.Text;
+
+                SqlParameter nom = new SqlParameter();
+                nom.ParameterName = "@nombre";
+                nom.SqlDbType = SqlDbType.NVarChar;
+                nom.Value = recor.Nombre;
+                splogin.Parameters.Add(nom);
+
+
+
+                
+
+                SqlDataReader sqlDataReader = splogin.ExecuteReader();
+
+                if (sqlDataReader.Read()==true)
+                {
+                    retorno = "Everithing its ok";
+                    string usernombre = sqlDataReader.GetString(0);
+                    string usercontra = sqlDataReader.GetString(1);
+                    string accountpassword = sqlDataReader.GetString(2);
+
+                    var mailservice =new  ServidorCorreo.SystemSuportMail();
+                    mailservice.sendMail(
+                        subject: "System: Password recory request",
+                        body: "Hola" + usernombre + "\n" + "Su contraseña es: " + usercontra,
+                        recipientMail: new List<string> { accountpassword }
+                        );
+                }
+                else
+                {
+                    retorno = "you have a problem";
+                }
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                conectar.Close();
+            }
+
+            return retorno;
+        }
+
        
     }
 }

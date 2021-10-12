@@ -180,6 +180,31 @@ namespace CAPA_PRESENTACION
 
         }
 
+        private void dtaagendar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void paneldegra21_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void paneldegra21_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void paneldegra22_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelagenda_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
 
 
 

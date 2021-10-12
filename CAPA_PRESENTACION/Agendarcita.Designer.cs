@@ -35,6 +35,11 @@ namespace CAPA_PRESENTACION
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Agendarcita));
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox.StateProperties();
             this.dtaagendar = new System.Windows.Forms.DataGridView();
             this.paneldegra22 = new CAPA_PRESENTACION.paneldegra2();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -56,10 +61,10 @@ namespace CAPA_PRESENTACION
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comidin = new CAPA_PRESENTACION.Pictureboxpersonal();
-            this.paneldegra21 = new CAPA_PRESENTACION.paneldegra2();
-            this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textagendar = new System.Windows.Forms.TextBox();
+            this.paneldegra21 = new Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel();
+            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
+            this.textagendar = new Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtaagendar)).BeginInit();
             this.paneldegra22.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -75,7 +80,7 @@ namespace CAPA_PRESENTACION
             this.dtaagendar.AllowUserToResizeRows = false;
             this.dtaagendar.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtaagendar.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dtaagendar.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dtaagendar.BackgroundColor = System.Drawing.Color.White;
             this.dtaagendar.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtaagendar.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtaagendar.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -100,7 +105,7 @@ namespace CAPA_PRESENTACION
             this.dtaagendar.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtaagendar.EnableHeadersVisualStyles = false;
             this.dtaagendar.GridColor = System.Drawing.Color.SkyBlue;
-            this.dtaagendar.Location = new System.Drawing.Point(0, 73);
+            this.dtaagendar.Location = new System.Drawing.Point(0, 0);
             this.dtaagendar.Name = "dtaagendar";
             this.dtaagendar.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -116,8 +121,9 @@ namespace CAPA_PRESENTACION
             this.dtaagendar.ShowCellToolTips = false;
             this.dtaagendar.ShowEditingIcon = false;
             this.dtaagendar.ShowRowErrors = false;
-            this.dtaagendar.Size = new System.Drawing.Size(770, 526);
+            this.dtaagendar.Size = new System.Drawing.Size(770, 599);
             this.dtaagendar.TabIndex = 7;
+            this.dtaagendar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaagendar_CellContentClick);
             this.dtaagendar.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtaagendar_CellDoubleClick);
             this.dtaagendar.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dtaagendar_RowHeaderMouseClick);
             // 
@@ -129,8 +135,9 @@ namespace CAPA_PRESENTACION
             this.paneldegra22.Controls.Add(this.panelagenda);
             this.paneldegra22.Location = new System.Drawing.Point(0, 0);
             this.paneldegra22.Name = "paneldegra22";
-            this.paneldegra22.Size = new System.Drawing.Size(799, 661);
+            this.paneldegra22.Size = new System.Drawing.Size(770, 599);
             this.paneldegra22.TabIndex = 9;
+            this.paneldegra22.Paint += new System.Windows.Forms.PaintEventHandler(this.paneldegra22_Paint);
             // 
             // dataGridView2
             // 
@@ -138,7 +145,7 @@ namespace CAPA_PRESENTACION
             this.dataGridView2.AllowUserToResizeRows = false;
             this.dataGridView2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView2.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.LightSkyBlue;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataGridView2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataGridView2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -165,7 +172,7 @@ namespace CAPA_PRESENTACION
             this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridView2.EnableHeadersVisualStyles = false;
             this.dataGridView2.GridColor = System.Drawing.Color.PaleTurquoise;
-            this.dataGridView2.Location = new System.Drawing.Point(388, 3);
+            this.dataGridView2.Location = new System.Drawing.Point(18, 12);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -181,7 +188,7 @@ namespace CAPA_PRESENTACION
             this.dataGridView2.ShowCellToolTips = false;
             this.dataGridView2.ShowEditingIcon = false;
             this.dataGridView2.ShowRowErrors = false;
-            this.dataGridView2.Size = new System.Drawing.Size(390, 569);
+            this.dataGridView2.Size = new System.Drawing.Size(746, 188);
             this.dataGridView2.TabIndex = 9;
             this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
             // 
@@ -216,10 +223,11 @@ namespace CAPA_PRESENTACION
             this.panelagenda.Controls.Add(this.label2);
             this.panelagenda.Controls.Add(this.label3);
             this.panelagenda.Controls.Add(this.comidin);
-            this.panelagenda.Location = new System.Drawing.Point(3, 12);
+            this.panelagenda.Location = new System.Drawing.Point(18, 216);
             this.panelagenda.Name = "panelagenda";
-            this.panelagenda.Size = new System.Drawing.Size(372, 560);
+            this.panelagenda.Size = new System.Drawing.Size(746, 375);
             this.panelagenda.TabIndex = 6;
+            this.panelagenda.Paint += new System.Windows.Forms.PaintEventHandler(this.panelagenda_Paint);
             // 
             // texthora
             // 
@@ -240,10 +248,10 @@ namespace CAPA_PRESENTACION
             // 
             // btnagen
             // 
-            this.btnagen.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.btnagen.BackgroundColor = System.Drawing.Color.MediumTurquoise;
-            this.btnagen.BorderColor = System.Drawing.Color.DarkBlue;
-            this.btnagen.BorderRadius = 20;
+            this.btnagen.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnagen.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.btnagen.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.btnagen.BorderRadius = 5;
             this.btnagen.BorderSize = 0;
             this.btnagen.FlatAppearance.BorderSize = 0;
             this.btnagen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -251,11 +259,12 @@ namespace CAPA_PRESENTACION
             this.btnagen.ForeColor = System.Drawing.Color.White;
             this.btnagen.Image = global::CAPA_PRESENTACION.Properties.Resources.googleagenda_94054;
             this.btnagen.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnagen.Location = new System.Drawing.Point(14, 487);
+            this.btnagen.Location = new System.Drawing.Point(26, 305);
             this.btnagen.Name = "btnagen";
             this.btnagen.Size = new System.Drawing.Size(163, 40);
             this.btnagen.TabIndex = 14;
             this.btnagen.Text = "Agendar cita";
+            this.btnagen.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnagen.TextColor = System.Drawing.Color.White;
             this.btnagen.UseVisualStyleBackColor = false;
             this.btnagen.Click += new System.EventHandler(this.btnagen_Click_1);
@@ -273,25 +282,25 @@ namespace CAPA_PRESENTACION
             // 
             // Calendaragenda
             // 
-            this.Calendaragenda.Location = new System.Drawing.Point(115, 300);
+            this.Calendaragenda.Location = new System.Drawing.Point(462, 122);
             this.Calendaragenda.Name = "Calendaragenda";
             this.Calendaragenda.TabIndex = 12;
             this.Calendaragenda.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.Calendaragenda_DateChanged_1);
             // 
             // buttonpersolizado1
             // 
-            this.buttonpersolizado1.BackColor = System.Drawing.Color.MediumTurquoise;
-            this.buttonpersolizado1.BackgroundColor = System.Drawing.Color.MediumTurquoise;
-            this.buttonpersolizado1.BorderColor = System.Drawing.Color.DarkBlue;
-            this.buttonpersolizado1.BorderRadius = 20;
-            this.buttonpersolizado1.BorderSize = 0;
+            this.buttonpersolizado1.BackColor = System.Drawing.Color.DodgerBlue;
+            this.buttonpersolizado1.BackgroundColor = System.Drawing.Color.DodgerBlue;
+            this.buttonpersolizado1.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.buttonpersolizado1.BorderRadius = 5;
+            this.buttonpersolizado1.BorderSize = 1;
             this.buttonpersolizado1.FlatAppearance.BorderSize = 0;
             this.buttonpersolizado1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonpersolizado1.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonpersolizado1.ForeColor = System.Drawing.Color.White;
             this.buttonpersolizado1.Image = global::CAPA_PRESENTACION.Properties.Resources._01_16_86396__1_;
             this.buttonpersolizado1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.buttonpersolizado1.Location = new System.Drawing.Point(16, 487);
+            this.buttonpersolizado1.Location = new System.Drawing.Point(27, 305);
             this.buttonpersolizado1.Name = "buttonpersolizado1";
             this.buttonpersolizado1.Size = new System.Drawing.Size(150, 40);
             this.buttonpersolizado1.TabIndex = 11;
@@ -302,14 +311,14 @@ namespace CAPA_PRESENTACION
             // 
             // textcodici
             // 
-            this.textcodici.BackColor = System.Drawing.Color.SkyBlue;
+            this.textcodici.BackColor = System.Drawing.Color.White;
             this.textcodici.BorderColor = System.Drawing.Color.DodgerBlue;
             this.textcodici.BorderFocusColor = System.Drawing.Color.Blue;
             this.textcodici.BorderRadius = 0;
             this.textcodici.BorderSize = 2;
             this.textcodici.Enabled = false;
             this.textcodici.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textcodici.ForeColor = System.Drawing.Color.White;
+            this.textcodici.ForeColor = System.Drawing.Color.Black;
             this.textcodici.IsFocused = false;
             this.textcodici.IsPasswordChar = false;
             this.textcodici.IsPlaceholder = false;
@@ -328,14 +337,14 @@ namespace CAPA_PRESENTACION
             // 
             // textnombre
             // 
-            this.textnombre.BackColor = System.Drawing.Color.SkyBlue;
+            this.textnombre.BackColor = System.Drawing.Color.White;
             this.textnombre.BorderColor = System.Drawing.Color.DodgerBlue;
             this.textnombre.BorderFocusColor = System.Drawing.Color.Blue;
             this.textnombre.BorderRadius = 0;
             this.textnombre.BorderSize = 2;
             this.textnombre.Enabled = false;
             this.textnombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textnombre.ForeColor = System.Drawing.Color.White;
+            this.textnombre.ForeColor = System.Drawing.Color.Black;
             this.textnombre.IsFocused = false;
             this.textnombre.IsPasswordChar = false;
             this.textnombre.IsPlaceholder = false;
@@ -354,13 +363,13 @@ namespace CAPA_PRESENTACION
             // 
             // textcodigo
             // 
-            this.textcodigo.BackColor = System.Drawing.Color.SkyBlue;
+            this.textcodigo.BackColor = System.Drawing.Color.White;
             this.textcodigo.BorderColor = System.Drawing.Color.DodgerBlue;
             this.textcodigo.BorderFocusColor = System.Drawing.Color.Blue;
             this.textcodigo.BorderRadius = 0;
             this.textcodigo.BorderSize = 2;
             this.textcodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textcodigo.ForeColor = System.Drawing.Color.White;
+            this.textcodigo.ForeColor = System.Drawing.Color.Black;
             this.textcodigo.IsFocused = false;
             this.textcodigo.IsPasswordChar = false;
             this.textcodigo.IsPlaceholder = false;
@@ -402,7 +411,7 @@ namespace CAPA_PRESENTACION
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(10, 300);
+            this.label4.Location = new System.Drawing.Point(357, 122);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 19);
             this.label4.TabIndex = 4;
@@ -447,33 +456,6 @@ namespace CAPA_PRESENTACION
             this.comidin.TabIndex = 0;
             this.comidin.TabStop = false;
             // 
-            // paneldegra21
-            // 
-            this.paneldegra21.BackColor = System.Drawing.Color.SkyBlue;
-            this.paneldegra21.Colorleft = System.Drawing.Color.Transparent;
-            this.paneldegra21.Colorrigth = System.Drawing.Color.SkyBlue;
-            this.paneldegra21.Controls.Add(this.label1);
-            this.paneldegra21.Controls.Add(this.button1);
-            this.paneldegra21.Controls.Add(this.textagendar);
-            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
-            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
-            this.paneldegra21.Name = "paneldegra21";
-            this.paneldegra21.Size = new System.Drawing.Size(770, 73);
-            this.paneldegra21.TabIndex = 6;
-            this.paneldegra21.Click += new System.EventHandler(this.paneldegra21_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(299, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 13);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Buscar Expediente";
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Transparent;
@@ -482,30 +464,128 @@ namespace CAPA_PRESENTACION
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.SteelBlue;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.search_locate_find_icon_icons_com_67287;
-            this.button1.Location = new System.Drawing.Point(585, 12);
+            this.button1.Image = global::CAPA_PRESENTACION.Properties.Resources.icons8_google_web_search_322;
+            this.button1.Location = new System.Drawing.Point(643, 12);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 44);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // paneldegra21
+            // 
+            this.paneldegra21.BorderColor = System.Drawing.Color.Transparent;
+            this.paneldegra21.Controls.Add(this.bunifuLabel1);
+            this.paneldegra21.Controls.Add(this.textagendar);
+            this.paneldegra21.Controls.Add(this.button1);
+            this.paneldegra21.Dock = System.Windows.Forms.DockStyle.Top;
+            this.paneldegra21.Location = new System.Drawing.Point(0, 0);
+            this.paneldegra21.Name = "paneldegra21";
+            this.paneldegra21.PanelColor = System.Drawing.Color.Empty;
+            this.paneldegra21.ShadowDept = 5;
+            this.paneldegra21.ShadowTopLeftVisible = false;
+            this.paneldegra21.Size = new System.Drawing.Size(770, 73);
+            this.paneldegra21.TabIndex = 10;
+            this.paneldegra21.Paint += new System.Windows.Forms.PaintEventHandler(this.paneldegra21_Paint_1);
+            // 
+            // bunifuLabel1
+            // 
+            this.bunifuLabel1.AutoEllipsis = true;
+            this.bunifuLabel1.CursorType = null;
+            this.bunifuLabel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Bold);
+            this.bunifuLabel1.ForeColor = System.Drawing.Color.Black;
+            this.bunifuLabel1.Location = new System.Drawing.Point(53, 26);
+            this.bunifuLabel1.Name = "bunifuLabel1";
+            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.bunifuLabel1.Size = new System.Drawing.Size(126, 21);
+            this.bunifuLabel1.TabIndex = 9;
+            this.bunifuLabel1.Text = " Buscar expediente";
+            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            // 
             // textagendar
             // 
-            this.textagendar.Location = new System.Drawing.Point(144, 36);
+            this.textagendar.AcceptsReturn = false;
+            this.textagendar.AcceptsTab = false;
+            this.textagendar.AnimationSpeed = 200;
+            this.textagendar.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.textagendar.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.textagendar.BackColor = System.Drawing.Color.White;
+            this.textagendar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("textagendar.BackgroundImage")));
+            this.textagendar.BorderColorActive = System.Drawing.Color.DodgerBlue;
+            this.textagendar.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(161)))), ((int)(((byte)(161)))));
+            this.textagendar.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            this.textagendar.BorderColorIdle = System.Drawing.Color.DodgerBlue;
+            this.textagendar.BorderRadius = 3;
+            this.textagendar.BorderThickness = 1;
+            this.textagendar.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.textagendar.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textagendar.DefaultFont = new System.Drawing.Font("Segoe UI Semibold", 9.75F);
+            this.textagendar.DefaultText = "";
+            this.textagendar.FillColor = System.Drawing.Color.White;
+            this.textagendar.ForeColor = System.Drawing.Color.Black;
+            this.textagendar.HideSelection = true;
+            this.textagendar.IconLeft = global::CAPA_PRESENTACION.Properties.Resources.icons8_nombre_32;
+            this.textagendar.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textagendar.IconPadding = 10;
+            this.textagendar.IconRight = null;
+            this.textagendar.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
+            this.textagendar.Lines = new string[0];
+            this.textagendar.Location = new System.Drawing.Point(191, 15);
+            this.textagendar.MaxLength = 32767;
+            this.textagendar.MinimumSize = new System.Drawing.Size(100, 35);
+            this.textagendar.Modified = false;
+            this.textagendar.Multiline = false;
             this.textagendar.Name = "textagendar";
-            this.textagendar.Size = new System.Drawing.Size(415, 20);
-            this.textagendar.TabIndex = 1;
+            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties1.FillColor = System.Drawing.Color.Empty;
+            stateProperties1.ForeColor = System.Drawing.Color.Empty;
+            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textagendar.OnActiveState = stateProperties1;
+            stateProperties2.BorderColor = System.Drawing.Color.Empty;
+            stateProperties2.FillColor = System.Drawing.Color.White;
+            stateProperties2.ForeColor = System.Drawing.Color.Empty;
+            stateProperties2.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.textagendar.OnDisabledState = stateProperties2;
+            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties3.FillColor = System.Drawing.Color.Empty;
+            stateProperties3.ForeColor = System.Drawing.Color.Empty;
+            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textagendar.OnHoverState = stateProperties3;
+            stateProperties4.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties4.FillColor = System.Drawing.Color.White;
+            stateProperties4.ForeColor = System.Drawing.Color.Black;
+            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.textagendar.OnIdleState = stateProperties4;
+            this.textagendar.PasswordChar = '\0';
+            this.textagendar.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.textagendar.PlaceholderText = "Nombres";
+            this.textagendar.ReadOnly = false;
+            this.textagendar.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.textagendar.SelectedText = "";
+            this.textagendar.SelectionLength = 0;
+            this.textagendar.SelectionStart = 0;
+            this.textagendar.ShortcutsEnabled = true;
+            this.textagendar.Size = new System.Drawing.Size(446, 35);
+            this.textagendar.Style = Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox._Style.Material;
+            this.textagendar.TabIndex = 4;
+            this.textagendar.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.textagendar.TextMarginBottom = 0;
+            this.textagendar.TextMarginLeft = 5;
+            this.textagendar.TextMarginTop = 0;
+            this.textagendar.TextPlaceholder = "Nombres";
+            this.textagendar.UseSystemPasswordChar = false;
+            this.textagendar.WordWrap = true;
             // 
             // Agendarcita
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SkyBlue;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(770, 599);
             this.Controls.Add(this.paneldegra22);
-            this.Controls.Add(this.dtaagendar);
             this.Controls.Add(this.paneldegra21);
+            this.Controls.Add(this.dtaagendar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Agendarcita";
             this.Text = "Agendarcita";
@@ -524,11 +604,7 @@ namespace CAPA_PRESENTACION
         }
 
         #endregion
-
-        private paneldegra2 paneldegra21;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textagendar;
         private paneldegra2 paneldegra22;
         private Paneldegradado panelagenda;
         public System.Windows.Forms.Label Fechacita;
@@ -550,5 +626,8 @@ namespace CAPA_PRESENTACION
         public System.Windows.Forms.DataGridView dtaagendar;
         private System.Windows.Forms.TextBox texthora;
         private System.Windows.Forms.TextBox texvalor;
+        private Bunifu.UI.WinForm.BunifuShadowPanel.BunifuShadowPanel paneldegra21;
+        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
+        private Bunifu.UI.WinForms.BunifuTextbox.BunifuTextBox textagendar;
     }
 }

@@ -46,7 +46,7 @@ namespace CAPA_DATOS
                 Conectar.Open();
                 SqlCommand sp_New_C = new SqlCommand();
                 sp_New_C.Connection = Conectar;
-                sp_New_C.CommandText = "New_C";
+                sp_New_C.CommandText = "psci.New_C";
                 sp_New_C.CommandType = CommandType.StoredProcedure;
 
 

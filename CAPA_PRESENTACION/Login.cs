@@ -138,5 +138,11 @@ namespace CAPA_PRESENTACION
             }
            
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            var recorypass = new Recovery();
+            recorypass.ShowDialog();
+        }
     }
 }

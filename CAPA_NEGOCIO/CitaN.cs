@@ -53,15 +53,13 @@ namespace CAPA_NEGOCIO
         }
 
 
-        public void ingresar(DateTime fecha1)
+        public DataTable filtro(DateTime fecha)
         {
-           
-
-
-
-
-
-
+            DataTable tablec = new DataTable();
+            CitaD datos = new CitaD();
+            datos.Hoy = fecha;
+            tablec = datos.filtro(datos);
+            return tablec;
         }
 
 

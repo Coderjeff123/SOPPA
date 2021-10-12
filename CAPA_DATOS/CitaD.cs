@@ -14,21 +14,24 @@ namespace CAPA_DATOS
         int ID_Remision;
         DateTime Fecha;
         DateTime Hora;
+        DateTime hoy;
 
         public CitaD(){}
 
-        public CitaD(int iD_Cita1, int iD_Remision1, DateTime fecha1,DateTime hora1)
+        public CitaD(int iD_Cita1, int iD_Remision1, DateTime fecha1,DateTime hora1,DateTime hoy)
         {
             ID_Cita1 = iD_Cita1;
             ID_Remision1 = iD_Remision1;
             Fecha1 = fecha1;
             Hora1 = hora1;
+            Hoy = hoy;
         }
 
         public int ID_Cita1 { get => ID_Cita; set => ID_Cita = value; }
         public int ID_Remision1 { get => ID_Remision; set => ID_Remision = value; }
         public DateTime Fecha1 { get => Fecha; set => Fecha = value; }
         public DateTime Hora1 { get => Hora; set => Hora = value; }
+        public DateTime Hoy { get => hoy; set => hoy = value; }
 
         public string insertcita(CitaD expCt)
         {
@@ -279,6 +282,64 @@ namespace CAPA_DATOS
 
 
         }
+
+        public DataTable filtro(CitaD cita)
+        {
+
+            DataTable showcita = new DataTable("cita");
+            string retorno = "";
+            SqlConnection Conectar = new SqlConnection();
+            try
+            {
+                //Asignamos la cadena de conexión
+                Conectar.ConnectionString = Conet.cnx;
+                Conectar.Open();
+                SqlCommand sp_Newcita = new SqlCommand();
+                sp_Newcita.Connection = Conectar;
+                sp_Newcita.CommandText = "psci.Filtro_fecha";
+                sp_Newcita.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter fecha = new SqlParameter();
+                fecha.ParameterName = "@fecha";
+                fecha.SqlDbType = SqlDbType.DateTime;
+                fecha.Value = cita.Hoy;
+                sp_Newcita.Parameters.Add(fecha);
+
+
+
+
+                SqlDataAdapter adartar = new SqlDataAdapter(sp_Newcita);
+                adartar.Fill(showcita);
+
+
+
+                if (sp_Newcita.ExecuteNonQuery() == 1)
+                {
+                    retorno = "Everything it's ok";
+                }
+                else
+                {
+                    retorno = "Houston tenemos un problema";
+                }
+
+            }
+            catch (Exception e)
+            {
+                retorno = e.Message;
+            }
+            finally
+            {
+                //verificacion la conexion segun el caso cerramos si es necesario
+                if (Conectar.State == ConnectionState.Open)
+                {
+                    Conectar.Close();
+                }
+            }
+            return showcita;
+
+
+        }
+
 
 
 

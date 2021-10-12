@@ -40,7 +40,7 @@ namespace CAPA_PRESENTACION
 
         public string Tema { get { return textBox1.Text; } }
 
-        public string Tema2 { get {return textBox2.Text; } }
+       
 
 
         private void Principal_Load(object sender, EventArgs e)
@@ -89,17 +89,17 @@ namespace CAPA_PRESENTACION
             else if (tema == "Morado")
             {
                 textBox1.Text = "Morado";
-                textBox2.Text = "Morado";
+             
             }
             else if (tema == "Verde")
             {
                 textBox1.Text = "Verde";
-                textBox2.Text = "Verde";
+               
             }
             else if (tema == "Defecto")
             {
                 textBox1.Text = "Defecto";
-                textBox2.Text = "Defecto";
+               
             }
 
             this.Refresh();
@@ -219,11 +219,12 @@ namespace CAPA_PRESENTACION
         {
             ocultarsubmenu();
             abrirForm(new VerConsulta());
+           
         }
 
         private void btncon_Click(object sender, EventArgs e)
         {
-            bunifuTransition1.ShowSync(panelsubmenuconsulta);
+          
             mostrarsubmenu(panelsubmenuconsulta);
             
 
@@ -231,7 +232,6 @@ namespace CAPA_PRESENTACION
 
         private void btncita_Click(object sender, EventArgs e)
         {
-            bunifuTransition2.ShowSync(panelsubmenucita);
             mostrarsubmenu(panelsubmenucita);
            
         }
@@ -387,24 +387,8 @@ namespace CAPA_PRESENTACION
         CitaN cita = new CitaN();
         private void Cargarfecha()
         {
-
-            dtaactividad.DataSource = cita.showct();
-           string fec= DateTime.Today.ToString();
-            textBox2.Text = fec;
-            for(int i = 1; i < dtaactividad.Rows.Count; i++) 
-            { 
-                if (fec == dtaactividad.CurrentRow.Cells["Fecha"].Value.ToString())
-                {
-                    dtaactividad.Rows[i].Visible = true;
-                }
-                else
-                {
-                       dtaactividad.Rows[i].Visible = false;
-                }
-            }
-            dtaactividad.Columns[0].Visible = false;
-            dtaactividad.Columns[1].Visible = false;
-            dtaactividad.Columns[3].Visible = false;
+            string fecha = DateTime.Now.ToShortDateString();
+           dtaactividad.DataSource = cita.filtro(Convert.ToDateTime(fecha));
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
@@ -449,6 +433,14 @@ namespace CAPA_PRESENTACION
         {
             Cambiar_contraseña cambiar = new Cambiar_contraseña();
             cambiar.Show();
+        }
+
+      
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            bunifuLabel1.Text = DateTime.Now.ToString("HH:mm:ss");
+            bunifuLabel2.Text = DateTime.Now.ToLongDateString();
         }
     }
 } 

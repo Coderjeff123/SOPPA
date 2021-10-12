@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using CAPA_DATOS;
 using CAPA_DATOS.usercache;
+using System.Data;
 
 namespace CAPA_NEGOCIO
 {
@@ -13,6 +14,7 @@ namespace CAPA_NEGOCIO
         public NLogin()
         {
         }
+        DLogin dLogin = new DLogin();
 
         public  string loginuser(string user, string pass)
         {
@@ -23,6 +25,16 @@ namespace CAPA_NEGOCIO
 
             return dLogin.INICIO(dLogin);
         }
+        public string recory(string recovery)
+        {
+            
+            DLogin datos = new DLogin();
+            datos.Nombre = recovery;
+            datos.recovery(datos);
+            return datos.recovery(datos); ;
+        }
+
+    
 
      
 

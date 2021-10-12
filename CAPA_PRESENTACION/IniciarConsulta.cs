@@ -23,8 +23,16 @@ namespace CAPA_PRESENTACION
         private void button1_Click(object sender, EventArgs e)
         {
             paneldegra21.Visible = false;
+            bunifuShadowPanel1.Visible = true;
             dtaexpe.DataSource = dto.buscarexpedientecita(textBox1.Text);
-            dtaexpe.Visible = true;
+            //dtaexpe.Visible = true;
+        }
+
+
+        private void dtaexpe_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            bunifuShadowPanel1.Visible = false;
+            bunifuShadowPanel2.Visible = true;
         }
     }
 }

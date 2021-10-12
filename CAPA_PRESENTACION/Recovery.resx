@@ -117,22 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="dataGridViewTextBoxColumn3.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <metadata name="dataGridViewTextBoxColumn4.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 1.2px; margin: auto; padding-top: 1px;font-family: 'Microsoft YaHei UI'; font-size: 9.75pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: Black; text-align: center; }</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="textagendar.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAb4AAAAjCAYAAADrAm/AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABgSURBVHhe7cNBDQAwCASwKUEzjnDGTcR+S5v0AAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAvqneqE1X9
-        f3IB95SnpAX/j6EAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAVAAAAAjCAYAAADCKVICAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABiSURBVHhe7dbBDQAQFERBjVCbUnRAxx93kbjKTPJa2GwC
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAf5R511SRJb6UyIiRJ7+0HelxW
+        SdKtaBNaiDMIKPhOtgAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="bunifuButton1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAANIAAAAtCAYAAADbXTWOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJHSURBVHhe7d2hb9tAFMdxw8LCgjguLCwsHBwcHCwMDCzs
+        f+BLNV44WDg4WFhYOFhatqF3vZe8JL76xYqr06Yl3yd9lEo5J8Q/3d2z61QURf2Dau7jSdPGT6pu4y1w
+        KCYL+Wzn9qmd7mWr+RbP6lbmdZCnaYgROHTpXH+eBmmbu3hhMfh4aYD0w1KI/my+ZBFjk16V/t39cuB/
+        tjmv31vI9zRLnVssxlWzkKs03b32PhQ4Fp2JQieTSZCvFo/9atLGL+tZyE0ocKR0L2UxGa7VTNRZygHI
+        pP3TzOLi16qpwHIOGKITjU44Fpt+aWNBB7KcA4ZpB9tik5d2JVjSAXuwJoT2Eiw+29JNVO8AAAPkh8Vn
+        W6sLUN5gAJ6Umd96p49FaH3h1R8MoG/dR8iWd3p/UfdNAPvJWuFpf3TtDQIwLLtAu2k0cO8cMIofJACj
+        ECSgAIIEFECQgAIIElAAQQIKIEhAAQQJKIAgAQUQJKAAggQUQJCAAggSUABBAgrIgxRk5g0CMCwLkj6F
+        f/kG/48EjFK3MrcYVZU+cX/5BkECRuk9Dzwt7168gQB26/1KxTTIvTcQgC9NPo8Wn22xTwLGyfZH3Uqz
+        0k/vAAA53QplD4fsVlrvXXoHAchlz7Pzqg7xxjsQwJo8WFyGi8YD8J6IvqaZ6Gnnks4rbhsCkqz5Jg9p
+        +3NqEdm/lr8lG+RX9qF09XBktLGws0M3ptLsdK1TmvclwKFK5/yz9gw+NAsN1fI3ZoPMdNkHHC6Z621z
+        dtpTFPV3qqreAFjCqj/8UGiFAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuLabel2.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 1.2px; font-family: 'Microsoft YaHei'; font-size: 20.25pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: ; text-align: left; }</value>
   </data>
 </root>
